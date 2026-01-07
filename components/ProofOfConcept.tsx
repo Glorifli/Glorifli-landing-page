@@ -3,35 +3,35 @@ import { motion } from 'framer-motion';
 
 const testimonials = [
   {
-    quote: "We went from 3 to 15 clients in our first month with Glorifli. The guarantee seemed too good to be true, but they delivered.",
-    author: "Sarah Jenkins",
-    role: "CEO, Spark Digital",
-    image: "https://picsum.photos/100/100?random=1"
+    quote: "I knew I could help more patients, but they couldn't find me. Glorifli changed that. Now, when people search for holistic care in my area, my practice is the first thing they see. I'm finally treating the patients who need me most.",
+    author: "Dr. Sarah Jenkins, ND",
+    role: "Naturopathic Doctor",
+    image: "/testimonials/sarah.png"
   },
   {
-    quote: "The quality of leads is unmatched. These aren't just cold emails; they are warm introductions to decision makers.",
-    author: "Marcus Thorne",
-    role: "Founder, Thorne Creative",
-    image: "https://picsum.photos/100/100?random=2"
+    quote: "Our old website was confusing and didn't convert. Glorifli's clear messaging and automated booking system completely turned it around. We've seen a 3x increase in new patient appointments since launching.",
+    author: "Dr. Michael Ross, DC",
+    role: "Chiropractor",
+    image: "/testimonials/ross.png"
   },
   {
-    quote: "Glorifli's system allowed us to scale our sales team without hiring more SDRs. It's fully automated growth.",
-    author: "Elena Rodriguez",
-    role: "VP Sales, TechFlow",
-    image: "https://picsum.photos/100/100?random=3"
+    quote: "My patients used to express a lot of uncertainty about whether I could actually treat them or not. But Glorifli's content strategy educated my patients before they even walked in. The authority we've built allows us to focus on care rather than convincing patients of our value.",
+    author: "Dr. Elena Rodriguez, DDS",
+    role: "Naturopathic Dentist",
+    image: "/testimonials/rodriguez.png"
   }
 ];
 
 const ProofOfConcept: React.FC = () => {
   return (
     <section id="proof" className="py-24 px-6 bg-background relative overflow-hidden">
-       {/* Background decoration */}
-       <div className="absolute right-0 top-1/4 w-[400px] h-[400px] bg-secondary/5 rounded-full blur-[100px] pointer-events-none" />
+      {/* Background decoration */}
+      <div className="absolute right-0 top-1/4 w-[400px] h-[400px] bg-secondary/5 rounded-full blur-[100px] pointer-events-none" />
 
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-5xl font-bold font-heading text-white">
-            Trusted By <span className="text-primary">Local Business Owners</span>
+            Trusted By <span className="text-primary">Health Professionals</span>
           </h2>
         </div>
 
@@ -41,10 +41,19 @@ const ProofOfConcept: React.FC = () => {
               key={index}
               initial={{ opacity: 0, scale: 0.95 }}
               whileInView={{ opacity: 1, scale: 1 }}
-              whileHover={{ y: -10 }}
+              whileHover={{
+                y: -10,
+                boxShadow: "0 0 40px -10px rgba(56, 189, 248, 0.4)",
+                borderColor: "rgba(56, 189, 248, 0.5)"
+              }}
               viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className="glass-panel p-8 rounded-3xl border border-white/5 hover:border-primary/30 hover:shadow-[0_20px_40px_-15px_rgba(56,189,248,0.3)] transition-colors duration-300 flex flex-col cursor-default"
+              transition={{
+                type: "spring",
+                stiffness: 500,
+                damping: 30,
+                mass: 1
+              }}
+              className="glass-panel p-8 rounded-3xl border border-white/5 flex flex-col cursor-default"
             >
               <div className="mb-6">
                 <svg className="w-8 h-8 text-primary/40 mb-4" fill="currentColor" viewBox="0 0 24 24">
@@ -53,9 +62,9 @@ const ProofOfConcept: React.FC = () => {
                 <p className="text-gray-200 leading-relaxed text-lg">"{testimonial.quote}"</p>
               </div>
               <div className="mt-auto flex items-center gap-4 pt-6 border-t border-white/5">
-                <img 
-                  src={testimonial.image} 
-                  alt={testimonial.author} 
+                <img
+                  src={testimonial.image}
+                  alt={testimonial.author}
                   className="w-12 h-12 rounded-full border border-white/10"
                 />
                 <div>
