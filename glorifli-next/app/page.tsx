@@ -1,0 +1,21 @@
+import Hero from "@/components/Hero";
+import PainPoints from "@/components/PainPoints";
+import ValueProposition from "@/components/ValueProposition";
+import ProofOfConcept from "@/components/ProofOfConcept";
+import LeadForm from "@/components/LeadForm";
+import BookingCalendar from "@/components/BookingCalendar";
+import FAQ from "@/components/FAQ";
+
+export default function Home() {
+  return (
+    <main>
+      <Hero />
+      <PainPoints />
+      <ValueProposition />
+      <ProofOfConcept />
+      <LeadForm />
+      <BookingCalendar />
+      <FAQ />
+    </main>
+  );
+}
