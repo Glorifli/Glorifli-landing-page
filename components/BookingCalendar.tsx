@@ -1,3 +1,5 @@
+"use client";
+
 import React, { useEffect } from 'react';
 
 const BookingCalendar: React.FC = () => {
@@ -47,7 +49,7 @@ const BookingCalendar: React.FC = () => {
                     Schedule Your Free <span className="text-primary">Strategy Call</span>
                 </h2>
                 <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-12">
-                    Diagnose your problem, get free advice, and show you a mock draft of your new website.
+                    Diagnose your problem, get free advice, and see a mock draft of your new website.
                 </p>
 
                 <div style={{ width: "100%", height: "100%", overflow: "scroll" }} id="my-cal-inline-15min"></div>

@@ -1,20 +1,22 @@
+"use client";
+
 import React from 'react';
 import { motion } from 'framer-motion';
-import { EyeOff, MessageSquareX, Target, TrendingUp, Search, ArrowRight } from 'lucide-react';
+import { EyeOff, MessageSquareX, TrendingUp } from 'lucide-react';
 
 const painPoints = [
     {
         icon: EyeOff,
         title: "Lack of Visibility",
         description: "You're an expert in your field, but to the patients who need you most, you're invisible. While less qualified competitors rank higher, your practice remains the best kept secret in town.",
-        accentColor: "text-accent", // Light Pink (#ec4899)
+        accentColor: "text-accent",
         glowColor: "from-accent/10"
     },
     {
         icon: MessageSquareX,
         title: "Unclear messaging",
         description: "Generic marketing like 'holistic health' doesn't speak to specific pain. Without addressing exact health issues, patients won't know if you can actually heal them, leading to lost opportunities.",
-        accentColor: "text-accent", // Light Pink (#ec4899)
+        accentColor: "text-accent",
         glowColor: "from-accent/10"
     }
 ];
@@ -65,7 +67,7 @@ const PainPoints: React.FC = () => {
                                 damping: 30,
                                 mass: 1
                             }}
-                            className="glass-panel p-8 rounded-3xl relative group overflow-hidden"
+                            className="glass-panel p-8 rounded-3xl relative group overflow-hidden border border-white/5"
                         >
                             <div className={`absolute inset-0 bg-gradient-to-br ${point.glowColor} to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500`} />
 
