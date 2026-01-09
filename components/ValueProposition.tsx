@@ -40,7 +40,7 @@ const ValueProposition: React.FC = () => {
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold font-heading mb-6">
-                        Need Help Converting <span className="text-primary">Eyes to Appointments?</span>
+                        Need Help Converting <span className="text-primary">Eyes Into Appointments?</span>
                     </h2>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto">
                         We don't just build websites. We build client acquisition systems to get more people into your practice!
