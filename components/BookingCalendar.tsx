@@ -19,6 +19,7 @@ const BookingCalendar: React.FC = () => {
                 if (ar[0] === L) {
                     const api = function () { p(api, arguments); };
                     const namespace = ar[1];
+                    // @ts-ignore
                     api.q = api.q || [];
                     if (typeof namespace === "string") {
                         cal.ns[namespace] = cal.ns[namespace] || api;

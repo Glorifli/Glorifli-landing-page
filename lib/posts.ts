@@ -4,17 +4,19 @@ import matter from 'gray-matter';
 
 const postsDirectory = path.join(process.cwd(), 'content/posts');
 
-export interface PostData {
+export type PostData = {
     slug: string;
     title: string;
     date: string;
     author: string;
     excerpt: string;
-    tags?: string[];
-    entities?: string[];
+    tags: string[];
     content: string;
     image?: string;
+    entities?: string[];
 }
+
+export type Post = PostData;
 
 export function getAllPostSlugs() {
     const fileNames = fs.readdirSync(postsDirectory);
