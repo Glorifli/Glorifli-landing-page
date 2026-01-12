@@ -32,14 +32,17 @@ const Navbar: React.FC = () => {
             if (element) {
                 element.scrollIntoView({ behavior: 'smooth' });
             }
+        } else if (href.startsWith('/')) {
+            // For actual route changes like /blog
+            window.location.href = href;
         }
     };
 
     const navLinks = [
         { name: 'Features', href: '#features', isRoute: false },
-        { name: 'Testimonials', href: '#proof', isRoute: false },
+        { name: 'Audit', href: '#form', isRoute: false },
+        { name: 'Consulting', href: '#calendar', isRoute: false },
         { name: 'Blog', href: '/blog', isRoute: true },
-        { name: 'FAQ', href: '#faq', isRoute: false },
     ];
 
     return (
@@ -80,9 +83,15 @@ const Navbar: React.FC = () => {
                                     if (pathname !== '/') {
                                         e.preventDefault();
                                         window.location.href = '/' + link.href;
+                                    } else {
+                                        e.preventDefault();
+                                        const element = document.querySelector(link.href);
+                                        if (element) {
+                                            element.scrollIntoView({ behavior: 'smooth' });
+                                        }
                                     }
                                 }}
-                                className="text-sm font-medium text-gray-400 hover:text-white transition-colors relative group"
+                                className="text-sm font-medium text-gray-400 hover:text-white transition-colors relative group cursor-pointer"
                             >
                                 {link.name}
                                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all group-hover:w-full" />
