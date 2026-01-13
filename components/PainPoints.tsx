@@ -8,7 +8,7 @@ const painPoints = [
     {
         icon: EyeOff,
         title: "Lack of Visibility",
-        description: "You're an expert in your field, but to the patients who need you most, you're invisible. While less qualified competitors rank higher, your practice remains the best kept secret in town.",
+        description: "You're an expert in your field, but to the patients who need you most, you're invisible. 77% of patients use search engines before booking a medical appointment, which means that your lack of visibility is costing you thousands of dollars every single month.",
         accentColor: "text-accent",
         glowColor: "from-accent/10"
     },
@@ -113,7 +113,7 @@ const PainPoints: React.FC = () => {
                             The Glorifli Solution
                         </div>
                         <h3 className="text-3xl md:text-5xl font-bold font-heading mb-8 text-white">
-                            How We'll Solve <span className="text-primary italic">These Problems For You</span>
+                            The <span className="text-primary italic">Solution</span>
                         </h3>
                         <p className="text-gray-400 text-lg md:text-xl leading-relaxed mb-6">
                             Glorifli's trusted framework ensures increased visibility and clear messaging for your practice. Our proprietary website architecture enables your practice to get in front of more eyes and seamlessly convert those eyes into appointments.
