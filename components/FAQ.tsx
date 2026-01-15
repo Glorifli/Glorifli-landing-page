@@ -6,8 +6,8 @@ import { ChevronDown } from 'lucide-react';
 
 const faqs = [
     {
-        question: "How does the 'If I don't like it, I don't pay' guarantee work?",
-        answer: "It's a fully refundable investment. We take a deposit to get started, but if you aren't thrilled with the final website we build for you, we refund 100% of your money. No questions asked."
+        question: "What do I get when I book a strategy call?",
+        answer: "When you book a strategy call, you get a completely free mock draft of your new site, free instructions on how to build it yourself, a custom scaling roadmap, and a comprehensive audit of your current online presence."
     },
     {
         question: "What makes your websites different?",
