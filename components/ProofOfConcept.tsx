@@ -5,21 +5,21 @@ import { motion } from 'framer-motion';
 
 const testimonials = [
     {
-        quote: "I knew I could help more patients, but they couldn't find me. Glorifli changed that. Now, when people search for holistic care in my area, my practice is the first thing they see. I'm finally treating the patients who need me most.",
-        author: "Dr. Sarah Jenkins, ND",
-        role: "Naturopathic Doctor",
+        quote: "I knew I could help more clients, but they couldn't find me. Glorifli changed that. Now, when people search for services in my area, my business is the first thing they see. I'm finally serving the clients who need me most.",
+        author: "Sarah Jenkins",
+        role: "Business Owner",
         image: "/testimonials/sarah.png"
     },
     {
-        quote: "Our old website was confusing and didn't convert. Glorifli's clear messaging and automated booking system completely turned it around. We've seen a 3x increase in new patient appointments since launching.",
-        author: "Dr. Michael Ross, DC",
-        role: "Chiropractor",
+        quote: "Our old website was confusing and didn't convert. Glorifli's clear messaging and automated booking system completely turned it around. We've seen a 3x increase in new client appointments since launching.",
+        author: "Michael Ross",
+        role: "Service Provider",
         image: "/testimonials/ross.png"
     },
     {
-        quote: "My patients used to express a lot of uncertainty about whether I could actually treat them or not. But Glorifli's content strategy educated my patients before they even walked in. The authority we've built allows us to focus on care rather than convincing patients of our value.",
-        author: "Dr. Elena Rodriguez, DDS",
-        role: "Naturopathic Dentist",
+        quote: "My clients used to express a lot of uncertainty about whether I could actually help them or not. But Glorifli's content strategy educated my clients before they even walked in. The authority we've built allows us to focus on service rather than convincing clients of our value.",
+        author: "Elena Rodriguez",
+        role: "Agency Founder",
         image: "/testimonials/rodriguez.png"
     }
 ];
@@ -33,7 +33,7 @@ const ProofOfConcept: React.FC = () => {
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-3xl md:text-5xl font-bold font-heading text-white">
-                        Trusted By <span className="text-primary">Health Professionals</span>
+                        Trusted By <span className="text-primary">Business Owners</span>
                     </h2>
                 </div>
 

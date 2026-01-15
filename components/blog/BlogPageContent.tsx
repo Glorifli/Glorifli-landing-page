@@ -35,10 +35,10 @@ export default function BlogPageContent({ initialPosts }: BlogPageContentProps) 
                         Glorifli <span className="text-primary">Insights</span>
                     </h1>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-2">
-                        Actionable strategies to grow your medical practice. Learn how to attract more patients and build a thriving clinic.
+                        Actionable strategies to grow your business. Learn how to attract more clients and build a thriving brand.
                     </p>
                     <p className="text-lg text-primary font-medium">
-                        We equip you with the strategies to help you bring healing to more people!
+                        We equip you with the strategies to help you serve more people!
                     </p>
                 </div>
 

@@ -84,13 +84,13 @@ const LeadForm: React.FC = () => {
                                 How Much Is <span className="text-primary">Low Visibility Costing You?</span>
                             </h2>
                             <p className="text-gray-400 mb-8">
-                                Fill out the form for a free audit to assess how much your practice is leaving on the table, and to see how many more people your practice could be helping.
+                                Fill out the form for a free audit to assess how much your business is leaving on the table, and to see how many more people your business could be helping.
                             </p>
                             <ul className="space-y-4">
                                 {[
                                     "Free Revenue Audit included",
                                     "Personalized Growth Roadmap",
-                                    "Identify patient visibility gaps",
+                                    "Identify visibility gaps",
                                     "No commitment required"
                                 ].map((item, i) => (
                                     <li key={i} className="flex items-center gap-3 text-sm text-gray-300">
@@ -153,7 +153,7 @@ const LeadForm: React.FC = () => {
                                         />
                                     </div>
                                     <div>
-                                        <label htmlFor="arppv" className="block text-xs font-medium text-gray-400 mb-1 ml-1">Avg. Revenue Per Patient Visit</label>
+                                        <label htmlFor="arppv" className="block text-xs font-medium text-gray-400 mb-1 ml-1">Avg. Revenue Per Client Visit</label>
                                         <input
                                             type="text"
                                             id="arppv"
@@ -165,7 +165,7 @@ const LeadForm: React.FC = () => {
                                         />
                                     </div>
                                     <div>
-                                        <label htmlFor="patientsPerMonth" className="block text-xs font-medium text-gray-400 mb-1 ml-1">Avg. Patients Per Month</label>
+                                        <label htmlFor="patientsPerMonth" className="block text-xs font-medium text-gray-400 mb-1 ml-1">Avg. Clients Per Month</label>
                                         <input
                                             type="text"
                                             id="patientsPerMonth"

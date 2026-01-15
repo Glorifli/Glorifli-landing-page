@@ -76,8 +76,8 @@ export default function PrivacyPolicy() {
                                 <li>Email address</li>
                                 <li>First name and last name</li>
                                 <li>Phone number</li>
-                                <li>Business/Practice Name (e.g., Clinic Name)</li>
-                                <li>Professional Details (e.g., Practice Type, Revenue estimates provided for audits)</li>
+                                <li>Business Name</li>
+                                <li>Professional Details (e.g., Industry, Revenue estimates provided for audits)</li>
                                 <li>Address, State, Province, ZIP/Postal code, City</li>
                                 <li>Usage Data</li>
                             </ul>

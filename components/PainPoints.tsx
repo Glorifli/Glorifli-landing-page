@@ -8,14 +8,14 @@ const painPoints = [
     {
         icon: EyeOff,
         title: "Lack of Visibility",
-        description: "You're an expert in your field, but to the patients who need you most, you're invisible. 77% of patients use search engines before booking a medical appointment, which means that your lack of visibility is costing you thousands of dollars every single month.",
+        description: "You're an expert in your field, but to the clients who need you most, you're invisible. 82% of appointments are booked thorugh searches made on mobile phone, which means that your lack of visibility is costing you thousands of dollars every single month.",
         accentColor: "text-accent",
         glowColor: "from-accent/10"
     },
     {
         icon: MessageSquareX,
         title: "Unclear messaging",
-        description: "Generic marketing like 'holistic health' doesn't speak to specific pain. Without addressing exact health issues, patients won't know if you can actually heal them, leading to lost opportunities.",
+        description: "Generic marketing doesn't speak to specific pain. Without addressing exact problems, clients won't know if you can actually help them, leading to lost opportunities.",
         accentColor: "text-accent",
         glowColor: "from-accent/10"
     }
@@ -36,7 +36,7 @@ const PainPoints: React.FC = () => {
                         viewport={{ once: true }}
                         className="text-3xl md:text-5xl font-bold font-heading mb-6"
                     >
-                        Your Practice Isn't The Problem. <span className="text-primary text-glow">Marketing Is.</span>
+                        Your Business Isn't The Problem. <span className="text-primary text-glow">Marketing Is.</span>
                     </motion.h2>
                     <motion.p
                         initial={{ opacity: 0, y: 20 }}
@@ -45,7 +45,7 @@ const PainPoints: React.FC = () => {
                         transition={{ delay: 0.1 }}
                         className="text-xl text-gray-400 max-w-2xl mx-auto"
                     >
-                        We get more eyes on your practice. You heal more patients.
+                        We get more eyes on your business. You help more clients.
                     </motion.p>
                 </div>
 
@@ -116,7 +116,7 @@ const PainPoints: React.FC = () => {
                             The <span className="text-primary italic">Solution</span>
                         </h3>
                         <p className="text-gray-400 text-lg md:text-xl leading-relaxed mb-6">
-                            Glorifli's trusted framework ensures increased visibility and clear messaging for your practice. Our proprietary website architecture enables your practice to get in front of more eyes and seamlessly convert those eyes into appointments.
+                            Glorifli's trusted framework ensures increased visibility and clear messaging for your business. Our proprietary website architecture enables your business to get in front of more eyes and seamlessly convert those eyes into appointments.
                         </p>
                     </div>
                 </motion.div>

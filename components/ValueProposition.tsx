@@ -8,14 +8,14 @@ const features = [
     {
         icon: Eye,
         title: 'Improved Visibility',
-        description: 'Our AEO & SEO optimized blogs answer specific patient questions, ensuring your practice appears before your competitors when patients need care.',
+        description: 'Our AEO & SEO optimized blogs answer specific client questions, ensuring your business appears before your competitors when people need you.',
         color: 'text-primary',
         colSpan: 'md:col-span-1'
     },
     {
         icon: Calendar,
         title: 'More Appointments',
-        description: 'Our Ai-powered chatbot qualifies leads and books appointments 24/7.',
+        description: '40% of appointments are booked after hours when businesses are closed, but our chatbot ensures customer inquiries are handled professionally and appointments are booked.',
         color: 'text-accent',
         colSpan: 'md:col-span-1',
         hoverColor: 'text-accent',
@@ -25,7 +25,7 @@ const features = [
     {
         icon: Award,
         title: 'Greater Credibility',
-        description: "We'll build your high-converting website to establish patient trust and authority for your practice.",
+        description: "We'll build your high-converting website to establish client trust and authority for your business.",
         color: 'text-primary',
         colSpan: 'md:col-span-1',
         hoverColor: 'text-primary',
@@ -43,7 +43,7 @@ const ValueProposition: React.FC = () => {
                         Need Help Converting <span className="text-primary">Eyes Into Appointments?</span>
                     </h2>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-                        We don't just build websites. We build client acquisition systems to get more people into your practice!
+                        We don't just build websites. We build client acquisition systems to get more people into your business!
                     </p>
                 </div>
 
