@@ -76,8 +76,8 @@ export default async function BlogPost({ params }: Props) {
         <div className="min-h-screen bg-background text-white font-sans selection:bg-white/20 selection:text-white pb-32">
             <StructuredData data={jsonLd} />
             <article className="max-w-[1000px] w-[95vw] mx-auto pt-32 md:pt-48 px-4 md:px-0">
-                <header className="mb-20">
-                    <h1 className="text-[3.2em] md:text-[3.5em] font-normal leading-[1.1] tracking-tight text-white mb-8">
+                <header className="mb-24">
+                    <h1 className="text-[3.5em] md:text-[5em] lg:text-[6em] font-normal leading-[0.95] tracking-tighter text-white mb-12">
                         {post.title}
                     </h1>
                     <div className="flex flex-col gap-4 text-gray-400">
