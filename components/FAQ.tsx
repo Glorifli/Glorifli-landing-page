@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ChevronDown } from 'lucide-react';
+import StructuredData from './StructuredData';
 
 const faqs = [
     {
@@ -26,8 +27,22 @@ const faqs = [
 const FAQ: React.FC = () => {
     const [activeIndex, setActiveIndex] = useState<number | null>(null);
 
+    const jsonLd = {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+            "@type": "Question",
+            "name": faq.question,
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": faq.answer
+            }
+        }))
+    };
+
     return (
         <section id="faq" className="py-24 px-6 bg-surface">
+            <StructuredData data={jsonLd} />
             <div className="max-w-3xl mx-auto">
                 <h2 className="text-3xl font-bold mb-12 font-heading text-center">Frequently asked questions</h2>
 

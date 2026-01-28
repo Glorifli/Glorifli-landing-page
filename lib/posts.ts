@@ -13,6 +13,7 @@ export type PostData = {
     tags: string[];
     content: string;
     image?: string;
+    image_alt?: string;
     entities?: string[];
 }
 
@@ -46,6 +47,7 @@ export async function getPostData(slug: string): Promise<PostData> {
         entities: matterResult.data.entities || [],
         content: matterResult.content,
         image: matterResult.data.image || '/images/blog-placeholder.jpg',
+        image_alt: matterResult.data.image_alt || '',
     };
 }
 
@@ -66,6 +68,7 @@ export async function getPosts(): Promise<Omit<PostData, 'content'>[]> {
             tags: matterResult.data.tags || [],
             entities: matterResult.data.entities || [],
             image: matterResult.data.image || '/images/blog-placeholder.jpg',
+            image_alt: matterResult.data.image_alt || '',
         };
     });
 

@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import path from "path";
 import fs from "fs";
 import Link from "next/link";
+import Image from "next/image";
 
 type Props = {
     params: Promise<{ slug: string }>;
@@ -25,6 +26,8 @@ export async function generateMetadata({ params }: Props) {
         };
     }
 
+    const images = post.image ? [`https://glorifli.com${post.image}`] : [];
+
     return {
         title: `${post.title} | Glorifli Blog`,
         description: post.excerpt,
@@ -34,6 +37,18 @@ export async function generateMetadata({ params }: Props) {
             type: "article",
             publishedTime: post.date,
             authors: ["Glorifli Team"],
+            url: `https://glorifli.com/blog/${slug}`,
+            images: images,
+            siteName: "Glorifli",
+        },
+        twitter: {
+            card: "summary_large_image",
+            title: post.title,
+            description: post.excerpt,
+            images: images,
+        },
+        alternates: {
+            canonical: `https://glorifli.com/blog/${slug}`,
         },
     };
 }
@@ -57,15 +72,33 @@ export default async function BlogPost({ params }: Props) {
         datePublished: post.date,
         dateModified: post.date,
         description: post.excerpt,
+        image: post.image ? `https://glorifli.com${post.image}` : undefined,
+        keywords: [...(post.tags || []), ...(post.entities || [])].join(", "),
         author: {
             "@type": "Organization",
             name: "Glorifli",
             url: "https://glorifli.com",
+            logo: {
+                "@type": "ImageObject",
+                url: "https://glorifli.com/logo.png" // Ensure this exists or use a valid placeholder
+            }
+        },
+        publisher: {
+            "@type": "Organization",
+            name: "Glorifli",
+            logo: {
+                "@type": "ImageObject",
+                url: "https://glorifli.com/logo.png"
+            }
         },
         mainEntityOfPage: {
             "@type": "WebPage",
             "@id": `https://glorifli.com/blog/${slug}`,
         },
+        about: post.entities?.map(entity => ({
+            "@type": "Thing",
+            "name": entity
+        })),
         speakable: {
             "@type": "SpeakableSpecification",
             xpath: ["/html/head/title", "/html/head/meta[@name='description']/@content"],
@@ -73,53 +106,53 @@ export default async function BlogPost({ params }: Props) {
     };
 
     return (
-        <div className="min-h-screen bg-background text-white font-sans selection:bg-white/20 selection:text-white pb-32">
+        <div className="min-h-screen bg-background text-white font-sans">
             <StructuredData data={jsonLd} />
-            <article className="max-w-[1000px] w-[95vw] mx-auto pt-32 md:pt-48 px-4 md:px-0">
-                <header className="mb-24">
-                    <h1 className="text-[3.5em] md:text-[5em] lg:text-[6em] font-normal leading-[0.95] tracking-tighter text-white mb-12">
+            <article className="max-w-3xl mx-auto py-20 px-6 sm:px-8">
+                <header className="mb-12 text-center">
+                    <h1 className="text-4xl md:text-6xl font-serif font-bold uppercase tracking-widest leading-tight text-white mb-8">
                         {post.title}
                     </h1>
-                    <div className="flex flex-col gap-4 text-gray-400">
-                        <p className="text-[1.2em] leading-relaxed max-w-2xl font-light text-gray-300">{post.excerpt}</p>
-                        <div className="flex items-center gap-4 text-sm uppercase tracking-widest mt-4 opacity-60">
-                            <time>{post.date}</time>
-                            <span>|</span>
-                            <span>{readTimeMinutes} Min Read</span>
-                        </div>
-                    </div>
+                    <p className="text-xl md:text-2xl text-gray-300 leading-relaxed font-light max-w-2xl mx-auto">{post.excerpt}</p>
                 </header>
 
-                {/* Minimalist Image Handling */}
                 {post.image && (
-                    <div className="mb-16 w-full aspect-video relative overflow-hidden bg-white/5 border border-white/10">
-                        <img
+                    <div className="mb-8 rounded-sm overflow-hidden border border-white/10 aspect-video relative">
+                        <Image
                             src={post.image}
                             alt={post.title}
-                            className="w-full h-full object-cover opacity-80"
+                            fill
+                            className="object-cover grayscale hover:grayscale-0 transition-all duration-700"
+                            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 80vw, 800px"
+                            priority
                         />
                     </div>
                 )}
 
-                <div className="prose prose-xl prose-invert max-w-none 
-                    prose-headings:font-normal prose-headings:text-white prose-headings:tracking-tight
-                    prose-h2:text-[2em] prose-h2:mt-16 prose-h2:mb-8
-                    prose-h3:text-[1.5em] prose-h3:mt-12
-                    prose-p:text-[1.35em] prose-p:leading-[1.8] prose-p:text-gray-300 prose-p:font-light prose-p:mb-10
-                    prose-a:no-underline prose-a:border-b prose-a:border-gray-500 prose-a:text-white hover:prose-a:border-primary hover:prose-a:text-primary transition-all duration-200
-                    prose-strong:font-medium prose-strong:text-white
-                    prose-ul:text-[1.35em] prose-ul:text-gray-300 prose-ul:font-light prose-li:my-4
-                    ">
+                <div className="flex flex-col items-center gap-4 mb-16 border-b border-white/10 pb-12">
+                    <time className="block text-sm text-primary font-mono uppercase tracking-[0.2em]">{post.date}</time>
+                    <div className="flex items-center gap-2 text-xs text-gray-500 font-mono uppercase tracking-widest border border-white/10 px-4 py-2 rounded-full">
+                        <span>TLDR; Est. {readTimeMinutes} Min Read</span>
+                    </div>
+                </div>
+
+                <div className="prose prose-lg prose-invert max-w-none mx-auto 
+                    prose-headings:font-serif prose-headings:uppercase prose-headings:tracking-widest prose-headings:text-white prose-headings:font-normal prose-headings:mt-16 prose-headings:mb-8 prose-headings:border-b prose-headings:border-white/10 prose-headings:pb-4
+                    prose-h2:text-3xl prose-h3:text-2xl
+                    prose-p:text-gray-300 prose-p:leading-[2.5] prose-p:font-light prose-p:mb-8
+                    prose-a:text-white prose-a:underline prose-a:decoration-white/30 prose-a:underline-offset-4 hover:prose-a:decoration-primary hover:prose-a:text-primary transition-all
+                    prose-strong:text-white prose-strong:font-semibold
+                    prose-ul:my-10 prose-li:text-gray-300 prose-li:my-4 prose-li:leading-loose marker:prose-li:text-primary">
                     {/* @ts-ignore */}
                     <MDXRemote source={post.content} />
                 </div>
 
-                <div className="mt-32 pt-16 border-t border-white/10">
+                <div className="mt-24 text-center border-t border-white/10 pt-12">
                     <Link
                         href="/blog"
-                        className="inline-block text-lg border-b border-gray-500 text-white hover:border-primary hover:text-primary transition-all uppercase tracking-wider"
+                        className="inline-flex items-center px-8 py-3 rounded-full bg-white/5 border border-white/10 text-sm font-medium text-gray-300 hover:text-white hover:bg-white/10 hover:border-primary/50 transition-all group uppercase tracking-widest"
                     >
-                        &larr; Back to Blog
+                        <span className="mr-2 group-hover:-translate-x-1 transition-transform">&larr;</span> Back to Blog
                     </Link>
                 </div>
             </article>

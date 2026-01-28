@@ -2,6 +2,7 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
+import Image from 'next/image';
 
 const testimonials = [
     {
@@ -64,10 +65,12 @@ const ProofOfConcept: React.FC = () => {
                                 <p className="text-gray-200 leading-relaxed text-lg">"{testimonial.quote}"</p>
                             </div>
                             <div className="mt-auto flex items-center gap-4 pt-6 border-t border-white/5">
-                                <img
+                                <Image
                                     src={testimonial.image}
                                     alt={testimonial.author}
-                                    className="w-12 h-12 rounded-full border border-white/10"
+                                    width={48}
+                                    height={48}
+                                    className="rounded-full border border-white/10"
                                 />
                                 <div>
                                     <h4 className="font-bold text-white text-sm">{testimonial.author}</h4>
