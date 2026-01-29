@@ -7,7 +7,7 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
 const Hero: React.FC = () => {
     return (
-        <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-20 pb-16 px-6">
+        <section className="relative min-h-[120vh] flex flex-col items-center justify-center overflow-hidden pt-24 pb-10 px-6">
             <StarBackground />
 
             {/* Background Gradients */}
@@ -35,10 +35,10 @@ const Hero: React.FC = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
-                    className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tighter leading-[0.95] mb-8 text-white"
+                    className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tighter leading-[0.95] mb-[220px] text-white"
                 >
-                    We'll build your website, <br className="hidden md:block" />
-                    and if you don't like it, you don't pay!
+                    Websites & Systems <br className="hidden md:block" />
+                    That Actually Convert
                 </motion.h1>
 
                 {/* Subheadline */}

@@ -26,10 +26,20 @@ const StarBackground: React.FC = () => {
         ];
 
         const resizeCanvas = () => {
-            canvas.width = window.innerWidth;
-            canvas.height = window.innerHeight;
-            initStars();
+            if (canvas.parentElement) {
+                canvas.width = canvas.parentElement.offsetWidth;
+                canvas.height = canvas.parentElement.offsetHeight;
+                initStars();
+            }
         };
+
+        const observer = new ResizeObserver(() => {
+            resizeCanvas();
+        });
+
+        if (canvas.parentElement) {
+            observer.observe(canvas.parentElement);
+        }
 
         class Star {
             angle: number;
@@ -72,7 +82,7 @@ const StarBackground: React.FC = () => {
             draw() {
                 if (!ctx) return;
                 const centerX = canvas!.width / 2;
-                const centerY = canvas!.height / 2;
+                const centerY = (canvas!.height / 2) + 30; // Aligned with Black Hole
                 const x = centerX + Math.cos(this.angle) * this.radius;
                 const y = centerY + Math.sin(this.angle) * this.radius;
 
@@ -196,17 +206,17 @@ const StarBackground: React.FC = () => {
         const drawBlackHoleGlow = () => {
             if (!ctx) return;
             const centerX = canvas!.width / 2;
-            const centerY = canvas!.height / 2;
+            const centerY = (canvas!.height / 2) + 30;
             const blackHoleRadius = 50;
 
             const glowRadius = 450;
             const gradient = ctx.createRadialGradient(centerX, centerY, blackHoleRadius, centerX, centerY, glowRadius);
 
-            gradient.addColorStop(0, 'rgba(255, 255, 255, 0.05)');
-            gradient.addColorStop(0.1, 'rgba(168, 85, 247, 0.03)');
-            gradient.addColorStop(0.2, 'rgba(0, 255, 255, 0.03)');
-            gradient.addColorStop(0.3, 'rgba(236, 72, 153, 0.02)');
-            gradient.addColorStop(0.5, 'rgba(255, 255, 255, 0.01)');
+            gradient.addColorStop(0, 'rgba(255, 255, 255, 0.01)');
+            gradient.addColorStop(0.1, 'rgba(168, 85, 247, 0.01)');
+            gradient.addColorStop(0.2, 'rgba(0, 255, 255, 0.01)');
+            gradient.addColorStop(0.3, 'rgba(236, 72, 153, 0.005)');
+            gradient.addColorStop(0.5, 'rgba(255, 255, 255, 0.002)');
             gradient.addColorStop(1, 'rgba(0,0,0,0)');
 
             ctx.beginPath();
@@ -222,10 +232,10 @@ const StarBackground: React.FC = () => {
             // 1. Iridescent Glow Ring
             ctx.beginPath();
             ctx.arc(centerX, centerY, blackHoleRadius, 0, Math.PI * 2);
-            ctx.strokeStyle = 'rgba(168, 85, 247, 0.3)';
+            ctx.strokeStyle = 'rgba(168, 85, 247, 0.1)';
             ctx.lineWidth = 4;
-            ctx.shadowBlur = 15;
-            ctx.shadowColor = 'rgba(0, 255, 255, 0.5)';
+            ctx.shadowBlur = 5;
+            ctx.shadowColor = 'rgba(0, 255, 255, 0.1)';
             ctx.stroke();
 
             // 2. Bright White Core Ring
@@ -276,12 +286,11 @@ const StarBackground: React.FC = () => {
             animationFrameId = requestAnimationFrame(animate);
         };
 
-        window.addEventListener('resize', resizeCanvas);
         resizeCanvas();
         animate();
 
         return () => {
-            window.removeEventListener('resize', resizeCanvas);
+            observer.disconnect();
             cancelAnimationFrame(animationFrameId);
         };
     }, []);
