@@ -3,11 +3,11 @@
 import React from 'react';
 import StarBackground from './StarBackground';
 import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { ArrowRight, CheckCircle2, ArrowDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
     return (
-        <section className="relative min-h-[120vh] flex flex-col items-center justify-center overflow-hidden pt-24 pb-10 px-6">
+        <section className="relative min-h-[120vh] flex flex-col items-center justify-center overflow-hidden pt-0 pb-10 px-6">
             <StarBackground />
 
             {/* Background Gradients */}
@@ -37,8 +37,8 @@ const Hero: React.FC = () => {
                     transition={{ duration: 0.5, delay: 0.1 }}
                     className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tighter leading-[0.95] mb-[220px] text-white"
                 >
-                    Websites & Systems <br className="hidden md:block" />
-                    That Actually Convert
+                    Ready To Take On <br className="hidden md:block" />
+                    5 New Clients?
                 </motion.h1>
 
                 {/* Subheadline */}
@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed"
                 >
-                    Stop chasing clients. We create reliable systems that consistently attract qualified clients - without upfront risk.
+                    We Guarantee You 5 Booked Appointments in 30 Days, Following the Release of Your New Site, or You Don't Pay Till We Get You Those Results!
                 </motion.p>
 
                 {/* CTA */}
@@ -81,12 +81,14 @@ const Hero: React.FC = () => {
             {/* Scroll Indicator */}
             <motion.div
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ delay: 1, duration: 1 }}
+                animate={{ opacity: 1, y: [0, 10, 0] }}
+                transition={{
+                    opacity: { delay: 1, duration: 1 },
+                    y: { repeat: Infinity, duration: 1.5, ease: "easeInOut" }
+                }}
                 className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
             >
-                <span className="text-[10px] uppercase tracking-[0.2em] text-gray-600">Scroll</span>
-                <div className="w-px h-12 bg-gradient-to-b from-primary/50 to-transparent"></div>
+                <ArrowDown className="w-12 h-12 text-primary/80" />
             </motion.div>
         </section>
     );

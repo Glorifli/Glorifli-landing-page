@@ -15,6 +15,7 @@ export type PostData = {
     image?: string;
     image_alt?: string;
     entities?: string[];
+    readTime?: string;
 }
 
 export type Post = PostData;
@@ -48,6 +49,7 @@ export async function getPostData(slug: string): Promise<PostData> {
         content: matterResult.content,
         image: matterResult.data.image || '/images/blog-placeholder.jpg',
         image_alt: matterResult.data.image_alt || '',
+        readTime: matterResult.data.readTime,
     };
 }
 
@@ -69,6 +71,7 @@ export async function getPosts(): Promise<Omit<PostData, 'content'>[]> {
             entities: matterResult.data.entities || [],
             image: matterResult.data.image || '/images/blog-placeholder.jpg',
             image_alt: matterResult.data.image_alt || '',
+            readTime: matterResult.data.readTime,
         };
     });
 

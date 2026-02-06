@@ -82,7 +82,7 @@ const StarBackground: React.FC = () => {
             draw() {
                 if (!ctx) return;
                 const centerX = canvas!.width / 2;
-                const centerY = (canvas!.height / 2) + 30; // Aligned with Black Hole
+                const centerY = (canvas!.height / 2) + 0; // Aligned with Black Hole
                 const x = centerX + Math.cos(this.angle) * this.radius;
                 const y = centerY + Math.sin(this.angle) * this.radius;
 
@@ -206,7 +206,7 @@ const StarBackground: React.FC = () => {
         const drawBlackHoleGlow = () => {
             if (!ctx) return;
             const centerX = canvas!.width / 2;
-            const centerY = (canvas!.height / 2) + 30;
+            const centerY = (canvas!.height / 2) + 0;
             const blackHoleRadius = 50;
 
             const glowRadius = 450;

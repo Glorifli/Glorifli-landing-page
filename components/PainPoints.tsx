@@ -7,15 +7,15 @@ import { EyeOff, MessageSquareX, TrendingUp } from 'lucide-react';
 const painPoints = [
     {
         icon: EyeOff,
-        title: "Lack of Visibility",
-        description: "You're an expert in your field, but to the clients who need you most, you're invisible. 82% of appointments are booked thorugh searches made on mobile phone, which means that your lack of visibility is costing you thousands of dollars every single month.",
+        title: "Tired of people not knowing about your business?",
+        description: "You're an expert in your field, but to the clients who need you most, you're invisible. Studies show that 82% of appointments are booked through searches made on mobile. This means that if your website doesnt have seamless online booking, you're missing out on a majority of the market share.",
         accentColor: "text-accent",
         glowColor: "from-accent/10"
     },
     {
         icon: MessageSquareX,
-        title: "Unclear messaging",
-        description: "Generic marketing doesn't speak to specific pain. Without addressing exact problems, clients won't know if you can actually help them, leading to lost opportunities.",
+        title: "Struggling to Convert Website Visitors Into Loyal Clients?",
+        description: "Studies show that nearly 70% of all customers chose online booking rather than booking over the phone. So if your site isn't designed to convert effortlessly your business's longevity will suffer.",
         accentColor: "text-accent",
         glowColor: "from-accent/10"
     }
@@ -45,7 +45,7 @@ const PainPoints: React.FC = () => {
                         transition={{ delay: 0.1 }}
                         className="text-xl text-gray-400 max-w-2xl mx-auto"
                     >
-                        We get more eyes on your business. You help more clients.
+                        Fed up with High Marketing Costs? Tired of Having an Inconsistent Stream of Clients?
                     </motion.p>
                 </div>
 
@@ -87,39 +87,7 @@ const PainPoints: React.FC = () => {
                 </div>
 
                 {/* The Solution / Results Section */}
-                <motion.div
-                    initial={{ opacity: 0, y: 40 }}
-                    whileInView={{ opacity: 1, y: 0 }}
-                    whileHover={{
-                        y: -10,
-                        boxShadow: "0 0 40px -10px rgba(56, 189, 248, 0.4)",
-                        borderColor: "rgba(56, 189, 248, 0.5)"
-                    }}
-                    viewport={{ once: true }}
-                    transition={{
-                        type: "spring",
-                        stiffness: 500,
-                        damping: 30,
-                        mass: 1
-                    }}
-                    className="relative rounded-[2rem] border border-primary/20 bg-primary/5 p-8 md:p-12 overflow-hidden"
-                >
-                    {/* Decorative element */}
-                    <div className="absolute -top-24 -right-24 w-64 h-64 bg-primary/10 rounded-full blur-3xl pointer-events-none" />
 
-                    <div className="relative z-10 text-center max-w-3xl mx-auto">
-                        <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary/10 border border-primary/20 text-primary text-sm font-medium mb-6">
-                            <TrendingUp className="w-4 h-4" />
-                            The Glorifli Solution
-                        </div>
-                        <h3 className="text-3xl md:text-5xl font-bold font-heading mb-8 text-white">
-                            The <span className="text-primary italic">Solution</span>
-                        </h3>
-                        <p className="text-gray-400 text-lg md:text-xl leading-relaxed mb-6">
-                            Glorifli's trusted framework ensures increased visibility and clear messaging for your business. Our proprietary website architecture enables your business to get in front of more eyes and seamlessly convert those eyes into appointments.
-                        </p>
-                    </div>
-                </motion.div>
             </div>
         </section>
     );

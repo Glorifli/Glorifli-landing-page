@@ -21,6 +21,10 @@ const faqs = [
     {
         question: "Do I handle the text and images?",
         answer: "We can handle everything including professional copywriting. However, you'll get the best results by sending us testimonials and authentic images of your work and staff to build maximum trust."
+    },
+    {
+        question: "What are the Guarantees?",
+        answer: "5 clients in the first 30 days following the launch of your website, or 30 days after we start running our SEO/AEO service on your site! (whichever is applicable)"
     }
 ];
 

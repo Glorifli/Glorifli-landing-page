@@ -25,7 +25,7 @@ const BlogHero: React.FC<BlogHeroProps> = ({ post }) => {
                 transition={{ duration: 0.5 }}
                 className="group relative rounded-[2.5rem] overflow-hidden border border-white/10"
             >
-                <Link href={`/blog/${post.slug}`} className="block relative aspect-[16/9] md:aspect-[21/9]">
+                <Link href={`/blog/${post.slug}`} className="block relative aspect-[16/9] md:aspect-[16/9]">
                     {/* Background Image */}
                     <div
                         className="absolute inset-0 bg-cover bg-center transform duration-700 group-hover:scale-105"
@@ -35,7 +35,8 @@ const BlogHero: React.FC<BlogHeroProps> = ({ post }) => {
                         }}
                     />
                     {/* Overlay Gradient */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent" />
+                    <div className="absolute inset-0 bg-black/30" />
+                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/90 to-transparent" />
 
                     <div className="absolute bottom-0 left-0 w-full p-8 md:p-12 lg:p-16">
                         <div className="max-w-4xl">

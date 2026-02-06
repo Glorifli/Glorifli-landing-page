@@ -62,8 +62,14 @@ export default async function BlogPost({ params }: Props) {
     }
 
     // Calculate Read Time
-    const words = post.content.split(/\s+/g).length;
-    const readTimeMinutes = Math.ceil(words / 200);
+    // Calculate Read Time
+    let readTimeMinutes = 0;
+    if (post.readTime) {
+        readTimeMinutes = parseInt(post.readTime);
+    } else {
+        const words = post.content.split(/\s+/g).length;
+        readTimeMinutes = Math.ceil(words / 200);
+    }
 
     const jsonLd = {
         "@context": "https://schema.org",
@@ -103,21 +109,43 @@ export default async function BlogPost({ params }: Props) {
             "@type": "SpeakableSpecification",
             xpath: ["/html/head/title", "/html/head/meta[@name='description']/@content"],
         },
+        breadcrumb: {
+            "@type": "BreadcrumbList",
+            "itemListElement": [
+                {
+                    "@type": "ListItem",
+                    "position": 1,
+                    "name": "Home",
+                    "item": "https://glorifli.com"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 2,
+                    "name": "Blog",
+                    "item": "https://glorifli.com/blog"
+                },
+                {
+                    "@type": "ListItem",
+                    "position": 3,
+                    "name": post.title,
+                    "item": `https://glorifli.com/blog/${slug}`
+                }
+            ]
+        }
     };
 
     return (
         <div className="min-h-screen bg-background text-white font-sans">
             <StructuredData data={jsonLd} />
-            <article className="max-w-3xl mx-auto py-20 px-6 sm:px-8">
+            <article className="max-w-5xl mx-auto py-48 px-6 sm:px-8">
                 <header className="mb-12 text-center">
                     <h1 className="text-4xl md:text-6xl font-serif font-bold uppercase tracking-widest leading-tight text-white mb-8">
                         {post.title}
                     </h1>
-                    <p className="text-xl md:text-2xl text-gray-300 leading-relaxed font-light max-w-2xl mx-auto">{post.excerpt}</p>
                 </header>
 
                 {post.image && (
-                    <div className="mb-8 rounded-sm overflow-hidden border border-white/10 aspect-video relative">
+                    <div className="mb-12 rounded-sm overflow-hidden border border-white/10 aspect-video relative">
                         <Image
                             src={post.image}
                             alt={post.title}
@@ -129,6 +157,8 @@ export default async function BlogPost({ params }: Props) {
                     </div>
                 )}
 
+                <p className="text-xl md:text-2xl text-gray-300 leading-relaxed font-light max-w-4xl mx-auto text-center mb-16">{post.excerpt}</p>
+
                 <div className="flex flex-col items-center gap-4 mb-16 border-b border-white/10 pb-12">
                     <time className="block text-sm text-primary font-mono uppercase tracking-[0.2em]">{post.date}</time>
                     <div className="flex items-center gap-2 text-xs text-gray-500 font-mono uppercase tracking-widest border border-white/10 px-4 py-2 rounded-full">
@@ -136,15 +166,21 @@ export default async function BlogPost({ params }: Props) {
                     </div>
                 </div>
 
-                <div className="prose prose-lg prose-invert max-w-none mx-auto 
-                    prose-headings:font-serif prose-headings:uppercase prose-headings:tracking-widest prose-headings:text-white prose-headings:font-normal prose-headings:mt-16 prose-headings:mb-8 prose-headings:border-b prose-headings:border-white/10 prose-headings:pb-4
-                    prose-h2:text-3xl prose-h3:text-2xl
-                    prose-p:text-gray-300 prose-p:leading-[2.5] prose-p:font-light prose-p:mb-8
-                    prose-a:text-white prose-a:underline prose-a:decoration-white/30 prose-a:underline-offset-4 hover:prose-a:decoration-primary hover:prose-a:text-primary transition-all
-                    prose-strong:text-white prose-strong:font-semibold
-                    prose-ul:my-10 prose-li:text-gray-300 prose-li:my-4 prose-li:leading-loose marker:prose-li:text-primary">
+                <div className="max-w-none mx-auto">
                     {/* @ts-ignore */}
-                    <MDXRemote source={post.content} />
+                    <MDXRemote
+                        source={post.content}
+                        components={{
+                            h1: (props) => <h1 {...props} className="text-5xl font-heading font-bold uppercase tracking-tight text-white mt-24 mb-12 border-b border-white/10 pb-6" />,
+                            h2: (props) => <h2 {...props} className="text-4xl font-heading font-bold uppercase tracking-tight text-white mt-20 mb-10" />,
+                            h3: (props) => <h3 {...props} className="text-3xl font-heading font-bold uppercase tracking-tight text-white mt-16 mb-8" />,
+                            p: (props) => <p {...props} className="text-xl text-gray-300 leading-[2.2] font-light mb-10" />,
+                            a: (props) => <a {...props} className="text-[#38bdf8] font-medium underline decoration-[#38bdf8] underline-offset-4 hover:text-[#38bdf8]/80 hover:decoration-[#38bdf8]/80 transition-all" />,
+                            strong: (props) => <strong {...props} className="text-white font-bold text-xl" />,
+                            ul: (props) => <ul {...props} className="list-disc pl-6 my-12 space-y-6" />,
+                            li: (props) => <li {...props} className="text-xl text-gray-300 leading-loose marker:text-[#38bdf8]" />,
+                        }}
+                    />
                 </div>
 
                 <div className="mt-24 text-center border-t border-white/10 pt-12">

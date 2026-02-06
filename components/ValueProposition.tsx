@@ -2,20 +2,20 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Eye, Calendar, Award } from 'lucide-react';
+import { Eye, Calendar, Award, ArrowRight } from 'lucide-react';
 
 const features = [
     {
         icon: Eye,
-        title: 'Improved Visibility',
+        title: 'Improve Your Visibility',
         description: 'Our AEO & SEO optimized blogs answer specific client questions, ensuring your business appears before your competitors when people need you.',
         color: 'text-primary',
         colSpan: 'md:col-span-1'
     },
     {
         icon: Calendar,
-        title: 'More Appointments',
-        description: '40% of appointments are booked after hours when businesses are closed, but our chatbot ensures customer inquiries are handled professionally and appointments are booked.',
+        title: 'Book More Appointments',
+        description: "We guarantee you 5 new clients booked in the first month after we launch your site or you don't pay till we hit that milestone!",
         color: 'text-accent',
         colSpan: 'md:col-span-1',
         hoverColor: 'text-accent',
@@ -24,7 +24,7 @@ const features = [
     },
     {
         icon: Award,
-        title: 'Greater Credibility',
+        title: 'Earn Greater Credibility',
         description: "We'll build your high-converting website to establish client trust and authority for your business.",
         color: 'text-primary',
         colSpan: 'md:col-span-1',
@@ -83,6 +83,16 @@ const ValueProposition: React.FC = () => {
                             </div>
                         </motion.div>
                     ))}
+                </div>
+
+                <div className="flex justify-center mt-12">
+                    <a
+                        href="#calendar"
+                        className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-primary/90 font-heading rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-gray-900 hover:bg-primary shadow-[0_0_30px_-5px_rgba(56,189,248,0.5)] hover:shadow-[0_0_50px_-10px_rgba(56,189,248,0.7)]"
+                    >
+                        <span className="mr-2">Get Started!</span>
+                        <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                    </a>
                 </div>
             </div>
         </section>

@@ -4,6 +4,7 @@ import "./globals.css";
 import StructuredData from "@/components/StructuredData";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import PopupForm from "@/components/PopupForm";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
 
@@ -20,6 +21,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "Glorifli - Risk-Free Website Building",
   description: "We'll build your website, and if you don't like it, you don't pay!",
+  metadataBase: new URL("https://glorifli.com"),
 };
 
 export default function RootLayout({
@@ -60,6 +62,7 @@ export default function RootLayout({
         <StructuredData data={jsonLd} />
         <Navbar />
         {children}
+        <PopupForm />
         <Footer />
         <SpeedInsights />
         <Analytics />
