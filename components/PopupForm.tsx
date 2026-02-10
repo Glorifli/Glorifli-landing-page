@@ -34,7 +34,24 @@ const PopupForm: React.FC = () => {
         setIsSubmitting(true);
 
         try {
-            // Using the same webhook as LeadForm
+            // 1. Submit to Google Sheets (Web App Webhook)
+            const googleSheetUrl = process.env.NEXT_PUBLIC_GOOGLE_SHEET_URL;
+            if (googleSheetUrl) {
+                try {
+                    await fetch(googleSheetUrl, {
+                        method: 'POST',
+                        mode: 'no-cors', // Important for Google Apps Script
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify(formState),
+                    });
+                } catch (err) {
+                    console.warn('Google Sheet error:', err);
+                }
+            } else {
+                console.warn('No Google Sheet URL configured.');
+            }
+
+            // 2. Submit to LeadConnector (Keep as is)
             const response = await fetch('https://services.leadconnectorhq.com/hooks/KyBfQlriCJtzUoDteCDn/webhook-trigger/9c2fa94d-e665-4e04-aa14-1aa3c9dfe687', {
                 method: 'POST',
                 headers: {

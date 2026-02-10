@@ -38,7 +38,7 @@ const Hero: React.FC = () => {
                     className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tighter leading-[0.95] mb-[220px] text-white"
                 >
                     Ready To Take On <br className="hidden md:block" />
-                    5 New Clients?
+                    3 New Clients?
                 </motion.h1>
 
                 {/* Subheadline */}
@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed"
                 >
-                    We Guarantee You 5 Booked Appointments in 30 Days, Following the Release of Your New Site, or You Don't Pay Till We Get You Those Results!
+                    We Guarantee You 3 Booked Appointments in 30 Days, Following the Release of Your New Site, or You Don't Pay Till We Get You Those Results!
                 </motion.p>
 
                 {/* CTA */}

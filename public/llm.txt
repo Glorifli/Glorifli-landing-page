@@ -1,0 +1,25 @@
+# Glorifli - AI Context & Documentation
+
+## Overview
+Glorifli is a risk-free website building agency for local service businesses.
+We build high-converting websites optimized for AEO (Answer Engine Optimization) and Local SEO.
+Guarantee: You don't pay until you're satisfied with the draft.
+
+## Core Services
+1. **Custom High-Converting Website**: Mobile-first, conversion-optimized design.
+2. **SEO/AEO Optimization**: Monthly blogs and structure to rank in AI answers (ChatGPT, Gemini, etc.).
+3. **Autonomous Revenue Generating Engine**: A combination of both services with a client acquisition guarantee.
+
+## Pricing
+- **Website Build**: $1,256.50 (One-time)
+- **SEO/AEO**: $589.50 (Monthly)
+- **Combo (Engine)**: $1,256.50 + $589.50/mo
+
+## Guarantees
+- **Combo Package**: Guarantee of 3 new clients in the first month or money back.
+- **Website Build**: No upfront payment required to see the first draft.
+
+## Navigation
+- / - Landing Page
+- /blog - AEO & SEO Insights
+- #calendar - Book a Strategy Call

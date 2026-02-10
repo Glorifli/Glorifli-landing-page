@@ -15,7 +15,7 @@ const features = [
     {
         icon: Calendar,
         title: 'Book More Appointments',
-        description: "We guarantee you 5 new clients booked in the first month after we launch your site or you don't pay till we hit that milestone!",
+        description: "We guarantee you 3 new clients booked in the first month after we launch your site or you don't pay till we hit that milestone!",
         color: 'text-accent',
         colSpan: 'md:col-span-1',
         hoverColor: 'text-accent',

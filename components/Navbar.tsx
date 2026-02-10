@@ -40,6 +40,7 @@ const Navbar: React.FC = () => {
 
     const navLinks = [
         { name: 'Features', href: '#features', isRoute: false },
+        { name: 'My Services', href: '#services', isRoute: false },
         { name: 'Audit', href: '#form', isRoute: false },
         { name: 'Consulting', href: '#calendar', isRoute: false },
         { name: 'Blog', href: '/blog', isRoute: true },

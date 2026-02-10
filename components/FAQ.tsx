@@ -24,7 +24,40 @@ const faqs = [
     },
     {
         question: "What are the Guarantees?",
-        answer: "5 clients in the first 30 days following the launch of your website, or 30 days after we start running our SEO/AEO service on your site! (whichever is applicable)"
+        answer: "We guarantee 3 new clients booked in the first 30 days following the launch of your site! (Note: This guarantee applies exclusively to the \"Autonomous Revenue Generating Engine\" package)."
+    },
+    {
+        question: "Is SEO dead? Why should I care about \"AEO\" for my local business?",
+        answer: (
+            <>
+                <strong className="text-white block mb-2">The Direct Answer:</strong>
+                SEO isn&apos;t dead, but the game has changed completely. Traditional SEO was about ranking a link; AEO is about becoming the cited answer when someone asks Siri or ChatGPT, &quot;Who is the best service provider near me?&quot;.
+                <br /><br />
+                <strong className="text-white block mb-2">The Data:</strong>
+                With 58% of searches now ending without a click (Zero-Click searches), you need to be the direct answer displayed at the top. If you are ignoring AEO, you are ignoring the fastest-growing source of high-intent leads.
+                <br /><br />
+                <strong className="text-white block mb-2">The Move:</strong>
+                Stop fighting for clicks and start fighting for citations. See how we can help you do this at <a href="#aeo-strategy" className="text-primary hover:text-primary-light underline decoration-primary/30 underline-offset-4 transition-all">Our AEO Strategy</a>.
+            </>
+        )
+    },
+    {
+        question: "How do I get ChatGPT and Google AI to recommend my business?",
+        answer: (
+            <>
+                <strong className="text-white block mb-2">The Strategy:</strong>
+                You need to build &quot;Entity Authority.&quot; AI models don&apos;t trust what you say about yourself; they trust what others say. We use a strategy called &quot;Consensus optimization&quot; where we align your reviews, directory listings, and data across the web so the AI views you as the &quot;Safe Recommendation.&quot;
+                <br /><br />
+                <strong className="text-white block mb-2">The Protocol:</strong>
+                <ul className="list-disc pl-5 space-y-1 mb-4">
+                    <li><strong>Entity Consistency:</strong> Ensure your Name, Address, and Phone (NAP) are identical everywhere.</li>
+                    <li><strong>Review Velocity:</strong> Get consistent reviews that mention specific services.</li>
+                    <li><strong>Data Structuring:</strong> Feed the AI facts it can verify.</li>
+                </ul>
+                <strong className="text-white block mb-2">Get Started:</strong>
+                <a href="#audit" className="text-primary hover:text-primary-light underline decoration-primary/30 underline-offset-4 transition-all">Book Your Entity Audit</a> and let&apos;s get you recommended.
+            </>
+        )
     }
 ];
 

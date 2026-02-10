@@ -5,6 +5,7 @@ import ProofOfConcept from "@/components/ProofOfConcept";
 import LeadForm from "@/components/LeadForm";
 import BookingCalendar from "@/components/BookingCalendar";
 import FAQ from "@/components/FAQ";
+import Services from "@/components/Services";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -43,6 +44,7 @@ export default function Home() {
       <PainPoints />
       <ValueProposition />
       <ProofOfConcept />
+      <Services />
       <LeadForm />
       <BookingCalendar />
       <FAQ />
