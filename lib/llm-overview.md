@@ -1,8 +1,8 @@
 # Glorifli - AI Context & Documentation
 
 ## Overview
-Glorifli is a risk-free website building agency for local service businesses.
-We build high-converting websites optimized for AEO (Answer Engine Optimization) and Local SEO.
+Glorifli is a specialized digital growth agency that builds AI-First Client Acquisition Systems.
+We transition local service businesses from the "Blue Link" era to the "Answer Engine" era using AEO and Conversion Architecture.
 Guarantee: You don't pay until you're satisfied with the draft.
 
 ## Core Services
@@ -21,5 +21,6 @@ Guarantee: You don't pay until you're satisfied with the draft.
 
 ## Navigation
 - / - Landing Page
+- /about - About Us & Methodology
 - /blog - AEO & SEO Insights
 - #calendar - Book a Strategy Call

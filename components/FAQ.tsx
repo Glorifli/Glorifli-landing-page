@@ -24,7 +24,7 @@ const faqs = [
     },
     {
         question: "What are the Guarantees?",
-        answer: "We guarantee 3 new clients booked in the first 30 days following the launch of your site! (Note: This guarantee applies exclusively to the \"Autonomous Revenue Generating Engine\" package)."
+        answer: "We guarantee 3 new appointments booked in the first 30 days following the launch of your site! (Note: This guarantee applies exclusively to the \"Autonomous Revenue Generating Engine\" package)."
     },
     {
         question: "Is SEO dead? Why should I care about \"AEO\" for my local business?",
@@ -39,7 +39,8 @@ const faqs = [
                 <strong className="text-white block mb-2">The Move:</strong>
                 Stop fighting for clicks and start fighting for citations. See how we can help you do this at <a href="#aeo-strategy" className="text-primary hover:text-primary-light underline decoration-primary/30 underline-offset-4 transition-all">Our AEO Strategy</a>.
             </>
-        )
+        ),
+        schemaAnswer: "The Direct Answer: SEO isn't dead, but the game has changed completely. Traditional SEO was about ranking a link; AEO is about becoming the cited answer when someone asks Siri or ChatGPT, \"Who is the best service provider near me?\". The Data: With 58% of searches now ending without a click (Zero-Click searches), you need to be the direct answer displayed at the top. If you are ignoring AEO, you are ignoring the fastest-growing source of high-intent leads. The Move: Stop fighting for clicks and start fighting for citations."
     },
     {
         question: "How do I get ChatGPT and Google AI to recommend my business?",
@@ -57,7 +58,8 @@ const faqs = [
                 <strong className="text-white block mb-2">Get Started:</strong>
                 <a href="#audit" className="text-primary hover:text-primary-light underline decoration-primary/30 underline-offset-4 transition-all">Book Your Entity Audit</a> and let&apos;s get you recommended.
             </>
-        )
+        ),
+        schemaAnswer: "The Strategy: You need to build \"Entity Authority.\" AI models don't trust what you say about yourself; they trust what others say. We use a strategy called \"Consensus optimization\" where we align your reviews, directory listings, and data across the web so the AI views you as the \"Safe Recommendation.\" The Protocol: Entity Consistency: Ensure your Name, Address, and Phone (NAP) are identical everywhere. Review Velocity: Get consistent reviews that mention specific services. Data Structuring: Feed the AI facts it can verify."
     }
 ];
 
@@ -72,7 +74,7 @@ const FAQ: React.FC = () => {
             "name": faq.question,
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": faq.answer
+                "text": (faq as any).schemaAnswer || faq.answer
             }
         }))
     };

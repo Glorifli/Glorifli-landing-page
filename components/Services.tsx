@@ -15,7 +15,7 @@ const services = [
             "Standard SEO/AEO Optimization",
             "Google Business Profile Sync",
             "Citation Network Building",
-            "Guarantee: 3 New Clients/Mo or Free!"
+            "Guarantee: 3 New Appointments/Mo or Free!"
         ],
         ctaLink: "https://buy.stripe.com/aFa6oH3zn4GLbAi1o9cwg0b",
         highlight: false
@@ -44,7 +44,7 @@ const services = [
             "ALL Features from Website & SEO Plans",
             "Full AEO Infrastructure Setup",
             "Priority Support",
-            "Guarantee: 3 New Clients in Month 1",
+            "Guarantee: 3 New Appointments in Month 1",
             "Or Your Money Back (Service Fee)"
         ],
         ctaLink: "https://buy.stripe.com/cNi4gz3znehlgUC1o9cwg0a",

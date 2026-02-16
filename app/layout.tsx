@@ -41,6 +41,18 @@ export default function RootLayout({
           "@type": "ImageObject",
           "url": "https://glorifli.com/logo.png",
         },
+        "founder": {
+          "@type": "Person",
+          "name": "Brendan Dillon",
+          "jobTitle": "Founder & CEO",
+          "sameAs": [
+            "https://www.linkedin.com/in/brendan-dillon-341035377",
+            "https://www.youtube.com/@BrendanDillon22",
+            "https://www.instagram.com/brendan.dillon.business/",
+            "https://www.threads.net/@brendan.dillon.business",
+            "https://x.com/BrendanDil64464"
+          ]
+        },
       },
       {
         "@type": "WebSite",
