@@ -59,7 +59,7 @@ const Hero: React.FC = () => {
                     className="flex flex-col items-center gap-6"
                 >
                     <a
-                        href="#calendar"
+                        href="#services"
                         className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-primary/90 font-heading rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-gray-900 hover:bg-primary shadow-[0_0_30px_-5px_rgba(56,189,248,0.5)] hover:shadow-[0_0_50px_-10px_rgba(56,189,248,0.7)]"
                     >
                         <span className="mr-2">Start Your Risk-Free Month</span>
