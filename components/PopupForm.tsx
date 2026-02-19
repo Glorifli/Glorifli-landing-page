@@ -34,21 +34,15 @@ const PopupForm: React.FC = () => {
         setIsSubmitting(true);
 
         try {
-            // 1. Submit to Google Sheets (Web App Webhook)
-            const googleSheetUrl = process.env.NEXT_PUBLIC_GOOGLE_SHEET_URL;
-            if (googleSheetUrl) {
-                try {
-                    await fetch(googleSheetUrl, {
-                        method: 'POST',
-                        mode: 'no-cors', // Important for Google Apps Script
-                        headers: { 'Content-Type': 'application/json' },
-                        body: JSON.stringify(formState),
-                    });
-                } catch (err) {
-                    console.warn('Google Sheet error:', err);
-                }
-            } else {
-                console.warn('No Google Sheet URL configured.');
+            // 1. Submit to Google Sheets via Internal API (Secure Service Account)
+            try {
+                await fetch('/api/leads', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(formState),
+                });
+            } catch (err) {
+                console.warn('Google Sheet API error:', err);
             }
 
             // 2. Submit to LeadConnector (Keep as is)
