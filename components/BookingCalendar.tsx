@@ -34,13 +34,19 @@ const BookingCalendar: React.FC = () => {
 
         (window as any).Cal("init", "15min", { origin: "https://app.cal.com" });
 
+        // column_view shows dates + available time slots immediately —
+        // no need to click a date first, much better on mobile.
         (window as any).Cal.ns["15min"]("inline", {
             elementOrSelector: "#my-cal-inline-15min",
-            config: { "layout": "month_view", "theme": "dark" },
+            config: { "layout": "column_view", "theme": "dark" },
             calLink: "brendan-dillon-4pkhkd/15min",
         });
 
-        (window as any).Cal.ns["15min"]("ui", { "theme": "dark", "hideEventTypeDetails": false, "layout": "month_view" });
+        (window as any).Cal.ns["15min"]("ui", {
+            "theme": "dark",
+            "hideEventTypeDetails": false,
+            "layout": "column_view",
+        });
     }, []);
 
     return (
@@ -53,7 +59,9 @@ const BookingCalendar: React.FC = () => {
                     Diagnose your problem, get free advice, and leave with a mock draft of your new site.
                 </p>
 
-                <div className="w-full h-[780px] md:h-auto overflow-hidden" id="my-cal-inline-15min"></div>
+                {/* column_view renders dates + time slots side-by-side immediately,
+                    no click required. Height is auto so it expands to fit all slots. */}
+                <div className="w-full min-h-[600px] md:min-h-0" id="my-cal-inline-15min"></div>
             </div>
         </section>
     );
