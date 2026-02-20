@@ -60,7 +60,13 @@ const organizationSchema = {
     "@type": "Country",
     name: "Canada",
   },
-  sameAs: [],
+  sameAs: [
+    "https://www.linkedin.com/in/brendan-dillon-341035377",
+    "https://www.youtube.com/@BrendanDillon22",
+    "https://www.instagram.com/brendan.dillon.business/",
+    "https://www.threads.net/@brendan.dillon.business",
+    "https://x.com/BrendanDil64464",
+  ],
   contactPoint: {
     "@type": "ContactPoint",
     contactType: "customer service",
