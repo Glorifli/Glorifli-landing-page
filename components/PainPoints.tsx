@@ -25,8 +25,8 @@ const PainPoints: React.FC = () => {
     return (
         <section className="py-24 px-6 bg-background relative overflow-hidden">
             {/* Background Glow */}
-            <div className="absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[120px] -z-10" />
-            <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-primary/5 rounded-full blur-[100px] -z-10" />
+            <div className="hidden md:block absolute top-1/2 left-1/4 -translate-y-1/2 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[120px] -z-10" />
+            <div className="hidden md:block absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-primary/5 rounded-full blur-[100px] -z-10" />
 
             <div className="max-w-7xl mx-auto">
                 <div className="text-center mb-16">
@@ -53,19 +53,12 @@ const PainPoints: React.FC = () => {
                     {painPoints.map((point, index) => (
                         <motion.div
                             key={index}
-                            initial={{ opacity: 0, x: index === 0 ? -20 : 20 }}
-                            whileInView={{ opacity: 1, x: 0 }}
-                            whileHover={{
-                                y: -10,
-                                boxShadow: "0 0 30px -10px rgba(255, 255, 115, 0.3)",
-                                borderColor: "rgba(255, 255, 115, 0.4)"
-                            }}
-                            viewport={{ once: true }}
+                            initial={{ opacity: 0, y: 16 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, margin: "-50px" }}
                             transition={{
-                                type: "spring",
-                                stiffness: 500,
-                                damping: 30,
-                                mass: 1
+                                duration: 0.4,
+                                ease: "easeOut"
                             }}
                             className="glass-panel p-8 rounded-3xl relative group overflow-hidden border border-white/5"
                         >

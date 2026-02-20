@@ -42,19 +42,12 @@ const ProofOfConcept: React.FC = () => {
                     {testimonials.map((testimonial, index) => (
                         <motion.div
                             key={index}
-                            initial={{ opacity: 0, scale: 0.95 }}
-                            whileInView={{ opacity: 1, scale: 1 }}
-                            whileHover={{
-                                y: -10,
-                                boxShadow: "0 0 40px -10px rgba(56, 189, 248, 0.4)",
-                                borderColor: "rgba(56, 189, 248, 0.5)"
-                            }}
-                            viewport={{ once: true }}
+                            initial={{ opacity: 0, y: 16 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            viewport={{ once: true, margin: "-50px" }}
                             transition={{
-                                type: "spring",
-                                stiffness: 500,
-                                damping: 30,
-                                mass: 1
+                                duration: 0.4,
+                                ease: "easeOut"
                             }}
                             className="glass-panel p-8 rounded-3xl border border-white/5 flex flex-col cursor-default"
                         >

@@ -16,6 +16,10 @@ const StarBackground: React.FC = () => {
         let stars: Star[] = [];
         let shootingStars: ShootingStar[] = [];
         let lastShootingStarTime = 0;
+        const isMobile = window.innerWidth < 768;
+        const targetFps = isMobile ? 30 : 60;
+        const frameInterval = 1000 / targetFps;
+        let lastFrameTime = 0;
 
         // Iridescent colors for stars
         const starColors = [
@@ -196,8 +200,9 @@ const StarBackground: React.FC = () => {
 
         const initStars = () => {
             stars = [];
-            // Even higher density: 6000 divisor
-            const numStars = Math.floor((window.innerWidth * window.innerHeight) / 6000);
+            // Fewer stars on mobile for performance
+            const divisor = isMobile ? 12000 : 6000;
+            const numStars = Math.floor((window.innerWidth * window.innerHeight) / divisor);
             for (let i = 0; i < numStars; i++) {
                 stars.push(new Star());
             }
@@ -250,8 +255,16 @@ const StarBackground: React.FC = () => {
             ctx.shadowBlur = 0;
         }
 
-        const animate = () => {
+        const animate = (timestamp: number) => {
             if (!ctx || !canvas) return;
+
+            // Throttle to target FPS on mobile
+            if (timestamp - lastFrameTime < frameInterval) {
+                animationFrameId = requestAnimationFrame(animate);
+                return;
+            }
+            lastFrameTime = timestamp;
+
             ctx.clearRect(0, 0, canvas.width, canvas.height);
 
             // Standard Stars
@@ -287,7 +300,7 @@ const StarBackground: React.FC = () => {
         };
 
         resizeCanvas();
-        animate();
+        animate(0);
 
         return () => {
             observer.disconnect();
@@ -299,6 +312,7 @@ const StarBackground: React.FC = () => {
         <canvas
             ref={canvasRef}
             className="absolute top-0 left-0 w-full h-full pointer-events-none z-0"
+            style={{ willChange: 'transform' }}
         />
     );
 };

@@ -51,19 +51,12 @@ const ValueProposition: React.FC = () => {
                     {features.map((feature, index) => (
                         <motion.div
                             key={index}
-                            initial={{ opacity: 0, y: 20 }}
+                            initial={{ opacity: 0, y: 16 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            whileHover={{
-                                y: -10,
-                                boxShadow: `0 0 40px -10px ${feature.shadowColor || 'rgba(56, 189, 248, 0.4)'}`,
-                                borderColor: feature.glowColor || 'rgba(56, 189, 248, 0.5)'
-                            }}
+                            viewport={{ once: true, margin: "-50px" }}
                             transition={{
-                                type: "spring",
-                                stiffness: 500,
-                                damping: 30,
-                                mass: 1
+                                duration: 0.4,
+                                ease: "easeOut"
                             }}
                             className={`glass-panel p-8 rounded-3xl group cursor-default relative overflow-hidden ${feature.colSpan} border border-white/5`}
                         >

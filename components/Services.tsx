@@ -74,14 +74,14 @@ const Services: React.FC = () => {
                     {services.map((service, index) => (
                         <motion.div
                             key={index}
-                            initial={{ opacity: 0, y: 20 }}
+                            initial={{ opacity: 0, y: 16 }}
                             whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true }}
-                            transition={{ delay: index * 0.1 }}
+                            viewport={{ once: true, margin: "-50px" }}
+                            transition={{ duration: 0.4, ease: "easeOut" }}
                             className={`relative rounded-3xl p-8 border ${service.highlight
                                 ? 'bg-white/5 border-primary/50 shadow-[0_0_30px_rgba(56,189,248,0.1)]'
                                 : 'bg-black/20 border-white/5 hover:border-white/10'
-                                } backdrop-blur-sm transition-all duration-300 flex flex-col h-full`}
+                                } transition-all duration-300 flex flex-col h-full`}
                         >
                             {service.highlight && (
                                 <div className="absolute -top-4 left-1/2 -translate-x-1/2 px-4 py-1 bg-primary text-black text-sm font-bold rounded-full shadow-lg">
