@@ -61,7 +61,7 @@ const BookingCalendar: React.FC = () => {
 
                 {/* column_view renders dates + time slots side-by-side immediately,
                     no click required. Height is auto so it expands to fit all slots. */}
-                <div className="w-full min-h-[600px] md:min-h-0" id="my-cal-inline-15min"></div>
+                <div className="w-full h-[520px] md:h-[520px] overflow-hidden" id="my-cal-inline-15min"></div>
             </div>
         </section>
     );
