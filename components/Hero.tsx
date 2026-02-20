@@ -7,14 +7,14 @@ import { ArrowRight, CheckCircle2, ArrowDown } from 'lucide-react';
 
 const Hero: React.FC = () => {
     return (
-        <section className="relative min-h-[120vh] flex flex-col items-center justify-center overflow-hidden pt-0 pb-10 px-6">
+        <section className="relative min-h-[120vh] flex flex-col items-center justify-start md:justify-center overflow-hidden pt-0 pb-10 px-6">
             <StarBackground />
 
             {/* Background Gradients */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] -z-10" />
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[100px] -z-10" />
 
-            <div className="relative z-10 max-w-5xl mx-auto text-center">
+            <div className="relative z-10 max-w-5xl mx-auto text-center pt-[25vh] md:pt-0">
 
                 {/* Badge */}
                 <motion.div
@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
-                    className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tighter leading-[0.95] mb-[220px] text-white"
+                    className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tighter leading-[0.95] mb-[130px] md:mb-[220px] text-white"
                 >
                     Ready To Take On <br className="hidden md:block" />
                     3 New Clients?

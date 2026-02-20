@@ -53,7 +53,7 @@ const BookingCalendar: React.FC = () => {
                     Diagnose your problem, get free advice, and leave with a mock draft of your new site.
                 </p>
 
-                <div className="w-full h-[400px] md:h-auto overflow-scroll" id="my-cal-inline-15min"></div>
+                <div className="w-full h-[780px] md:h-auto overflow-hidden" id="my-cal-inline-15min"></div>
             </div>
         </section>
     );
