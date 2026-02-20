@@ -3,7 +3,7 @@
 import React from 'react';
 import StarBackground from './StarBackground';
 import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle2, ArrowDown } from 'lucide-react';
+import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
 const Hero: React.FC = () => {
     return (
@@ -78,18 +78,6 @@ const Hero: React.FC = () => {
 
             </div>
 
-            {/* Scroll Indicator */}
-            <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1, y: [0, 10, 0] }}
-                transition={{
-                    opacity: { delay: 1, duration: 1 },
-                    y: { repeat: Infinity, duration: 1.5, ease: "easeInOut" }
-                }}
-                className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2"
-            >
-                <ArrowDown className="w-12 h-12 text-primary/80" />
-            </motion.div>
         </section>
     );
 };

@@ -37,7 +37,7 @@ const faqs = [
                 With 58% of searches now ending without a click (Zero-Click searches), you need to be the direct answer displayed at the top. If you are ignoring AEO, you are ignoring the fastest-growing source of high-intent leads.
                 <br /><br />
                 <strong className="text-white block mb-2">The Move:</strong>
-                Stop fighting for clicks and start fighting for citations. See how we can help you do this at <a href="#aeo-strategy" className="text-primary hover:text-primary-light underline decoration-primary/30 underline-offset-4 transition-all">Our AEO Strategy</a>.
+                Stop fighting for clicks and start fighting for citations. See how we can help you do this at <a href="#services" className="text-primary hover:text-primary-light underline decoration-primary/30 underline-offset-4 transition-all">View Our Service Packages</a>.
             </>
         ),
         schemaAnswer: "The Direct Answer: SEO isn't dead, but the game has changed completely. Traditional SEO was about ranking a link; AEO is about becoming the cited answer when someone asks Siri or ChatGPT, \"Who is the best service provider near me?\". The Data: With 58% of searches now ending without a click (Zero-Click searches), you need to be the direct answer displayed at the top. If you are ignoring AEO, you are ignoring the fastest-growing source of high-intent leads. The Move: Stop fighting for clicks and start fighting for citations."
@@ -56,7 +56,7 @@ const faqs = [
                     <li><strong>Data Structuring:</strong> Feed the AI facts it can verify.</li>
                 </ul>
                 <strong className="text-white block mb-2">Get Started:</strong>
-                <a href="#audit" className="text-primary hover:text-primary-light underline decoration-primary/30 underline-offset-4 transition-all">Book Your Entity Audit</a> and let&apos;s get you recommended.
+                <a href="#calendar" className="text-primary hover:text-primary-light underline decoration-primary/30 underline-offset-4 transition-all">Book a Free Strategy Call</a> and let&apos;s get you recommended.
             </>
         ),
         schemaAnswer: "The Strategy: You need to build \"Entity Authority.\" AI models don't trust what you say about yourself; they trust what others say. We use a strategy called \"Consensus optimization\" where we align your reviews, directory listings, and data across the web so the AI views you as the \"Safe Recommendation.\" The Protocol: Entity Consistency: Ensure your Name, Address, and Phone (NAP) are identical everywhere. Review Velocity: Get consistent reviews that mention specific services. Data Structuring: Feed the AI facts it can verify."
