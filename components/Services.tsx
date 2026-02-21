@@ -30,7 +30,8 @@ const services = [
             "Mobile & Desktop Optimization",
             "Proven Conversion Wiremapping",
             "2 Revisions (2-Week Period)",
-            "Integrated Booking System"
+            "Integrated Booking System",
+            "One Month of Free Blog Posts"
         ],
         ctaLink: "https://buy.stripe.com/28EbJ17PD2yD5bUgj3cwg0c",
         highlight: false
