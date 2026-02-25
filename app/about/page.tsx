@@ -102,82 +102,94 @@ const AboutPage = () => {
                         We Don't Build Websites. <br /> <span className="text-primary">We Build Client Acquisition Systems.</span>
                     </h1>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-                        Mission: To transition local service businesses from the "Blue Link" era of traditional SEO to the "Answer Engine" era of high-intent growth.
+                        Glorifli's mission is to transition local service businesses from the "Blue Link" era of traditional SEO to the "Answer Engine" era of high-intent growth, guided by a higher calling.
                     </p>
                 </section>
 
                 {/* Who Is Glorifli */}
-                <section className="mb-16">
+                <section className="mb-16 scroll-mt-24" id="who-we-are">
                     <div className="bg-white/5 border border-white/10 rounded-2xl p-8 md:p-10 backdrop-blur-sm">
-                        <h2 className="text-3xl font-bold mb-6 text-white font-heading">Who Is Glorifli? (The Direct Answer)</h2>
+                        <h2 className="text-3xl font-bold mb-6 text-white font-heading">Who Is Glorifli?</h2>
+                        <p className="text-gray-300 text-lg leading-relaxed mb-6 font-medium border-l-4 border-primary pl-4">
+                            Glorifli is a specialized digital growth agency that builds AI-First Client Acquisition Systems. We use Answer Engine Optimization (AEO) and proprietary Conversion Architecture so that local businesses become the "Direct Answer" in search results and capture revenue 24/7.
+                        </p>
                         <p className="text-gray-300 text-lg leading-relaxed">
-                            Glorifli is a specialized digital growth agency that builds AI-First Client Acquisition Systems. Unlike traditional web design agencies that focus on aesthetics, Glorifli focuses on AEO (Answer Engine Optimization) and SEO infrastructure. We build "Level 10" systems that ensure your business is the cited answer in search results, captures the 82% of mobile bookings competitors miss, and uses a proprietary Conversion Architecture to turn traffic into revenue 24/7.
+                            Unlike traditional web design agencies that focus purely on aesthetics, we build "Level 10" systems that ensure your business ranks highly, converts mobile traffic into booked appointments immediately, and leverages the latest in AI and Entity Search.
                         </p>
                     </div>
                 </section>
 
-                {/* The Philosophy */}
-                <section className="mb-16">
-                    <h2 className="text-3xl font-bold mb-6 text-white font-heading">The Philosophy: Why "Pretty" Websites Don't Pay the Bills</h2>
-                    <div className="space-y-6 text-gray-300 text-lg leading-relaxed">
+                {/* Our Core Values */}
+                <section className="mb-16 scroll-mt-24" id="our-values">
+                    <h2 className="text-3xl font-bold mb-6 text-white font-heading">What Are Our Core Values?</h2>
+                    <p className="text-gray-300 text-lg leading-relaxed mb-6">
+                        At Glorifli, our approach to business and client relationships is rooted in a fundamental, unwavering principle:
+                    </p>
+                    <div className="bg-gradient-to-br from-primary/10 to-black border border-primary/30 rounded-xl p-8 mb-8">
+                        <h3 className="text-2xl font-bold text-white mb-4">Serving Clients as Christ Served Us</h3>
+                        <p className="text-gray-300 text-lg leading-relaxed">
+                            We believe that true success is found in service. We aim to serve our clients with the same profound dedication, humility, and sacrificial love that Christ demonstrated. This means prioritizing your business's success above our own ego, acting with radical transparency, and committing to excellence not just for profit, but as a reflection of our faith. We don't just want to build your digital acquiring system; we want to see you, your family, and your employees flourish.
+                        </p>
+                    </div>
+                </section>
+
+                {/* Why Traditional Methods Fail */}
+                <section className="mb-16 scroll-mt-24" id="why-traditional-seo-fails">
+                    <h2 className="text-3xl font-bold mb-6 text-white font-heading">Why Do "Pretty" Websites Fail to Drive Revenue?</h2>
+
+                    <p className="text-gray-300 text-lg leading-relaxed mb-6 font-medium border-l-4 border-primary pl-4">
+                        A visually appealing website fails to drive revenue if it acts only as a static digital brochure instead of an active acquisition engine. In the modern era, 58% of Google searches end without a click because AI tools answer the user's question directly.
+                    </p>
+
+                    <div className="space-y-4 text-gray-300 text-lg leading-relaxed">
                         <p>
-                            Look, if you are reading this, you probably already know the truth: <strong className="text-white">The old way of marketing is dead.</strong>
+                            For the last decade, businesses were told to "blog more" and "post on social media." However, if your website isn't optimized for Answer Engines (like ChatGPT, Perplexity, and Google's AI Overviews) and doesn't explicitly answer high-intent queries, you are invisible to the modern consumer.
                         </p>
                         <p>
-                            For the last decade, businesses were told to "blog more" and "post on social media" to get traffic. But today, <strong className="text-white">58% of Google searches end without a click</strong> because AI tools and search snippets answer the user's question directly.
-                        </p>
-                        <p>
-                            If your website is just a digital brochure, you are invisible to the modern consumer.
-                        </p>
-                        <p>
-                            At <strong className="text-white">Glorifli</strong>, we reject the "Brochure Method." We believe your digital presence should be a machine—a system that works while you sleep.
+                            At <strong className="text-white">Glorifli</strong>, we reject the "Brochure Method." We believe your digital presence should be an automated machine that captures and converts leads while you sleep.
                         </p>
                     </div>
                 </section>
 
                 {/* The Methodology */}
-                <section className="mb-16">
-                    <h2 className="text-3xl font-bold mb-8 text-white font-heading border-b border-white/10 pb-4">The Glorifli Methodology: The 4-Pillar "Growth Protocol"</h2>
-                    <p className="text-gray-400 mb-8 italic">We don't guess. We use a data-backed framework derived from analyzing thousands of successful interactions.</p>
+                <section className="mb-16 scroll-mt-24" id="glorifli-methodology">
+                    <h2 className="text-3xl font-bold mb-4 text-white font-heading border-b border-white/10 pb-4">How Does Glorifli's 4-Pillar Growth Protocol Work?</h2>
+                    <p className="text-gray-400 mb-8 italic">We don't guess. We use a data-backed framework to construct Client Acquisition Systems:</p>
 
                     <div className="grid gap-8">
                         {/* Pillar 1 */}
                         <div className="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-primary/50 transition-colors">
-                            <h3 className="text-xl font-bold text-primary mb-3">Pillar 1: AEO & SEO Infrastructure (The "Answer" Strategy)</h3>
+                            <h3 className="text-xl font-bold text-primary mb-3">1. AEO & SEO Infrastructure (The Answer Strategy)</h3>
                             <p className="text-gray-300 mb-4">
-                                Most agencies build websites for humans. We build them for <strong className="text-white">Search Engines</strong> and <strong className="text-white">AI Agents</strong>. We use <strong className="text-white">Server-Side Rendering</strong> and <strong className="text-white">Nested Schema Markup</strong> to ensure that when a user asks Google or Siri, <em>"Who is the best service provider near me?"</em>, your business is the recommended answer.
-                            </p>
-                            <p className="text-sm text-gray-400 bg-black/30 p-3 rounded border-l-2 border-primary">
-                                <strong>The Result:</strong> You don't just rank; you get <strong>cited</strong>.
+                                Most agencies build websites for humans. We build them for search engines and AI assistants. We use <strong>Server-Side Rendering</strong> and <strong>Nested Schema Markup</strong> to ensure you are the cited authority when users ask queries like, <em>"Who is the best service provider near me?"</em>
                             </p>
                         </div>
 
                         {/* Pillar 2 */}
                         <div className="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-primary/50 transition-colors">
-                            <h3 className="text-xl font-bold text-primary mb-3">Pillar 2: The Mobile-First Booking Engine</h3>
+                            <h3 className="text-xl font-bold text-primary mb-3">2. Mobile-First Booking Engine</h3>
                             <p className="text-gray-300">
-                                The data is undeniable: <strong className="text-white">82% of service appointments are booked via mobile search</strong>. If your site requires "pinching and zooming," you are losing money. We build friction-free mobile experiences that convert visitors into booked appointments in under 60 seconds.
+                                Over <strong>82% of service appointments are booked via mobile search</strong>. We construct friction-free, lightning-fast mobile funnels designed to convert visitors into booked appointments in under 60 seconds without clumsy pinch-to-zoom interfaces.
                             </p>
                         </div>
 
                         {/* Pillar 3 */}
                         <div className="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-primary/50 transition-colors">
-                            <h3 className="text-xl font-bold text-primary mb-3">Pillar 3: Our Proprietary Conversion Architecture</h3>
+                            <h3 className="text-xl font-bold text-primary mb-3">3. Proprietary Conversion Architecture</h3>
                             <p className="text-gray-300 mb-4">
-                                Stop relying on passive contact forms that go to an inbox no one checks. We implement a <strong className="text-white">Conversion Architecture</strong> designed to capture revenue 24/7.
+                                Passive contact forms lose leads. We implement systems that capture revenue around the clock:
                             </p>
                             <ul className="list-disc pl-5 text-gray-300 space-y-2">
-                                <li>
-                                    <strong className="text-white">The "After-Hours" Protocol:</strong> <strong className="text-white">40% of appointments are booked after hours</strong> when you are closed. Our system captures, qualifies, and secures these leads automatically, ensuring you never miss a deal just because it’s 9:00 PM.
-                                </li>
+                                <li><strong>The After-Hours Protocol:</strong> 40% of appointments are booked after you close. Our system captures, qualifies, and schedules these leads automatically.</li>
+                                <li><strong>Direct Response Mechanisms:</strong> Clear, undeniable calls to action integrated at the exact point of highest user intent.</li>
                             </ul>
                         </div>
 
                         {/* Pillar 4 */}
                         <div className="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-primary/50 transition-colors">
-                            <h3 className="text-xl font-bold text-primary mb-3">Pillar 4: Entity Authority & Trust</h3>
+                            <h3 className="text-xl font-bold text-primary mb-3">4. Entity Authority & Trust</h3>
                             <p className="text-gray-300">
-                                Search engines don't trust what <em>you</em> say; they trust what <em>others</em> say about you. We utilize <strong className="text-white">Consensus Optimization</strong> to align your reviews, directory listings, and "digital footprint" across the web. This signals to the algorithms that you are a "Safe Recommendation."
+                                Answer Engines require "Consensus Optimization" to trust a brand. We align your reviews, external directory listings, and digital footprint, signaling to the algorithms that you are a Safe Recommendation backed by strong <strong>E-E-A-T</strong> (Experience, Expertise, Authoritativeness, and Trustworthiness).
                             </p>
                         </div>
                     </div>
@@ -186,15 +198,15 @@ const AboutPage = () => {
                 {/* Call to Action */}
                 <section className="mb-16 bg-gradient-to-br from-primary/20 via-black to-black border border-primary/30 rounded-2xl p-8 md:p-12 text-center relative overflow-hidden">
                     <div className="relative z-10">
-                        <h2 className="text-3xl font-bold mb-6 text-white font-heading">Need Help Converting Eyes Into Appointments?</h2>
+                        <h2 className="text-3xl font-bold mb-6 text-white font-heading">Ready to Convert Traffic into Appointments?</h2>
                         <p className="text-gray-300 mb-8 max-w-2xl mx-auto">
-                            We don't just build websites. We build <strong>Client Acquisition Systems</strong> designed to get more people into your business.
+                            We build systems designed to get more people into your business. Stop settling for a brochure.
                         </p>
 
                         <div className="grid md:grid-cols-3 gap-6 text-left mb-8">
                             <div className="bg-black/50 p-4 rounded-lg border border-white/5">
                                 <h4 className="font-bold text-primary mb-2">1. Improved Visibility</h4>
-                                <p className="text-sm text-gray-400">AEO strategy ensures you are the recommended answer.</p>
+                                <p className="text-sm text-gray-400">AEO strategy ensures you are the cited answer.</p>
                             </div>
                             <div className="bg-black/50 p-4 rounded-lg border border-white/5">
                                 <h4 className="font-bold text-primary mb-2">2. Conversion Architecture</h4>
@@ -202,7 +214,7 @@ const AboutPage = () => {
                             </div>
                             <div className="bg-black/50 p-4 rounded-lg border border-white/5">
                                 <h4 className="font-bold text-primary mb-2">3. Greater Credibility</h4>
-                                <p className="text-sm text-gray-400">Establish immediate authority with trust-optimized designs.</p>
+                                <p className="text-sm text-gray-400">Establish immediate authority with E-E-A-T optimized designs.</p>
                             </div>
                         </div>
 
