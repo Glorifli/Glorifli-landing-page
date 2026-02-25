@@ -17,6 +17,12 @@ const BookingCalendar: React.FC = () => {
 
     return (
         <section id="calendar" className="py-24 px-6 bg-surface relative overflow-hidden text-center">
+            <style>{`
+                .cal-embed-wrapper iframe {
+                    height: 100% !important;
+                    max-height: 100% !important;
+                }
+            `}</style>
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-3xl md:text-5xl font-bold font-heading mb-6">
                     Schedule Your Free <span className="text-primary">Strategy Call</span>
@@ -26,10 +32,10 @@ const BookingCalendar: React.FC = () => {
                 </p>
 
                 {/* The Cal component handles loading and rendering the calendar seamlessly */}
-                <div className="w-full h-auto min-h-[520px] overflow-hidden">
+                <div className="cal-embed-wrapper w-full h-[650px] overflow-hidden rounded-2xl border border-white/10">
                     <Cal
                         calLink="brendan-dillon-4pkhkd/15min"
-                        style={{ width: "100%", height: "100%", overflow: "scroll" }}
+                        style={{ width: "100%", height: "100%", overflow: "hidden" }}
                         config={{ layout: 'column_view', theme: 'dark' }}
                     />
                 </div>
