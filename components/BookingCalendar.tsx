@@ -1,52 +1,18 @@
 "use client";
 
 import React, { useEffect } from 'react';
+import Cal, { getCalApi } from "@calcom/embed-react";
 
 const BookingCalendar: React.FC = () => {
     useEffect(() => {
-        (function (C: any, A: string, L: string) {
-            let p = function (a: any, ar: any) { a.q.push(ar); };
-            let d = C.document;
-            C.Cal = C.Cal || function () {
-                let cal = C.Cal;
-                let ar = arguments;
-                if (!cal.loaded) {
-                    cal.ns = {};
-                    cal.q = cal.q || [];
-                    d.head.appendChild(d.createElement("script")).src = A;
-                    cal.loaded = true;
-                }
-                if (ar[0] === L) {
-                    const api = function () { p(api, arguments); };
-                    const namespace = ar[1];
-                    // @ts-ignore
-                    api.q = api.q || [];
-                    if (typeof namespace === "string") {
-                        cal.ns[namespace] = cal.ns[namespace] || api;
-                        p(cal.ns[namespace], ar);
-                        p(cal, ["initNamespace", namespace]);
-                    } else p(cal, ar);
-                    return;
-                }
-                p(cal, ar);
-            };
-        })(window, "https://app.cal.com/embed/embed.js", "init");
-
-        (window as any).Cal("init", "15min", { origin: "https://app.cal.com" });
-
-        // column_view shows dates + available time slots immediately —
-        // no need to click a date first, much better on mobile.
-        (window as any).Cal.ns["15min"]("inline", {
-            elementOrSelector: "#my-cal-inline-15min",
-            config: { "layout": "column_view", "theme": "dark" },
-            calLink: "brendan-dillon-4pkhkd/15min",
-        });
-
-        (window as any).Cal.ns["15min"]("ui", {
-            "theme": "dark",
-            "hideEventTypeDetails": false,
-            "layout": "column_view",
-        });
+        (async function () {
+            const cal = await getCalApi();
+            cal("ui", {
+                "theme": "dark",
+                "hideEventTypeDetails": false,
+                "layout": "column_view"
+            });
+        })();
     }, []);
 
     return (
@@ -59,9 +25,14 @@ const BookingCalendar: React.FC = () => {
                     Diagnose your problem, get free advice, and leave with a mock draft of your new site.
                 </p>
 
-                {/* column_view renders dates + time slots side-by-side immediately,
-                    no click required. Height is auto so it expands to fit all slots. */}
-                <div className="w-full h-[520px] md:h-[520px] overflow-hidden" id="my-cal-inline-15min"></div>
+                {/* The Cal component handles loading and rendering the calendar seamlessly */}
+                <div className="w-full h-auto min-h-[520px] overflow-hidden">
+                    <Cal
+                        calLink="brendan-dillon-4pkhkd/15min"
+                        style={{ width: "100%", height: "100%", overflow: "scroll" }}
+                        config={{ layout: 'column_view', theme: 'dark' }}
+                    />
+                </div>
             </div>
         </section>
     );
