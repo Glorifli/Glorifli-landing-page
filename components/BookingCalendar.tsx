@@ -12,6 +12,13 @@ const BookingCalendar: React.FC = () => {
                 "hideEventTypeDetails": false,
                 "layout": "column_view"
             });
+            cal("on", {
+                action: "bookingSuccessful",
+                callback: (e) => {
+                    // Change the URL to track the booking without reloading the page
+                    window.history.pushState({}, '', '/meeting-booked');
+                }
+            });
         })();
     }, []);
 
