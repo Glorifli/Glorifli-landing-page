@@ -68,6 +68,9 @@ export default function RootLayout({
 
   return (
     <html lang="en" className="dark">
+      <head>
+        <script id="vtag-ai-js" async src="https://r2.leadsy.ai/tag.js" data-pid="RG0l6sbiq6jkX5Qv" data-version="062024"></script>
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-white selection:bg-primary/30 selection:text-primary-100`}
       >

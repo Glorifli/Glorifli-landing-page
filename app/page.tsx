@@ -2,7 +2,6 @@ import Hero from "@/components/Hero";
 import PainPoints from "@/components/PainPoints";
 import ValueProposition from "@/components/ValueProposition";
 import ProofOfConcept from "@/components/ProofOfConcept";
-import LeadForm from "@/components/LeadForm";
 import BookingCalendar from "@/components/BookingCalendar";
 import FAQ from "@/components/FAQ";
 import Services from "@/components/Services";
@@ -191,10 +190,9 @@ export default function Home() {
       <Hero />
       <PainPoints />
       <ValueProposition />
+      <BookingCalendar />
       <ProofOfConcept />
       <Services />
-      <LeadForm />
-      <BookingCalendar />
       <FAQ />
     </main>
   );
