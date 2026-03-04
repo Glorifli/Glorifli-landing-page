@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
                             <span className="text-2xl font-bold font-heading tracking-tight text-white">Glorifli</span>
                         </div>
                         <p className="text-sm text-gray-400 max-w-sm">
-                            We'll build your website, and if you don't like it, you don't pay!
+                            You pay nothing — not the build cost, not the monthly fee — until we get you 3 booked appointments. If we don't, we work for free until we do.
                         </p>
                         <p className="text-xs text-gray-600">© 2025 Glorifli Inc. All rights reserved.</p>
                     </div>

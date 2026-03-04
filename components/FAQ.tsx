@@ -24,7 +24,7 @@ const faqs = [
     },
     {
         question: "What are the Guarantees?",
-        answer: "We guarantee 3 new appointments booked in the first 30 days following the launch of your site! (Note: This guarantee applies exclusively to the \"Autonomous Revenue Generating Engine\" package)."
+        answer: "You pay absolutely nothing — not the website build cost, not the monthly SEO/maintenance fee — until we get you 3 booked appointments in the first 30 days following your site launch. If we don't hit that number, we keep working for free until we do. No excuses, no fine print."
     },
     {
         question: "Is SEO dead? Why should I care about \"AEO\" for my local business?",

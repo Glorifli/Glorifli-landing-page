@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed"
                 >
-                    We Guarantee You 3 Booked Appointments in 30 Days, Following the Release of Your New Site, or You Don't Pay Till We Get You Those Results!
+                    You Pay Nothing — Not the Build Cost, Not the Monthly SEO Fee — Until We Get You 3 Booked Appointments. If We Don't, We Work for Free Until We Do.
                 </motion.p>
 
                 {/* CTA */}

@@ -15,7 +15,7 @@ const services = [
             "Standard SEO/AEO Optimization",
             "Google Business Profile Sync",
             "Citation Network Building",
-            "Guarantee: 3 New Appointments/Mo or Free!"
+            "Guarantee: 3 New Appointments/Mo or We Keep Working"
         ],
         ctaLink: "https://buy.stripe.com/aFa6oH3zn4GLbAi1o9cwg0b",
         highlight: false
@@ -45,8 +45,8 @@ const services = [
             "ALL Features from Website & SEO Plans",
             "Full AEO Infrastructure Setup",
             "Priority Support",
-            "Guarantee: 3 New Appointments in Month 1",
-            "Or Your Money Back (Service Fee)"
+            "Guaranteed 3 Booked Appointments — or We Work Free Until You Get Them",
+            "You Pay $0 Until Results Are Delivered (No Build Fee, No Monthly Fee)"
         ],
         ctaLink: "https://buy.stripe.com/cNi4gz3znehlgUC1o9cwg0a",
         highlight: true,
@@ -67,7 +67,7 @@ const Services: React.FC = () => {
                         My <span className="text-primary">Services</span>
                     </h2>
                     <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-                        Simple, transparent pricing. No hidden fees. Just results.
+                        No upfront fees. No monthly fees. You pay nothing until we get you 3 booked appointments — or we work for free until we do.
                     </p>
                 </div>
 
