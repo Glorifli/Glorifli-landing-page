@@ -9,7 +9,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Glorifli - Risk-Free Website Building for Local Business",
-  description: "We build high-converting websites for service businesses. If you don't like it, you don't pay. Get a free mock draft and scaling roadmap today.",
+  description: "We build high-converting websites for service businesses. If you don't like it, you don't pay. Get a free mock draft and SEO audit with actionable steps to improve your visibility today.",
   openGraph: {
     title: "Glorifli - We Build Your Website, Or You Don't Pay",
     description: "Stop chasing clients. We create reliable systems that consistently attract qualified clients - without upfront risk.",
@@ -59,6 +59,7 @@ const organizationSchema = {
     name: "Canada",
   },
   sameAs: [
+    "https://www.google.com/maps/place/Glorifli/data=!4m2!3m1!1s0x0:0x5eea403674673dc6",
     "https://www.linkedin.com/in/brendan-dillon-341035377",
     "https://www.youtube.com/@BrendanDillon22",
     "https://www.instagram.com/brendan.dillon.business/",

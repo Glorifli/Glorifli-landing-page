@@ -46,6 +46,7 @@ export default function RootLayout({
           "name": "Brendan Dillon",
           "jobTitle": "Founder & CEO",
           "sameAs": [
+            "https://www.google.com/maps/place/Glorifli/data=!4m2!3m1!1s0x0:0x5eea403674673dc6",
             "https://www.linkedin.com/in/brendan-dillon-341035377",
             "https://www.youtube.com/@BrendanDillon22",
             "https://www.instagram.com/brendan.dillon.business/",

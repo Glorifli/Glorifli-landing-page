@@ -8,7 +8,7 @@ import StructuredData from './StructuredData';
 const faqs = [
     {
         question: "What do I get when I book a strategy call?",
-        answer: "When you book a strategy call, you get a completely free mock draft of your new site, free instructions on how to build it yourself, a custom scaling roadmap, and a comprehensive audit of your current online presence."
+        answer: "When you book a strategy call, you get a completely free mock draft of your new site, free instructions on how to build it yourself, a free SEO audit with actionable steps to improve your visibility, and a comprehensive audit of your current online presence."
     },
     {
         question: "What makes your websites different?",
