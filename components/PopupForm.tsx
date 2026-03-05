@@ -96,6 +96,7 @@ const PopupForm: React.FC = () => {
                         {/* Close Button */}
                         <button
                             onClick={handleClose}
+                            aria-label="Close"
                             className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"
                         >
                             <X size={24} />

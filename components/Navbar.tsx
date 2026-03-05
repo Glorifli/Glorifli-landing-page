@@ -53,9 +53,12 @@ const Navbar: React.FC = () => {
             <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-[5px] group">
-                    <img
+                    <Image
                         src="/GlorifliLogo.png"
                         alt="Glorifli Logo"
+                        width={122}
+                        height={64}
+                        priority
                         className="h-16 w-auto group-hover:scale-105 transition-transform duration-300"
                     />
                     <span className="text-2xl font-bold font-heading tracking-tight text-white group-hover:text-primary transition-colors">
@@ -110,6 +113,7 @@ const Navbar: React.FC = () => {
                 <button
                     className="md:hidden text-white"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+                    aria-label={isMobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
                 >
                     {isMobileMenuOpen ? <X /> : <Menu />}
                 </button>
