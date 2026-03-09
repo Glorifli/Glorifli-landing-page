@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import PopupForm from "@/components/PopupForm";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/next";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -70,7 +71,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark">
       <head>
-        <script id="vtag-ai-js" async src="https://r2.leadsy.ai/tag.js" data-pid="RG0l6sbiq6jkX5Qv" data-version="062024"></script>
+        {/* Preconnect to critical third-party origins to reduce DNS/TLS latency */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://r2.leadsy.ai" />
+        <link rel="dns-prefetch" href="https://calendly.com" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-white selection:bg-primary/30 selection:text-primary-100`}
@@ -82,6 +87,14 @@ export default function RootLayout({
         <Footer />
         <SpeedInsights />
         <Analytics />
+        {/* Leadsy AI tag — deferred to after page is interactive to avoid render-blocking */}
+        <Script
+          id="vtag-ai-js"
+          src="https://r2.leadsy.ai/tag.js"
+          data-pid="RG0l6sbiq6jkX5Qv"
+          data-version="062024"
+          strategy="lazyOnload"
+        />
       </body>
     </html>
   );

@@ -1,44 +1,21 @@
 import type { NextConfig } from "next";
 
 const securityHeaders = [
+  { key: "Strict-Transport-Security", value: "max-age=63072000; includeSubDomains; preload" },
+  { key: "X-Frame-Options", value: "SAMEORIGIN" },
+  { key: "X-Content-Type-Options", value: "nosniff" },
+  { key: "Referrer-Policy", value: "strict-origin-when-cross-origin" },
+  { key: "Permissions-Policy", value: "camera=(), microphone=(), geolocation=(), interest-cohort=()" },
   {
-    key: "Strict-Transport-Security",
-    value: "max-age=63072000; includeSubDomains; preload",
-  },
-  {
-    key: "X-Frame-Options",
-    value: "SAMEORIGIN",
-  },
-  {
-    key: "X-Content-Type-Options",
-    value: "nosniff",
-  },
-  {
-    key: "Referrer-Policy",
-    value: "strict-origin-when-cross-origin",
-  },
-  {
-    key: "Permissions-Policy",
-    value: "camera=(), microphone=(), geolocation=(), interest-cohort=()",
-  },
-  {
-    // Content Security Policy — whitelists all required third-party origins
     key: "Content-Security-Policy",
     value: [
       "default-src 'self'",
-      // Scripts: self + cal.com embed + leadsy analytics + vercel speed insights
       "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://app.cal.com https://r2.leadsy.ai https://va.vercel-scripts.com https://vitals.vercel-insights.com",
-      // Styles: self + inline (needed for Tailwind + framer-motion)
       "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com",
-      // Fonts
       "font-src 'self' https://fonts.gstatic.com",
-      // Images: self + data URIs + google user content (testimonial avatars) + leadsy
       "img-src 'self' data: blob: https://lh3.googleusercontent.com https://wvbknd.leadsy.ai",
-      // Frames: cal.com embed
       "frame-src 'self' https://app.cal.com https://cal.com",
-      // Connections: API calls the site makes
       "connect-src 'self' https://app.cal.com https://wvbknd.leadsy.ai https://r2.leadsy.ai https://services.leadconnectorhq.com https://vitals.vercel-insights.com https://va.vercel-scripts.com",
-      // Workers (framer-motion / next internals)
       "worker-src 'self' blob:",
     ].join("; "),
   },
@@ -48,15 +25,46 @@ const nextConfig: NextConfig = {
   typescript: {
     ignoreBuildErrors: true,
   },
+
+  // ── Image Optimisation ────────────────────────────────────────────────────
+  images: {
+    // Prefer AVIF, fall back to WebP — dramatically smaller at same quality
+    formats: ["image/avif", "image/webp"],
+    // 1-year cache for optimised images served by Next.js Image API
+    minimumCacheTTL: 31536000,
+    remotePatterns: [
+      { protocol: "https", hostname: "lh3.googleusercontent.com" },
+    ],
+  },
+
+  // ── Compiler Optimisations ───────────────────────────────────────────────
+  compiler: {
+    // Strip console.* calls from production builds
+    removeConsole: process.env.NODE_ENV === "production",
+  },
+
+  // ── Bundle Optimisation ──────────────────────────────────────────────────
+  // Tree-shake large icon/animation packages — only ship code that's used
+  experimental: {
+    optimizePackageImports: ["lucide-react", "framer-motion"],
+  },
+
   async headers() {
     return [
       {
-        // Apply security headers to all routes
         source: "/(.*)",
         headers: securityHeaders,
+      },
+      {
+        // Instruct browsers/CDN to cache hashed static assets for 1 year
+        source: "/_next/static/(.*)",
+        headers: [
+          { key: "Cache-Control", value: "public, max-age=31536000, immutable" },
+        ],
       },
     ];
   },
 };
 
 export default nextConfig;
+

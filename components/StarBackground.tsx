@@ -1,11 +1,19 @@
 "use client";
 
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 const StarBackground: React.FC = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
+    const [isMobileDevice, setIsMobileDevice] = useState(false);
 
     useEffect(() => {
+        setIsMobileDevice(window.innerWidth < 768);
+    }, []);
+
+    useEffect(() => {
+        // Skip the canvas animation entirely on mobile — use CSS fallback instead
+        if (window.innerWidth < 768) return;
+
         const canvas = canvasRef.current;
         if (!canvas) return;
 
@@ -308,11 +316,23 @@ const StarBackground: React.FC = () => {
         };
     }, []);
 
+    // Mobile: zero-JS static background — preserves visual quality without canvas cost
+    if (isMobileDevice) {
+        return (
+            <div
+                className="absolute top-0 left-0 w-full h-full pointer-events-none z-0"
+                style={{
+                    background:
+                        'radial-gradient(ellipse 80% 60% at 50% 40%, rgba(56,189,248,0.07) 0%, rgba(168,85,247,0.04) 50%, transparent 100%)',
+                }}
+            />
+        );
+    }
+
     return (
         <canvas
             ref={canvasRef}
             className="absolute top-0 left-0 w-full h-full pointer-events-none z-0"
-            style={{ willChange: 'transform' }}
         />
     );
 };
