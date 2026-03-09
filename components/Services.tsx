@@ -158,7 +158,10 @@ const Services: React.FC = () => {
                 {/* ROI Proof Line */}
                 <div className="mt-12 text-center">
                     <p className="text-gray-500 text-sm">
-                        Roofing clients see up to <span className="text-white font-bold">2,646% ROI</span> · Home Remodeling up to <span className="text-white font-bold">5,869% ROI</span> · Based on 30% close rate of 10 guaranteed leads.{' '}
+                        Roofing clients see up to <span className="text-white font-bold">2,646% ROI</span> · Home Remodeling up to <span className="text-white font-bold">5,869% ROI</span> · Based on 30% close rate of 10 guaranteed leads · Sources:{' '}
+                        <a href="https://modernize.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Modernize</a>,{' '}
+                        <a href="https://homeguide.com/costs" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">HomeGuide</a>,{' '}
+                        <a href="https://www.angi.com/research/reports/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Angi</a>.{' '}
                         <Link href="/services" className="text-primary hover:underline">See full ROI breakdown →</Link>
                     </p>
                 </div>

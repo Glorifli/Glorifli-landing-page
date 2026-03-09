@@ -122,7 +122,8 @@ export default function SEOAEOPage() {
                 <section className="mb-16">
                     <h2 className="text-2xl font-bold text-white font-heading mb-4">Why Is AEO More Valuable Than Traditional SEO in 2025?</h2>
                     <p className="text-gray-400 mb-4 leading-relaxed border-l-4 border-accent pl-5">
-                        <strong className="text-white">58% of Google searches now end without a click.</strong> AI tools answer the user directly — meaning the business that gets cited wins the lead without a click. Traditional SEO chases blue-link rankings. AEO wins the citation.
+                        <strong className="text-white"><a href="https://sparktoro.com/blog/how-much-of-googles-search-traffic-is-left-for-anyone-but-google/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition-colors underline underline-offset-2">58% of Google searches now end without a click.</a></strong>{' '}
+                        AI tools answer the user directly — meaning the business that gets cited wins the lead without a click. Traditional SEO chases blue-link rankings. AEO wins the citation.
                     </p>
                     <p className="text-gray-400 leading-relaxed">Our strategy targets the exact high-intent questions local buyers ask and structures your content so AI systems cite your business — turning your site into a 24/7 lead engine.</p>
                 </section>
@@ -148,7 +149,10 @@ export default function SEOAEOPage() {
                 {/* SEO/AEO vs Ads */}
                 <section className="mb-16">
                     <h2 className="text-2xl font-bold text-white font-heading mb-4">How Does SEO/AEO Compare to Paid Advertising?</h2>
-                    <p className="text-gray-400 mb-8">SEO/AEO leads close at 25–45% vs 2–5% for paid ads — because they searched for exactly what you offer, right now.</p>
+                    <p className="text-gray-400 mb-8">SEO/AEO leads close at{' '}
+                        <a href="https://www.searchenginejournal.com/seo-vs-ppc/" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2 hover:text-white transition-colors">25–45% vs 2–5% for paid ads</a>{' '}
+                        — because they searched for exactly what you offer, right now.
+                    </p>
                     <div className="overflow-x-auto rounded-3xl border border-white/10">
                         <table className="w-full text-sm">
                             <thead>
@@ -201,7 +205,12 @@ export default function SEOAEOPage() {
                 {/* ROI */}
                 <section className="mb-16">
                     <h2 className="text-2xl font-bold text-white font-heading mb-4">What ROI Can I Expect from SEO/AEO?</h2>
-                    <p className="text-gray-400 mb-3">Closing just 3 of your guaranteed 10 leads pays for your investment many times over. Sources: Modernize, Angi, HomeGuide (2025–2026).</p>
+                    <p className="text-gray-400 mb-3">Closing just 3 of your guaranteed 10 leads pays for your investment many times over. Sources:{' '}
+                        <a href="https://modernize.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Modernize</a>,{' '}
+                        <a href="https://www.angi.com/research/reports/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Angi</a>,{' '}
+                        <a href="https://homeguide.com/costs" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">HomeGuide</a>{' '}
+                        (2025–2026).
+                    </p>
                     <div className="overflow-x-auto rounded-3xl border border-white/10">
                         <table className="w-full text-sm">
                             <thead>

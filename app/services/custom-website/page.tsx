@@ -216,7 +216,13 @@ export default function CustomWebsitePage() {
                     <p className="text-gray-400 mb-3 leading-relaxed">
                         SEO/AEO leads close at 25–45% — not the 2–5% of paid ads — because they're people who searched for exactly what you offer, in your city, right now. Here's what closing just 3 of your guaranteed 10 leads looks like in real revenue:
                     </p>
-                    <p className="text-xs text-gray-600 mb-8">Based on 30% close rate. Sources: Modernize, Angi, HomeGuide, Quicken Loans (2025–2026).</p>
+                    <p className="text-xs text-gray-600 mb-8">Based on 30% close rate. Sources:{' '}
+                        <a href="https://modernize.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Modernize</a>,{' '}
+                        <a href="https://www.angi.com/research/reports/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Angi</a>,{' '}
+                        <a href="https://homeguide.com/costs" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">HomeGuide</a>,{' '}
+                        <a href="https://www.quickenloans.com/learn/home-improvement-statistics" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Quicken Loans</a>{' '}
+                        (2025–2026).
+                    </p>
                     <div className="overflow-x-auto rounded-3xl border border-white/10">
                         <table className="w-full text-sm">
                             <thead>
