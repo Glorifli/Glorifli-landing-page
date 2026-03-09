@@ -1,20 +1,62 @@
 "use client";
 
-import React from 'react';
+import React, { useState } from 'react';
 import StarBackground from './StarBackground';
-import { motion } from 'framer-motion';
-import { ArrowRight, CheckCircle2 } from 'lucide-react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { ArrowRight, CheckCircle2, Globe } from 'lucide-react';
+
+type Step = 'website' | 'contact' | 'done';
+
+const WEBHOOK = 'https://services.leadconnectorhq.com/hooks/KyBfQlriCJtzUoDteCDn/webhook-trigger/9c2fa94d-e665-4e04-aa14-1aa3c9dfe687';
 
 const Hero: React.FC = () => {
+    const [step, setStep] = useState<Step>('website');
+    const [website, setWebsite] = useState('');
+    const [name, setName] = useState('');
+    const [email, setEmail] = useState('');
+    const [submitting, setSubmitting] = useState(false);
+    const [error, setError] = useState('');
+
+    // Step 1 — user enters website URL and clicks →
+    const handleWebsiteNext = (e: React.FormEvent) => {
+        e.preventDefault();
+        if (!website.trim()) return;
+        setStep('contact');
+    };
+
+    // Step 2 — user enters name + email and submits
+    const handleSubmit = async (e: React.FormEvent) => {
+        e.preventDefault();
+        setSubmitting(true);
+        setError('');
+        try {
+            await fetch(WEBHOOK, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    website,
+                    name,
+                    email,
+                    leadType: 'hero-seo-audit',
+                }),
+            });
+            setStep('done');
+        } catch {
+            setError('Something went wrong. Please try again.');
+        } finally {
+            setSubmitting(false);
+        }
+    };
+
     return (
-        <section className="relative min-h-[120vh] flex flex-col items-center justify-start md:justify-center overflow-hidden pt-0 pb-10 px-6">
+        <section className="relative min-h-[100vh] flex flex-col items-center justify-center overflow-hidden pt-0 pb-16 px-6">
             <StarBackground />
 
             {/* Background Gradients */}
             <div className="hidden md:block absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/10 rounded-full blur-[120px] -z-10" />
             <div className="hidden md:block absolute top-0 right-0 w-[500px] h-[500px] bg-accent/5 rounded-full blur-[100px] -z-10" />
 
-            <div className="relative z-10 max-w-5xl mx-auto text-center pt-[20vh] md:pt-0">
+            <div className="relative z-10 max-w-4xl mx-auto text-center">
 
                 {/* Badge */}
                 <motion.div
@@ -30,15 +72,16 @@ const Hero: React.FC = () => {
                     <span className="text-xs font-medium text-gray-300 uppercase tracking-widest">Growth Guaranteed</span>
                 </motion.div>
 
-                {/* Headline — keyword-rich H1 for SEO + AEO, conversion hook in subheadline */}
+                {/* H1 — SEO keywords + conversion hook */}
                 <motion.h1
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
-                    className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tighter leading-[0.95] mb-[130px] md:mb-[220px] text-white"
+                    className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold tracking-tighter leading-[1.05] mb-6 text-white"
                 >
-                    Website Design &amp; Local SEO<br className="hidden md:block" />
-                    for <span className="text-primary">Service Businesses</span>
+                    Service Business Owners Ready to Get{' '}
+                    <span className="text-primary">More Appointments</span>{' '}
+                    on Autopilot?
                 </motion.h1>
 
                 {/* Subheadline */}
@@ -46,38 +89,136 @@ const Hero: React.FC = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                    className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed"
+                    className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed"
                 >
-                    Pay the $1,256.50 setup fee today — your website goes live and the SEO/AEO service runs free until we get you 10 booked leads within 60 days. After that, you decide if you want to keep growing. Plus, get 1 free month of blog content included.
+                    We Guarantee You <strong className="text-white">10 New Clients in the Next 60 Days</strong> or we work for free until you get those results.
                 </motion.p>
 
-                {/* CTA */}
+                {/* ── Compact Multi-Step Audit Form ── */}
                 <motion.div
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
-                    className="flex flex-col items-center gap-6"
+                    className="max-w-md mx-auto"
                 >
-                    <a
-                        href="#services"
-                        className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-primary/90 font-heading rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-gray-900 hover:bg-primary shadow-[0_0_30px_-5px_rgba(56,189,248,0.5)] hover:shadow-[0_0_50px_-10px_rgba(56,189,248,0.7)]"
-                    >
-                        <span className="mr-2">Start Your Risk-Free Month</span>
-                        <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-                    </a>
+                    <div className="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-sm">
+                        <p className="text-xs text-gray-500 uppercase tracking-widest mb-4 font-semibold">
+                            🔍 Get Your Free SEO Audit — See How to Get More Clients Organically
+                        </p>
 
-                    <div className="flex items-center gap-4 text-sm text-gray-500">
+                        <AnimatePresence mode="wait">
+
+                            {/* Step 1 — Website URL */}
+                            {step === 'website' && (
+                                <motion.form
+                                    key="step-website"
+                                    initial={{ opacity: 0, x: 10 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    exit={{ opacity: 0, x: -10 }}
+                                    transition={{ duration: 0.2 }}
+                                    onSubmit={handleWebsiteNext}
+                                    className="flex gap-2"
+                                >
+                                    <div className="relative flex-1">
+                                        <Globe className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
+                                        <input
+                                            type="url"
+                                            id="hero-website"
+                                            required
+                                            placeholder="https://yourbusiness.com"
+                                            value={website}
+                                            onChange={(e) => setWebsite(e.target.value)}
+                                            className="w-full pl-9 pr-3 py-3 bg-black/50 border border-white/10 rounded-xl text-white text-sm placeholder-gray-600 focus:outline-none focus:border-primary/60 focus:ring-1 focus:ring-primary/40 transition-all"
+                                        />
+                                    </div>
+                                    <button
+                                        type="submit"
+                                        className="flex-shrink-0 flex items-center gap-1.5 px-4 py-3 bg-primary text-black text-sm font-bold rounded-xl hover:bg-white transition-all duration-200 shadow-[0_0_20px_-4px_rgba(56,189,248,0.6)]"
+                                    >
+                                        Audit <ArrowRight className="w-3.5 h-3.5" />
+                                    </button>
+                                </motion.form>
+                            )}
+
+                            {/* Step 2 — Name + Email */}
+                            {step === 'contact' && (
+                                <motion.form
+                                    key="step-contact"
+                                    initial={{ opacity: 0, x: 10 }}
+                                    animate={{ opacity: 1, x: 0 }}
+                                    exit={{ opacity: 0, x: -10 }}
+                                    transition={{ duration: 0.2 }}
+                                    onSubmit={handleSubmit}
+                                    className="space-y-3"
+                                >
+                                    <p className="text-xs text-gray-500 text-left">
+                                        ✅ <span className="text-gray-400">{website}</span> — now tell us where to send your audit:
+                                    </p>
+                                    <input
+                                        type="text"
+                                        id="hero-name"
+                                        required
+                                        placeholder="Your name"
+                                        value={name}
+                                        onChange={(e) => setName(e.target.value)}
+                                        className="w-full px-4 py-3 bg-black/50 border border-white/10 rounded-xl text-white text-sm placeholder-gray-600 focus:outline-none focus:border-primary/60 focus:ring-1 focus:ring-primary/40 transition-all"
+                                    />
+                                    <input
+                                        type="email"
+                                        id="hero-email"
+                                        required
+                                        placeholder="Your email address"
+                                        value={email}
+                                        onChange={(e) => setEmail(e.target.value)}
+                                        className="w-full px-4 py-3 bg-black/50 border border-white/10 rounded-xl text-white text-sm placeholder-gray-600 focus:outline-none focus:border-primary/60 focus:ring-1 focus:ring-primary/40 transition-all"
+                                    />
+                                    {error && <p className="text-red-400 text-xs">{error}</p>}
+                                    <button
+                                        type="submit"
+                                        disabled={submitting}
+                                        className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-primary text-black text-sm font-bold rounded-xl hover:bg-white transition-all duration-200 shadow-[0_0_20px_-4px_rgba(56,189,248,0.6)] disabled:opacity-60"
+                                    >
+                                        {submitting ? 'Sending…' : <>Send Me My Free Audit <ArrowRight className="w-3.5 h-3.5" /></>}
+                                    </button>
+                                    <p className="text-xs text-gray-600 text-center">No spam. Unsubscribe any time.</p>
+                                </motion.form>
+                            )}
+
+                            {/* Step 3 — Success */}
+                            {step === 'done' && (
+                                <motion.div
+                                    key="step-done"
+                                    initial={{ opacity: 0, scale: 0.95 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    transition={{ duration: 0.25 }}
+                                    className="text-center py-2"
+                                >
+                                    <div className="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-3">
+                                        <CheckCircle2 className="w-5 h-5 text-green-400" />
+                                    </div>
+                                    <p className="text-sm font-bold text-white mb-1">You're on the list!</p>
+                                    <p className="text-xs text-gray-500">We'll send your personalised SEO/AEO audit within 24–48 hrs. Check your inbox.</p>
+                                </motion.div>
+                            )}
+
+                        </AnimatePresence>
+                    </div>
+
+                    {/* Social proof micro-copy */}
+                    <div className="flex items-center justify-center gap-4 mt-5 text-xs text-gray-600">
                         <span className="flex items-center gap-1.5">
-                            <CheckCircle2 className="w-4 h-4 text-secondary" /> No Risk
+                            <CheckCircle2 className="w-3.5 h-3.5 text-secondary" /> 100% Free
                         </span>
                         <span className="flex items-center gap-1.5">
-                            <CheckCircle2 className="w-4 h-4 text-secondary" /> Verified Results
+                            <CheckCircle2 className="w-3.5 h-3.5 text-secondary" /> Actionable Steps
+                        </span>
+                        <span className="flex items-center gap-1.5">
+                            <CheckCircle2 className="w-3.5 h-3.5 text-secondary" /> No Sales Call Required
                         </span>
                     </div>
                 </motion.div>
 
             </div>
-
         </section>
     );
 };

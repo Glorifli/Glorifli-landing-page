@@ -57,7 +57,7 @@ const organizationSchema = {
   foundingDate: "2025",
   areaServed: {
     "@type": "Country",
-    name: "Canada",
+    name: "United States",
   },
   sameAs: [
     "https://www.google.com/maps/place/Glorifli/data=!4m2!3m1!1s0x0:0x5eea403674673dc6",
@@ -101,10 +101,9 @@ const localBusinessSchema = {
   description:
     "We build high-converting websites and AEO/SEO systems for local service businesses — guaranteed 10 new leads in 60 days of the $1,256.50 setup payment, or we work free until we deliver.",
   priceRange: "$$",
-  currenciesAccepted: "CAD, USD",
+  currenciesAccepted: "USD",
   paymentAccepted: "Credit Card",
   areaServed: [
-    { "@type": "Country", name: "Canada" },
     { "@type": "Country", name: "United States" },
   ],
   hasOfferCatalog: {

@@ -81,7 +81,7 @@ const serviceSchema = {
         priceSpecification: { "@type": "UnitPriceSpecification", price: "1256.50", priceCurrency: "USD", unitText: "one-time" },
     },
     url: "https://glorifli.com/services/custom-website",
-    areaServed: [{ "@type": "Country", name: "Canada" }, { "@type": "Country", name: "United States" }],
+    areaServed: [{ "@type": "Country", name: "United States" }],
 };
 
 const faqSchema = {
