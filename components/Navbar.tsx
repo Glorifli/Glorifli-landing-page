@@ -39,10 +39,11 @@ const Navbar: React.FC = () => {
     };
 
     const navLinks = [
-        { name: 'My Services', href: '#services', isRoute: false },
+        { name: 'Services', href: '/services', isRoute: true },
         { name: 'About', href: '/about', isRoute: true },
-        { name: 'Consulting', href: '#calendar', isRoute: false },
+        { name: 'FAQ', href: '/faq', isRoute: true },
         { name: 'Blog', href: '/blog', isRoute: true },
+        { name: 'Consulting', href: '#calendar', isRoute: false },
     ];
 
     return (

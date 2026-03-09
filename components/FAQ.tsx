@@ -8,7 +8,7 @@ import StructuredData from './StructuredData';
 const faqs = [
     {
         question: "What do I get when I book a strategy call?",
-        answer: "When you book a strategy call, you get a completely free mock draft of your new site, free instructions on how to build it yourself, a free SEO audit with actionable steps to improve your visibility, and a comprehensive audit of your current online presence."
+        answer: "When you book a strategy call, you get a completely free mock draft of your new site, free instructions on how to build it yourself, a comprehensive audit of your current online presence, and a personalized game plan for growth. You can also grab a free SEO/AEO audit with actionable steps to generate more organic traffic by filling in your name, email, and website in the form at the top of this page — no call required."
     },
     {
         question: "What makes your websites different?",
@@ -24,7 +24,7 @@ const faqs = [
     },
     {
         question: "What are the Guarantees?",
-        answer: "You pay absolutely nothing — not the website build cost, not the monthly SEO/maintenance fee — until we get you 3 booked appointments in the first 30 days following your site launch. If we don't hit that number, we keep working for free until we do. No excuses, no fine print."
+        answer: "Pay the $1,256.50 setup fee to get the ball rolling — your 60-day clock starts the moment payment is received. Your website goes live and the SEO/AEO service runs completely free during that window. Within 60 days we guarantee 10 new booked leads. If we miss that number, the SEO/AEO service keeps running at no charge until we deliver. Once your 10 leads are booked, you choose whether to continue the SEO/AEO service at $589.50/mo. You also get 1 free month of blog content included with the setup. No excuses, no fine print."
     },
     {
         question: "Is SEO dead? Why should I care about \"AEO\" for my local business?",

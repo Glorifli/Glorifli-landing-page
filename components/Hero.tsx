@@ -37,8 +37,8 @@ const Hero: React.FC = () => {
                     transition={{ duration: 0.5, delay: 0.1 }}
                     className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tighter leading-[0.95] mb-[130px] md:mb-[220px] text-white"
                 >
-                    Ready To Take On <br className="hidden md:block" />
-                    3 New Clients?
+                    Ready to Take On <br className="hidden md:block" />
+                    10 New Leads?
                 </motion.h1>
 
                 {/* Subheadline */}
@@ -48,7 +48,7 @@ const Hero: React.FC = () => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-12 leading-relaxed"
                 >
-                    You Pay Nothing — Not the Build Cost, Not the Monthly SEO Fee — Until We Get You 3 Booked Appointments. If We Don't, We Work for Free Until We Do.
+                    Pay the $1,256.50 setup fee today — your website goes live and the SEO/AEO service runs free until we get you 10 booked leads within 60 days. After that, you decide if you want to keep growing. Plus, get 1 free month of blog content included.
                 </motion.p>
 
                 {/* CTA */}

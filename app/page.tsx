@@ -1,4 +1,5 @@
 import Hero from "@/components/Hero";
+import SEOAuditLeadMagnet from "@/components/SEOAuditLeadMagnet";
 import PainPoints from "@/components/PainPoints";
 import ValueProposition from "@/components/ValueProposition";
 import BookingCalendar from "@/components/BookingCalendar";
@@ -8,11 +9,11 @@ import StructuredData from "@/components/StructuredData";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Glorifli - Risk-Free Website Building for Local Business",
-  description: "We build high-converting websites for service businesses. If you don't like it, you don't pay. Get a free mock draft and SEO audit with actionable steps to improve your visibility today.",
+  title: "Glorifli - 10 New Leads in 60 Days or We Work for Free",
+  description: "We build high-converting websites and SEO/AEO systems for local service businesses. Pay the $1,256.50 setup fee and get 10 new leads in 60 days — or we work for free until you do. Claim your free SEO/AEO audit today.",
   openGraph: {
-    title: "Glorifli - We Build Your Website, Or You Don't Pay",
-    description: "Stop chasing clients. We create reliable systems that consistently attract qualified clients - without upfront risk.",
+    title: "Glorifli - 10 New Leads in 60 Days or We Work for Free",
+    description: "Pay the $1,256.50 setup fee and get 10 new leads in 60 days — guaranteed. If we don't deliver, we work for free until we do.",
     type: "website",
     url: "https://glorifli.com",
     siteName: "Glorifli",
@@ -27,8 +28,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Glorifli - Risk-Free Website Building",
-    description: "We build high-converting websites for service businesses. If you don't like it, you don't pay.",
+    title: "Glorifli - 10 New Leads in 60 Days Guaranteed",
+    description: "Pay the $1,256.50 setup fee and get 10 new leads within 60 days — or we work for free until we deliver.",
     images: ["https://glorifli.com/images/blog/featured-hero.png"],
   },
   alternates: {
@@ -52,7 +53,7 @@ const organizationSchema = {
     height: 512,
   },
   description:
-    "Glorifli builds high-converting websites and AEO/SEO content systems for local service businesses. Guaranteed results or you don't pay.",
+    "Glorifli builds high-converting websites and AEO/SEO content systems for local service businesses. $1,256.50 setup fee with a guarantee of 10 new leads in 60 days — or we work for free until we deliver.",
   foundingDate: "2025",
   areaServed: {
     "@type": "Country",
@@ -98,7 +99,7 @@ const localBusinessSchema = {
   logo: "https://glorifli.com/logo.png",
   image: "https://glorifli.com/images/blog/featured-hero.png",
   description:
-    "We build high-converting websites and AEO/SEO systems for local service businesses — guaranteed 3 new appointments in month 1 or you don't pay.",
+    "We build high-converting websites and AEO/SEO systems for local service businesses — guaranteed 10 new leads in 60 days of the $1,256.50 setup payment, or we work free until we deliver.",
   priceRange: "$$",
   currenciesAccepted: "CAD, USD",
   paymentAccepted: "Credit Card",
@@ -116,7 +117,7 @@ const localBusinessSchema = {
           "@type": "Service",
           name: "SEO/AEO Optimization",
           description:
-            "8 SEO/AEO optimized blog posts monthly, Google Business Profile sync, citation network building, and guaranteed 3 new appointments per month.",
+            "8 SEO/AEO optimized blog posts monthly, Google Business Profile sync, citation network building, and guaranteed 10 new leads in 60 days or we keep working free.",
           offers: {
             "@type": "Offer",
             price: "589.50",
@@ -151,7 +152,7 @@ const localBusinessSchema = {
           "@type": "Service",
           name: "Autonomous Revenue Generating Engine",
           description:
-            "Complete website + SEO/AEO system. Guaranteed 3 new appointments in month 1 or money back.",
+            "Complete website + SEO/AEO system. $1,256.50 setup fee with 60-day guarantee of 10 new leads — or we work free until results are delivered.",
         },
       },
     ],
@@ -188,6 +189,7 @@ export default function Home() {
       <StructuredData data={breadcrumbSchema} />
 
       <Hero />
+      <SEOAuditLeadMagnet />
       <PainPoints />
       <ValueProposition />
       <BookingCalendar />

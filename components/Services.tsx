@@ -2,56 +2,63 @@
 
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Check } from 'lucide-react';
+import { Check, ArrowRight } from 'lucide-react';
+import Link from 'next/link';
 
 const services = [
     {
         name: "SEO/AEO Optimization",
+        slug: "seo-aeo-optimization",
         price: "$589.50",
         period: "/month",
+        marketValue: "$3,500+/mo market value",
         description: "Dominate local search and become the AI-recommended answer.",
         features: [
             "8 SEO/AEO Optimized Blogs Monthly",
-            "Standard SEO/AEO Optimization",
             "Google Business Profile Sync",
             "Citation Network Building",
-            "Guarantee: 3 New Appointments/Mo or We Keep Working"
+            "AI Search Optimization (ChatGPT, Gemini, Perplexity)",
+            "FREE Until We Book You 10 Leads (then $589.50/mo)"
         ],
         ctaLink: "https://buy.stripe.com/aFa6oH3zn4GLbAi1o9cwg0b",
         highlight: false
     },
     {
         name: "Custom High-Converting Website",
+        slug: "custom-website",
         price: "$1,256.50",
         period: "",
-        description: "A digital storefront designed to turn visitors into booked appointments.",
+        marketValue: "$4,700+ market value",
+        description: "A digital storefront designed to turn visitors into booked leads — 1 free month of blog content included.",
         features: [
             "Custom Design & Branding",
             "Mobile & Desktop Optimization",
-            "Proven Conversion Wiremapping",
-            "2 Revisions (2-Week Period)",
+            "Conversion Copywriting Done-For-You",
             "Integrated Booking System",
-            "One Month of Free Blog Posts"
+            "Domain Transfer or Acquisition",
+            "1 Free Month of Blog Content Included"
         ],
         ctaLink: "https://buy.stripe.com/28EbJ17PD2yD5bUgj3cwg0c",
         highlight: false
     },
     {
         name: "Autonomous Revenue Generating Engine",
+        slug: "autonomous-revenue-engine",
         price: "Combo",
         period: "",
+        marketValue: "$8,900+ total market value",
         description: "The complete system. Build your site, fill your calendar, and scale on autopilot.",
         features: [
             "ALL Features from Website & SEO Plans",
+            "1 Free Month of Blog Content",
             "Full AEO Infrastructure Setup",
             "Priority Support",
-            "Guaranteed 3 Booked Appointments — or We Work Free Until You Get Them",
-            "You Pay $0 Until Results Are Delivered (No Build Fee, No Monthly Fee)"
+            "SEO/AEO Service Runs FREE Until 10 Leads Booked — Then $589.50/mo"
         ],
         ctaLink: "https://buy.stripe.com/cNi4gz3znehlgUC1o9cwg0a",
         highlight: true,
         badge: "Best Value",
-        priceDetail: "$1,256.50 + $589.50/mo"
+        priceDetail: "$1,256.50 setup + $589.50/mo"
     }
 ];
 
@@ -66,9 +73,14 @@ const Services: React.FC = () => {
                     <h2 className="text-4xl md:text-5xl font-bold font-heading text-white mb-6">
                         My <span className="text-primary">Services</span>
                     </h2>
-                    <p className="text-gray-400 text-lg max-w-2xl mx-auto">
-                        No upfront fees. No monthly fees. You pay nothing until we get you 3 booked appointments — or we work for free until we do.
+                    <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-4">
+                        Pay the $1,256.50 setup fee to get started. Your website goes live and the SEO/AEO service runs <strong className="text-white">free</strong> until we book you 10 leads — all within 60 days of payment. If we don't, we keep working at no charge until we do.
                     </p>
+                    {/* Value Stack Highlight */}
+                    <div className="inline-flex items-center gap-3 px-5 py-3 rounded-full border border-primary/30 bg-primary/5 text-sm text-gray-300 mt-2">
+                        <span className="text-primary font-bold">$8,900+</span> in total market value —
+                        <span className="text-white font-bold">you invest $1,256.50</span> to start
+                    </div>
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
@@ -90,12 +102,12 @@ const Services: React.FC = () => {
                                 </div>
                             )}
 
-                            <div className="mb-8">
+                            <div className="mb-6">
                                 <h3 className="text-xl font-bold text-white mb-2">{service.name}</h3>
-                                <p className="text-gray-400 text-sm h-10">{service.description}</p>
+                                <p className="text-gray-400 text-sm">{service.description}</p>
                             </div>
 
-                            <div className="mb-8">
+                            <div className="mb-6">
                                 <div className="flex items-baseline gap-1">
                                     {service.price === "Combo" ? (
                                         <div className="flex flex-col">
@@ -109,6 +121,7 @@ const Services: React.FC = () => {
                                         </>
                                     )}
                                 </div>
+                                <p className="text-xs text-gray-600 mt-2">{service.marketValue}</p>
                             </div>
 
                             <ul className="space-y-4 mb-8 flex-grow">
@@ -120,16 +133,34 @@ const Services: React.FC = () => {
                                 ))}
                             </ul>
 
-                            <a
-                                href={service.ctaLink}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className={`w-full py-4 rounded-xl font-bold text-center transition-all duration-300 bg-white/10 text-white hover:bg-primary hover:text-black hover:scale-[1.02]`}
-                            >
-                                Get Started
-                            </a>
+                            {/* Dual CTAs: Get Started + Learn More */}
+                            <div className="flex flex-col gap-3">
+                                <a
+                                    href={service.ctaLink}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className={`w-full py-3.5 rounded-xl font-bold text-center transition-all duration-300 ${service.highlight ? 'bg-primary text-black hover:bg-white' : 'bg-white/10 text-white hover:bg-primary hover:text-black hover:scale-[1.02]'}`}
+                                >
+                                    Get Started
+                                </a>
+                                <Link
+                                    href={`/services/${service.slug}`}
+                                    className="w-full py-2.5 rounded-xl font-medium text-center text-sm text-gray-400 hover:text-primary border border-white/5 hover:border-primary/30 transition-all duration-300 flex items-center justify-center gap-1.5 group"
+                                >
+                                    Learn More
+                                    <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
+                                </Link>
+                            </div>
                         </motion.div>
                     ))}
+                </div>
+
+                {/* ROI Proof Line */}
+                <div className="mt-12 text-center">
+                    <p className="text-gray-500 text-sm">
+                        Roofing clients see up to <span className="text-white font-bold">2,646% ROI</span> · Home Remodeling up to <span className="text-white font-bold">5,869% ROI</span> · Based on 30% close rate of 10 guaranteed leads.{' '}
+                        <Link href="/services" className="text-primary hover:underline">See full ROI breakdown →</Link>
+                    </p>
                 </div>
             </div>
         </section>

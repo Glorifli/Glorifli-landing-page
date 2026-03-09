@@ -54,7 +54,7 @@ const Footer: React.FC = () => {
                             <span className="text-2xl font-bold font-heading tracking-tight text-white">Glorifli</span>
                         </div>
                         <p className="text-sm text-gray-400 max-w-sm">
-                            You pay nothing — not the build cost, not the monthly fee — until we get you 3 booked appointments. If we don't, we work for free until we do.
+                            Pay the $1,256.50 setup fee and we guarantee 10 new leads within 60 days — or we work for free until we get you those results.
                         </p>
                         <p className="text-xs text-gray-600">© 2025 Glorifli Inc. All rights reserved.</p>
                     </div>

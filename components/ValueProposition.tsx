@@ -15,7 +15,7 @@ const features = [
     {
         icon: Calendar,
         title: 'Book More Appointments',
-        description: "You pay nothing — not the website build cost, not the monthly SEO fee — until we get you 3 booked appointments. If we don't deliver, we keep working for free until we do.",
+        description: "Start with the $1,256.50 setup fee — your site goes live and the SEO/AEO monthly service runs free until we book you 10 leads within 60 days. Hit that target and you decide whether to continue at $589.50/mo.",
         color: 'text-accent',
         colSpan: 'md:col-span-1',
         hoverColor: 'text-accent',
