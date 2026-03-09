@@ -4,16 +4,17 @@ export default function robots(): MetadataRoute.Robots {
     return {
         rules: [
             {
+                // All standard crawlers: allow everything except private/api routes
                 userAgent: '*',
-                allow: ['/', '/blog/'],
-                disallow: ['/private/'],
+                allow: '/',
+                disallow: ['/private/', '/api/'],
             },
             {
-                userAgent: ['GPTBot', 'CCBot', 'Google-Extended'],
-                allow: ['/'],
+                // Explicitly welcome AI crawlers for AEO citation eligibility
+                userAgent: ['GPTBot', 'CCBot', 'Google-Extended', 'PerplexityBot', 'anthropic-ai', 'Claude-Web'],
+                allow: '/',
             }
         ],
-        // We explicitly allow friendly AI bots to crawl for AEO
         sitemap: 'https://glorifli.com/sitemap.xml',
     };
 }

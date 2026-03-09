@@ -30,15 +30,15 @@ const Hero: React.FC = () => {
                     <span className="text-xs font-medium text-gray-300 uppercase tracking-widest">Growth Guaranteed</span>
                 </motion.div>
 
-                {/* Headline */}
+                {/* Headline — keyword-rich H1 for SEO + AEO, conversion hook in subheadline */}
                 <motion.h1
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.1 }}
                     className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold tracking-tighter leading-[0.95] mb-[130px] md:mb-[220px] text-white"
                 >
-                    Ready to Take On <br className="hidden md:block" />
-                    10 New Leads?
+                    Website Design &amp; Local SEO<br className="hidden md:block" />
+                    for <span className="text-primary">Service Businesses</span>
                 </motion.h1>
 
                 {/* Subheadline */}
