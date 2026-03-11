@@ -10,7 +10,7 @@ const painPoints = [
         title: "Tired of people not knowing about your business?",
         description: (
             <>
-                You're an expert in your field, but to the clients who need you most, you're invisible. Studies show that{' '}
+                You're an expert in your field, but to the people who need you most, you're invisible. Studies show that{' '}
                 <a href="https://www.zippia.com/advice/online-booking-statistics/" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2 hover:text-white transition-colors">82% of appointments are booked through searches made on mobile</a>.{' '}
                 This means that if your website doesn't have seamless online booking, you're missing out on a majority of the market share.
             </>
@@ -20,7 +20,7 @@ const painPoints = [
     },
     {
         icon: MessageSquareX,
-        title: "Struggling to Convert Website Visitors Into Loyal Clients?",
+        title: "Struggling to Convert Website Visitors Into Booked Appointments?",
         description: (
             <>
                 Studies show that{' '}
@@ -58,7 +58,7 @@ const PainPoints: React.FC = () => {
                         transition={{ delay: 0.1 }}
                         className="text-xl text-gray-400 max-w-2xl mx-auto"
                     >
-                        Fed up with High Marketing Costs? Tired of Having an Inconsistent Stream of Clients?
+                        Fed up with High Marketing Costs? Tired of Having an Inconsistent Stream of Appointments?
                     </motion.p>
                 </div>
 

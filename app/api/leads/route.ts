@@ -4,7 +4,14 @@ import { appendLeadToSheet } from '@/lib/google-sheets';
 export async function POST(request: Request) {
     try {
         const body = await request.json();
-        const { name, email } = body;
+        const {
+            name,
+            email,
+            websiteUrl = '',
+            website = '',
+            source = '',
+            leadType = '',
+        } = body;
 
         if (!name || !email) {
             return NextResponse.json(
@@ -13,8 +20,12 @@ export async function POST(request: Request) {
             );
         }
 
-        // Call the Google Sheets utility
-        await appendLeadToSheet(name, email);
+        // Accept either websiteUrl or website field name (Hero uses 'website', PopupForm uses 'websiteUrl')
+        const resolvedWebsite = websiteUrl || website;
+        const resolvedSource = source || leadType;
+
+        // Append to "Glorifli Email List" sheet
+        await appendLeadToSheet(name, email, resolvedWebsite, resolvedSource);
 
         return NextResponse.json(
             { message: 'Lead successfully captured' },

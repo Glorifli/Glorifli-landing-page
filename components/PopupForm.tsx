@@ -2,13 +2,14 @@
 
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X } from 'lucide-react';
+import { X, Globe } from 'lucide-react';
 
 const PopupForm: React.FC = () => {
     const [isVisible, setIsVisible] = useState(false);
     const [formState, setFormState] = useState({
         name: '',
-        email: ''
+        email: '',
+        websiteUrl: ''
     });
     const [isSubmitting, setIsSubmitting] = useState(false);
     const [isSubmitted, setIsSubmitted] = useState(false);
@@ -85,81 +86,106 @@ const PopupForm: React.FC = () => {
 
                     {/* Modal */}
                     <motion.div
-                        initial={{ opacity: 0, scale: 0.9, y: 20 }}
+                        initial={{ opacity: 0, scale: 0.92, y: 24 }}
                         animate={{ opacity: 1, scale: 1, y: 0 }}
-                        exit={{ opacity: 0, scale: 0.9, y: 20 }}
-                        className="relative w-full max-w-md bg-surface border border-white/10 rounded-3xl p-8 shadow-2xl overflow-hidden"
+                        exit={{ opacity: 0, scale: 0.92, y: 24 }}
+                        transition={{ type: 'spring', damping: 22, stiffness: 260 }}
+                        className="relative w-full max-w-md rounded-3xl overflow-hidden"
                     >
-                        {/* Glass effect background */}
-                        <div className="absolute inset-0 bg-white/5 pointer-events-none" />
+                        {/* Glow orb behind card */}
+                        <div className="absolute -top-24 -left-24 w-64 h-64 bg-primary/20 rounded-full blur-[80px] pointer-events-none" />
+                        <div className="absolute -bottom-16 -right-16 w-48 h-48 bg-accent/15 rounded-full blur-[60px] pointer-events-none" />
 
-                        {/* Close Button */}
-                        <button
-                            onClick={handleClose}
-                            aria-label="Close"
-                            className="absolute top-4 right-4 text-gray-400 hover:text-white transition-colors"
-                        >
-                            <X size={24} />
-                        </button>
+                        {/* Glass card */}
+                        <div className="relative bg-black/60 backdrop-blur-xl border border-white/10 rounded-3xl p-8 shadow-[0_8px_60px_rgba(0,0,0,0.6)] overflow-hidden">
+                            {/* Racing-glow border */}
+                            <div className="absolute inset-0 rounded-3xl pointer-events-none" style={{ boxShadow: 'inset 0 0 0 1px rgba(56,189,248,0.15), 0 0 40px -8px rgba(56,189,248,0.25)' }} />
 
-                        <div className="relative z-10 text-center">
-                            {isSubmitted ? (
-                                <motion.div
-                                    initial={{ opacity: 0 }}
-                                    animate={{ opacity: 1 }}
-                                    className="py-10"
-                                >
-                                    <div className="w-16 h-16 bg-success/20 text-green-400 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
-                                        ✓
-                                    </div>
-                                    <h3 className="text-2xl font-bold text-white mb-2">You're In!</h3>
-                                    <p className="text-gray-400">Thanks for signing up. We'll be in touch shortly.</p>
-                                </motion.div>
-                            ) : (
-                                <>
-                                    <h2 className="text-2xl md:text-3xl font-bold font-heading mb-2">
-                                        Get Your <span className="text-primary">Free Audit</span>
-                                    </h2>
-                                    <p className="text-gray-400 mb-8 text-sm">
-                                        Join our list to receive exclusive insights and a free audit of your current digital presence.
-                                    </p>
+                            {/* Close Button */}
+                            <button
+                                onClick={handleClose}
+                                aria-label="Close"
+                                className="absolute top-4 right-4 text-gray-500 hover:text-white transition-colors z-10"
+                            >
+                                <X size={20} />
+                            </button>
 
-                                    <form onSubmit={handleSubmit} className="space-y-4 text-left">
-                                        <div>
-                                            <label htmlFor="popup-name" className="block text-xs font-medium text-gray-400 mb-1 ml-1">Full Name</label>
-                                            <input
-                                                type="text"
-                                                id="popup-name"
-                                                required
-                                                className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all"
-                                                placeholder="John Doe"
-                                                value={formState.name}
-                                                onChange={(e) => setFormState({ ...formState, name: e.target.value })}
-                                            />
+                            <div className="relative z-10 text-center">
+                                {isSubmitted ? (
+                                    <motion.div
+                                        initial={{ opacity: 0 }}
+                                        animate={{ opacity: 1 }}
+                                        className="py-10"
+                                    >
+                                        <div className="w-16 h-16 bg-success/20 text-green-400 rounded-full flex items-center justify-center mx-auto mb-4 text-3xl">
+                                            ✓
                                         </div>
-                                        <div>
-                                            <label htmlFor="popup-email" className="block text-xs font-medium text-gray-400 mb-1 ml-1">Work Email</label>
-                                            <input
-                                                type="email"
-                                                id="popup-email"
-                                                required
-                                                className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-primary/50 focus:ring-1 focus:ring-primary/50 transition-all"
-                                                placeholder="john@company.com"
-                                                value={formState.email}
-                                                onChange={(e) => setFormState({ ...formState, email: e.target.value })}
-                                            />
-                                        </div>
+                                        <h3 className="text-2xl font-bold text-white mb-2">You're In!</h3>
+                                        <p className="text-gray-400">Thanks for signing up. We'll be in touch shortly.</p>
+                                    </motion.div>
+                                ) : (
+                                    <>
+                                        <h2 className="text-2xl md:text-3xl font-bold font-heading mb-2">
+                                            Get Your <span className="text-primary">Personalized Seo</span> Action Plan!
+                                        </h2>
+                                        <p className="text-gray-400 mb-8 text-sm">
+                                            The Sooner Your Website Ranks the Sooner You Will be Booking Appointments Without having to Lift a Finger!
+                                        </p>
 
-                                        <button
-                                            type="submit"
-                                            disabled={isSubmitting}
-                                            className="w-full bg-white text-black font-bold rounded-xl py-3 hover:bg-gray-200 transition-colors disabled:opacity-70 disabled:cursor-not-allowed mt-4"
-                                        >
-                                            {isSubmitting ? 'Processing...' : 'Get Instant Access'}
-                                        </button>
-                                    </form>
-                                </>
-                            )}
+                                        <form onSubmit={handleSubmit} className="space-y-3 text-left">
+                                            <div>
+                                                <label htmlFor="popup-name" className="block text-xs font-medium text-gray-500 mb-1 ml-1">Full Name</label>
+                                                <input
+                                                    type="text"
+                                                    id="popup-name"
+                                                    required
+                                                    className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-primary/60 focus:ring-1 focus:ring-primary/40 transition-all text-sm"
+                                                    placeholder="John Doe"
+                                                    value={formState.name}
+                                                    onChange={(e) => setFormState({ ...formState, name: e.target.value })}
+                                                />
+                                            </div>
+                                            <div>
+                                                <label htmlFor="popup-email" className="block text-xs font-medium text-gray-500 mb-1 ml-1">Work Email</label>
+                                                <input
+                                                    type="email"
+                                                    id="popup-email"
+                                                    required
+                                                    className="w-full bg-black/50 border border-white/10 rounded-xl px-4 py-3 text-white placeholder-gray-600 focus:outline-none focus:border-primary/60 focus:ring-1 focus:ring-primary/40 transition-all text-sm"
+                                                    placeholder="john@company.com"
+                                                    value={formState.email}
+                                                    onChange={(e) => setFormState({ ...formState, email: e.target.value })}
+                                                />
+                                            </div>
+                                            <div className="relative">
+                                                <label htmlFor="popup-website" className="block text-xs font-medium text-gray-500 mb-1 ml-1">Website URL</label>
+                                                <Globe className="absolute left-3 bottom-3.5 w-4 h-4 text-gray-500" />
+                                                <input
+                                                    type="url"
+                                                    id="popup-website"
+                                                    required
+                                                    className="w-full pl-9 pr-4 bg-black/50 border border-white/10 rounded-xl py-3 text-white placeholder-gray-600 focus:outline-none focus:border-primary/60 focus:ring-1 focus:ring-primary/40 transition-all text-sm"
+                                                    placeholder="https://yourwebsite.com"
+                                                    value={formState.websiteUrl}
+                                                    onChange={(e) => setFormState({ ...formState, websiteUrl: e.target.value })}
+                                                />
+                                            </div>
+
+                                            <button
+                                                type="submit"
+                                                disabled={isSubmitting}
+                                                className="w-full flex items-center justify-center gap-2 bg-white text-black font-bold rounded-xl py-3 hover:bg-gray-200 transition-colors disabled:opacity-70 disabled:cursor-not-allowed mt-1 shadow-[0_0_25px_-5px_rgba(56,189,248,0.5)] hover:shadow-[0_0_35px_-8px_rgba(56,189,248,0.7)]"
+                                            >
+                                                {isSubmitting ? 'Processing...' : 'Get Instant Access'}
+                                            </button>
+                                        </form>
+
+                                        <p className="mt-5 text-center text-3xl font-extrabold tracking-widest text-primary">
+                                            FREE
+                                        </p>
+                                    </>
+                                )}
+                            </div>
                         </div>
                     </motion.div>
                 </div>

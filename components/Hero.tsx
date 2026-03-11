@@ -91,7 +91,7 @@ const Hero: React.FC = () => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed"
                 >
-                    We Guarantee You <strong className="text-white">10 New Clients in the Next 60 Days</strong> or we work for free until you get those results.
+                    We Guarantee You <strong className="text-white">10 New Appointments in the Next 60 Days</strong> or we work for free until you get those results.
                 </motion.p>
 
                 {/* ── Compact Multi-Step Audit Form ── */}
@@ -99,11 +99,14 @@ const Hero: React.FC = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
-                    className="max-w-md mx-auto"
+                    className="max-w-md mx-auto mt-10"
                 >
                     <div className="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-sm">
-                        <p className="text-xs text-gray-500 uppercase tracking-widest mb-4 font-semibold">
-                            🔍 Get Your Free SEO Audit — See How to Get More Clients Organically
+                        <p className="text-sm font-bold text-white mb-1 text-center">
+                            Get Your <span className="text-primary">Personalized SEO</span> Action Plan!
+                        </p>
+                        <p className="text-xs text-gray-400 text-center mb-4">
+                            The Sooner Your Website Ranks the Sooner You Will be Booking Appointments Without having to Lift a Finger!
                         </p>
 
                         <AnimatePresence mode="wait">
@@ -133,9 +136,9 @@ const Hero: React.FC = () => {
                                     </div>
                                     <button
                                         type="submit"
-                                        className="flex-shrink-0 flex items-center gap-1.5 px-4 py-3 bg-primary text-black text-sm font-bold rounded-xl hover:bg-white transition-all duration-200 shadow-[0_0_20px_-4px_rgba(56,189,248,0.6)]"
+                                        className="flex-shrink-0 flex items-center gap-1.5 px-4 py-3 bg-white text-black text-sm font-bold rounded-xl hover:bg-gray-200 transition-all duration-200 shadow-[0_0_20px_-4px_rgba(56,189,248,0.6)]"
                                     >
-                                        Audit <ArrowRight className="w-3.5 h-3.5" />
+                                        Next <ArrowRight className="w-3.5 h-3.5" />
                                     </button>
                                 </motion.form>
                             )}
@@ -152,13 +155,13 @@ const Hero: React.FC = () => {
                                     className="space-y-3"
                                 >
                                     <p className="text-xs text-gray-500 text-left">
-                                        ✅ <span className="text-gray-400">{website}</span> — now tell us where to send your audit:
+                                        ✅ <span className="text-gray-400">{website}</span> — now tell us where to send your plan:
                                     </p>
                                     <input
                                         type="text"
                                         id="hero-name"
                                         required
-                                        placeholder="Your name"
+                                        placeholder="Full Name"
                                         value={name}
                                         onChange={(e) => setName(e.target.value)}
                                         className="w-full px-4 py-3 bg-black/50 border border-white/10 rounded-xl text-white text-sm placeholder-gray-600 focus:outline-none focus:border-primary/60 focus:ring-1 focus:ring-primary/40 transition-all"
@@ -167,7 +170,7 @@ const Hero: React.FC = () => {
                                         type="email"
                                         id="hero-email"
                                         required
-                                        placeholder="Your email address"
+                                        placeholder="Work Email"
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
                                         className="w-full px-4 py-3 bg-black/50 border border-white/10 rounded-xl text-white text-sm placeholder-gray-600 focus:outline-none focus:border-primary/60 focus:ring-1 focus:ring-primary/40 transition-all"
@@ -176,11 +179,11 @@ const Hero: React.FC = () => {
                                     <button
                                         type="submit"
                                         disabled={submitting}
-                                        className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-primary text-black text-sm font-bold rounded-xl hover:bg-white transition-all duration-200 shadow-[0_0_20px_-4px_rgba(56,189,248,0.6)] disabled:opacity-60"
+                                        className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-white text-black text-sm font-bold rounded-xl hover:bg-gray-200 transition-all duration-200 shadow-[0_0_20px_-4px_rgba(56,189,248,0.6)] disabled:opacity-60"
                                     >
-                                        {submitting ? 'Sending…' : <>Send Me My Free Audit <ArrowRight className="w-3.5 h-3.5" /></>}
+                                        {submitting ? 'Sending…' : <>Get Instant Access <ArrowRight className="w-3.5 h-3.5" /></>}
                                     </button>
-                                    <p className="text-xs text-gray-600 text-center">No spam. Unsubscribe any time.</p>
+                                    <p className="text-center text-lg font-extrabold tracking-widest text-primary">FREE</p>
                                 </motion.form>
                             )}
 
@@ -197,7 +200,7 @@ const Hero: React.FC = () => {
                                         <CheckCircle2 className="w-5 h-5 text-green-400" />
                                     </div>
                                     <p className="text-sm font-bold text-white mb-1">You're on the list!</p>
-                                    <p className="text-xs text-gray-500">We'll send your personalised SEO/AEO audit within 24–48 hrs. Check your inbox.</p>
+                                    <p className="text-xs text-gray-500">We'll send your personalised SEO Action Plan within 24–48 hrs. Check your inbox.</p>
                                 </motion.div>
                             )}
 

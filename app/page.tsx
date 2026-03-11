@@ -1,5 +1,4 @@
 import Hero from "@/components/Hero";
-import SEOAuditLeadMagnet from "@/components/SEOAuditLeadMagnet";
 import PainPoints from "@/components/PainPoints";
 import ValueProposition from "@/components/ValueProposition";
 import BookingCalendar from "@/components/BookingCalendar";
@@ -188,7 +187,6 @@ export default function Home() {
       <StructuredData data={breadcrumbSchema} />
 
       <Hero />
-      <SEOAuditLeadMagnet />
       <PainPoints />
       <ValueProposition />
       <BookingCalendar />
