@@ -252,13 +252,13 @@ const StarBackground: React.FC = () => {
             ctx.shadowColor = 'rgba(0, 255, 255, 0.1)';
             ctx.stroke();
 
-            // 2. Bright White Core Ring
+            // 2. Medium/Dark Grey Core Ring
             ctx.beginPath();
             ctx.arc(centerX, centerY, blackHoleRadius, 0, Math.PI * 2);
-            ctx.strokeStyle = 'rgba(255, 255, 255, 0.9)';
+            ctx.strokeStyle = 'rgba(80, 80, 80, 0.8)';
             ctx.lineWidth = 2;
             ctx.shadowBlur = 5;
-            ctx.shadowColor = 'rgba(255, 255, 255, 0.5)';
+            ctx.shadowColor = 'rgba(80, 80, 80, 0.4)';
             ctx.stroke();
 
             ctx.shadowBlur = 0;

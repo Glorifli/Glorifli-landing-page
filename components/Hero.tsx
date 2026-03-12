@@ -87,7 +87,7 @@ const Hero: React.FC = () => {
                 >
                     Service Business Owners Ready to Get{' '}
                     <span className="text-primary">More Appointments</span>{' '}
-                    on Autopilot?
+                    on <span className="text-primary">Autopilot</span>?
                 </motion.h1>
 
                 {/* Subheadline */}
@@ -220,9 +220,9 @@ const Hero: React.FC = () => {
                                     <button
                                         type="submit"
                                         disabled={submitting}
-                                        className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-white text-black text-sm font-bold rounded-xl hover:bg-gray-200 transition-all duration-200 shadow-[0_0_20px_-4px_rgba(56,189,248,0.6)] disabled:opacity-60"
+                                        className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-white text-black text-sm font-bold rounded-xl hover:bg-sky-400 hover:text-white transition-all duration-200 shadow-[0_0_20px_-4px_rgba(56,189,248,0.6)] disabled:opacity-60"
                                     >
-                                        {submitting ? 'Sending…' : <>Get Instant Access <ArrowRight className="w-3.5 h-3.5" /></>}
+                                        {submitting ? 'Sending…' : <>Get Access <ArrowRight className="w-3.5 h-3.5" /></>}
                                     </button>
                                     <p className="text-center text-lg font-extrabold tracking-widest text-primary">FREE</p>
                                 </motion.form>
