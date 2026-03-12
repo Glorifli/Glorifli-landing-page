@@ -4,16 +4,18 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const StarBackground: React.FC = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
-    const [isMobileDevice, setIsMobileDevice] = useState<boolean | null>(null);
+    const [isMobileDevice, setIsMobileDevice] = useState(false);
 
+    // Detect mobile first, then start canvas animation only after we know we're on desktop
     useEffect(() => {
-        setIsMobileDevice(window.innerWidth < 768);
+        const mobile = window.innerWidth < 768;
+        setIsMobileDevice(mobile);
     }, []);
 
     useEffect(() => {
         // Skip the canvas animation entirely on mobile — use CSS fallback instead
-        if (window.innerWidth < 768) return;
-
+        if (isMobileDevice) return;
+        // Also skip if canvas not yet in DOM (shouldn't happen but safety)
         const canvas = canvasRef.current;
         if (!canvas) return;
 
@@ -24,8 +26,7 @@ const StarBackground: React.FC = () => {
         let stars: Star[] = [];
         let shootingStars: ShootingStar[] = [];
         let lastShootingStarTime = 0;
-        const isMobile = window.innerWidth < 768;
-        const targetFps = isMobile ? 30 : 60;
+        const targetFps = 60;
         const frameInterval = 1000 / targetFps;
         let lastFrameTime = 0;
 
@@ -208,8 +209,8 @@ const StarBackground: React.FC = () => {
 
         const initStars = () => {
             stars = [];
-            // Fewer stars on mobile for performance
-            const divisor = isMobile ? 12000 : 6000;
+            // Slightly fewer stars to ease initial paint — visually identical
+            const divisor = 8000;
             const numStars = Math.floor((window.innerWidth * window.innerHeight) / divisor);
             for (let i = 0; i < numStars; i++) {
                 stars.push(new Star());
@@ -308,16 +309,22 @@ const StarBackground: React.FC = () => {
         };
 
         resizeCanvas();
-        animate(0);
+
+        // Defer animation start to after first paint so it doesn't block LCP
+        let animationFrameId2: number;
+        const startAnimation = () => { animationFrameId = requestAnimationFrame(animate); };
+        if ('requestIdleCallback' in window) {
+            (window as Window & { requestIdleCallback: (cb: () => void, opts?: { timeout: number }) => number })
+                .requestIdleCallback(startAnimation, { timeout: 1000 });
+        } else {
+            setTimeout(startAnimation, 200);
+        }
 
         return () => {
             observer.disconnect();
             cancelAnimationFrame(animationFrameId);
         };
-    }, []);
-
-    // Not yet hydrated — render nothing to avoid SSR mismatch / CLS flash
-    if (isMobileDevice === null) return null;
+    }, [isMobileDevice]); // re-run only when mobile detection resolves
 
     // Mobile: zero-JS static background — preserves visual quality without canvas cost
     if (isMobileDevice) {
