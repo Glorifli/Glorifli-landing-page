@@ -4,7 +4,7 @@ import React, { useEffect, useRef, useState } from 'react';
 
 const StarBackground: React.FC = () => {
     const canvasRef = useRef<HTMLCanvasElement>(null);
-    const [isMobileDevice, setIsMobileDevice] = useState(false);
+    const [isMobileDevice, setIsMobileDevice] = useState<boolean | null>(null);
 
     useEffect(() => {
         setIsMobileDevice(window.innerWidth < 768);
@@ -315,6 +315,9 @@ const StarBackground: React.FC = () => {
             cancelAnimationFrame(animationFrameId);
         };
     }, []);
+
+    // Not yet hydrated — render nothing to avoid SSR mismatch / CLS flash
+    if (isMobileDevice === null) return null;
 
     // Mobile: zero-JS static background — preserves visual quality without canvas cost
     if (isMobileDevice) {
