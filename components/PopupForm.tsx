@@ -34,13 +34,23 @@ const PopupForm: React.FC = () => {
         e.preventDefault();
         setIsSubmitting(true);
 
+        const formattedWebsite = (!/^https?:\/\//i.test(formState.websiteUrl))
+            ? `https://${formState.websiteUrl}`
+            : formState.websiteUrl;
+
         try {
-            // 1. Submit to Google Sheets via Internal API (Secure Service Account)
+            // 1. Submit to Google Sheets via Make.com webhook
             try {
-                await fetch('/api/leads', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify(formState),
+                await fetch("https://hook.us2.make.com/6v27uovh37of144n5ovik89t41eebm95", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify({
+                        name: formState.name,
+                        email: formState.email,
+                        websiteUrl: formattedWebsite
+                    }),
                 });
             } catch (err) {
                 console.warn('Google Sheet API error:', err);
@@ -52,7 +62,12 @@ const PopupForm: React.FC = () => {
                 headers: {
                     'Content-Type': 'application/json',
                 },
-                body: JSON.stringify({ ...formState, source: 'popup' }),
+                body: JSON.stringify({
+                    name: formState.name,
+                    email: formState.email,
+                    websiteUrl: formattedWebsite,
+                    source: 'popup'
+                }),
             });
 
             if (response.ok) {
@@ -161,11 +176,11 @@ const PopupForm: React.FC = () => {
                                                 <label htmlFor="popup-website" className="block text-xs font-medium text-gray-500 mb-1 ml-1">Website URL</label>
                                                 <Globe className="absolute left-3 bottom-3.5 w-4 h-4 text-gray-500" />
                                                 <input
-                                                    type="url"
+                                                    type="text"
                                                     id="popup-website"
                                                     required
                                                     className="w-full pl-9 pr-4 bg-black/50 border border-white/10 rounded-xl py-3 text-white placeholder-gray-600 focus:outline-none focus:border-primary/60 focus:ring-1 focus:ring-primary/40 transition-all text-sm"
-                                                    placeholder="https://yourwebsite.com"
+                                                    placeholder="glorifli.com or https://glorifli.com"
                                                     value={formState.websiteUrl}
                                                     onChange={(e) => setFormState({ ...formState, websiteUrl: e.target.value })}
                                                 />

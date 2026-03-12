@@ -20,8 +20,14 @@ const Hero: React.FC = () => {
     // Step 1 — user enters website URL and clicks →
     const handleWebsiteNext = (e: React.FormEvent) => {
         e.preventDefault();
-        if (!website.trim()) return;
-        setStep('contact');
+        if (website.trim()) {
+            let formattedUrl = website.trim();
+            if (formattedUrl !== 'No website' && !/^https?:\/\//i.test(formattedUrl)) {
+                formattedUrl = `https://${formattedUrl}`;
+            }
+            setWebsite(formattedUrl);
+            setStep('contact');
+        }
     };
 
     // Step 2 — user enters name + email and submits
@@ -152,7 +158,7 @@ const Hero: React.FC = () => {
                                         <div className="relative flex-1">
                                             <Globe className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
                                             <input
-                                                type="url"
+                                                type="text"
                                                 id="hero-website"
                                                 required
                                                 placeholder="https://yourbusiness.com"
