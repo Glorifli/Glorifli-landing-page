@@ -173,7 +173,7 @@ const Hero: React.FC = () => {
                                         onClick={() => { setWebsite('No website'); setStep('contact'); }}
                                         className="text-xs text-gray-400 hover:text-white transition-colors text-left pl-1"
                                     >
-                                        I don't have a website
+                                        I don't have a website yet
                                     </button>
                                 </motion.form>
                             )}
