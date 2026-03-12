@@ -109,6 +109,32 @@ const Hero: React.FC = () => {
                             The Sooner Your Website Ranks the Sooner You Will be Booking Appointments Without having to Lift a Finger!
                         </p>
 
+                        {/* Progress bar — shown on steps 1 & 2 only */}
+                        {step !== 'done' && (
+                            <div className="mb-4">
+                                <div className="flex justify-between items-center mb-1.5">
+                                    <span className="text-xs text-gray-500 font-medium">
+                                        Step {step === 'website' ? '1' : '2'} of 2
+                                    </span>
+                                    <span className="text-xs text-primary font-semibold">
+                                        {step === 'website' ? '50%' : '100%'}
+                                    </span>
+                                </div>
+                                <div className="h-1.5 w-full bg-white/8 rounded-full overflow-hidden">
+                                    <motion.div
+                                        className="h-full rounded-full"
+                                        style={{
+                                            background: 'linear-gradient(90deg, #38bdf8, #7dd3fc)',
+                                            boxShadow: '0 0 8px rgba(56,189,248,0.6)',
+                                        }}
+                                        initial={{ width: '0%' }}
+                                        animate={{ width: step === 'website' ? '50%' : '100%' }}
+                                        transition={{ duration: 0.45, ease: 'easeOut' }}
+                                    />
+                                </div>
+                            </div>
+                        )}
+
                         <AnimatePresence mode="wait">
 
                             {/* Step 1 — Website URL */}

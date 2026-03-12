@@ -62,10 +62,10 @@ const PopupForm: React.FC = () => {
                     setIsVisible(false);
                 }, 3000);
             } else {
-                console.error('Submission failed');
+                console.warn('Submission failed');
             }
         } catch (error) {
-            console.error('Error submitting form:', error);
+            console.warn('Error submitting form:', error);
         } finally {
             setIsSubmitting(false);
         }
