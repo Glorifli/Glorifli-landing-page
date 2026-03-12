@@ -99,7 +99,7 @@ const Hero: React.FC = () => {
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.3 }}
-                    className="max-w-md mx-auto mt-10"
+                    className="max-w-md mx-auto mt-20"
                 >
                     <div className="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-sm">
                         <p className="text-sm font-bold text-white mb-1 text-center">
@@ -146,25 +146,34 @@ const Hero: React.FC = () => {
                                     exit={{ opacity: 0, x: -10 }}
                                     transition={{ duration: 0.2 }}
                                     onSubmit={handleWebsiteNext}
-                                    className="flex gap-2"
+                                    className="flex flex-col gap-3"
                                 >
-                                    <div className="relative flex-1">
-                                        <Globe className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
-                                        <input
-                                            type="url"
-                                            id="hero-website"
-                                            required
-                                            placeholder="https://yourbusiness.com"
-                                            value={website}
-                                            onChange={(e) => setWebsite(e.target.value)}
-                                            className="w-full pl-9 pr-3 py-3 bg-black/50 border border-white/10 rounded-xl text-white text-sm placeholder-gray-600 focus:outline-none focus:border-primary/60 focus:ring-1 focus:ring-primary/40 transition-all"
-                                        />
+                                    <div className="flex gap-2">
+                                        <div className="relative flex-1">
+                                            <Globe className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
+                                            <input
+                                                type="url"
+                                                id="hero-website"
+                                                required
+                                                placeholder="https://yourbusiness.com"
+                                                value={website}
+                                                onChange={(e) => setWebsite(e.target.value)}
+                                                className="w-full pl-9 pr-3 py-3 bg-black/50 border border-white/10 rounded-xl text-white text-sm placeholder-gray-600 focus:outline-none focus:border-primary/60 focus:ring-1 focus:ring-primary/40 transition-all"
+                                            />
+                                        </div>
+                                        <button
+                                            type="submit"
+                                            className="flex-shrink-0 flex items-center gap-1.5 px-4 py-3 bg-white text-black text-sm font-bold rounded-xl hover:bg-gray-200 transition-all duration-200 shadow-[0_0_20px_-4px_rgba(56,189,248,0.6)]"
+                                        >
+                                            Next <ArrowRight className="w-3.5 h-3.5" />
+                                        </button>
                                     </div>
                                     <button
-                                        type="submit"
-                                        className="flex-shrink-0 flex items-center gap-1.5 px-4 py-3 bg-white text-black text-sm font-bold rounded-xl hover:bg-gray-200 transition-all duration-200 shadow-[0_0_20px_-4px_rgba(56,189,248,0.6)]"
+                                        type="button"
+                                        onClick={() => { setWebsite('No website'); setStep('contact'); }}
+                                        className="text-xs text-gray-400 hover:text-white transition-colors text-left pl-1"
                                     >
-                                        Next <ArrowRight className="w-3.5 h-3.5" />
+                                        I don't have a website
                                     </button>
                                 </motion.form>
                             )}
