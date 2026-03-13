@@ -147,8 +147,8 @@ export default function ARGEPage() {
                 <section className="mb-16">
                     <h2 className="text-2xl font-bold text-white font-heading mb-4">Why Is the Autonomous Revenue Engine Worth $8,900+?</h2>
                     <p className="text-gray-400 mb-8 leading-relaxed">Every deliverable has a clear market rate. Here's what you would pay to assemble this system by hiring separately — and what you actually invest with Glorifli.</p>
-                    <div className="bg-white/5 border border-white/10 rounded-3xl overflow-hidden">
-                        <table className="w-full text-sm">
+                    <div className="bg-white/5 border border-white/10 rounded-3xl overflow-x-auto">
+                        <table className="w-full min-w-[500px] text-sm">
                             <thead>
                                 <tr className="border-b border-white/10">
                                     <th className="text-left px-6 py-4 text-gray-400 font-medium">Deliverable</th>

@@ -209,8 +209,8 @@ export default function ServicesPage() {
                     <p className="text-center text-gray-400 mb-10 max-w-2xl mx-auto">
                         Every deliverable Glorifli provides has a clear market rate. Here's what you'd pay on the open market — and what you actually invest.
                     </p>
-                    <div className="bg-white/5 border border-white/10 rounded-3xl overflow-hidden">
-                        <table className="w-full text-sm">
+                    <div className="bg-white/5 border border-white/10 rounded-3xl overflow-x-auto">
+                        <table className="w-full min-w-[500px] text-sm">
                             <thead>
                                 <tr className="border-b border-white/10">
                                     <th className="text-left px-6 py-4 text-gray-400 font-medium">Deliverable</th>

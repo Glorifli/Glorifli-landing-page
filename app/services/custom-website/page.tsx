@@ -174,8 +174,8 @@ export default function CustomWebsitePage() {
                     <p className="text-gray-400 mb-8 leading-relaxed">
                         The combined market rate for everything included in this package exceeds $4,700. At $1,256.50, you're paying less than 27 cents on the dollar. Here's the breakdown:
                     </p>
-                    <div className="bg-white/5 border border-white/10 rounded-3xl overflow-hidden mb-6">
-                        <table className="w-full text-sm">
+                    <div className="bg-white/5 border border-white/10 rounded-3xl overflow-x-auto mb-6">
+                        <table className="w-full min-w-[500px] text-sm">
                             <thead>
                                 <tr className="border-b border-white/10">
                                     <th className="text-left px-6 py-4 text-gray-400 font-medium">Deliverable</th>
