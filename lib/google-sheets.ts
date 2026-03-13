@@ -19,9 +19,9 @@ export async function appendLeadToSheet(
         // 2. Get Sheets Client
         const sheets = google.sheets({ version: 'v4', auth });
 
-        // 3. Target the "Glorifli Email List" tab — columns: Name | Email | Website | Source | Date
+        // 3. Target the "Sheet1" tab — columns: Name | Email | Website | Source | Date
         const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID;
-        const range = 'Glorifli Email List!A:E';
+        const range = 'Sheet1!A:E';
         const valueInputOption = 'USER_ENTERED';
 
         const resource = {

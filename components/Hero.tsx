@@ -7,7 +7,7 @@ import { ArrowRight, CheckCircle2, Globe } from 'lucide-react';
 
 type Step = 'website' | 'contact' | 'done';
 
-const WEBHOOK = 'https://services.leadconnectorhq.com/hooks/KyBfQlriCJtzUoDteCDn/webhook-trigger/9c2fa94d-e665-4e04-aa14-1aa3c9dfe687';
+const INTERNAL_API = '/api/leads';
 
 const Hero: React.FC = () => {
     const [step, setStep] = useState<Step>('website');
@@ -36,7 +36,20 @@ const Hero: React.FC = () => {
         setSubmitting(true);
         setError('');
         try {
-            await fetch(WEBHOOK, {
+            // 1. Submit to internal API (Google Sheets)
+            await fetch(INTERNAL_API, {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    website,
+                    name,
+                    email,
+                    leadType: 'hero-seo-audit',
+                }),
+            });
+
+            // 2. Submit to LeadConnector webhook
+            await fetch('https://services.leadconnectorhq.com/hooks/KyBfQlriCJtzUoDteCDn/webhook-trigger/9c2fa94d-e665-4e04-aa14-1aa3c9dfe687', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
