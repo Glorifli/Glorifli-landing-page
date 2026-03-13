@@ -30,7 +30,7 @@ const tableRows = [
         focus: 'High-converting websites + SEO/AEO for booked appointments',
         siteCost: '$1,256.50 one-time',
         monthly: '$589.50/mo (8 blogs, GBP sync, citations)',
-        guarantee: 'Yes — 3 new appointments in month 1 or you don\'t pay the service fee',
+        guarantee: 'Yes — 10 new appointments in 60 days or you don\'t pay the service fee',
         risk: 'Low',
         aeo: 'Yes — explicitly built-in',
     },
@@ -104,7 +104,7 @@ const checklist = [
     },
     {
         title: 'Outcome-based guarantee vs "best effort"',
-        glorifli: '3 new appointments in month 1 or you don\'t pay the service fee — we work free until the milestone',
+        glorifli: '10 new appointments in 60 days or you don\'t pay the service fee — we work free until the milestone',
         others: 'Most focus on traffic, rankings, or "campaign success" — not specific booked appointments',
     },
     {
@@ -158,7 +158,7 @@ export default function VsHubPage() {
                 {/* ── Direct Answer (AEO) ── */}
                 <section className="mb-20 scroll-mt-24" id="why-glorifli">
                     <p className="text-gray-200 text-lg leading-relaxed border-l-4 border-primary pl-5 py-1 bg-white/3 rounded-r-xl">
-                        <strong className="text-white">Glorifli</strong> is designed specifically for small local service businesses that need booked appointments — not just website traffic or keyword rankings. Compared to agencies like SmartSites, Victorious, or NPAccel, Glorifli offers a lower all-in cost, a clear outcome-based guarantee (3 appointments in month 1 or you don't pay the service fee), and explicitly built-in AEO (Answer Engine Optimization) so AI assistants recommend your business. No other agency on this list publicly offers all three at an entry-level price point.
+                        <strong className="text-white">Glorifli</strong> is designed specifically for small local service businesses that need booked appointments — not just website traffic or keyword rankings. Compared to agencies like SmartSites, Victorious, or NPAccel, Glorifli offers a lower all-in cost, a clear outcome-based guarantee (10 appointments in 60 days or you don't pay the service fee), and explicitly built-in AEO (Answer Engine Optimization) so AI assistants recommend your business. No other agency on this list publicly offers all three at an entry-level price point.
                     </p>
                 </section>
 
@@ -266,7 +266,7 @@ export default function VsHubPage() {
                         Most agencies measure success by <em>traffic</em>, <em>keyword rankings</em>, or <em>impressions</em> — metrics that look great in a monthly report but don't pay your bills. A local service business lives or dies by one number: <strong className="text-white">booked appointments</strong>.
                     </p>
                     <p className="text-gray-400 text-lg leading-relaxed mb-4">
-                        Glorifli's guarantee is simple: 3 new appointments booked in your first month after launch, or the $589.50/mo service fee is waived — we keep working until that milestone is hit. No vague "improved visibility." No retainer while you wait 12 months for results.
+                        Glorifli's guarantee is simple: 10 new appointments booked in your first 60 days after launch, or the $589.50/mo service fee is waived — we keep working until that milestone is hit. No vague "improved visibility." No retainer while you wait 12 months for results.
                     </p>
                     <p className="text-gray-400 text-lg leading-relaxed">
                         Competitors like SmartSites, Victorious, and typical local SEO agencies do not publicly offer a specific appointments-or-free guarantee. That's not a criticism — their model works for larger brands with longer timelines. But if you're a single-location service business that needs clients <em>this quarter</em>, the risk profile is very different.
@@ -300,7 +300,7 @@ export default function VsHubPage() {
                             </Link>
                         </div>
                         <div className="flex flex-wrap justify-center gap-6 mt-8 text-sm text-gray-500">
-                            {['3 Appointments in Month 1', 'No Long-Term Contracts', 'No Hidden Fees', 'AEO Built-In from Day 1'].map((t) => (
+                            {['10 Appointments in 60 Days', 'No Long-Term Contracts', 'No Hidden Fees', 'AEO Built-In from Day 1'].map((t) => (
                                 <span key={t} className="flex items-center gap-2">
                                     <CheckCircle2 className="w-4 h-4 text-primary" /> {t}
                                 </span>

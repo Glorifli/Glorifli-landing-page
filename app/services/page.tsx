@@ -32,10 +32,10 @@ const services = [
             "Conversion Copywriting Included",
             "Integrated Booking System",
             "Domain Transfer or Acquisition",
-            "Up to 3 Revisions (Month 1)",
+            "Up to 3 Revisions (First 60 Days)",
             "Email & Phone Lead Capture",
             "Mock Draft — Yours to Keep",
-            "1 Free Month of Blog Content",
+            "60 Days of Free Blog Content",
         ],
     },
     {
@@ -69,7 +69,7 @@ const services = [
         highlight: true,
         features: [
             "Everything in Website + SEO Plans",
-            "1 Free Month of Blog Content",
+            "60 Days of Free Blog Content",
             "Full AEO Infrastructure Setup",
             "Google Business Profile Optimization",
             "AI Search Optimization",
@@ -93,7 +93,7 @@ const valueStack = [
     { item: "High-Converting Website Build", value: "$3,500" },
     { item: "Full Site Copywriting", value: "$800" },
     { item: "Booking System Integration", value: "$400" },
-    { item: "SEO/AEO Blog Service (1 month)", value: "$2,500" },
+    { item: "SEO/AEO Blog Service (First 60 Days)", value: "$2,500" },
     { item: "Google Business Profile Optimization", value: "$500" },
     { item: "AI Search (AEO) Infrastructure", value: "$1,200" },
 ];
@@ -160,8 +160,8 @@ export default function ServicesPage() {
                             <div
                                 key={service.slug}
                                 className={`relative rounded-3xl p-8 border flex flex-col h-full transition-all duration-300 ${service.highlight
-                                        ? 'bg-white/5 border-primary/50 shadow-[0_0_40px_rgba(56,189,248,0.1)]'
-                                        : 'bg-black/30 border-white/10 hover:border-white/20'
+                                    ? 'bg-white/5 border-primary/50 shadow-[0_0_40px_rgba(56,189,248,0.1)]'
+                                    : 'bg-black/30 border-white/10 hover:border-white/20'
                                     }`}
                             >
                                 {service.badge && (
@@ -189,8 +189,8 @@ export default function ServicesPage() {
                                 <Link
                                     href={`/services/${service.slug}`}
                                     className={`w-full py-4 rounded-xl font-bold text-center transition-all duration-300 flex items-center justify-center gap-2 group ${service.highlight
-                                            ? 'bg-primary text-black hover:bg-white'
-                                            : 'bg-white/10 text-white hover:bg-primary hover:text-black'
+                                        ? 'bg-primary text-black hover:bg-white'
+                                        : 'bg-white/10 text-white hover:bg-primary hover:text-black'
                                         }`}
                                 >
                                     Learn More

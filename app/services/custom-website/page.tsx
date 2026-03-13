@@ -5,7 +5,7 @@ import { ArrowRight, Check, CheckCircle2 } from 'lucide-react';
 
 export const metadata: Metadata = {
     title: "Custom High-Converting Website | Glorifli — $1,256.50 Setup",
-    description: "Glorifli builds custom high-converting websites for local service businesses. $1,256.50 one-time setup. Mobile-optimized, conversion-architecture built, integrated booking, and 1 free month of blog content. 10 leads in 60 days guaranteed.",
+    description: "Glorifli builds custom high-converting websites for local service businesses. $1,256.50 one-time setup. Mobile-optimized, conversion-architecture built, integrated booking, and 60 days of free blog content. 10 leads in 60 days guaranteed.",
     openGraph: {
         title: "Custom High-Converting Website by Glorifli — $1,256.50",
         description: "Stop losing leads to a brochure site. Glorifli builds client acquisition websites that rank, convert, and book while you sleep. $1,256.50 setup, 10 leads in 60 days guaranteed.",
@@ -23,16 +23,16 @@ const features = [
     { title: "Integrated Booking System", desc: "A frictionless booking flow that captures leads around the clock, even after hours." },
     { title: "Domain Transfer or Acquisition", desc: "We handle the technical setup so your site goes live without you needing to be tech-savvy." },
     { title: "Email & Phone Lead Capture", desc: "Multiple capture points ensure you never miss a lead regardless of how they prefer to contact you." },
-    { title: "Up to 3 Revisions (Month 1)", desc: "Your site, your way. We refine it until it's exactly right within the first month." },
+    { title: "Up to 3 Revisions (First 60 Days)", desc: "Your site, your way. We refine it until it's exactly right within the first 60 days." },
     { title: "Mock Draft — Yours to Keep", desc: "Your free mock draft is created before you pay — no commitment, no risk." },
-    { title: "1 Free Month of Blog Content", desc: "8 AEO/SEO-optimized blog posts at launch to kickstart your organic traffic immediately." },
+    { title: "60 Days of Free Blog Content", desc: "16 AEO/SEO-optimized blog posts at launch to kickstart your organic traffic immediately." },
 ];
 
 const valueStack = [
     { item: "High-Converting Website Build", market: "$3,500", yours: "✓" },
     { item: "Full Site Copywriting", market: "$800", yours: "✓" },
     { item: "Booking System Integration", market: "$400", yours: "✓" },
-    { item: "1 Month SEO/AEO Blog Content", market: "$2,500", yours: "FREE (included)" },
+    { item: "60 Days SEO/AEO Blog Content", market: "$2,500", yours: "FREE (included)" },
     { item: "Domain Setup / Transfer", market: "$0–$200", yours: "✓" },
 ];
 
@@ -47,11 +47,11 @@ const roiExamples = [
 const faqs = [
     {
         q: "What is included in the custom website build?",
-        a: "The $1,256.50 setup fee includes custom design and branding, mobile and desktop optimization, conversion copywriting, integrated booking system, domain setup or transfer, email and phone lead capture, up to 3 revisions in month 1, a free mock draft, and 1 free month of AEO/SEO blog content (8 posts).",
+        a: "The $1,256.50 setup fee includes custom design and branding, mobile and desktop optimization, conversion copywriting, integrated booking system, domain setup or transfer, email and phone lead capture, up to 3 revisions in the first 60 days, a free mock draft, and 60 days of free AEO/SEO blog content (16 posts).",
     },
     {
         q: "How long does it take to build my website?",
-        a: "Your first draft is delivered within 2 weeks. The site goes live within 30 days. You have up to 3 revision rounds during that first month.",
+        a: "Your first draft is delivered within 2 weeks. The site goes live within 30 days. You have up to 3 revision rounds during that first 60 days.",
     },
     {
         q: "Do I need to write any copy or provide images?",
@@ -73,7 +73,7 @@ const serviceSchema = {
     "@id": "https://glorifli.com/services/custom-website#service",
     name: "Custom High-Converting Website",
     provider: { "@id": "https://glorifli.com/#organization" },
-    description: "A custom designed, mobile-optimized, conversion-architecture website for local service businesses. Includes booking system, copywriting, domain setup, and 1 month of free blog content. $1,256.50 one-time setup.",
+    description: "A custom designed, mobile-optimized, conversion-architecture website for local service businesses. Includes booking system, copywriting, domain setup, and 60 days of free blog content. $1,256.50 one-time setup.",
     offers: {
         "@type": "Offer",
         price: "1256.50",
@@ -134,7 +134,7 @@ export default function CustomWebsitePage() {
                         <span className="text-primary">Custom High-Converting Website</span> Service?
                     </h1>
                     <p className="text-xl text-gray-400 leading-relaxed mb-6">
-                        Glorifli's custom website service delivers a fully branded, mobile-optimized, conversion-architecture site that turns traffic into booked leads — not just visitors. For a one-time $1,256.50 setup fee, you get a $4,700+ value package, including 1 free month of AEO/SEO blog content.
+                        Glorifli's custom website service delivers a fully branded, mobile-optimized, conversion-architecture site that turns traffic into booked leads — not just visitors. For a one-time $1,256.50 setup fee, you get a $4,700+ value package, including 60 days of free AEO/SEO blog content.
                     </p>
                     <div className="flex flex-wrap gap-4">
                         <Link href="/#calendar" className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-black font-bold rounded-full hover:bg-white transition-all duration-300 shadow-lg shadow-primary/20">

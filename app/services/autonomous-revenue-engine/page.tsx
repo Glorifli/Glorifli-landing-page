@@ -20,7 +20,7 @@ const features = [
     { title: "Custom High-Converting Website", desc: "Fully branded, mobile-optimized site built for conversions — not just aesthetics." },
     { title: "Conversion Copywriting Done-For-You", desc: "Professional copy written to convert visitors into booked leads. Zero writing required from you." },
     { title: "Integrated Booking System", desc: "Frictionless booking that captures leads 24/7, including after business hours." },
-    { title: "1 Free Month of Blog Content", desc: "8 AEO/SEO blog posts at launch to kickstart organic traffic immediately." },
+    { title: "60 Days of Free Blog Content", desc: "16 AEO/SEO blog posts at launch to kickstart organic traffic immediately." },
     { title: "8 SEO/AEO Blog Posts Monthly", desc: "Ongoing content that targets high-intent queries and builds your authority every month." },
     { title: "Google Business Profile Optimization", desc: "Full GBP setup and sync so you dominate local map packs and Google AI Local answers." },
     { title: "Citation Network Building", desc: "50+ verified directory listings — a critical trust signal for AI recommendation engines." },
@@ -35,7 +35,7 @@ const valueStack = [
     { item: "Custom High-Converting Website", market: "$3,500" },
     { item: "Full Site Copywriting", market: "$800" },
     { item: "Booking System Integration", market: "$400" },
-    { item: "SEO/AEO Blog Service (1 month free)", market: "$2,500" },
+    { item: "SEO/AEO Blog Service (60 days free)", market: "$2,500" },
     { item: "Google Business Profile Optimization", market: "$500" },
     { item: "AI Search (AEO) Infrastructure Setup", market: "$1,200" },
 ];
@@ -49,7 +49,7 @@ const roiRows = [
 ];
 
 const faqs = [
-    { q: "What does the Autonomous Revenue Engine include?", a: "Everything: custom website with copywriting and booking system, 8 monthly SEO/AEO blog posts, Google Business Profile optimization, citation network building, AI search (AEO) infrastructure, backend SEO, 1 free month of blog content at launch, priority support, and the 10-leads-in-60-days guarantee." },
+    { q: "What does the Autonomous Revenue Engine include?", a: "Everything: custom website with copywriting and booking system, 8 monthly SEO/AEO blog posts, Google Business Profile optimization, citation network building, AI search (AEO) infrastructure, backend SEO, 60 days of free blog content at launch, priority support, and the 10-leads-in-60-days guarantee." },
     { q: "How does the pricing work for the complete package?", a: "You pay $1,256.50 upfront for the website build. The SEO/AEO service ($589.50/month) runs free until we deliver 10 booked leads within 60 days. After the guarantee is satisfied, you choose whether to continue at $589.50/month. No contracts, no hidden fees." },
     { q: "Why is this called the Autonomous Revenue Engine?", a: "Because once built, the system generates and converts leads automatically — without you needing to run ads, post on social media, or manually chase prospects. Your website ranks, gets cited by AI, books appointments, and captures after-hours leads while you sleep." },
     { q: "What happens if we don't hit 10 leads in 60 days?", a: "The SEO/AEO service keeps running at no charge until we deliver 10 booked leads. The guarantee never expires. There is no scenario in which you pay and don't get results." },
