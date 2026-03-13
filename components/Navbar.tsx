@@ -44,7 +44,6 @@ const Navbar: React.FC = () => {
         { name: 'Compare', href: '/vs', isRoute: true },
         { name: 'FAQ', href: '/faq', isRoute: true },
         { name: 'Blog', href: '/blog', isRoute: true },
-        { name: 'Consulting', href: '#calendar', isRoute: false },
     ];
 
     return (
@@ -104,7 +103,7 @@ const Navbar: React.FC = () => {
                         )
                     ))}
                     <a
-                        href={pathname === '/' ? '#form' : '/#form'}
+                        href={pathname === '/' ? '#calendar' : '/#calendar'}
                         className="px-5 py-2 rounded-full bg-white/5 border border-white/10 text-white text-sm font-medium hover:bg-white/10 hover:border-primary/50 hover:text-primary hover:shadow-[0_0_15px_rgba(56,189,248,0.3)] transition-all duration-300"
                     >
                         Get Started
@@ -153,7 +152,7 @@ const Navbar: React.FC = () => {
                                 )
                             ))}
                             <a
-                                href={pathname === '/' ? '#form' : '/#form'}
+                                href={pathname === '/' ? '#calendar' : '/#calendar'}
                                 className="w-full text-center px-5 py-3 rounded-xl bg-primary/10 text-primary border border-primary/20 font-bold"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
