@@ -112,30 +112,31 @@ export default function FAQIndexClient() {
                                     animate={{ opacity: 1, y: 0 }}
                                     exit={{ opacity: 0, scale: 0.95 }}
                                     transition={{ duration: 0.25, delay: i * 0.03 }}
-                                    className="bg-black/30 border border-white/8 rounded-2xl p-6 flex flex-col hover:border-white/15 transition-all duration-300 group"
                                 >
-                                    {/* Category badge */}
-                                    <span className={`self-start px-3 py-1 text-xs font-semibold rounded-full border mb-4 ${categoryBadge[item.category]}`}>
-                                        {item.category}
-                                    </span>
-
-                                    {/* Question */}
-                                    <h2 className="text-base font-bold text-white mb-3 leading-snug flex-grow group-hover:text-primary transition-colors duration-200">
-                                        {item.question}
-                                    </h2>
-
-                                    {/* Excerpt */}
-                                    <p className="text-sm text-gray-500 leading-relaxed mb-5 line-clamp-3">
-                                        {item.excerpt}
-                                    </p>
-
-                                    {/* CTA */}
                                     <Link
                                         href={`/faq/${item.slug}`}
-                                        className="inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:gap-3 transition-all duration-200"
+                                        className="bg-black/30 border border-white/8 rounded-2xl p-6 flex flex-col hover:border-white/15 hover:-translate-y-2 hover:shadow-xl hover:shadow-primary/5 transition-all duration-300 group h-full"
                                     >
-                                        Read Full Answer
-                                        <ArrowRight className="w-4 h-4" />
+                                        {/* Category badge */}
+                                        <span className={`self-start px-3 py-1 text-xs font-semibold rounded-full border mb-4 ${categoryBadge[item.category]}`}>
+                                            {item.category}
+                                        </span>
+
+                                        {/* Question */}
+                                        <h2 className="text-base font-bold text-white mb-3 leading-snug flex-grow group-hover:text-primary transition-colors duration-200">
+                                            {item.question}
+                                        </h2>
+
+                                        {/* Excerpt */}
+                                        <p className="text-sm text-gray-500 leading-relaxed mb-5 line-clamp-3">
+                                            {item.excerpt}
+                                        </p>
+
+                                        {/* CTA */}
+                                        <div className="inline-flex items-center gap-2 text-sm font-bold text-primary group-hover:gap-3 transition-all duration-200">
+                                            Read Full Answer
+                                            <ArrowRight className="w-4 h-4" />
+                                        </div>
                                     </Link>
                                 </motion.article>
                             ))}
