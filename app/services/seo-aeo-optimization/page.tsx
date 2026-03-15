@@ -106,7 +106,7 @@ export default function SEOAEOPage() {
                         What Is Glorifli's <span className="text-primary">SEO/AEO Optimization</span> Service?
                     </h1>
                     <p className="text-xl text-gray-400 leading-relaxed mb-4 border-l-4 border-primary pl-5">
-                        Glorifli's SEO/AEO Optimization makes your business the answer that Google and AI assistants (ChatGPT, Perplexity, Google AI) recommend when local buyers search for your services. It runs completely free until we deliver 10 booked leads — then $589.50/month. Market value: <strong className="text-white">$3,500+/month.</strong>
+                        Glorifli's SEO/AEO Optimization makes your business the answer that Google and AI assistants (ChatGPT, Perplexity, Google AI) recommend when local buyers search for your services. It runs completely free until we deliver <Link href="/vs" className="text-white hover:text-primary transition-colors underline underline-offset-2">10 booked leads</Link> — then $589.50/month. Market value: <strong className="text-white">$3,500+/month.</strong>
                     </p>
                     <div className="flex flex-wrap gap-4 mt-8">
                         <Link href="/#calendar" className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-black font-bold rounded-full hover:bg-white transition-all duration-300">

@@ -134,7 +134,7 @@ export default function CustomWebsitePage() {
                         <span className="text-primary">Custom High-Converting Website</span> Service?
                     </h1>
                     <p className="text-xl text-gray-400 leading-relaxed mb-6">
-                        Glorifli's custom website service delivers a fully branded, mobile-optimized, conversion-architecture site that turns traffic into booked leads — not just visitors. For a one-time $1,256.50 setup fee, you get a $4,700+ value package, including 60 days of free AEO/SEO blog content.
+                        Glorifli's custom website service delivers a fully branded, mobile-optimized, conversion-architecture site that turns traffic into booked leads — not just visitors. For a one-time $1,256.50 setup fee, you get a $4,700+ value package, including 60 days of free <Link href="/services/seo-aeo-optimization" className="text-white hover:text-primary transition-colors underline underline-offset-2">AEO/SEO blog content</Link>.
                     </p>
                     <div className="flex flex-wrap gap-4">
                         <Link href="/#calendar" className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-black font-bold rounded-full hover:bg-white transition-all duration-300 shadow-lg shadow-primary/20">

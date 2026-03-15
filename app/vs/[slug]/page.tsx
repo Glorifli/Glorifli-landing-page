@@ -8,9 +8,9 @@ import { ArrowRight, CheckCircle2, X, Minus } from 'lucide-react';
 const competitors: Record<string, {
     name: string;
     slug: string;
-    tagline: string;
-    description: string;
-    directAnswer: string;
+    tagline: React.ReactNode;
+    description: React.ReactNode;
+    directAnswer: React.ReactNode;
 
     glorifliSiteCost: string;
     competitorSiteCost: string;
@@ -27,8 +27,8 @@ const competitors: Record<string, {
     glorifliRisk: string;
     competitorRisk: string;
 
-    bestForCompetitor: string;
-    bestForGlorifli: string;
+    bestForCompetitor: React.ReactNode;
+    bestForGlorifli: React.ReactNode;
 
     faq: { q: string; a: string }[];
 }> = {
@@ -36,8 +36,8 @@ const competitors: Record<string, {
         name: 'SmartSites',
         slug: 'smartsites',
         tagline: 'Full-Service SEO, PPC & Web Design Agency',
-        description: 'SmartSites is a top-rated full-service digital agency offering SEO, PPC, and web design with a strong reputation across industries.',
-        directAnswer: 'Glorifli and SmartSites both build websites and run SEO campaigns, but they serve different market segments. SmartSites is a strong full-service agency best suited for mid-market or growing businesses with larger budgets. Glorifli is purpose-built for single-location local service businesses — offering a lower all-in price ($1,256.50 setup + $589.50/mo), an explicit AEO system, and a 10-appointments-in-60-days guarantee that SmartSites does not publicly offer.',
+        description: <>SmartSites is a top-rated full-service digital agency offering SEO, PPC, and web design with a strong reputation across industries. <a href="https://www.smartsites.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition-colors underline underline-offset-2">Visit their website</a>.</>,
+        directAnswer: <>Glorifli and SmartSites both build websites and run <Link href="/services/seo-aeo-optimization" className="text-primary hover:underline underline-offset-2">SEO campaigns</Link>, but they serve different market segments. SmartSites is a strong full-service agency best suited for mid-market or growing businesses with larger budgets. Glorifli is purpose-built for single-location local service businesses — offering a lower all-in price (<Link href="/services/custom-website" className="text-primary hover:underline underline-offset-2">$1,256.50 setup</Link> + $589.50/mo), an explicit AEO system, and a 10-appointments-in-60-days guarantee that SmartSites does not publicly offer.</>,
 
         glorifliSiteCost: '$1,256.50 one-time (conversion-optimized, booking-ready)',
         competitorSiteCost: '$2,500–$10,000+ for a comparable custom build',
@@ -55,7 +55,7 @@ const competitors: Record<string, {
         competitorRisk: 'Medium–High — sizeable monthly commitment with no outcome-specific guarantee',
 
         bestForCompetitor: 'SmartSites is a great fit for businesses with $2,000+/mo marketing budgets, multi-location operations, or those needing PPC alongside SEO — especially if you already have a website and want a well-known agency name behind your campaigns.',
-        bestForGlorifli: 'Glorifli is the better choice for a single-location service business (HVAC, roofing, plumbing, etc.) that needs a high-converting website, AEO infrastructure, and a clear guarantee — without committing to enterprise-level retainers.',
+        bestForGlorifli: <>Glorifli is the better choice for a single-location service business (HVAC, roofing, plumbing, etc.) that needs a high-converting website, <Link href="/services/seo-aeo-optimization" className="text-primary hover:underline underline-offset-2">AEO infrastructure</Link>, and a clear guarantee — without committing to enterprise-level retainers.</>,
 
         faq: [
             { q: 'Is SmartSites good for small local businesses?', a: 'SmartSites has a strong reputation and produces results, but their pricing (often $1,800–$2,600+/mo for SEO alone) is typically higher than what a single-location local service business needs in their first year. Glorifli offers comparable SEO/AEO capability at $589.50/mo with an outcome guarantee.' },
@@ -68,8 +68,8 @@ const competitors: Record<string, {
         name: 'Victorious SEO',
         slug: 'victorious',
         tagline: 'Enterprise-Level SEO & Content Agency',
-        description: 'Victorious is a premium SEO agency designed for larger budgets, with advanced link-building, content strategy, and long-term organic growth campaigns.',
-        directAnswer: 'Victorious is an enterprise-grade SEO agency with entry plans starting around $4,999/month — a budget that is typically out of reach for single-location local service businesses. Glorifli targets the same outcome (more clients from organic search) at a fraction of the cost ($589.50/mo), with an explicit AEO layer built for AI search and a 10-appointment guarantee that Victorious does not offer.',
+        description: <>Victorious is a premium SEO agency designed for larger budgets, with advanced link-building, content strategy, and long-term organic growth campaigns. <a href="https://victoriousseo.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition-colors underline underline-offset-2">Visit their website</a>.</>,
+        directAnswer: <>Victorious is an enterprise-grade SEO agency with entry plans starting around $4,999/month — a budget that is typically out of reach for single-location local service businesses. Glorifli targets the same outcome (more clients from organic search) at a fraction of the cost ($589.50/mo), with an explicit <Link href="/faq/what-is-aeo" className="text-primary hover:underline underline-offset-2">AEO layer</Link> built for AI search and a <Link href="/vs" className="text-primary hover:underline underline-offset-2">10-appointment guarantee</Link> that Victorious does not offer.</>,
 
         glorifliSiteCost: '$1,256.50 one-time (conversion-optimized, booking-ready)',
         competitorSiteCost: 'Not a primary service — Victorious typically works with existing sites',
@@ -87,7 +87,7 @@ const competitors: Record<string, {
         competitorRisk: 'High — powerful for funded companies, but overkill and expensive for single-location local businesses',
 
         bestForCompetitor: 'Victorious is ideal for funded companies, e-commerce brands, or established businesses with $5,000+/mo SEO budgets who need aggressive link-building and a dedicated account team. If organic rankings are a top-line business priority with budget to match, Victorious delivers.',
-        bestForGlorifli: 'Glorifli is built for local service businesses that can\'t justify $5,000+ per month on SEO alone. If you need a website, AEO infrastructure, GBP optimization, and content — all tied to a booked-appointment guarantee — Glorifli provides that system at $589.50/mo.',
+        bestForGlorifli: <>Glorifli is built for local service businesses that can't justify $5,000+ per month on SEO alone. If you need a website, AEO infrastructure, GBP optimization, and content — all tied to a <Link href="/vs" className="text-primary hover:underline underline-offset-2">booked-appointment guarantee</Link> — Glorifli provides that system at $589.50/mo.</>,
 
         faq: [
             { q: 'Is Victorious SEO worth it for a small local business?', a: 'Victorious is powerful but typically priced for larger organizations. Their entry-level plans start near $5,000/month — which represents a significant financial commitment for a single-location service business. Glorifli provides comparable organic visibility at $589.50/mo, purpose-built for local appointment booking.' },
@@ -100,8 +100,8 @@ const competitors: Record<string, {
         name: 'NPAccel',
         slug: 'npackel',
         tagline: 'Performance-Focused Local SEO Agency',
-        description: 'NPAccel is a local SEO agency focused on leads and revenue rather than pure rankings, serving small and medium-sized businesses.',
-        directAnswer: 'NPAccel and Glorifli are both focused on generating leads for local service businesses rather than chasing vanity rankings. The key differences are price, guarantee, and AEO. NPAccel\'s local SEO packages commonly start in the low-to-mid four figures per month with a conventional retainer model. Glorifli offers the same local-focused outcome at $589.50/mo — with an explicit AEO system and a 10-appointments-or-free guarantee that NPAccel does not currently publicly offer.',
+        description: <>NPAccel is a local SEO agency focused on leads and revenue rather than pure rankings, serving small and medium-sized businesses. <a href="https://npaccel.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition-colors underline underline-offset-2">Visit their website</a>.</>,
+        directAnswer: <>NPAccel and Glorifli are both focused on generating leads for local service businesses rather than chasing vanity rankings. The key differences are price, guarantee, and <Link href="/faq/what-is-aeo" className="text-primary hover:underline underline-offset-2">AEO</Link>. NPAccel's local SEO packages commonly start in the low-to-mid four figures per month with a conventional retainer model. Glorifli offers the same local-focused outcome at $589.50/mo — with an explicit <Link href="/services/seo-aeo-optimization" className="text-primary hover:underline underline-offset-2">AEO system</Link> and a 10-appointments-or-free guarantee that NPAccel does not currently publicly offer.</>,
 
         glorifliSiteCost: '$1,256.50 one-time (conversion-optimized, booking-ready)',
         competitorSiteCost: 'Separate engagement when site work is needed',
@@ -119,7 +119,7 @@ const competitors: Record<string, {
         competitorRisk: 'Medium–High — strong local focus, but conventional retainer model means you carry the performance risk',
 
         bestForCompetitor: 'NPAccel is a solid option for local businesses with a meaningful marketing budget who want an agency focused on lead generation rather than just rankings. If your business generates enough revenue to absorb a mid-to-high four-figure monthly retainer comfortably, NPAccel is worth evaluating.',
-        bestForGlorifli: 'Glorifli is the better fit when you want local-intent content, GBP management, AEO infrastructure, and a site — all tied to a specific guarantee — without the conventional retainer risk. Ideal for business owners who want skin-in-the-game performance alignment.',
+        bestForGlorifli: <>Glorifli is the better fit when you want local-intent content, GBP management, <Link href="/services/seo-aeo-optimization" className="text-primary hover:underline underline-offset-2">AEO infrastructure</Link>, and a site — all tied to a specific guarantee — without the conventional retainer risk. Ideal for business owners who want skin-in-the-game performance alignment.</>,
 
         faq: [
             { q: 'How does Glorifli differ from NPAccel for local service businesses?', a: 'Both focus on local lead generation, but Glorifli includes a website, AEO infrastructure for AI search, and a 10-appointment guarantee — all at $589.50/mo. NPAccel packages typically start higher and operate on a conventional retainer without a public outcome guarantee.' },
@@ -132,8 +132,8 @@ const competitors: Record<string, {
         name: 'Big-Name Web Design Agencies',
         slug: 'web-design-agencies',
         tagline: 'Custom Site Builds for Polished Marketing Presences',
-        description: 'Large web design agencies build polished, custom marketing sites across industries — often with beautiful design but without built-in lead generation, AEO, or appointment guarantees.',
-        directAnswer: 'Big-name web design agencies typically charge $2,500–$10,000+ for a custom site, then upsell ongoing SEO retainers at $1,000–$3,000+/mo. They rarely guarantee specific booked appointments — success is measured as a "beautiful site" plus traffic growth. Glorifli builds a high-converting, AEO-optimized site for a $1,256.50 one-time fee with the SEO/AEO system running at $589.50/mo and a 10-appointment guarantee — not just a portfolio piece.',
+        description: <>Large web design agencies build polished, custom marketing sites across industries — often with beautiful design but without built-in <Link href="/services/autonomous-revenue-engine" className="text-white hover:text-primary transition-colors underline underline-offset-2">lead generation engines</Link>, AEO, or appointment guarantees.</>,
+        directAnswer: <>Big-name web design agencies typically charge $2,500–$10,000+ for a custom site, then upsell ongoing SEO retainers at $1,000–$3,000+/mo. They rarely guarantee specific booked appointments — success is measured as a "beautiful site" plus traffic growth. Glorifli builds a high-converting, <Link href="/services/seo-aeo-optimization" className="text-primary hover:underline underline-offset-2">AEO-optimized</Link> site for a $1,256.50 one-time fee with the SEO/AEO system running at $589.50/mo and a 10-appointment guarantee — not just a portfolio piece.</>,
 
         glorifliSiteCost: '$1,256.50 one-time — conversion wireframes, booking, AEO-ready',
         competitorSiteCost: '$2,500–$10,000+ for a comparable custom build — often before SEO is added',
@@ -151,7 +151,7 @@ const competitors: Record<string, {
         competitorRisk: 'Medium — you get a professional site, but no built-in client acquisition guarantee',
 
         bestForCompetitor: 'Big-name web design agencies are a strong fit for established businesses, funded startups, or brands that need a highly polished visual identity as a primary priority — especially for investor pitches, rebrands, or markets where brand perception is a dominant buying factor.',
-        bestForGlorifli: 'Glorifli is purpose-built for local service businesses where the website\'s main job is to generate booked appointments. If you need a great-looking, conversion-optimized site with AEO infrastructure and a performance guarantee — not just a design award — Glorifli is the better fit.',
+        bestForGlorifli: <>Glorifli is purpose-built for local service businesses where the <Link href="/services/custom-website" className="text-primary hover:underline underline-offset-2">website's main job</Link> is to generate booked appointments. If you need a great-looking, conversion-optimized site with AEO infrastructure and a performance guarantee — not just a design award — Glorifli is the better fit.</>,
 
         faq: [
             { q: 'Why is a web design agency not enough for a local service business?', a: 'A visually stunning website is a starting point, not a system. Without AEO infrastructure, mobile-optimized booking funnels, and ongoing SEO content, even a $10,000 custom site can sit idle. Glorifli builds the traffic and conversion engine alongside the site.' },
@@ -164,8 +164,8 @@ const competitors: Record<string, {
         name: 'Typical Local SEO Agencies',
         slug: 'local-seo-agencies',
         tagline: 'Rankings, GBP Management & Basic Content',
-        description: 'Typical local SEO agencies focus on keyword rankings, Google Business Profile citations, and basic blog content — usually on a monthly retainer without outcome-specific guarantees.',
-        directAnswer: 'Typical local SEO agencies charge $500–$2,000+/mo on retainer and focus on keyword rankings and GBP management. They rarely offer a guarantee tied to booked appointments. Glorifli operates in a similar price range ($589.50/mo) but adds an explicit AEO layer (built for ChatGPT and Google AI), 8 monthly blog posts, and a 10-appointments-in-60-days guarantee that most local SEO agencies don\'t offer.',
+        description: <>Typical local SEO agencies focus on keyword rankings, <Link href="/blog/google-business-profile-for-contractors-complete-guide" className="text-white hover:text-primary transition-colors underline underline-offset-2">Google Business Profile citations</Link>, and basic blog content — usually on a monthly retainer without outcome-specific guarantees.</>,
+        directAnswer: <>Typical local SEO agencies charge $500–$2,000+/mo on retainer and focus on keyword rankings and GBP management. They rarely offer a guarantee tied to booked appointments. Glorifli operates in a similar price range ($589.50/mo) but adds an explicit <Link href="/services/seo-aeo-optimization" className="text-primary hover:underline underline-offset-2">AEO layer</Link> (built for ChatGPT and Google AI), 8 monthly blog posts, and a 10-appointments-in-60-days guarantee that most local SEO agencies don't offer.</>,
 
         glorifliSiteCost: '$1,256.50 one-time — conversion-optimized, AEO-ready, booking-integrated',
         competitorSiteCost: 'Sometimes a templated site or basic redesign included in packages (low thousands)',
@@ -183,7 +183,7 @@ const competitors: Record<string, {
         competitorRisk: 'Medium — usually locked into a monthly retainer with no precise outcome milestone',
 
         bestForCompetitor: 'A typical local SEO agency is a reasonable fit for businesses that already have a solid site, have some existing organic presence, and want a no-frills retainer to maintain and improve their rankings over time without switching to a new provider.',
-        bestForGlorifli: 'Glorifli is the better choice when you want a website built from scratch, AEO optimization for AI-driven search, a content engine (8 monthly blogs), and a clear guarantee — all bundled at a comparable or lower monthly cost than most "typical" local SEO packages.',
+        bestForGlorifli: <>Glorifli is the better choice when you want a website built from scratch, <Link href="/faq/what-is-aeo" className="text-primary hover:underline underline-offset-2">AEO optimization for AI-driven search</Link>, a content engine (8 monthly blogs), and a clear guarantee — all bundled at a comparable or lower monthly cost than most "typical" local SEO packages.</>,
 
         faq: [
             { q: 'What is the difference between Glorifli and a local SEO agency?', a: 'Most local SEO agencies focus on traditional keyword rankings and GBP management on a retainer with no outcome guarantee. Glorifli adds an AEO layer, 8 monthly blogs, a high-converting website build, and a 10-appointment guarantee — at a similar or lower monthly price.' },

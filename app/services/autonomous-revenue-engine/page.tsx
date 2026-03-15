@@ -113,7 +113,7 @@ export default function ARGEPage() {
                         <span className="text-primary">Autonomous Revenue Generating Engine?</span>
                     </h1>
                     <p className="text-xl text-gray-400 leading-relaxed mb-4 border-l-4 border-primary pl-5">
-                        The Autonomous Revenue Generating Engine is Glorifli's complete client acquisition system — a custom high-converting website combined with ongoing SEO/AEO optimization, Google Business Profile management, citation building, and AI search targeting. It generates and converts leads automatically, 24/7. Total market value: <strong className="text-white">$8,900+.</strong> Setup: <strong className="text-white">$1,256.50.</strong>
+                        The Autonomous Revenue Generating Engine is Glorifli's complete client acquisition system — a custom <Link href="/services/custom-website" className="text-white hover:text-primary transition-colors underline underline-offset-2">high-converting website</Link> combined with ongoing <Link href="/services/seo-aeo-optimization" className="text-white hover:text-primary transition-colors underline underline-offset-2">SEO/AEO optimization</Link>, Google Business Profile management, citation building, and AI search targeting. It generates and converts leads automatically, 24/7. Total market value: <strong className="text-white">$8,900+.</strong> Setup: <strong className="text-white">$1,256.50.</strong>
                     </p>
                     <div className="flex flex-wrap gap-4 mt-8">
                         <Link href="/#calendar" className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-black font-bold rounded-full hover:bg-white transition-all duration-300 shadow-lg shadow-primary/20">
