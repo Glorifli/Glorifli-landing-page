@@ -293,7 +293,7 @@ export default function VsHubPage() {
                                 <ArrowRight className="w-4 h-4" />
                             </Link>
                             <Link
-                                href={`/Why-Go-With-Glorifli-Over-Competitors/${c.slug}`}
+                                href="/about"
                                 className="inline-flex items-center justify-center w-full py-3.5 bg-white/5 border border-white/10 rounded-xl font-bold text-white hover:bg-primary hover:text-black hover:border-primary transition-all duration-300"
                             >
                                 Learn About Glorifli
