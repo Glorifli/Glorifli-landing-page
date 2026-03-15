@@ -9,10 +9,11 @@ export const metadata: Metadata = {
     openGraph: {
         title: 'Glorifli vs Other Agencies — Honest Comparison',
         description: 'Compare Glorifli against top SEO and web design agencies on price, outcome guarantees, and AEO capability.',
-        url: 'https://glorifli.com/vs',
+        url: 'https://glorifli.com/Why-Go-With-Glorifli-Over-Competitors',
         type: 'website',
+        images: ['https://glorifli.com/images/blog/featured-hero.png'],
     },
-    alternates: { canonical: 'https://glorifli.com/vs' },
+    alternates: { canonical: 'https://glorifli.com/Why-Go-With-Glorifli-Over-Competitors' },
 };
 
 const competitors = [
@@ -115,25 +116,25 @@ const checklist = [
 ];
 
 export default function VsHubPage() {
-    const schema = {
+    const hubSchema = {
         '@context': 'https://schema.org',
         '@type': 'WebPage',
-        '@id': 'https://glorifli.com/vs#webpage',
-        url: 'https://glorifli.com/vs',
-        name: 'Why Glorifli vs Other SEO & Web Design Agencies',
-        description: 'An honest comparison of Glorifli against SmartSites, Victorious, NPAccel, and typical web design and local SEO agencies.',
+        '@id': 'https://glorifli.com/Why-Go-With-Glorifli-Over-Competitors#webpage',
+        url: 'https://glorifli.com/Why-Go-With-Glorifli-Over-Competitors',
+        name: 'Glorifli vs Competitors',
+        description: 'Compare Glorifli\'s custom websites, SEO/AEO optimization, and 10-appointment guarantee against SmartSites, NPAccel, Victorious SEO, and more.',
         breadcrumb: {
             '@type': 'BreadcrumbList',
             itemListElement: [
                 { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://glorifli.com' },
-                { '@type': 'ListItem', position: 2, name: 'Compare', item: 'https://glorifli.com/vs' },
+                { '@type': 'ListItem', position: 2, name: 'Compare', item: 'https://glorifli.com/Why-Go-With-Glorifli-Over-Competitors' },
             ],
         },
     };
 
     return (
         <div className="bg-black min-h-screen text-white">
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(hubSchema) }} />
 
             {/* ── Hero ── */}
             <section className="relative pt-32 pb-20 px-6 overflow-hidden">
@@ -170,7 +171,7 @@ export default function VsHubPage() {
                         {competitors.map((c) => (
                             <Link
                                 key={c.slug}
-                                href={`/vs/${c.slug}`}
+                                href={`/Why-Go-With-Glorifli-Over-Competitors/${c.slug}`}
                                 className="group bg-white/5 border border-white/10 rounded-2xl p-6 hover:border-primary/50 hover:bg-white/8 transition-all duration-200"
                             >
                                 <p className="text-xs font-bold uppercase tracking-widest text-primary mb-2">Glorifli vs</p>
@@ -292,8 +293,8 @@ export default function VsHubPage() {
                                 <ArrowRight className="w-4 h-4" />
                             </Link>
                             <Link
-                                href="/about"
-                                className="inline-flex items-center gap-2 px-8 py-4 bg-white/5 border border-white/10 text-white font-bold rounded-full hover:bg-white/10 hover:border-primary/40 transition-all duration-300"
+                                href={`/Why-Go-With-Glorifli-Over-Competitors/${c.slug}`}
+                                className="inline-flex items-center justify-center w-full py-3.5 bg-white/5 border border-white/10 rounded-xl font-bold text-white hover:bg-primary hover:text-black hover:border-primary transition-all duration-300"
                             >
                                 Learn About Glorifli
                                 <ArrowRight className="w-4 h-4" />

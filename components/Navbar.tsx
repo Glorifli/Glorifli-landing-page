@@ -41,7 +41,7 @@ const Navbar: React.FC = () => {
     const navLinks = [
         { name: 'Services', href: '/services', isRoute: true },
         { name: 'About', href: '/about', isRoute: true },
-        { name: 'Compare', href: '/vs', isRoute: true },
+        { name: 'Compare', href: '/Why-Go-With-Glorifli-Over-Competitors', isRoute: true },
         { name: 'FAQ', href: '/faq', isRoute: true },
         { name: 'Blog', href: '/blog', isRoute: true },
     ];

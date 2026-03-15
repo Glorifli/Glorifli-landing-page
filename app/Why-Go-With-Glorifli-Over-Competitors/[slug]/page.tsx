@@ -69,7 +69,7 @@ const competitors: Record<string, {
         slug: 'victorious',
         tagline: 'Enterprise-Level SEO & Content Agency',
         description: <>Victorious is a premium SEO agency designed for larger budgets, with advanced link-building, content strategy, and long-term organic growth campaigns. <a href="https://victoriousseo.com/" target="_blank" rel="noopener noreferrer" className="text-white hover:text-primary transition-colors underline underline-offset-2">Visit their website</a>.</>,
-        directAnswer: <>Victorious is an enterprise-grade SEO agency with entry plans starting around $4,999/month — a budget that is typically out of reach for single-location local service businesses. Glorifli targets the same outcome (more clients from organic search) at a fraction of the cost ($589.50/mo), with an explicit <Link href="/faq/what-is-aeo" className="text-primary hover:underline underline-offset-2">AEO layer</Link> built for AI search and a <Link href="/vs" className="text-primary hover:underline underline-offset-2">10-appointment guarantee</Link> that Victorious does not offer.</>,
+        directAnswer: <>Victorious is an enterprise-grade SEO agency with entry plans starting around $4,999/month — a budget that is typically out of reach for single-location local service businesses. Glorifli targets the same outcome (more clients from organic search) at a fraction of the cost ($589.50/mo), with an explicit <Link href="/faq/what-is-aeo" className="text-primary hover:underline underline-offset-2">AEO layer</Link> built for AI search and a <Link href="/Why-Go-With-Glorifli-Over-Competitors" className="text-primary hover:underline underline-offset-2">10-appointment guarantee</Link> that Victorious does not offer.</>,
 
         glorifliSiteCost: '$1,256.50 one-time (conversion-optimized, booking-ready)',
         competitorSiteCost: 'Not a primary service — Victorious typically works with existing sites',
@@ -87,7 +87,7 @@ const competitors: Record<string, {
         competitorRisk: 'High — powerful for funded companies, but overkill and expensive for single-location local businesses',
 
         bestForCompetitor: 'Victorious is ideal for funded companies, e-commerce brands, or established businesses with $5,000+/mo SEO budgets who need aggressive link-building and a dedicated account team. If organic rankings are a top-line business priority with budget to match, Victorious delivers.',
-        bestForGlorifli: <>Glorifli is built for local service businesses that can't justify $5,000+ per month on SEO alone. If you need a website, AEO infrastructure, GBP optimization, and content — all tied to a <Link href="/vs" className="text-primary hover:underline underline-offset-2">booked-appointment guarantee</Link> — Glorifli provides that system at $589.50/mo.</>,
+        bestForGlorifli: <>Glorifli is built for local service businesses that can't justify $5,000+ per month on SEO alone. If you need a website, AEO infrastructure, GBP optimization, and content — all tied to a <Link href="/Why-Go-With-Glorifli-Over-Competitors" className="text-primary hover:underline underline-offset-2">booked-appointment guarantee</Link> — Glorifli provides that system at $589.50/mo.</>,
 
         faq: [
             { q: 'Is Victorious SEO worth it for a small local business?', a: 'Victorious is powerful but typically priced for larger organizations. Their entry-level plans start near $5,000/month — which represents a significant financial commitment for a single-location service business. Glorifli provides comparable organic visibility at $589.50/mo, purpose-built for local appointment booking.' },
@@ -207,10 +207,11 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
         openGraph: {
             title: `Glorifli vs ${c.name}`,
             description: `An honest comparison of Glorifli and ${c.name} for local service businesses.`,
-            url: `https://glorifli.com/vs/${slug}`,
-            type: 'website',
+            url: `https://glorifli.com/Why-Go-With-Glorifli-Over-Competitors/${slug}`,
+            type: 'article',
+            images: ['https://glorifli.com/images/blog/featured-hero.png'],
         },
-        alternates: { canonical: `https://glorifli.com/vs/${slug}` },
+        alternates: { canonical: `https://glorifli.com/Why-Go-With-Glorifli-Over-Competitors/${slug}` },
     };
 }
 
@@ -219,19 +220,19 @@ export default async function CompetitorPage({ params }: { params: Promise<{ slu
     const c = competitors[slug];
     if (!c) notFound();
 
-    const schema = {
+    const comparisonSchema = {
         '@context': 'https://schema.org',
         '@type': 'WebPage',
-        '@id': `https://glorifli.com/vs/${slug}#webpage`,
-        url: `https://glorifli.com/vs/${slug}`,
-        name: `Glorifli vs ${c.name}`,
-        description: `An honest comparison of Glorifli and ${c.name} for local service businesses — covering pricing, AEO, guarantees, and who each option best serves.`,
+        '@id': `https://glorifli.com/Why-Go-With-Glorifli-Over-Competitors/${slug}#webpage`,
+        url: `https://glorifli.com/Why-Go-With-Glorifli-Over-Competitors/${slug}`,
+        name: `Glorifli vs ${c.name} — Which Is Better?`,
+        description: c.description,
         breadcrumb: {
             '@type': 'BreadcrumbList',
             itemListElement: [
                 { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://glorifli.com' },
-                { '@type': 'ListItem', position: 2, name: 'Compare', item: 'https://glorifli.com/vs' },
-                { '@type': 'ListItem', position: 3, name: `Glorifli vs ${c.name}`, item: `https://glorifli.com/vs/${slug}` },
+                { '@type': 'ListItem', position: 2, name: 'Compare', item: 'https://glorifli.com/Why-Go-With-Glorifli-Over-Competitors' },
+                { '@type': 'ListItem', position: 3, name: `Glorifli vs ${c.name}`, item: `https://glorifli.com/Why-Go-With-Glorifli-Over-Competitors/${slug}` },
             ],
         },
     };
@@ -256,7 +257,7 @@ export default async function CompetitorPage({ params }: { params: Promise<{ slu
 
     return (
         <div className="bg-black min-h-screen text-white">
-            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(comparisonSchema) }} />
             <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
 
             {/* ── Hero ── */}
@@ -273,10 +274,13 @@ export default async function CompetitorPage({ params }: { params: Promise<{ slu
                     </h1>
                     <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">{c.description}</p>
 
-                    <div className="flex flex-wrap gap-3 justify-center mt-8">
-                        <Link href="/vs" className="text-sm text-gray-500 hover:text-primary transition-colors flex items-center gap-1.5">
-                            ← Back to all comparisons
+                    <div className="flex items-center justify-between mb-8">
+                        <Link href="/Why-Go-With-Glorifli-Over-Competitors" className="text-sm text-gray-500 hover:text-primary transition-colors flex items-center gap-1.5">
+                            <ArrowRight className="w-4 h-4 rotate-180" /> Back to all comparisons
                         </Link>
+                        <span className="text-xs font-semibold text-primary uppercase tracking-widest px-3 py-1 bg-primary/10 rounded-full border border-primary/20">
+                            Objective Comparison
+                        </span>
                     </div>
                 </div>
             </section>
@@ -401,10 +405,13 @@ export default async function CompetitorPage({ params }: { params: Promise<{ slu
                                 </span>
                             ))}
                         </div>
-                        <div className="mt-8 pt-8 border-t border-white/10">
-                            <Link href="/vs" className="text-sm text-gray-500 hover:text-primary transition-colors">
-                                ← Compare all agencies
-                            </Link>
+                        <div className="text-center mt-12 pt-8 border-t border-white/10">
+                            <p className="text-gray-400 mb-4">Want to see how we stack up against other agencies and platforms?</p>
+                            <div className="flex justify-center gap-6">
+                                <Link href="/Why-Go-With-Glorifli-Over-Competitors" className="text-sm text-gray-500 hover:text-primary transition-colors">
+                                    View all comparisons <ArrowRight className="w-3 h-3 inline ml-1" />
+                                </Link>
+                            </div>
                         </div>
                     </div>
                 </section>

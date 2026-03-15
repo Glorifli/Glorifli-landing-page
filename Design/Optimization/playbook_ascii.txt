@@ -1,0 +1,237 @@
+=== PAGE 1 ===
+Glorifli.com  |  AI-Ready Website Playbook  |  Confidential
+Page 1
+AI-Ready Website Playbook
+How to prepare your website for the no-click AI future ??? step-by-step.
+By 2027, AI agents will browse on behalf of humans. When a prospect wants to hire a home service company, an AI will
+read every relevant page across every competitor and recommend one. This playbook tells you exactly what pages to build
+and how to structure them so that AI always recommends YOU.
+??? How AI Agents Choose Who to Recommend
+1. AI gathers everything it knows about the prospect's problem.
+2. AI crawls your website (and competitors') looking for answers to that problem.
+3. AI ranks companies based on how completely and clearly their site answers every relevant question.
+4. AI recommends the winner to the human.
+Your job: Make sure your website is the most complete, most credible, and easiest for AI to parse.
+MASTER PAGE CHECKLIST
+Every page below needs to exist on your site. Check each box as you complete it. Priority order: top = most impactful now.
+About Page (main)
+Brag page ??? why you're the best choice
+  ??? Company History sub-page
+When founded, milestones, credibility signals
+  ??? Why Work With Us sub-page
+Benefits, guarantees, differentiators
+  ??? Team Member pages
+One page per key team member
+FAQ Page
+Answer EVERY question that comes up on sales calls
+Pricing Page
+Even a range or starting price helps AI
+How To Work With Us Page
+Outline your process step-by-step
+Service Pages (one per service)
+Detailed ??? what it is, what's included, results
+
+=== PAGE 2 ===
+Glorifli.com  |  AI-Ready Website Playbook  |  Confidential
+Page 2
+  ??? Sub-service pages
+Linked from the main service page
+Use Case / Demographic Pages
+Format: '[Service] for [Customer Type]'
+Case Studies / Project Examples
+Specific stories: problem ??? solution ??? result
+Reviews / Testimonials Page
+All-star reviews + summarized themes
+Competitor Comparison Pages
+One per competitor: why you win for your ICP
+Blog: Bottom-of-Funnel Posts
+'How to choose best [service] company in [city]'
+Blog: Problem-Solving Posts
+'How to fix [problem your service solves]'
+STEP-BY-STEP ACTION PLAN
+01
+Build Your About Page Hub
+WHAT: A flagship 'brag page' about your company that links to all sub-pages.
+HOW: Write 400-800 words covering: who you are, how long you've been operating, how many jobs completed,
+licenses/certifications, service area, and core values. Add links to sub-pages at the bottom.
+??? PRO TIP: Mention specific numbers: '500+ roofs replaced', '12 years in business'. AI treats specificity as credibility.
+Write the main About page copy
+Link to: History, Why Us, Team pages
+Add trust badges / certifications
+Include a photo of your team or work
+
+=== PAGE 3 ===
+Glorifli.com  |  AI-Ready Website Playbook  |  Confidential
+Page 3
+02
+Create Your Power FAQ Page
+WHAT: A single page that answers every question a prospect could ask ??? essentially training AI to sell for you.
+HOW: List every question you get on sales calls. Every objection. Every 'how does it work?' Write a clear, factual
+answer for each. Aim for 20-50 questions minimum. Put the most common questions first, then keep going.
+??? PRO TIP: Don't gatekeep. The more openly you answer pricing, timeline, and 'what if something goes wrong'
+questions, the more AI trusts you.
+List 20+ real sales call questions
+Write clear answers for each
+Organize by category (pricing, process, quality, etc.)
+Add schema markup (FAQPage type)
+03
+Add a Pricing Page
+WHAT: Give AI (and humans) enough pricing context to pre-qualify ??? even without exact numbers.
+HOW: If you can't show exact pricing, use ranges ('Most projects run $X-$Y'), explain what affects price, and list what's
+included. If you do show pricing, add a short explanation for each tier.
+Create /pricing page
+Include at least a starting price or range
+Explain what factors affect cost
+Add a clear CTA (call, quote form, etc.)
+
+=== PAGE 4 ===
+Glorifli.com  |  AI-Ready Website Playbook  |  Confidential
+Page 4
+04
+Build 'How To Work With Us' Page
+WHAT: A simple process page showing the customer journey from first contact to completed job.
+HOW: Use a numbered list or visual timeline: Step 1 ??? Call/Quote, Step 2 ??? Schedule, Step 3 ??? We do the work,
+Step 4 ??? Final walkthrough, Step 5 ??? You're done. Keep it simple. Link to this from your About page.
+Create /how-it-works or /our-process page
+Outline 4-6 clear steps
+Describe what happens at each step
+Link from About page
+05
+Create Dedicated Service Pages
+WHAT: One page per service you offer, each with full detail ??? not just a paragraph.
+HOW: For each service, write: what it is, what's included, what the process looks like, who it's for, common problems it
+solves, and results customers see. 400-600 words minimum per page. Add links to related sub-services.
+??? PRO TIP: Treat each service page like its own mini-website. AI may land directly on it.
+List all services you offer
+Create one page per service
+Write 400+ words per page
+Link to sub-service pages where relevant
+Add photos/before-after images
+
+=== PAGE 5 ===
+Glorifli.com  |  AI-Ready Website Playbook  |  Confidential
+Page 5
+06
+Build Use Case / Demographic Pages
+WHAT: Pages targeting specific customer types or situations ??? makes AI match you to more prospects.
+HOW: Format: '[Your Service] for [Customer Type or Situation]'. Examples: 'Roofing for New Homeowners', 'HVAC for
+Rental Property Managers', 'Plumbing for Restaurant Owners'. One page or blog post per use case.
+Brainstorm 5-10 customer types or situations you serve
+Create a page or blog post for each
+Use 'X for Y' in the title and H1
+07
+Publish Case Studies
+WHAT: Real project stories that prove your results ??? AI loves these to match to similar prospects.
+HOW: Format for each: Customer situation ??? Problem ??? What you did ??? Result. Be specific: 'We replaced a
+22-year-old roof in Marietta, GA in one day. Homeowner passed insurance inspection 3 days later.' Aim for 5+ case
+studies.
+??? PRO TIP: Case studies are the #1 thing AI uses to match your business to a prospect's specific problem.
+Identify 5-10 memorable past jobs
+Write up each as: Situation ??? Solution ??? Result
+Include location, scope, and outcome with numbers
+Add before/after photos if possible
+
+=== PAGE 6 ===
+Glorifli.com  |  AI-Ready Website Playbook  |  Confidential
+Page 6
+08
+Build a Reviews / Social Proof Page
+WHAT: A dedicated page showcasing your best reviews and summarizing common praise themes.
+HOW: Pull your best Google/Yelp reviews. Group them by theme: 'Customers consistently mention speed,
+professionalism, and cleanup.' Add a section for each theme with supporting quotes.
+Collect top 10-20 reviews
+Identify 3-5 common themes
+Create /reviews or /testimonials page
+Embed or quote reviews with customer name + city
+Add Review schema markup
+09
+Write Competitor Comparison Pages
+WHAT: Pages that explain why a prospect should choose you over specific competitors.
+HOW: For your top 3-5 competitors, create a page titled '[Your Company] vs [Competitor]'. Explain your differentiators
+honestly. Who is each option best for? Be factual, not negative.
+??? PRO TIP: AI reads these pages when a prospect asks 'who's better ??? Company A or Company B?'
+List your top 3-5 local competitors
+Create one comparison page per competitor
+Cover: pricing, process, quality, speed, guarantees
+Be honest about who each option suits best
+
+=== PAGE 7 ===
+Glorifli.com  |  AI-Ready Website Playbook  |  Confidential
+Page 7
+10
+Publish Bottom-of-Funnel Blog Posts
+WHAT: SEO content that captures people (and AI) researching their decision right now.
+HOW: Write posts targeting: 'How to choose the best [service] company in [city]', 'What to look for in a [service]
+contractor', 'Questions to ask before hiring a [service] company'. These rank in search AND get cited by AI.
+Write 'How to choose best [service] in [city]' post
+Write 'Questions to ask before hiring a [service]' post
+Write 'How to fix [problem your service solves]' post
+Aim for 800-1200 words per post
+Link to your service pages from each post
+SITE STRUCTURE REFERENCE (for AI / Antigravity)
+When building or updating pages, follow this hierarchy. Each parent page links to its children. This makes it easy for AI crawlers to discover
+all content from any entry point.
+URL Pattern
+Page Name
+Links To
+/about
+About (main hub)
+/about/history, /about/why-us, /team/[name], /how-it-works
+/faq
+FAQ
+Service pages, pricing, contact
+/pricing
+Pricing
+Contact / quote form
+/how-it-works
+How To Work With Us
+/about, /contact
+/services/[servi
+ce]
+Service Page
+/services/[service]/[sub-service], /case-studies, /reviews
+/for/[use-case]
+Use Case Page
+Relevant service page, /contact
+/case-studies/[s
+lug]
+Case Study
+Related service page
+/reviews
+Reviews / Social Proof
+/contact, /services
+/vs/[competitor]
+Competitor Comparison
+/contact, /about
+/blog/[slug]
+Blog Post
+Relevant service page, /contact
+
+=== PAGE 8 ===
+Glorifli.com  |  AI-Ready Website Playbook  |  Confidential
+Page 8
+PAGE CONTENT BRIEF (copy-paste for each page)
+Page URL
+/services/roofing (example)
+Page Title (H1)
+Roofing Services in [City] | [Company Name]
+Meta Description
+150-160 chars. Include service + city + main benefit.
+Word Count Target
+400-800 words for service pages. 800-1500 for blog posts.
+Must Include
+What is this service | Who needs it | What's included | Process | Results/outcomes | CTA
+Internal Links
+List 2-4 pages this page should link to
+Schema Markup
+Service, FAQPage, Review, LocalBusiness ??? whichever applies
+Images
+At least 1 relevant photo with descriptive alt text
+CTA
+Phone number, quote form, or 'Get a Free Estimate' button
+??? NOTE FOR AI / ANTIGRAVITY
+When reading this document to build or audit a website, treat each checked item in the Master Checklist as a required
+deliverable. For each page, follow the Content Brief template above. Use the Site Structure Reference to set correct
+URL patterns and internal links. Prioritize pages in the order listed (Step 01 first, Step 10 last). If a page already exists,
+audit it against the Step requirements and fill any gaps.
+
