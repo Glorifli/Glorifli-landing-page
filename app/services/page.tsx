@@ -2,6 +2,7 @@ import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight, Check, Star } from 'lucide-react';
+import LeadMagnetForm from '@/components/LeadMagnetForm';
 
 export const metadata: Metadata = {
     title: "Digital Marketing Services | Glorifli — AEO, SEO & Web Design",
@@ -275,7 +276,7 @@ export default function ServicesPage() {
                 </section>
 
                 {/* ── CTA ── */}
-                <section className="bg-gradient-to-br from-primary/20 via-black to-black border border-primary/30 rounded-3xl p-10 md:p-14 text-center relative overflow-hidden">
+                <section className="bg-gradient-to-br from-primary/20 via-black to-black border border-primary/30 rounded-3xl p-10 md:p-14 text-center relative overflow-hidden mb-20">
                     <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[100px] rounded-full pointer-events-none" />
                     <div className="relative z-10">
                         <Star className="w-8 h-8 text-primary mx-auto mb-4" />
@@ -291,6 +292,36 @@ export default function ServicesPage() {
                         >
                             Book Your Free Strategy Call
                             <ArrowRight className="w-4 h-4" />
+                        </Link>
+                    </div>
+                </section>
+
+                {/* ── Free Value Section ── */}
+                <section className="mb-20 text-center" id="free-value">
+                    <h2 className="text-3xl font-bold text-white font-heading mb-4">Take Advantage of Our Free Resources!</h2>
+                    <p className="text-gray-400 max-w-2xl mx-auto mb-12">Get a custom SEO Action Plan, Free Backlink Content, or join our Lifetime Commission Affiliate Program.</p>
+
+                    <div className="mb-16">
+                        <LeadMagnetForm className="" delay={0.1} />
+                    </div>
+
+                    <div className="grid md:grid-cols-3 gap-6 text-left max-w-5xl mx-auto">
+                        <Link href="/free-value/free-services" className="group bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
+                            <h3 className="text-xl font-bold text-white mb-2 font-heading group-hover:text-primary transition-colors">Free Services</h3>
+                            <p className="text-sm text-gray-400 mb-4">Get your free custom SEO Action Plan + 2 Free SEO Optimized Blog Posts designed specifically for your local business.</p>
+                            <span className="text-primary text-sm font-bold flex items-center gap-2">Get Started <ArrowRight className="w-4 h-4" /></span>
+                        </Link>
+
+                        <Link href="/free-value/free-blog-content" className="group bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
+                            <h3 className="text-xl font-bold text-white mb-2 font-heading group-hover:text-primary transition-colors">Free SEO/AEO Blog Content</h3>
+                            <p className="text-sm text-gray-400 mb-4">We'll write incredibly high-quality, high-ranking SEO content for your site for free, in exchange for a simple backlink to Glorifli.</p>
+                            <span className="text-primary text-sm font-bold flex items-center gap-2">Request Content <ArrowRight className="w-4 h-4" /></span>
+                        </Link>
+
+                        <Link href="/free-value/make-money" className="group bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
+                            <h3 className="text-xl font-bold text-white mb-2 font-heading group-hover:text-primary transition-colors">Make Money With Us Here!</h3>
+                            <p className="text-sm text-gray-400 mb-4">Join our remote sales or affiliate program. We offer a true 20% lifetime commission on any job you bring in that closes.</p>
+                            <span className="text-primary text-sm font-bold flex items-center gap-2">Apply Now <ArrowRight className="w-4 h-4" /></span>
                         </Link>
                     </div>
                 </section>

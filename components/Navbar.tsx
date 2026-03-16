@@ -44,6 +44,7 @@ const Navbar: React.FC = () => {
         { name: 'Compare', href: '/Why-Go-With-Glorifli-Over-Competitors', isRoute: true },
         { name: 'FAQ', href: '/faq', isRoute: true },
         { name: 'Blog', href: '/blog', isRoute: true },
+        { name: 'Free Value', href: '/free-value', isRoute: true },
     ];
 
     return (
