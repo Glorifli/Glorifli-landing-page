@@ -32,10 +32,6 @@ const blogFaqs: FAQItem[] = [
             </>
         ),
         schemaAnswer: "Within the blog post we give you, we will specify a natural, contextual sentence where the backlink should go. It will simply be a small hyperlink pointing back to the Glorifli Free Value Hub or our Home page."
-    },
-    {
-        question: "Can I choose the specific topic for the blog post?",
-        answer: "Yes! When you email us to request the exchange, simply let us know what specific service or pain point you want the blog to address, and we will structure the content strictly around what your ideal customers are searching for."
     }
 ];
 

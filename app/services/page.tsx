@@ -228,7 +228,7 @@ export default function ServicesPage() {
                                 <tr className="bg-primary/10 border-t-2 border-primary/30">
                                     <td className="px-6 py-4 font-bold text-white">Total Market Value</td>
                                     <td className="px-6 py-4 text-right text-lg">
-                                        <span className="relative inline-block font-bold text-gray-400">
+                                        <span className="relative inline-block font-bold text-primary">
                                             $8,900+
                                             <span className="absolute left-[-5%] top-1/2 w-[110%] h-[2px] bg-red-500 -rotate-12 origin-center pointer-events-none rounded-full" />
                                         </span>
@@ -236,7 +236,7 @@ export default function ServicesPage() {
                                 </tr>
                                 <tr className="border-t border-white/5">
                                     <td className="px-6 py-4 text-gray-300">Your Investment (Setup Fee)</td>
-                                    <td className="px-6 py-4 text-right font-bold text-white text-lg">$1,256.50</td>
+                                    <td className="px-6 py-4 text-right font-bold text-accent text-lg">$1,256.50</td>
                                 </tr>
                             </tbody>
                         </table>

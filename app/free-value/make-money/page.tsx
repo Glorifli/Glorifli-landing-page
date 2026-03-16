@@ -54,8 +54,11 @@ export default function MakeMoneyPage() {
                 <h1 className="text-4xl md:text-5xl font-bold font-heading mb-6">
                     Make Money With Us: <span className="text-primary">20% Lifetime Commission</span>
                 </h1>
-                <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
+                <p className="text-lg text-gray-400 mb-6 max-w-2xl mx-auto">
                     Whether you're an affiliate marketer, a B2B agency looking for a white-label partner, or a remote sales contractor—bring us a client that closes, and you receive 20% of the revenue. Forever.
+                </p>
+                <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
+                    This is a great opportunity to gain sales experience, make money in your free time, or completely replace your income. There is absolutely NO fulfillment required on your end. We even provide you with a proven cold call and cold email template to begin generating leads immediately. Once you pass a brief interview and sign our contract, boom—you can start today.
                 </p>
 
                 <div className="grid md:grid-cols-3 gap-6 text-left mb-16">
@@ -79,13 +82,13 @@ export default function MakeMoneyPage() {
                 <div className="bg-gradient-to-br from-primary/20 to-black border border-primary/30 rounded-3xl p-10 md:p-14 text-center">
                     <h2 className="text-3xl font-bold mb-4 font-heading">Ready to Become a Partner?</h2>
                     <p className="text-gray-400 mb-8 max-w-xl mx-auto">
-                        Book a quick intro call using the calendar link below. We'll set you up with your affiliate tracking tools and promotional materials.
+                        All partners must first pass a brief interview. Book your calendar slot below, and if it's a fit, we'll set you up with your contract, templates, and affiliate tracking tools.
                     </p>
                     <Link
                         href="/#calendar"
                         className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-black font-bold rounded-full hover:bg-white transition-all duration-300 shadow-[0_0_20px_-4px_rgba(56,189,248,0.3)]"
                     >
-                        Schedule Partner Onboarding <ArrowRight className="w-4 h-4" />
+                        Schedule Your Interview <ArrowRight className="w-4 h-4" />
                     </Link>
                 </div>
 
