@@ -11,9 +11,24 @@ const INTERNAL_API = '/api/leads';
 interface LeadMagnetFormProps {
     className?: string;
     delay?: number;
+    title?: React.ReactNode;
+    subtitle?: React.ReactNode;
+    successMessageTitle?: React.ReactNode;
+    successMessageSubtitle?: React.ReactNode;
+    submitButtonText?: React.ReactNode;
+    leadType?: string;
 }
 
-export default function LeadMagnetForm({ className = "", delay = 0 }: LeadMagnetFormProps) {
+export default function LeadMagnetForm({
+    className = "",
+    delay = 0,
+    title = <>Get Your <span className="text-primary">Personalized SEO</span> Action Plan!</>,
+    subtitle = "The Sooner Your Website Ranks the Sooner You Will be Booking Appointments Without having to Lift a Finger!",
+    successMessageTitle = "You're on the list!",
+    successMessageSubtitle = "We'll send your personalised SEO Action Plan within 24–48 hrs. Check your inbox.",
+    submitButtonText = <>Get Access <ArrowRight className="w-3.5 h-3.5" /></>,
+    leadType = 'hero-seo-audit'
+}: LeadMagnetFormProps) {
     const [step, setStep] = useState<Step>('website');
     const [website, setWebsite] = useState('');
     const [name, setName] = useState('');
@@ -45,7 +60,7 @@ export default function LeadMagnetForm({ className = "", delay = 0 }: LeadMagnet
                     website,
                     name,
                     email,
-                    leadType: 'hero-seo-audit',
+                    leadType,
                 }),
             });
 
@@ -56,7 +71,7 @@ export default function LeadMagnetForm({ className = "", delay = 0 }: LeadMagnet
                     website,
                     name,
                     email,
-                    leadType: 'hero-seo-audit',
+                    leadType,
                 }),
             });
             setStep('done');
@@ -76,10 +91,10 @@ export default function LeadMagnetForm({ className = "", delay = 0 }: LeadMagnet
         >
             <div className="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-sm">
                 <p className="text-sm font-bold text-white mb-1 text-center">
-                    Get Your <span className="text-primary">Personalized SEO</span> Action Plan!
+                    {title}
                 </p>
                 <p className="text-xs text-gray-400 text-center mb-4">
-                    The Sooner Your Website Ranks the Sooner You Will be Booking Appointments Without having to Lift a Finger!
+                    {subtitle}
                 </p>
 
                 {step !== 'done' && (
@@ -185,7 +200,7 @@ export default function LeadMagnetForm({ className = "", delay = 0 }: LeadMagnet
                                 disabled={submitting}
                                 className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-white text-black text-sm font-bold rounded-xl hover:bg-sky-400 hover:text-white transition-all duration-200 shadow-[0_0_20px_-4px_rgba(56,189,248,0.6)] disabled:opacity-60"
                             >
-                                {submitting ? 'Sending…' : <>Get Access <ArrowRight className="w-3.5 h-3.5" /></>}
+                                {submitting ? 'Sending…' : submitButtonText}
                             </button>
                             <p className="text-center text-lg font-extrabold tracking-widest text-primary">FREE</p>
                         </motion.form>
@@ -202,8 +217,8 @@ export default function LeadMagnetForm({ className = "", delay = 0 }: LeadMagnet
                             <div className="w-10 h-10 bg-green-500/20 rounded-full flex items-center justify-center mx-auto mb-3">
                                 <CheckCircle2 className="w-5 h-5 text-green-400" />
                             </div>
-                            <p className="text-sm font-bold text-white mb-1">You're on the list!</p>
-                            <p className="text-xs text-gray-500">We'll send your personalised SEO Action Plan within 24–48 hrs. Check your inbox.</p>
+                            <p className="text-sm font-bold text-white mb-1">{successMessageTitle}</p>
+                            <p className="text-xs text-gray-500">{successMessageSubtitle}</p>
                         </motion.div>
                     )}
                 </AnimatePresence>

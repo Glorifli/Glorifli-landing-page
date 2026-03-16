@@ -1,6 +1,7 @@
 import React from 'react';
 import { Metadata } from 'next';
 import { ArrowRight } from 'lucide-react';
+import LeadMagnetForm from '@/components/LeadMagnetForm';
 
 export const metadata: Metadata = {
     title: 'Free SEO/AEO Blog Content | Glorifli',
@@ -49,11 +50,15 @@ export default function FreeBlogContentPage() {
                     </ol>
                 </div>
 
-                <div className="text-center">
-                    <h3 className="text-xl font-bold mb-4">Interested in a free blog post?</h3>
-                    <a href="mailto:contact@glorifli.com?subject=Free%20Blog%20Content%20Exchange" className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-black font-bold rounded-full hover:bg-white transition-all duration-300 shadow-[0_0_20px_-4px_rgba(56,189,248,0.3)]">
-                        Email Us to Start <ArrowRight className="w-4 h-4" />
-                    </a>
+                <div className="text-center max-w-lg mx-auto">
+                    <LeadMagnetForm
+                        title={<>Get Your <span className="text-primary">Free Blog Content</span>!</>}
+                        subtitle="We give it for free in exchange for a back link to our website and a review for our service to boost our visibility so we help you and you in turn help us"
+                        leadType="free-blog-content"
+                        successMessageTitle="We received your request!"
+                        successMessageSubtitle="We will be in touch shortly with your custom and optimized Free Blog Content."
+                        submitButtonText={<>Request Free Blog <ArrowRight className="w-3.5 h-3.5" /></>}
+                    />
                 </div>
             </div>
         </div>
