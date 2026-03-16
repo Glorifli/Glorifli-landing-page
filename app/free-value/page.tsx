@@ -3,11 +3,51 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import LeadMagnetForm from '@/components/LeadMagnetForm';
+import GenericFAQ, { FAQItem } from '@/components/GenericFAQ';
 
 export const metadata: Metadata = {
     title: 'Free Value & Resources | Glorifli',
     description: 'Get free SEO Action Plans, Free Blog Content, and join our lifetime commission Affiliate Program. We build goodwill by giving value upfront.',
 };
+
+const hubFaqs: FAQItem[] = [
+    {
+        question: "What is the Free Value Hub?",
+        answer: (
+            <>
+                The Free Value Hub is our way of building absolute trust before you pay us a dime. We offer resources like a free SEO Action Plan, complimentary blog content, and a partner program to help your <Link href="/services" className="text-primary hover:text-primary-light transition-colors">local service business</Link> grow immediately.
+            </>
+        ),
+        schemaAnswer: "The Free Value Hub is our way of building absolute trust before you pay us a dime. We offer resources like a free SEO Action Plan, complimentary blog content, and a partner program to help your local service business grow immediately."
+    },
+    {
+        question: "How do I claim my free SEO Action plan?",
+        answer: (
+            <>
+                Simply fill out the short form at the <Link href="/free-value/free-services" className="text-primary hover:text-primary-light transition-colors">top of this page</Link> with your website, name, and email. Our team will manually audit your site and send you a personalized roadmap within 24-48 hours.
+            </>
+        ),
+        schemaAnswer: "Simply fill out the short form at the top of this page with your website, name, and email. Our team will manually audit your site and send you a personalized roadmap within 24-48 hours."
+    },
+    {
+        question: "Where can I find more information about your paid services?",
+        answer: (
+            <>
+                If you are ready to let us implement these strategies for you on autopilot, you can visit our <Link href="/services" className="text-primary hover:text-primary-light transition-colors">Services page</Link> to see our full, risk-free guarantee. You can also visit our <Link href="/faq" className="text-primary hover:text-primary-light transition-colors">main FAQ page</Link> for details about timelines and pricing.
+            </>
+        ),
+        schemaAnswer: "If you are ready to let us implement these strategies for you on autopilot, you can visit our Services page to see our full, risk-free guarantee. You can also visit our main FAQ page for details about timelines and pricing."
+    },
+    {
+        question: "How does the backlink exchange program work?",
+        answer: (
+            <>
+                We will write a fully optimized blog post specifically for your target audience for free. In return, you just publish it on your site and include a backlink to Glorifli. Learn more on our <Link href="/free-value/free-blog-content" className="text-primary hover:text-primary-light transition-colors">Free Blog Content page</Link>.
+            </>
+        ),
+        schemaAnswer: "We will write a fully optimized blog post specifically for your target audience for free. In return, you just publish it on your site and include a backlink to Glorifli. Learn more on our Free Blog Content page."
+    }
+];
 
 export default function FreeValueHubPage() {
     return (
@@ -48,6 +88,10 @@ export default function FreeValueHubPage() {
                         <span className="inline-flex items-center gap-2 text-primary font-bold">Apply Now <ArrowRight className="w-4 h-4" /></span>
                     </Link>
                 </div>
+            </div>
+
+            <div className="max-w-4xl mx-auto mt-24 border-t border-white/10 pt-16">
+                <GenericFAQ faqs={hubFaqs} className="" title="Free Value Hub FAQ" />
             </div>
         </div>
     );

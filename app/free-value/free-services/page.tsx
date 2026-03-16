@@ -1,12 +1,48 @@
 import React from 'react';
 import { Metadata } from 'next';
+import Link from 'next/link';
 import LeadMagnetForm from '@/components/LeadMagnetForm';
 import { CheckCircle2 } from 'lucide-react';
+import GenericFAQ, { FAQItem } from '@/components/GenericFAQ';
 
 export const metadata: Metadata = {
     title: 'Free SEO Services & Action Plan | Glorifli',
     description: 'Get a custom SEO Action Plan and 2 Free SEO Optimized Blog Posts designed specifically for your local business.',
 };
+
+const servicesFaqs: FAQItem[] = [
+    {
+        question: "What exactly is included in the SEO Action plan?",
+        answer: (
+            <>
+                You will receive a comprehensive technical audit of your website, a targeted list of local search terms you are currently missing, and <Link href="/blog" className="text-primary hover:text-primary-light transition-colors">two free custom blog posts</Link> fully optimized and ready to publish.
+            </>
+        ),
+        schemaAnswer: "You will receive a comprehensive technical audit of your website, a targeted list of local search terms you are currently missing, and two free custom blog posts fully optimized and ready to publish."
+    },
+    {
+        question: "How long does it take to receive my plan?",
+        answer: "Because we do not use automated generic reports, a real human will audit your site and craft the blog content. This usually takes between 24 and 48 business hours."
+    },
+    {
+        question: "Is there really no catch?",
+        answer: (
+            <>
+                No catch. We provide this upfront value because we know that when business owners see our quality of work, a percentage of them will hire us for our full <Link href="/services" className="text-primary hover:text-primary-light transition-colors">Autonomous Revenue Engine</Link> service. But there is absolutely zero obligation to buy anything.
+            </>
+        ),
+        schemaAnswer: "No catch. We provide this upfront value because we know that when business owners see our quality of work, a percentage of them will hire us for our full Autonomous Revenue Engine service. But there is absolutely zero obligation to buy anything."
+    },
+    {
+        question: "What if I want Glorifli to implement the plan for me?",
+        answer: (
+            <>
+                If you love the plan and want us to take over your monthly SEO completely on autopilot, you can review our <Link href="/services/seo-aeo-optimization" className="text-primary hover:text-primary-light transition-colors">SEO/AEO Optimization Service</Link> or book a call with us to get started!
+            </>
+        ),
+        schemaAnswer: "If you love the plan and want us to take over your monthly SEO completely on autopilot, you can review our SEO/AEO Optimization Service or book a call with us to get started!"
+    }
+];
 
 export default function FreeServicesPage() {
     return (
@@ -44,6 +80,10 @@ export default function FreeServicesPage() {
                     <div className="bg-white/5 border border-white/10 rounded-3xl p-8">
                         <LeadMagnetForm delay={0.2} />
                     </div>
+                </div>
+
+                <div className="mt-24 border-t border-white/10 pt-16">
+                    <GenericFAQ faqs={servicesFaqs} className="" title="Free Services FAQ" />
                 </div>
             </div>
         </div>

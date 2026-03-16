@@ -1,12 +1,43 @@
 import React from 'react';
 import { Metadata } from 'next';
+import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 import LeadMagnetForm from '@/components/LeadMagnetForm';
+import GenericFAQ, { FAQItem } from '@/components/GenericFAQ';
 
 export const metadata: Metadata = {
     title: 'Free SEO/AEO Blog Content | Glorifli',
     description: 'Get free, high-quality SEO/AEO optimized blog content for your local service business in exchange for a simple backlink.',
 };
+
+const blogFaqs: FAQItem[] = [
+    {
+        question: "How long does it take for you to write the blog post?",
+        answer: "Once you request the content and tell us your target niche and keyword, our team will research and write the fully optimized post within 48-72 hours."
+    },
+    {
+        question: "Where can I see examples of your previous blog work?",
+        answer: (
+            <>
+                You can read through our own internal content on the <Link href="/blog" className="text-primary hover:text-primary-light transition-colors">Glorifli Blog</Link> to see the exact structure, tone, and AEO optimization formatting we use to rank local service businesses.
+            </>
+        ),
+        schemaAnswer: "You can read through our own internal content on the Glorifli Blog to see the exact structure, tone, and AEO optimization formatting we use to rank local service businesses."
+    },
+    {
+        question: "How exactly do I place the backlink to Glorifli?",
+        answer: (
+            <>
+                Within the blog post we give you, we will specify a natural, contextual sentence where the backlink should go. It will simply be a small hyperlink pointing back to the <Link href="/free-value" className="text-primary hover:text-primary-light transition-colors">Glorifli Free Value Hub</Link> or our Home page.
+            </>
+        ),
+        schemaAnswer: "Within the blog post we give you, we will specify a natural, contextual sentence where the backlink should go. It will simply be a small hyperlink pointing back to the Glorifli Free Value Hub or our Home page."
+    },
+    {
+        question: "Can I choose the specific topic for the blog post?",
+        answer: "Yes! When you email us to request the exchange, simply let us know what specific service or pain point you want the blog to address, and we will structure the content strictly around what your ideal customers are searching for."
+    }
+];
 
 export default function FreeBlogContentPage() {
     return (
@@ -59,6 +90,10 @@ export default function FreeBlogContentPage() {
                         successMessageSubtitle="We will be in touch shortly with your custom and optimized Free Blog Content."
                         submitButtonText={<>Request Free Blog <ArrowRight className="w-3.5 h-3.5" /></>}
                     />
+                </div>
+
+                <div className="mt-24 border-t border-white/10 pt-16">
+                    <GenericFAQ faqs={blogFaqs} className="" title="Backlink Exchange FAQ" />
                 </div>
             </div>
         </div>

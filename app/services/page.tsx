@@ -227,7 +227,12 @@ export default function ServicesPage() {
                                 ))}
                                 <tr className="bg-primary/10 border-t-2 border-primary/30">
                                     <td className="px-6 py-4 font-bold text-white">Total Market Value</td>
-                                    <td className="px-6 py-4 text-right font-bold text-primary text-lg">$8,900+</td>
+                                    <td className="px-6 py-4 text-right text-lg">
+                                        <span className="relative inline-block font-bold text-gray-400">
+                                            $8,900+
+                                            <span className="absolute left-[-5%] top-1/2 w-[110%] h-[2px] bg-red-500 -rotate-12 origin-center pointer-events-none rounded-full" />
+                                        </span>
+                                    </td>
                                 </tr>
                                 <tr className="border-t border-white/5">
                                     <td className="px-6 py-4 text-gray-300">Your Investment (Setup Fee)</td>
@@ -247,7 +252,11 @@ export default function ServicesPage() {
                         SEO/AEO leads close at 25–45% because prospects searched for exactly what you offer, in your city, at the moment they need it. Here's what closing just 3 of your 10 guaranteed leads looks like:
                     </p>
                     <p className="text-center text-xs text-gray-600 mb-10">
-                        Based on 30% close rate (conservative floor). Sources: Modernize, Angi, HomeGuide, Quicken Loans (2025–2026).
+                        Based on 30% close rate (conservative floor). Sources:{' '}
+                        <a href="https://modernize.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-white/20 hover:decoration-primary/50 transition-colors">Modernize</a>,{' '}
+                        <a href="https://www.angi.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-white/20 hover:decoration-primary/50 transition-colors">Angi</a>,{' '}
+                        <a href="https://homeguide.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-white/20 hover:decoration-primary/50 transition-colors">HomeGuide</a>,{' '}
+                        <a href="https://www.quickenloans.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-white/20 hover:decoration-primary/50 transition-colors">Quicken Loans</a> (2025–2026).
                     </p>
                     <div className="overflow-x-auto rounded-3xl border border-white/10">
                         <table className="w-full text-sm">

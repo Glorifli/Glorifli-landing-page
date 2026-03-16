@@ -10,7 +10,7 @@ import LeadMagnetForm from './LeadMagnetForm';
 const Hero: React.FC = () => {
 
     return (
-        <section className="relative min-h-[100vh] flex flex-col items-center justify-center overflow-hidden pt-0 pb-16 px-6">
+        <section className="relative min-h-[100vh] flex flex-col items-center justify-center overflow-hidden pt-32 pb-16 px-6">
             <StarBackground />
 
             {/* Background Gradients */}

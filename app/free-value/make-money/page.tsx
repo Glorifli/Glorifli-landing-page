@@ -2,11 +2,46 @@ import React from 'react';
 import { Metadata } from 'next';
 import { ArrowRight, DollarSign, Users, Award } from 'lucide-react';
 import Link from 'next/link';
+import GenericFAQ, { FAQItem } from '@/components/GenericFAQ';
 
 export const metadata: Metadata = {
     title: 'Affiliate & Remote Sales Partner Program | Glorifli',
     description: 'Join Glorifli\'s Partner Program. We offer a true 20% lifetime commission on any job you bring in that closes.',
 };
+
+const affiliateFaqs: FAQItem[] = [
+    {
+        question: "When and how do I get paid my commission?",
+        answer: "You get paid your 20% commission on the exact same day that the client makes their payment to us. So if they pay the $1,256.50 setup fee on Tuesday, your $251 is sent via ACH or wire on that very same Tuesday."
+    },
+    {
+        question: "How long does the 20% commission last?",
+        answer: (
+            <>
+                It lasts for the lifetime of the client. As long as they keep paying for our <Link href="/services" className="text-primary hover:text-primary-light transition-colors">monthly SEO/AEO retainer</Link>, you keep getting your 20% cut every single month—completely passively.
+            </>
+        ),
+        schemaAnswer: "It lasts for the lifetime of the client. As long as they keep paying for our monthly SEO/AEO retainer, you keep getting your 20% cut every single month—completely passively."
+    },
+    {
+        question: "Do I need to fulfill any of the actual services?",
+        answer: (
+            <>
+                Absolutely not. Your only job is to bring the client to the door. Once they sign and pay, my team handles 100% of the website building, SEO optimization, and client communication. Our <Link href="/faq" className="text-primary hover:text-primary-light transition-colors">60-day performance guarantee</Link> handles all objections for you.
+            </>
+        ),
+        schemaAnswer: "Absolutely not. Your only job is to bring the client to the door. Once they sign and pay, my team handles 100% of the website building, SEO optimization, and client communication. Our 60-day performance guarantee handles all objections for you."
+    },
+    {
+        question: "How do I start sending you potential clients today?",
+        answer: (
+            <>
+                Simply book a quick 15-minute onboarding call via our <Link href="/#calendar" className="text-primary hover:text-primary-light transition-colors">strategy calendar</Link>. We will get you set up with your tracking system and give you all the promotional materials you need to start immediately.
+            </>
+        ),
+        schemaAnswer: "Simply book a quick 15-minute onboarding call via our strategy calendar. We will get you set up with your tracking system and give you all the promotional materials you need to start immediately."
+    }
+];
 
 export default function MakeMoneyPage() {
     return (
@@ -52,6 +87,10 @@ export default function MakeMoneyPage() {
                     >
                         Schedule Partner Onboarding <ArrowRight className="w-4 h-4" />
                     </Link>
+                </div>
+
+                <div className="mt-24 border-t border-white/10 pt-16">
+                    <GenericFAQ faqs={affiliateFaqs} className="" title="Partner Program FAQ" />
                 </div>
             </div>
         </div>
