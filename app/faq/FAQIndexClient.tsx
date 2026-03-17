@@ -8,17 +8,21 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const categoryColors: Record<FaqCategory | "All", string> = {
     "All": "bg-primary/10 text-primary border-primary/30",
-    "AEO & GEO": "bg-accent/10 text-accent border-accent/30",
-    "SEO Basics": "bg-purple-400/10 text-purple-300 border-purple-400/30",
-    "Local SEO": "bg-green-400/10 text-green-300 border-green-400/30",
-    "Content Strategy": "bg-yellow-400/10 text-yellow-300 border-yellow-400/30",
+    "HVAC SEO": "bg-blue-400/10 text-blue-300 border-blue-400/30",
+    "Roofing SEO": "bg-red-400/10 text-red-300 border-red-400/30",
+    "Plumbing SEO": "bg-cyan-400/10 text-cyan-300 border-cyan-400/30",
+    "Landscaping SEO": "bg-green-400/10 text-green-300 border-green-400/30",
+    "Remodeling SEO": "bg-yellow-400/10 text-yellow-300 border-yellow-400/30",
+    "Guarantees & Objections": "bg-purple-400/10 text-purple-300 border-purple-400/30",
 };
 
 const categoryBadge: Record<FaqCategory, string> = {
-    "AEO & GEO": "bg-accent/10 text-accent border-accent/20",
-    "SEO Basics": "bg-purple-400/10 text-purple-300 border-purple-400/20",
-    "Local SEO": "bg-green-400/10 text-green-300 border-green-400/20",
-    "Content Strategy": "bg-yellow-400/10 text-yellow-300 border-yellow-400/20",
+    "HVAC SEO": "bg-blue-400/10 text-blue-300 border-blue-400/20",
+    "Roofing SEO": "bg-red-400/10 text-red-300 border-red-400/20",
+    "Plumbing SEO": "bg-cyan-400/10 text-cyan-300 border-cyan-400/20",
+    "Landscaping SEO": "bg-green-400/10 text-green-300 border-green-400/20",
+    "Remodeling SEO": "bg-yellow-400/10 text-yellow-300 border-yellow-400/20",
+    "Guarantees & Objections": "bg-purple-400/10 text-purple-300 border-purple-400/20",
 };
 
 type FilterCategory = "All" | FaqCategory;

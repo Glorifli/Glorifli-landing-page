@@ -29,10 +29,12 @@ export async function generateMetadata({ params }: Props) {
 }
 
 const categoryColor: Record<string, string> = {
-    "AEO & GEO": "text-accent border-accent/30 bg-accent/10",
-    "SEO Basics": "text-purple-300 border-purple-400/30 bg-purple-400/10",
-    "Local SEO": "text-green-300 border-green-400/30 bg-green-400/10",
-    "Content Strategy": "text-yellow-300 border-yellow-400/30 bg-yellow-400/10",
+    "HVAC SEO": "text-blue-300 border-blue-400/30 bg-blue-400/10",
+    "Roofing SEO": "text-red-300 border-red-400/30 bg-red-400/10",
+    "Plumbing SEO": "text-cyan-300 border-cyan-400/30 bg-cyan-400/10",
+    "Landscaping SEO": "text-green-300 border-green-400/30 bg-green-400/10",
+    "Remodeling SEO": "text-yellow-300 border-yellow-400/30 bg-yellow-400/10",
+    "Guarantees & Objections": "text-purple-300 border-purple-400/30 bg-purple-400/10",
 };
 
 export default async function FAQSlugPage({ params }: Props) {
@@ -45,7 +47,7 @@ export default async function FAQSlugPage({ params }: Props) {
     // Build full answer text for schema
     const fullAnswerText = [
         item.excerpt,
-        ...item.sections.flatMap((s) => [s.body, ...(s.bullets ?? [])]),
+        ...item.sections.flatMap((s: any) => [s.body, ...(s.bullets ?? [])]),
         "Key takeaways: " + item.keyTakeaways.join(". "),
     ].join(" ");
 
@@ -76,7 +78,7 @@ export default async function FAQSlugPage({ params }: Props) {
                 name: item.question,
                 acceptedAnswer: { "@type": "Answer", text: fullAnswerText },
             },
-            ...item.sections.map((s) => ({
+            ...item.sections.map((s: any) => ({
                 "@type": "Question",
                 name: s.heading,
                 acceptedAnswer: {
@@ -132,7 +134,7 @@ export default async function FAQSlugPage({ params }: Props) {
 
                 {/* ── Sections ── */}
                 <div className="space-y-12">
-                    {item.sections.map((section, i) => (
+                    {item.sections.map((section: any, i: number) => (
                         <section key={i}>
                             <h2 className="text-xl md:text-2xl font-bold text-white font-heading mb-4">
                                 {section.heading}
@@ -149,7 +151,7 @@ export default async function FAQSlugPage({ params }: Props) {
 
                             {section.bullets && section.bullets.length > 0 && (
                                 <ul className="space-y-3 mt-4">
-                                    {section.bullets.map((b, bi) => (
+                                    {section.bullets.map((b: string, bi: number) => (
                                         <li key={bi} className="flex items-start gap-3 text-sm text-gray-300 leading-relaxed">
                                             <span className="w-1.5 h-1.5 rounded-full bg-primary flex-shrink-0 mt-2" />
                                             <span>{b}</span>
@@ -168,7 +170,7 @@ export default async function FAQSlugPage({ params }: Props) {
                         Key Takeaways
                     </h2>
                     <ul className="space-y-3">
-                        {item.keyTakeaways.map((t, i) => (
+                        {item.keyTakeaways.map((t: string, i: number) => (
                             <li key={i} className="flex items-start gap-3 text-sm text-gray-300 leading-relaxed">
                                 <CheckCircle2 className="w-4 h-4 text-primary flex-shrink-0 mt-0.5" />
                                 <span>{t}</span>
@@ -196,7 +198,7 @@ export default async function FAQSlugPage({ params }: Props) {
                     <div className="mt-14">
                         <h2 className="text-lg font-bold text-white mb-6">Related Questions</h2>
                         <div className="space-y-3">
-                            {related.map((rel) => (
+                            {related.map((rel: any) => (
                                 <Link
                                     key={rel.slug}
                                     href={`/faq/${rel.slug}`}

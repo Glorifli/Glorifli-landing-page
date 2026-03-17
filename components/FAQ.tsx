@@ -7,59 +7,41 @@ import StructuredData from './StructuredData';
 
 const faqs = [
     {
-        question: "What do I get when I book a strategy call?",
-        answer: "When you book a strategy call, you get a completely free mock draft of your new site, free instructions on how to build it yourself, a comprehensive audit of your current online presence, and a personalized game plan for growth. You can also grab a free SEO/AEO audit with actionable steps to generate more organic traffic by filling in your name, email, and website in the form at the top of this page — no call required."
+        question: "How to get more consistent leads for my roofing business?",
+        answer: "Getting more leads for roofing businesses is a breeze with our Autonomous Revenue Engine. Instead of paying for shared HomeAdvisor leads that race to the bottom on price, we build you an AEO-optimized site that captures homeowners exactly when they search for 'roof repair near me' or ask ChatGPT for local recommendations. You get exclusive, high-intent leads straight to your phone."
     },
     {
-        question: "What makes your websites different?",
-        answer: "We don't just build brochures; we build client acquisition systems. Our sites feature a proven landing page conversion structure, custom lead-generating chatbots, and high-performance SEO/AEO blogs designed to generate traffic and turn visitors into paying clients."
+        question: "Why should I hire Glorifli for HVAC SEO instead of a generic web marketing agency?",
+        answer: "Generic agencies charge you $2,000/month just to publish generic blog posts and hope for the best, without tying their pay to your actual ROI. Glorifli specializes exclusively in local service businesses. Most importantly, we put our money where our mouth is: if you don't get 10 new booked leads within 60 days of paying the $1,256.50 setup fee, our ongoing services are completely free until you do."
     },
     {
-        question: "How long until my new site is live?",
-        answer: "We'll send you your first draft of the website by the end of two weeks and the site will be live in less than a month."
-    },
-    {
-        question: "Do I handle the text and images?",
-        answer: "We can handle everything including professional copywriting. However, you'll get the best results by sending us testimonials and authentic images of your work and staff to build maximum trust."
-    },
-    {
-        question: "What are the Guarantees?",
-        answer: "Pay the $1,256.50 setup fee to get the ball rolling — your 60-day clock starts the moment payment is received. Your website goes live and the SEO/AEO service runs completely free during that window. Within 60 days we guarantee 10 new booked leads. If we miss that number, the SEO/AEO service keeps running at no charge until we deliver. Once your 10 leads are booked, you choose whether to continue the SEO/AEO service at $589.50/mo. You also get 1 free month of blog content included with the setup. No excuses, no fine print."
-    },
-    {
-        question: "Is SEO dead? Why should I care about \"AEO\" for my local business?",
-        answer: (
-            <>
-                <strong className="text-white block mb-2">The Direct Answer:</strong>
-                SEO isn&apos;t dead, but the game has changed completely. Traditional SEO was about ranking a link; AEO is about becoming the cited answer when someone asks Siri or ChatGPT, &quot;Who is the best service provider near me?&quot;.
-                <br /><br />
-                <strong className="text-white block mb-2">The Data:</strong>
-                With 58% of searches now ending without a click (Zero-Click searches), you need to be the direct answer displayed at the top. If you are ignoring AEO, you are ignoring the fastest-growing source of high-intent leads.
-                <br /><br />
-                <strong className="text-white block mb-2">The Move:</strong>
-                Stop fighting for clicks and start fighting for citations. See how we can help you do this at <a href="#services" className="text-primary hover:text-primary-light underline decoration-primary/30 underline-offset-4 transition-all">View Our Service Packages</a>.
-            </>
-        ),
-        schemaAnswer: "The Direct Answer: SEO isn't dead, but the game has changed completely. Traditional SEO was about ranking a link; AEO is about becoming the cited answer when someone asks Siri or ChatGPT, \"Who is the best service provider near me?\". The Data: With 58% of searches now ending without a click (Zero-Click searches), you need to be the direct answer displayed at the top. If you are ignoring AEO, you are ignoring the fastest-growing source of high-intent leads. The Move: Stop fighting for clicks and start fighting for citations."
-    },
-    {
-        question: "How do I get ChatGPT and Google AI to recommend my business?",
+        question: "What is the best way to get my plumbing business recommended to people on AI?",
         answer: (
             <>
                 <strong className="text-white block mb-2">The Strategy:</strong>
-                You need to build &quot;Entity Authority.&quot; AI models don&apos;t trust what you say about yourself; they trust what others say. We use a strategy called &quot;Consensus optimization&quot; where we align your reviews, directory listings, and data across the web so the AI views you as the &quot;Safe Recommendation.&quot;
+                To get recommended by ChatGPT, Gemini, and Google's AI Overviews, your plumbing business needs massive "Entity Authority." AI models compile facts from across the web to determine the most trusted local plumber.
                 <br /><br />
-                <strong className="text-white block mb-2">The Protocol:</strong>
-                <ul className="list-disc pl-5 space-y-1 mb-4">
-                    <li><strong>Entity Consistency:</strong> Ensure your Name, Address, and Phone (NAP) are identical everywhere.</li>
-                    <li><strong>Review Velocity:</strong> Get consistent reviews that mention specific services.</li>
-                    <li><strong>Data Structuring:</strong> Feed the AI facts it can verify.</li>
-                </ul>
-                <strong className="text-white block mb-2">Get Started:</strong>
-                <a href="#calendar" className="text-primary hover:text-primary-light underline decoration-primary/30 underline-offset-4 transition-all">Book a Free Strategy Call</a> and let&apos;s get you recommended.
+                <strong className="text-white block mb-2">The Execution:</strong>
+                We ensure your Name, Address, and Phone (NAP) are identical across 50+ directories. We inject aggressive LocalBusiness and FAQPage schema markup into your site's code, and we write high-density factual content that AI scrapers love to cite.
             </>
         ),
-        schemaAnswer: "The Strategy: You need to build \"Entity Authority.\" AI models don't trust what you say about yourself; they trust what others say. We use a strategy called \"Consensus optimization\" where we align your reviews, directory listings, and data across the web so the AI views you as the \"Safe Recommendation.\" The Protocol: Entity Consistency: Ensure your Name, Address, and Phone (NAP) are identical everywhere. Review Velocity: Get consistent reviews that mention specific services. Data Structuring: Feed the AI facts it can verify."
+        schemaAnswer: "To get recommended by ChatGPT, Gemini, and Google's AI Overviews, your plumbing business needs massive \"Entity Authority.\" We ensure your Name, Address, and Phone (NAP) are identical across 50+ directories, inject LocalBusiness schema markup into your site, and write high-density factual content."
+    },
+    {
+        question: "Is it worth paying $1,256.50 for a custom home remodeling website? What is the ROI?",
+        answer: "Absolutely. Home remodeling is a high-ticket service. Our $1,256.50 setup fee gets you a custom, high-converting digital storefront designed to capture leads. Our data shows that true SEO and AEO leads close at a conservative 30% rate. If our guaranteed 10 leads convert into just 3 remodeling jobs (averaging $25,000 each), that's $75,000 in revenue from a one-time $1,256.50 investment and a performance-backed $589.50/mo retainer."
+    },
+    {
+        question: "What happens if you don't get my landscaping company 10 new leads in 60 days?",
+        answer: "We work for free until we do. The 60-day clock begins the moment your $1,256.50 setup fee is paid. We build your site and run your SEO/AEO completely free during that time. If day 60 hits and we haven't generated 10 exclusive leads for your landscaping business, you do not pay a single cent of the $589.50 monthly retainer until the 10th lead is booked. No excuses."
+    },
+    {
+        question: "Do I have to write the blog posts for my local SEO to rank in Google Maps?",
+        answer: "No. You focus on running your service business; we handle the fulfillment. We research hyper-specific local keywords (like 'water heater repair cost near me') and write 8 fully optimized, human-sounding blog posts every single month. This constant flow of fresh, localized content signals to Google that your business is the most active and authoritative in your service area, pushing you straight into the Local 3-Pack."
+    },
+    {
+        question: "Can I just use Glorifli for the $589.50/mo SEO without the website build?",
+        answer: "We only run our SEO/AEO optimization on websites that we build and control ourselves. Why? Because achieving a 10-leads-in-60-days guarantee requires a flawlessly optimized technical foundation. We need total access to inject our precise Schema markup, optimize the loading speed, and build the dedicated service landing pages that actually convert the traffic we send."
     }
 ];
 
