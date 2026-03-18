@@ -26,7 +26,7 @@ export async function appendLeadToSheet(
 
         const resource = {
             values: [
-                [name, email, websiteUrl, source, new Date().toISOString()],
+                [name, email, websiteUrl, source, "email 1 (received Lead magnet in some way)"],
             ],
         };
 

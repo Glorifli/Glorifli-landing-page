@@ -112,7 +112,7 @@ const LeadForm: React.FC = () => {
                                         ✓
                                     </div>
                                     <h3 className="text-xl font-bold text-white mb-2">Request Received!</h3>
-                                    <p className="text-gray-400 text-sm">We'll be in touch within 24 hours with your free audit.</p>
+                                    <p className="text-gray-400 text-sm">We'll be in touch shortly with your free audit.</p>
                                 </motion.div>
                             ) : (
                                 <form onSubmit={handleSubmit} className="space-y-4">

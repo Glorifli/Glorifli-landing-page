@@ -141,7 +141,7 @@ const SEOAuditLeadMagnet: React.FC = () => {
                                     </div>
                                     <h3 className="text-xl font-bold text-white mb-2">You're on the list!</h3>
                                     <p className="text-gray-400 text-sm">
-                                        We'll review your site and send your personalised SEO/AEO audit report within 24–48 hours. Keep an eye on your inbox!
+                                        We'll review your site and send your personalised SEO action plan shortly. Keep an eye on your inbox!
                                     </p>
                                 </motion.div>
                             ) : (
