@@ -24,12 +24,9 @@ export async function appendLeadToSheet(
         const range = 'Sheet1!A:E';
         const valueInputOption = 'RAW'; // Prevents data validation crashes on weird text
 
-        // Format current timestamp
-        const timestamp = new Date().toLocaleString('en-US', { timeZone: 'America/New_York' });
-
         const resource = {
             values: [
-                [name, email, websiteUrl, source || "Email 1 (Received Lead Magnet)", timestamp],
+                [name, email, websiteUrl, source || "Email 1 (Received Lead Magnet)"],
             ],
         };
 
