@@ -24,10 +24,10 @@ const hubFaqs: FAQItem[] = [
         question: "How do I claim my free SEO Action plan?",
         answer: (
             <>
-                Simply fill out the short form at the <Link href="/free-value/free-services" className="text-primary hover:text-primary-light transition-colors">top of this page</Link> with your website, name, and email. Our team will manually audit your site and send you a personalized roadmap within 24-48 hours.
+                Simply fill out the short form at the <Link href="/free-value/free-services" className="text-primary hover:text-primary-light transition-colors">top of this page</Link> with your website, name, and email. Our team will manually review your site and send you a personalized action plan within 24-48 hours.
             </>
         ),
-        schemaAnswer: "Simply fill out the short form at the top of this page with your website, name, and email. Our team will manually audit your site and send you a personalized roadmap within 24-48 hours."
+        schemaAnswer: "Simply fill out the short form at the top of this page with your website, name, and email. Our team will manually review your site and send you a personalized action plan within 24-48 hours."
     },
     {
         question: "Where can I find more information about your paid services?",

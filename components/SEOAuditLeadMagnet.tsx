@@ -45,7 +45,7 @@ const SEOAuditLeadMagnet: React.FC = () => {
     };
 
     const perks = [
-        { icon: Search, text: 'Full SEO/AEO visibility audit' },
+        { icon: Search, text: 'Full SEO/AEO visibility action plan' },
         { icon: BarChart2, text: 'Actionable steps to rank higher' },
         { icon: Zap, text: 'Quick-wins to boost organic traffic fast' },
     ];
@@ -109,11 +109,11 @@ const SEOAuditLeadMagnet: React.FC = () => {
 
                             <h2 className="text-3xl md:text-4xl font-bold font-heading mb-4 leading-tight">
                                 Get Your Free{' '}
-                                <span className="text-primary">SEO/AEO Audit</span>{' '}
+                                <span className="text-primary">SEO/AEO Action Plan</span>{' '}
                                 With Actionable Steps
                             </h2>
                             <p className="text-gray-400 mb-8 leading-relaxed">
-                                Want more organic traffic without spending more on ads? Drop your name, email, and website URL below and we'll send you a personalised SEO/AEO audit packed with actionable steps to generate more leads from search — completely free.
+                                Want more organic traffic without spending more on ads? Drop your name, email, and website URL below and we'll send you a personalised SEO/AEO action plan packed with actionable steps to generate more leads from search — completely free.
                             </p>
 
                             <ul className="space-y-3">
@@ -219,7 +219,7 @@ const SEOAuditLeadMagnet: React.FC = () => {
                                             'Sending...'
                                         ) : (
                                             <>
-                                                <span>Send Me My Free Audit</span>
+                                                <span>Send Me My Free Action Plan</span>
                                                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
                                             </>
                                         )}
