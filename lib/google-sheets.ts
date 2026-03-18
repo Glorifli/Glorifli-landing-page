@@ -8,10 +8,23 @@ export async function appendLeadToSheet(
 ) {
     try {
         // 1. Prepare Authentication
+        let rawKey = process.env.GOOGLE_SHEETS_PRIVATE_KEY || '';
+
+        // Vercel frequently wraps environment variables in literal double quotes. Strip them.
+        if (rawKey.startsWith('"') && rawKey.endsWith('"')) {
+            rawKey = rawKey.substring(1, rawKey.length - 1);
+        }
+        if (rawKey.startsWith("'") && rawKey.endsWith("'")) {
+            rawKey = rawKey.substring(1, rawKey.length - 1);
+        }
+
+        // Safely map literal backend `\n` characters to actual linebreaks for the RSA parser
+        const formattedKey = rawKey.replace(/\\n/g, '\n');
+
         const auth = new google.auth.GoogleAuth({
             credentials: {
                 client_email: process.env.GOOGLE_SHEETS_CLIENT_EMAIL,
-                private_key: process.env.GOOGLE_SHEETS_PRIVATE_KEY?.replace(/\\n/g, '\n'),
+                private_key: formattedKey,
             },
             scopes: ['https://www.googleapis.com/auth/spreadsheets'],
         });
@@ -24,9 +37,11 @@ export async function appendLeadToSheet(
         const range = 'Sheet1!A:E';
         const valueInputOption = 'RAW'; // Prevents data validation crashes on weird text
 
+        const finalWebsite = (websiteUrl === 'No website' || !websiteUrl) ? '' : websiteUrl;
+
         const resource = {
             values: [
-                [name, email, websiteUrl, source || "Email 1 (Received Lead Magnet)"],
+                [name, email, finalWebsite, source || "Email 1 (Received Lead Magnet)"],
             ],
         };
 
