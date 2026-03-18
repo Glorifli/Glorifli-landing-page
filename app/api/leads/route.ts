@@ -32,10 +32,10 @@ export async function POST(request: Request) {
             { status: 200 }
         );
 
-    } catch (error) {
+    } catch (error: any) {
         console.error('API Error:', error);
         return NextResponse.json(
-            { error: 'Internal Server Error' },
+            { error: 'Internal Server Error', details: error.message || error.toString() },
             { status: 500 }
         );
     }

@@ -19,7 +19,19 @@ export async function appendLeadToSheet(
         }
 
         // Safely map literal backend `\n` characters to actual linebreaks for the RSA parser
-        const formattedKey = rawKey.replace(/\\n/g, '\n');
+        let formattedKey = rawKey.replace(/\\n/g, '\n');
+
+        // If the deployment platform ate the linebreaks entirely, mathematically reconstruct the PEM format:
+        if (!formattedKey.includes('\n') && formattedKey.includes('-----BEGIN PRIVATE KEY-----')) {
+            const keyContent = formattedKey
+                .replace('-----BEGIN PRIVATE KEY-----', '')
+                .replace('-----END PRIVATE KEY-----', '')
+                .replace(/\s+/g, ''); // Remove all spaces
+
+            // Chunk the base64 string into 64-character lines as required by PEM standard
+            const chunked = keyContent.match(/.{1,64}/g)?.join('\n') || '';
+            formattedKey = `-----BEGIN PRIVATE KEY-----\n${chunked}\n-----END PRIVATE KEY-----\n`;
+        }
 
         const auth = new google.auth.GoogleAuth({
             credentials: {
