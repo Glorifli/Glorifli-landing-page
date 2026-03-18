@@ -12,7 +12,7 @@ const painPoints = [
         description: (
             <>
                 You're an expert in your field, but to the people who need you most, you're invisible. Studies show that{' '}
-                <Link href="/blog/why-near-me-seo-is-fastest-way-to-get-local-clients" className="text-primary underline underline-offset-2 hover:text-white transition-colors">82% of appointments are booked through searches made on mobile</Link>.{' '}
+                <a href="https://www.zippia.com/advice/online-booking-statistics/" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2 hover:text-white transition-colors">82% of appointments are booked through searches made on mobile</a>.{' '}
                 This means that if your website doesn't have seamless online booking, you're missing out on a majority of the market share.
             </>
         ),
@@ -25,7 +25,7 @@ const painPoints = [
         description: (
             <>
                 Studies show that{' '}
-                <Link href="/blog/whats-the-best-way-to-get-more-appointments-booked" className="text-primary underline underline-offset-2 hover:text-white transition-colors">nearly 70% of all customers chose online booking rather than booking over the phone</Link>.{' '}
+                <a href="https://www.softwareadvice.com/resources/why-small-businesses-should-offer-online-booking/" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2 hover:text-white transition-colors">nearly 70% of all customers chose online booking rather than booking over the phone</a>.{' '}
                 So if your site isn't designed to convert effortlessly your business's longevity will suffer.
             </>
         ),
