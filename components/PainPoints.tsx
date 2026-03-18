@@ -11,7 +11,8 @@ const painPoints = [
         title: "Tired of people not knowing about your business?",
         description: (
             <>
-                You're an expert in your field, but to the people who need you most, you're invisible. Studies show that the vast majority of local appointments are now booked directly through competitive mobile searches.{' '}
+                You're an expert in your field, but to the people who need you most, you're invisible. According to industry data,{' '}
+                <a href="https://schedulingkit.com/statistics/scheduling-statistics" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2 hover:text-white transition-colors">82% of consumers prefer to book appointments online rather than by phone</a>.{' '}
                 This means that if your website doesn't have seamless online booking, you're missing out on a massive portion of the market share.
             </>
         ),
@@ -23,8 +24,9 @@ const painPoints = [
         title: "Struggling to Convert Website Visitors Into Booked Appointments?",
         description: (
             <>
-                Consumer research indicates that modern customers overwhelmingly prefer online scheduling over traditional cold-calling.{' '}
-                So if your site isn't designed to convert effortlessly, your business's longevity will suffer.
+                Consumer research from the same study shows that{' '}
+                <a href="https://schedulingkit.com/statistics/scheduling-statistics" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2 hover:text-white transition-colors">approximately 40% of all online bookings occur outside traditional business hours</a>.{' '}
+                If your site isn't equipped to automatically capture these late-night, high-intent conversions, your business's longevity will suffer.
             </>
         ),
         accentColor: "text-accent",
