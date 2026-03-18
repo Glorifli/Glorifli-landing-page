@@ -122,7 +122,7 @@ export default function ServicesPage() {
                         <span className="text-primary">Does Glorifli Offer?</span>
                     </h1>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed mb-6">
-                        Glorifli offers three core services: a custom high-converting website, an SEO/AEO content system, and the complete Autonomous Revenue Engine — all backed by a performance guarantee.
+                        Glorifli offers two core services: a custom high-converting website, and the complete Autonomous Revenue Engine — both backed by a performance guarantee.
                     </p>
                     <p className="text-gray-500 text-sm">
                         <strong className="text-white">Total market value: $8,900+</strong> — Your investment: $1,256.50 to start.
@@ -137,7 +137,7 @@ export default function ServicesPage() {
                     <h2 className="text-2xl font-bold text-white font-heading mb-10 text-center">
                         Which Glorifli Service Is Right for Your Business?
                     </h2>
-                    <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start max-w-5xl mx-auto">
                         {services.map((service) => (
                             <div
                                 key={service.slug}

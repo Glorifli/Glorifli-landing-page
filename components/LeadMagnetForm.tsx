@@ -90,10 +90,10 @@ export default function LeadMagnetForm({
             className={`max-w-md w-full mx-auto ${className}`}
         >
             <div className="bg-white/5 border border-white/10 rounded-2xl p-5 backdrop-blur-sm">
-                <p className="text-sm font-bold text-white mb-1 text-center">
+                <p className="text-base md:text-lg font-bold text-white mb-2 text-center leading-snug">
                     {title}
                 </p>
-                <p className="text-xs text-gray-400 text-center mb-4">
+                <p className="text-sm text-gray-400 text-center mb-5 leading-relaxed">
                     {subtitle}
                 </p>
 

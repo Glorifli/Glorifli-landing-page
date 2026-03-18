@@ -21,6 +21,12 @@ const services = [
             "Domain Transfer or Acquisition",
             "1 Free Month of Blog Content Included"
         ],
+        valueStack: [
+            { item: "High-Converting Website Build", price: "$3,500" },
+            { item: "Full Site Copywriting", price: "$800" },
+            { item: "Booking System Integration", price: "$400" },
+            { item: "60 Days SEO/AEO Content", price: "$2,500" },
+        ],
         ctaLink: "https://buy.stripe.com/28EbJ17PD2yD5bUgj3cwg0c",
         highlight: false
     },
@@ -37,6 +43,12 @@ const services = [
             "Full AEO Infrastructure Setup",
             "Priority Support",
             "SEO/AEO Service Runs FREE Until 10 Leads Booked — Then $589.50/mo"
+        ],
+        valueStack: [
+            { item: "Custom Website & Copywriting", price: "$4,300" },
+            { item: "Booking System", price: "$400" },
+            { item: "60 Days SEO/AEO Content", price: "$2,500" },
+            { item: "GBP & Local Citation Network", price: "$1,700+" },
         ],
         ctaLink: "https://buy.stripe.com/cNi4gz3znehlgUC1o9cwg0a",
         highlight: true,
@@ -59,14 +71,15 @@ const Services: React.FC = () => {
                     <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-4">
                         Pay the $1,256.50 setup fee to get started. Your website goes live and the SEO/AEO service runs <strong className="text-white">free</strong> until we book you 10 leads — all within 60 days of payment. If we don't, we keep working at no charge until we do.
                     </p>
+
                     {/* Value Stack Highlight */}
-                    <div className="inline-flex items-center gap-3 px-5 py-3 rounded-full border border-primary/30 bg-primary/5 text-sm text-gray-300 mt-2">
+                    <div className="flex flex-col sm:flex-row items-center justify-center gap-2 sm:gap-3 px-5 py-4 sm:py-3 rounded-2xl sm:rounded-full border border-primary/30 bg-primary/5 text-sm text-gray-300 mx-auto w-fit text-center">
                         <span className="text-primary font-bold">$8,900+</span> in total market value —
                         <span className="text-white font-bold">you invest $1,256.50</span> to start
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start max-w-5xl mx-auto">
                     {services.map((service, index) => (
                         <motion.div
                             key={index}
@@ -104,7 +117,24 @@ const Services: React.FC = () => {
                                         </>
                                     )}
                                 </div>
-                                <p className="text-xs text-gray-600 mt-2">{service.marketValue}</p>
+                                <p className="text-xs text-gray-600 mt-2 mb-4">{service.marketValue}</p>
+
+                                {/* Price Justification Breakdown */}
+                                <div className="bg-white/5 rounded-xl p-4 border border-white/5">
+                                    <p className="text-[10px] text-primary font-bold uppercase tracking-wider mb-3">Market Value Breakdown</p>
+                                    <ul className="space-y-2">
+                                        {service.valueStack.map((vs, idx) => (
+                                            <li key={idx} className="flex justify-between items-center text-xs">
+                                                <span className="text-gray-400">{vs.item}</span>
+                                                <span className="text-gray-500 line-through decoration-gray-500/50">{vs.price}</span>
+                                            </li>
+                                        ))}
+                                        <li className="flex justify-between items-center text-sm font-bold pt-2 mt-2 border-t border-white/10">
+                                            <span className="text-white">Total Real Value</span>
+                                            <span className="text-primary">{service.marketValue.split(' ')[0]}</span>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
 
                             <ul className="space-y-4 mb-8 flex-grow">
@@ -149,7 +179,7 @@ const Services: React.FC = () => {
                     </p>
                 </div>
             </div>
-        </section>
+        </section >
     );
 };
 
