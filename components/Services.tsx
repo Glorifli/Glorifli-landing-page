@@ -130,8 +130,8 @@ const Services: React.FC = () => {
                                     href={`/services/${service.slug}`}
                                     className="w-full py-2.5 rounded-xl font-medium text-center text-sm text-gray-400 hover:text-primary border border-white/5 hover:border-primary/30 transition-all duration-300 flex items-center justify-center gap-1.5 group"
                                 >
-                                    Learn More
-                                    <ArrowRight className="w-3.5 h-3.5 transition-transform group-hover:translate-x-0.5" />
+                                    <span className="truncate">Explore {service.name}</span>
+                                    <ArrowRight className="w-3.5 h-3.5 shrink-0 transition-transform group-hover:translate-x-0.5" />
                                 </Link>
                             </div>
                         </motion.div>

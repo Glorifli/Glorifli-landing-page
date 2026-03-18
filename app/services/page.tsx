@@ -175,8 +175,8 @@ export default function ServicesPage() {
                                         : 'bg-white/10 text-white hover:bg-primary hover:text-black'
                                         }`}
                                 >
-                                    Learn More
-                                    <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+                                    <span className="truncate">Explore {service.name}</span>
+                                    <ArrowRight className="w-4 h-4 shrink-0 transition-transform group-hover:translate-x-1" />
                                 </Link>
                             </div>
                         ))}

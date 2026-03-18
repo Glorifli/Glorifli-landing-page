@@ -1,7 +1,11 @@
 "use client";
 
 import React, { useState } from 'react';
-import StarBackground from './StarBackground';
+import dynamic from 'next/dynamic';
+
+const StarBackground = dynamic(() => import('./StarBackground'), {
+    ssr: false, // Do not render on the server to prevent hydration issues and block main thread
+});
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, CheckCircle2, Globe } from 'lucide-react';
 

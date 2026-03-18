@@ -46,9 +46,11 @@ const Footer: React.FC = () => {
                     {/* Logo and Tagline */}
                     <div className="flex flex-col gap-4">
                         <div className="flex items-center gap-[5px]">
-                            <img
+                            <Image
                                 src="/GlorifliLogo.png"
                                 alt="Glorifli Logo"
+                                width={122}
+                                height={64}
                                 className="h-16 w-auto rounded"
                             />
                             <span className="text-2xl font-bold font-heading tracking-tight text-white">Glorifli</span>
