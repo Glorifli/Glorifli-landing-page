@@ -13,25 +13,30 @@ export const metadata: Metadata = {
 const blogFaqs: FAQItem[] = [
     {
         question: "How long does it take for you to write the blog post?",
-        answer: "Once you request the content and tell us your target niche and keyword, our team will research and write the fully optimized post within 48-72 hours."
+        answer: (
+            <>
+                Once you request the content and tell us your target niche and keyword, our team will research and write the fully optimized post within 48-72 hours. While you wait, check out our guide on <Link href="/blog/what-makes-a-high-converting-landing-page" className="text-primary hover:underline transition-colors">what makes a high-converting landing page</Link>. Ready for more growth? <Link href="/#calendar" className="text-primary font-bold hover:underline">Book a strategy call here</Link>.
+            </>
+        ),
+        schemaAnswer: "Once you request the content and tell us your target niche and keyword, our team will research and write the fully optimized post within 48-72 hours. While you wait, check out our guide on what makes a high-converting landing page. Ready for more growth? Book a strategy call here."
     },
     {
         question: "Where can I see examples of your previous blog work?",
         answer: (
             <>
-                You can read through our own internal content on the <Link href="/blog" className="text-primary hover:text-primary-light transition-colors">Glorifli Blog</Link> to see the exact structure, tone, and AEO optimization formatting we use to rank local service businesses.
+                You can read through our own internal content on the <Link href="/blog" className="text-primary hover:text-primary-light transition-colors">Glorifli Blog</Link> to see the exact structure, tone, and AEO optimization formatting we use to rank local service businesses. See our strategy in action in <Link href="/blog/seo-vs-paid-ads-for-hvac-roofing-companies" className="text-primary hover:underline transition-colors">SEO vs paid ads</Link>. Let's discuss your custom content: <Link href="/#calendar" className="text-primary font-bold hover:underline">book a call today</Link>.
             </>
         ),
-        schemaAnswer: "You can read through our own internal content on the Glorifli Blog to see the exact structure, tone, and AEO optimization formatting we use to rank local service businesses."
+        schemaAnswer: "You can read through our own internal content on the Glorifli Blog to see the exact structure, tone, and AEO optimization formatting we use to rank local service businesses. See our strategy in action in SEO vs paid ads. Let's discuss your custom content: book a call today."
     },
     {
         question: "How exactly do I place the backlink to Glorifli?",
         answer: (
             <>
-                Within the blog post we give you, we will specify a natural, contextual sentence where the backlink should go. It will simply be a small hyperlink pointing back to the <Link href="/free-value" className="text-primary hover:text-primary-light transition-colors">Glorifli Free Value Hub</Link> or our Home page.
+                Within the blog post we give you, we will specify a natural, contextual sentence where the backlink should go. It will simply be a small hyperlink pointing back to the <Link href="/free-value" className="text-primary hover:text-primary-light transition-colors">Glorifli Free Value Hub</Link> or our Home page. Learn why backlinks matter in <Link href="/blog/what-is-aeo-for-home-service-businesses" className="text-primary hover:underline transition-colors">the shift from Google to AI</Link>. Have questions? <Link href="/#calendar" className="text-primary font-bold hover:underline">Book a quick call</Link>.
             </>
         ),
-        schemaAnswer: "Within the blog post we give you, we will specify a natural, contextual sentence where the backlink should go. It will simply be a small hyperlink pointing back to the Glorifli Free Value Hub or our Home page."
+        schemaAnswer: "Within the blog post we give you, we will specify a natural, contextual sentence where the backlink should go. It will simply be a small hyperlink pointing back to the Glorifli Free Value Hub or our Home page. Learn why backlinks matter in the shift from Google to AI. Have questions? Book a quick call."
     }
 ];
 

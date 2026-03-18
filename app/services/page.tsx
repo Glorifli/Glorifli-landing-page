@@ -19,7 +19,7 @@ export const metadata: Metadata = {
 
 const services = [
     {
-        slug: "custom-website",
+        slug: "custom-website-for-service-businesses",
         name: "Custom High-Converting Website",
         tagline: "Your digital storefront — built to turn traffic into booked leads.",
         price: "$1,256.50",
@@ -39,28 +39,9 @@ const services = [
             "60 Days of Free Blog Content",
         ],
     },
+
     {
-        slug: "seo-aeo-optimization",
-        name: "SEO/AEO Optimization",
-        tagline: "Dominate local search and become the AI-recommended answer.",
-        price: "$589.50",
-        priceNote: "/month (free until 10 leads are booked)",
-        marketValue: "$2,500/mo",
-        badge: null,
-        highlight: false,
-        features: [
-            "8 SEO/AEO Optimized Blog Posts Monthly",
-            "Google Business Profile Sync",
-            "Citation Network Building",
-            "AI Search Optimization (ChatGPT, Gemini, Perplexity)",
-            "Full Backend Site Optimization",
-            "Targets Local High-Intent Traffic",
-            "Builds Entity Authority Online",
-            "10 Leads in 60 Days or We Keep Working Free",
-        ],
-    },
-    {
-        slug: "autonomous-revenue-engine",
+        slug: "autonomous-revenue-engine-for-service-businesses",
         name: "Autonomous Revenue Generating Engine",
         tagline: "The complete system. Build, rank, convert — on autopilot.",
         price: "$1,256.50 setup",

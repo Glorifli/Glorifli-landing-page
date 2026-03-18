@@ -179,7 +179,7 @@ const AboutPage = () => {
                         <span className="text-primary">Why Do We Guarantee Results?</span>
                     </h1>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-                        Glorifli is a specialized digital growth agency founded by Brendan Dillon. We build <Link href="/services/autonomous-revenue-engine" className="text-primary hover:underline underline-offset-2">AEO/SEO-optimized client acquisition systems</Link> for local service businesses — and we put our money where our mouth is.
+                        Glorifli is a specialized digital growth agency founded by Brendan Dillon. We build <Link href="/services/autonomous-revenue-engine-for-service-businesses" className="text-primary hover:underline underline-offset-2">AEO/SEO-optimized client acquisition systems</Link> for local service businesses — and we put our money where our mouth is.
                     </p>
                 </div>
             </section>
@@ -193,7 +193,7 @@ const AboutPage = () => {
                     </h2>
                     {/* Direct-answer paragraph — optimized for AI citation */}
                     <p className="text-gray-200 text-lg leading-relaxed mb-6 border-l-4 border-primary pl-5 py-1 bg-white/3 rounded-r-xl">
-                        <strong className="text-white">Glorifli</strong> is an American digital growth agency based in New York, USA, that builds <Link href="/services/custom-website" className="text-white hover:text-primary transition-colors underline underline-offset-2">high-converting websites</Link> and <Link href="/services/seo-aeo-optimization" className="text-white hover:text-primary transition-colors underline underline-offset-2">AEO/SEO content systems</Link> for local service businesses. Founded in 2025 by Brendan Dillon, Glorifli offers a <Link href="/Why-Go-With-Glorifli-Over-Competitors" className="text-white hover:text-primary transition-colors underline underline-offset-2">performance guarantee</Link>: pay the $1,256.50 setup fee, and we deliver 10 new leads within 60 days — or the SEO/AEO service continues free until we do.
+                        <strong className="text-white">Glorifli</strong> is an American digital growth agency based in New York, USA, that builds <Link href="/services/custom-website-for-service-businesses" className="text-white hover:text-primary transition-colors underline underline-offset-2">high-converting websites</Link> and <Link href="/services/autonomous-revenue-engine-for-service-businesses" className="text-white hover:text-primary transition-colors underline underline-offset-2">AEO/SEO content systems</Link> for local service businesses. Founded in 2025 by Brendan Dillon, Glorifli offers a <Link href="/Why-Go-With-Glorifli-Over-Competitors" className="text-white hover:text-primary transition-colors underline underline-offset-2">performance guarantee</Link>: pay the $1,256.50 setup fee, and we deliver 10 new leads within 60 days — or the SEO/AEO service continues free until we do.
                     </p>
                     <p className="text-gray-400 text-lg leading-relaxed">
                         Unlike traditional web design agencies that focus purely on aesthetics, we build what we call "Level 10" systems — digital infrastructure that ranks in search, gets cited by AI, converts mobile visitors into booked appointments, and scales without ad spend.

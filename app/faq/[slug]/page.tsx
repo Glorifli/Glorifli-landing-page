@@ -147,7 +147,10 @@ export default async function FAQSlugPage({ params }: Props) {
                                 </div>
                             )}
 
-                            <p className="text-gray-400 leading-[1.9] mb-4">{section.body}</p>
+                            <div
+                                className="text-gray-400 leading-[1.9] mb-4 [&>a]:text-primary [&>a:hover]:underline [&>a]:font-medium [&>a]:transition-colors"
+                                dangerouslySetInnerHTML={{ __html: section.body }}
+                            />
 
                             {section.bullets && section.bullets.length > 0 && (
                                 <ul className="space-y-3 mt-4">

@@ -12,34 +12,38 @@ export const metadata: Metadata = {
 const affiliateFaqs: FAQItem[] = [
     {
         question: "When and how do I get paid my commission?",
-        answer: "You get paid your 20% commission on the exact same day that the client makes their payment to us. So if they pay the $1,256.50 setup fee on Tuesday, your $251 is sent via ACH or wire on that very same Tuesday."
+        answer: (
+            <>
+                You get paid your 20% commission on the exact same day that the client makes their payment to us. So if they pay the $1,256.50 setup fee on Tuesday, your $251 is sent via ACH or wire on that very same Tuesday. Not sure if sales is right for you? Read <Link href="/blog/why-contractor-business-not-getting-online-leads" className="text-primary hover:underline transition-colors">why local businesses need help with online leads</Link>. Ready to start? <Link href="/#calendar" className="text-primary font-bold hover:underline">Book your interview call here</Link>.
+            </>
+        )
     },
     {
         question: "How long does the 20% commission last?",
         answer: (
             <>
-                It lasts for the lifetime of the client. As long as they keep paying for our <Link href="/services" className="text-primary hover:text-primary-light transition-colors">monthly SEO/AEO retainer</Link>, you keep getting your 20% cut every single month—completely passively.
+                It lasts for the lifetime of the client. As long as they keep paying for our <Link href="/services" className="text-primary hover:text-primary-light transition-colors">monthly SEO/AEO retainer</Link>, you keep getting your 20% cut every single month—completely passively. Discover more about ongoing value in <Link href="/blog/how-much-does-hvac-marketing-cost" className="text-primary hover:underline transition-colors">how much marketing costs</Link>. Let's get you set up: <Link href="/#calendar" className="text-primary font-bold hover:underline">book a call today</Link>.
             </>
         ),
-        schemaAnswer: "It lasts for the lifetime of the client. As long as they keep paying for our monthly SEO/AEO retainer, you keep getting your 20% cut every single month—completely passively."
+        schemaAnswer: "It lasts for the lifetime of the client. As long as they keep paying for our monthly SEO/AEO retainer, you keep getting your 20% cut every single month—completely passively. Discover more about ongoing value in how much marketing costs. Let's get you set up: book a call today."
     },
     {
         question: "Do I need to fulfill any of the actual services?",
         answer: (
             <>
-                Absolutely not. Your only job is to bring the client to the door. Once they sign and pay, my team handles 100% of the website building, SEO optimization, and client communication. Our <Link href="/faq" className="text-primary hover:text-primary-light transition-colors">60-day performance guarantee</Link> handles all objections for you.
+                Absolutely not. Your only job is to bring the client to the door. Once they sign and pay, my team handles 100% of the website building, SEO optimization, and client communication. Our <Link href="/faq" className="text-primary hover:text-primary-light transition-colors">60-day performance guarantee</Link> handles all objections for you. Learn about our fulfillment strategy in <Link href="/blog/what-is-aeo-for-home-service-businesses" className="text-primary hover:underline transition-colors">what AEO means for service businesses</Link>. <Link href="/#calendar" className="text-primary font-bold hover:underline">Book a call</Link> to join the team.
             </>
         ),
-        schemaAnswer: "Absolutely not. Your only job is to bring the client to the door. Once they sign and pay, my team handles 100% of the website building, SEO optimization, and client communication. Our 60-day performance guarantee handles all objections for you."
+        schemaAnswer: "Absolutely not. Your only job is to bring the client to the door. Once they sign and pay, my team handles 100% of the website building, SEO optimization, and client communication. Our 60-day performance guarantee handles all objections for you. Learn about our fulfillment strategy in what AEO means for service businesses. Book a call to join the team."
     },
     {
         question: "How do I start sending you potential clients today?",
         answer: (
             <>
-                Simply book a quick 15-minute onboarding call via our <Link href="/#calendar" className="text-primary hover:text-primary-light transition-colors">strategy calendar</Link>. We will get you set up with your tracking system and give you all the promotional materials you need to start immediately.
+                Simply book a quick 15-minute onboarding call via our <Link href="/#calendar" className="text-primary hover:text-primary-light transition-colors">strategy calendar</Link>. We will get you set up with your tracking system and give you all the promotional materials you need to start immediately. Curious how we close deals? Check out <Link href="/blog/whats-the-best-way-to-get-more-appointments-booked" className="text-primary hover:underline transition-colors">how to get more appointments booked</Link>. <Link href="/#calendar" className="text-primary font-bold hover:underline">Secure your interview slot now</Link>.
             </>
         ),
-        schemaAnswer: "Simply book a quick 15-minute onboarding call via our strategy calendar. We will get you set up with your tracking system and give you all the promotional materials you need to start immediately."
+        schemaAnswer: "Simply book a quick 15-minute onboarding call via our strategy calendar. We will get you set up with your tracking system and give you all the promotional materials you need to start immediately. Curious how we close deals? Check out how to get more appointments booked. Secure your interview slot now."
     }
 ];
 

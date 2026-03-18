@@ -7,25 +7,8 @@ import Link from 'next/link';
 
 const services = [
     {
-        name: "SEO/AEO Optimization",
-        slug: "seo-aeo-optimization",
-        price: "$589.50",
-        period: "/month",
-        marketValue: "$3,500+/mo market value",
-        description: "Dominate local search and become the AI-recommended answer.",
-        features: [
-            "8 SEO/AEO Optimized Blogs Monthly",
-            "Google Business Profile Sync",
-            "Citation Network Building",
-            "AI Search Optimization (ChatGPT, Gemini, Perplexity)",
-            "FREE Until We Book You 10 Leads (then $589.50/mo)"
-        ],
-        ctaLink: "https://buy.stripe.com/aFa6oH3zn4GLbAi1o9cwg0b",
-        highlight: false
-    },
-    {
         name: "Custom High-Converting Website",
-        slug: "custom-website",
+        slug: "custom-website-for-service-businesses",
         price: "$1,256.50",
         period: "",
         marketValue: "$4,700+ market value",
@@ -43,7 +26,7 @@ const services = [
     },
     {
         name: "Autonomous Revenue Generating Engine",
-        slug: "autonomous-revenue-engine",
+        slug: "autonomous-revenue-engine-for-service-businesses",
         price: "Combo",
         period: "",
         marketValue: "$8,900+ total market value",
