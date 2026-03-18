@@ -197,14 +197,23 @@ export default function LeadMagnetForm({
                                 className="w-full px-4 py-3 bg-black/50 border border-white/10 rounded-xl text-white text-sm placeholder-gray-600 focus:outline-none focus:border-primary/60 focus:ring-1 focus:ring-primary/40 transition-all"
                             />
                             {error && <p className="text-red-400 text-xs">{error}</p>}
-                            <button
-                                type="submit"
-                                disabled={submitting}
-                                className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-white text-black text-sm font-bold rounded-xl hover:bg-sky-400 hover:text-white transition-all duration-200 shadow-[0_0_20px_-4px_rgba(56,189,248,0.6)] disabled:opacity-60"
-                            >
-                                {submitting ? 'Sending…' : submitButtonText}
-                            </button>
-                            <p className="text-center text-lg font-extrabold tracking-widest text-primary">FREE</p>
+                            <div className="flex flex-col gap-1">
+                                <button
+                                    type="submit"
+                                    disabled={submitting}
+                                    className="w-full flex items-center justify-center gap-2 px-4 py-3 bg-white text-black text-sm font-bold rounded-xl hover:bg-sky-400 hover:text-white transition-all duration-200 shadow-[0_0_20px_-4px_rgba(56,189,248,0.6)] disabled:opacity-60"
+                                >
+                                    {submitting ? 'Sending…' : submitButtonText}
+                                </button>
+                                <button
+                                    type="button"
+                                    onClick={() => setStep('website')}
+                                    className="text-xs text-gray-400 hover:text-white transition-colors text-center py-2"
+                                >
+                                    ← Go back
+                                </button>
+                            </div>
+                            <p className="text-center text-lg font-extrabold tracking-widest text-primary mt-1">FREE</p>
                         </motion.form>
                     )}
 
