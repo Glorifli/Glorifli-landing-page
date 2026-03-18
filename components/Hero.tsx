@@ -10,7 +10,7 @@ import LeadMagnetForm from './LeadMagnetForm';
 const Hero: React.FC = () => {
 
     return (
-        <section className="relative min-h-[100vh] flex flex-col items-center justify-center overflow-hidden pt-32 pb-16 px-6">
+        <section className="relative min-h-[85vh] flex flex-col items-center justify-center overflow-hidden pt-32 pb-0 px-6">
             <StarBackground />
 
             {/* Background Gradients */}
@@ -56,7 +56,7 @@ const Hero: React.FC = () => {
                 </motion.p>
 
                 {/* ── Compact Multi-Step Audit Form ── */}
-                <LeadMagnetForm className="mt-32" delay={0.3} />
+                <LeadMagnetForm className="mt-12" delay={0.3} />
 
             </div>
         </section>
