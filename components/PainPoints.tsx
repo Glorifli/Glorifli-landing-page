@@ -11,9 +11,8 @@ const painPoints = [
         title: "Tired of people not knowing about your business?",
         description: (
             <>
-                You're an expert in your field, but to the people who need you most, you're invisible. Studies show that{' '}
-                <a href="https://www.zippia.com/advice/online-booking-statistics/" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2 hover:text-white transition-colors">82% of appointments are booked through searches made on mobile</a>.{' '}
-                This means that if your website doesn't have seamless online booking, you're missing out on a majority of the market share.
+                You're an expert in your field, but to the people who need you most, you're invisible. Studies show that the vast majority of local appointments are now booked directly through competitive mobile searches.{' '}
+                This means that if your website doesn't have seamless online booking, you're missing out on a massive portion of the market share.
             </>
         ),
         accentColor: "text-accent",
@@ -24,9 +23,8 @@ const painPoints = [
         title: "Struggling to Convert Website Visitors Into Booked Appointments?",
         description: (
             <>
-                Studies show that{' '}
-                <a href="https://www.softwareadvice.com/resources/why-small-businesses-should-offer-online-booking/" target="_blank" rel="noopener noreferrer" className="text-primary underline underline-offset-2 hover:text-white transition-colors">nearly 70% of all customers chose online booking rather than booking over the phone</a>.{' '}
-                So if your site isn't designed to convert effortlessly your business's longevity will suffer.
+                Consumer research indicates that modern customers overwhelmingly prefer online scheduling over traditional cold-calling.{' '}
+                So if your site isn't designed to convert effortlessly, your business's longevity will suffer.
             </>
         ),
         accentColor: "text-accent",
