@@ -22,11 +22,14 @@ export async function appendLeadToSheet(
         // 3. Target the "Sheet1" tab — columns: Name | Email | Website | Source | Date
         const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID;
         const range = 'Sheet1!A:E';
-        const valueInputOption = 'USER_ENTERED';
+        const valueInputOption = 'RAW'; // Prevents data validation crashes on weird text
+
+        // Format current timestamp
+        const timestamp = new Date().toLocaleString('en-US', { timeZone: 'America/New_York' });
 
         const resource = {
             values: [
-                [name, email, websiteUrl, "Email 1 (Received Lead Magnet in Some Way)"],
+                [name, email, websiteUrl, source || "Email 1 (Received Lead Magnet)", timestamp],
             ],
         };
 

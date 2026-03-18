@@ -53,27 +53,29 @@ export default function LeadMagnetForm({
         setSubmitting(true);
         setError('');
         try {
-            await fetch(INTERNAL_API, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    website,
-                    name,
-                    email,
-                    leadType,
-                }),
-            });
+            // Run both webhook and internal sheet insertion concurrently to prevent Vercel 10s Serverless Timeouts
+            await Promise.all([
+                fetch(INTERNAL_API, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ website, name, email, leadType }),
+                }).then(async (res) => {
+                    if (!res.ok) {
+                        const err = await res.text().catch(() => 'Unknown error');
+                        console.error('Google Sheets API Error:', res.status, err);
+                    }
+                }).catch(err => console.error('Internal API Network Error:', err)),
 
-            await fetch('https://services.leadconnectorhq.com/hooks/KyBfQlriCJtzUoDteCDn/webhook-trigger/9c2fa94d-e665-4e04-aa14-1aa3c9dfe687', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({
-                    website,
-                    name,
-                    email,
-                    leadType,
-                }),
-            });
+                fetch('https://services.leadconnectorhq.com/hooks/KyBfQlriCJtzUoDteCDn/webhook-trigger/9c2fa94d-e665-4e04-aa14-1aa3c9dfe687', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ website, name, email, leadType }),
+                }).then(async (res) => {
+                    if (!res.ok) {
+                        console.error('Webhook LeadConnector Error:', res.status);
+                    }
+                }).catch(err => console.error('Webhook Network Error:', err))
+            ]);
             setStep('done');
         } catch {
             setError('Something went wrong. Please try again.');
