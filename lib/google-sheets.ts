@@ -44,16 +44,16 @@ export async function appendLeadToSheet(
         // 2. Get Sheets Client
         const sheets = google.sheets({ version: 'v4', auth });
 
-        // 3. Target the "Sheet1" tab — columns: Name | Email | Website | Source | Date
+        // 3. Target the "Sheet1" tab — columns: Name | Email | Website
         const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID;
-        const range = 'Sheet1!A:E';
+        const range = 'Sheet1!A:C';
         const valueInputOption = 'RAW'; // Prevents data validation crashes on weird text
 
         const finalWebsite = (websiteUrl === 'No website' || !websiteUrl) ? '' : websiteUrl;
 
         const resource = {
             values: [
-                [name, email, finalWebsite, source || "Email 1 (Received Lead Magnet)"],
+                [name, email, finalWebsite],
             ],
         };
 
