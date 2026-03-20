@@ -29,10 +29,10 @@ const faqs = [
     },
     {
         question: "Is it worth paying $1,256.50 for a custom home remodeling website? What is the ROI?",
-        answer: "Absolutely. Home remodeling is a high-ticket service. Our $1,256.50 setup fee gets you a custom, high-converting digital storefront designed to capture leads. Our data shows that true SEO and AEO leads close at a conservative 30% rate. If our guaranteed 10 leads convert into just 3 remodeling jobs (averaging $25,000 each), that's $75,000 in revenue from a one-time $1,256.50 investment and a performance-backed $589.50/mo retainer."
+        answer: "Absolutely. Home remodeling is a high-ticket service. Our $1,256.50 setup fee gets you a custom, high-converting digital storefront designed to capture leads. Our data shows that true SEO and AEO booked appointments close at a realistic 60% rate. If our guaranteed 5 booked appointments convert into just 3 remodeling jobs (averaging $25,000 each), that's $75,000 in revenue from a one-time $1,256.50 investment and a performance-backed $589.50/mo retainer."
     },
     {
-        question: "What happens if you don't get my landscaping company 10 new leads in 60 days?",
+        question: "What happens if you don't get my landscaping company 5 new leads in 60 days?",
         answer: "We work for free until we do. The 60-day clock begins the moment your $1,256.50 setup fee is paid. We build your site and run your SEO/AEO completely free during that time. If day 60 hits and we haven't generated 10 exclusive leads for your landscaping business, you do not pay a single cent of the $589.50 monthly retainer until the 10th lead is booked. No excuses."
     },
     {
@@ -41,7 +41,7 @@ const faqs = [
     },
     {
         question: "Can I just use Glorifli for the $589.50/mo SEO without the website build?",
-        answer: "We only run our SEO/AEO optimization on websites that we build and control ourselves. Why? Because achieving a 10-leads-in-60-days guarantee requires a flawlessly optimized technical foundation. We need total access to inject our precise Schema markup, optimize the loading speed, and build the dedicated service landing pages that actually convert the traffic we send."
+        answer: "We only run our SEO/AEO optimization on websites that we build and control ourselves. Why? Because achieving a 5-leads-in-60-days guarantee requires a flawlessly optimized technical foundation. We need total access to inject our precise Schema markup, optimize the loading speed, and build the dedicated service landing pages that actually convert the traffic we send."
     }
 ];
 

@@ -42,7 +42,7 @@ const services = [
             "1 Free Month of Blog Content",
             "Full AEO Infrastructure Setup",
             "Priority Support",
-            "SEO/AEO Service Runs FREE Until 10 Leads Booked — Then $589.50/mo"
+            "SEO/AEO Service Runs FREE Until 5 Leads Booked — Then $589.50/mo"
         ],
         valueStack: [
             { item: "Custom Website & Copywriting", price: "$4,300" },
@@ -69,7 +69,7 @@ const Services: React.FC = () => {
                         My <span className="text-primary">Services</span>
                     </h2>
                     <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-4">
-                        Pay the $1,256.50 setup fee to get started. Your website goes live and the SEO/AEO service runs <strong className="text-white">free</strong> until we book you 10 leads — all within 60 days of payment. If we don't, we keep working at no charge until we do.
+                        Pay the $1,256.50 setup fee to get started. Your website goes live and the SEO/AEO service runs <strong className="text-white">free</strong> until we book you 5 leads — all within 60 days of payment. If we don't, we keep working at no charge until we do.
                     </p>
 
                     {/* Value Stack Highlight */}
@@ -171,7 +171,7 @@ const Services: React.FC = () => {
                 {/* ROI Proof Line */}
                 <div className="mt-12 text-center">
                     <p className="text-gray-500 text-sm">
-                        Roofing clients see up to <span className="text-white font-bold">2,646% ROI</span> · Home Remodeling up to <span className="text-white font-bold">5,869% ROI</span> · Based on 30% close rate of 10 guaranteed leads · Sources:{' '}
+                        Roofing clients see up to <span className="text-white font-bold">2,646% ROI</span> · Home Remodeling up to <span className="text-white font-bold">5,869% ROI</span> · Based on 60% close rate of 5 guaranteed appointments · Sources:{' '}
                         <a href="https://modernize.com/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Modernize</a>,{' '}
                         <a href="https://homeguide.com/costs" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">HomeGuide</a>,{' '}
                         <a href="https://www.angi.com/research/reports/" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">Angi</a>.{' '}

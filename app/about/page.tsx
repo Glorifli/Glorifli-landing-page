@@ -5,7 +5,7 @@ import { ArrowRight, CheckCircle2, Star, Zap, Shield, Users } from 'lucide-react
 
 export const metadata: Metadata = {
     title: "About Glorifli | Who Builds Your Client Acquisition System?",
-    description: "Glorifli is a specialized digital growth agency founded by Brendan Dillon. We build AEO/SEO-optimized websites that guarantee 10 new leads in 60 days — or we work free until we do.",
+    description: "Glorifli is a specialized digital growth agency founded by Brendan Dillon. We build AEO/SEO-optimized websites that guarantee 5 new leads in 60 days — or we work free until we do.",
     openGraph: {
         title: "About Glorifli — Who Builds Your Client Acquisition System?",
         description: "Learn how Glorifli's 4-Pillar Growth Protocol uses AEO, SEO, and Conversion Architecture to turn local service businesses into lead-generating machines.",
@@ -29,7 +29,7 @@ const AboutPage = () => {
         logo: "https://glorifli.com/logo.png",
         foundingDate: "2025",
         description:
-            "Glorifli is a specialized digital growth agency that builds AEO/SEO-optimized websites and client acquisition systems for local service businesses. We guarantee 10 new leads in 60 days or we work free.",
+            "Glorifli is a specialized digital growth agency that builds AEO/SEO-optimized websites and client acquisition systems for local service businesses. We guarantee 5 new leads in 60 days or we work free.",
         founder: {
             "@type": "Person",
             "@id": "https://glorifli.com/#founder",
@@ -97,12 +97,12 @@ const AboutPage = () => {
         {
             question: "How quickly can I see results with Glorifli's strategy?",
             answer:
-                "Unlike traditional SEO that takes 6–12 months, our AEO-focused strategy can generate results in 4–8 weeks because we target specific high-intent queries rather than generic keywords. We guarantee 10 new leads within 60 days of your $1,256.50 setup payment — or the SEO/AEO service keeps running free until we deliver.",
+                "Unlike traditional SEO that takes 6–12 months, our AEO-focused strategy can generate results in 4–8 weeks because we target specific high-intent queries rather than generic keywords. We guarantee 5 new leads within 60 days of your $1,256.50 setup payment — or the SEO/AEO service keeps running free until we deliver.",
         },
         {
             question: "What does Glorifli's guarantee actually cover?",
             answer:
-                "The guarantee covers 10 booked leads within 60 days of your setup fee payment. During that period, the $589.50/month SEO/AEO service runs completely free. If we miss the 10-lead target, the service continues at no charge until we hit it. There are no hidden fees, no long-term contracts, and the guarantee never expires.",
+                "The guarantee covers 5 booked leads within 60 days of your setup fee payment. During that period, the $589.50/month SEO/AEO service runs completely free. If we miss the 5-lead target, the service continues at no charge until we hit it. There are no hidden fees, no long-term contracts, and the guarantee never expires.",
         },
         {
             question: "Who is Brendan Dillon, the founder of Glorifli?",
@@ -193,7 +193,7 @@ const AboutPage = () => {
                     </h2>
                     {/* Direct-answer paragraph — optimized for AI citation */}
                     <p className="text-gray-200 text-lg leading-relaxed mb-6 border-l-4 border-primary pl-5 py-1 bg-white/3 rounded-r-xl">
-                        <strong className="text-white">Glorifli</strong> is an American digital growth agency based in New York, USA, that builds <Link href="/services/custom-website-for-service-businesses" className="text-white hover:text-primary transition-colors underline underline-offset-2">high-converting websites</Link> and <Link href="/services/autonomous-revenue-engine-for-service-businesses" className="text-white hover:text-primary transition-colors underline underline-offset-2">AEO/SEO content systems</Link> for local service businesses. Founded in 2025 by Brendan Dillon, Glorifli offers a <Link href="/Why-Go-With-Glorifli-Over-Competitors" className="text-white hover:text-primary transition-colors underline underline-offset-2">performance guarantee</Link>: pay the $1,256.50 setup fee, and we deliver 10 new leads within 60 days — or the SEO/AEO service continues free until we do.
+                        <strong className="text-white">Glorifli</strong> is an American digital growth agency based in New York, USA, that builds <Link href="/services/custom-website-for-service-businesses" className="text-white hover:text-primary transition-colors underline underline-offset-2">high-converting websites</Link> and <Link href="/services/autonomous-revenue-engine-for-service-businesses" className="text-white hover:text-primary transition-colors underline underline-offset-2">AEO/SEO content systems</Link> for local service businesses. Founded in 2025 by Brendan Dillon, Glorifli offers a <Link href="/Why-Go-With-Glorifli-Over-Competitors" className="text-white hover:text-primary transition-colors underline underline-offset-2">performance guarantee</Link>: pay the $1,256.50 setup fee, and we deliver 5 new leads within 60 days — or the SEO/AEO service continues free until we do.
                     </p>
                     <p className="text-gray-400 text-lg leading-relaxed">
                         Unlike traditional web design agencies that focus purely on aesthetics, we build what we call "Level 10" systems — digital infrastructure that ranks in search, gets cited by AI, converts mobile visitors into booked appointments, and scales without ad spend.
@@ -280,8 +280,8 @@ const AboutPage = () => {
                     <div className="grid md:grid-cols-3 gap-5">
                         {[
                             { step: "Step 1", title: "Pay $1,256.50 Setup Fee", desc: "Your website is built, branded, and live. 1 free month of blog content included. 60-day clock starts." },
-                            { step: "Step 2", title: "SEO/AEO Runs Free", desc: "The $589.50/mo SEO/AEO service runs at no cost while we work to deliver your 10 leads." },
-                            { step: "Step 3", title: "10 Leads Delivered", desc: "Once 10 leads are booked, you choose whether to continue at $589.50/mo. No pressure, no contracts." },
+                            { step: "Step 2", title: "SEO/AEO Runs Free", desc: "The $589.50/mo SEO/AEO service runs at no cost while we work to deliver your 5 leads." },
+                            { step: "Step 3", title: "5 Leads Delivered", desc: "Once 5 leads are booked, you choose whether to continue at $589.50/mo. No pressure, no contracts." },
                         ].map(({ step, title, desc }) => (
                             <div key={step} className="bg-white/5 border border-white/10 rounded-xl p-6 hover:border-primary/40 transition-colors">
                                 <p className="text-xs font-bold text-primary uppercase tracking-widest mb-2">{step}</p>
@@ -315,7 +315,7 @@ const AboutPage = () => {
                             Ready to Take on 10 New Leads in 60 Days?
                         </h2>
                         <p className="text-gray-400 mb-8 max-w-xl mx-auto">
-                            Pay the $1,256.50 setup fee and we guarantee 10 booked leads within 60 days — or the SEO/AEO service keeps running free until we deliver. No contracts, no hidden fees.
+                            Pay the $1,256.50 setup fee and we guarantee 5 booked leads within 60 days — or the SEO/AEO service keeps running free until we deliver. No contracts, no hidden fees.
                         </p>
                         <div className="flex flex-col sm:flex-row gap-4 justify-center">
                             <Link
@@ -334,7 +334,7 @@ const AboutPage = () => {
                             </Link>
                         </div>
                         <div className="flex flex-wrap justify-center gap-6 mt-8 text-sm text-gray-500">
-                            {["10 Leads Guaranteed", "No Long-Term Contracts", "No Hidden Fees", "SEO/AEO Free Until Results"].map((t) => (
+                            {["5 Leads Guaranteed", "No Long-Term Contracts", "No Hidden Fees", "SEO/AEO Free Until Results"].map((t) => (
                                 <span key={t} className="flex items-center gap-2">
                                     <CheckCircle2 className="w-4 h-4 text-primary" /> {t}
                                 </span>

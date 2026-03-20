@@ -79,7 +79,7 @@ export default function MakeMoneyPage() {
                     <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
                         <Users className="w-8 h-8 text-primary mb-4" />
                         <h3 className="font-bold text-lg mb-2">Easy to Sell</h3>
-                        <p className="text-gray-400 text-sm">We guarantee 10 booked leads in 60 days or we work for free. You're selling an irresistible, risk-free offer to business owners.</p>
+                        <p className="text-gray-400 text-sm">We guarantee 5 booked leads in 60 days or we work for free. You're selling an irresistible, risk-free offer to business owners.</p>
                     </div>
                 </div>
 

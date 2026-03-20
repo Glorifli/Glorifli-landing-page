@@ -6,10 +6,10 @@ import LeadMagnetForm from '@/components/LeadMagnetForm';
 
 export const metadata: Metadata = {
     title: "Digital Marketing Services | Glorifli — AEO, SEO & Web Design",
-    description: "Explore Glorifli's services: custom high-converting websites ($1,256.50), SEO/AEO optimization ($589.50/mo), and the complete Autonomous Revenue Engine. 10 leads in 60 days guaranteed.",
+    description: "Explore Glorifli's services: custom high-converting websites ($1,256.50), SEO/AEO optimization ($589.50/mo), and the complete Autonomous Revenue Engine. 5 leads in 60 days guaranteed.",
     openGraph: {
         title: "Glorifli Services — AEO, SEO & Web Design for Local Businesses",
-        description: "View Glorifli's full service offering. Custom websites, SEO/AEO content systems, and a complete Revenue Engine — all backed by a 10-leads-in-60-days guarantee.",
+        description: "View Glorifli's full service offering. Custom websites, SEO/AEO content systems, and a complete Revenue Engine — all backed by a 5-leads-in-60-days guarantee.",
         url: "https://glorifli.com/services",
         type: "website",
         images: ["https://glorifli.com/images/blog/featured-hero.png"],
@@ -45,7 +45,7 @@ const services = [
         name: "Autonomous Revenue Generating Engine",
         tagline: "The complete system. Build, rank, convert — on autopilot.",
         price: "$1,256.50 setup",
-        priceNote: "then $589.50/mo (free until 10 leads booked)",
+        priceNote: "then $589.50/mo (free until 5 leads booked)",
         marketValue: "$8,900+",
         badge: "Best Value",
         highlight: true,
@@ -115,7 +115,7 @@ export default function ServicesPage() {
                 <div className="max-w-4xl mx-auto text-center relative z-10">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 mb-8">
                         <span className="w-2 h-2 rounded-full bg-accent animate-pulse" />
-                        <span className="text-xs font-semibold text-accent uppercase tracking-widest">10 Leads in 60 Days — Guaranteed</span>
+                        <span className="text-xs font-semibold text-accent uppercase tracking-widest">5 Leads in 60 Days — Guaranteed</span>
                     </div>
                     <h1 className="text-4xl md:text-6xl font-bold font-heading tracking-tighter leading-tight mb-6">
                         What Digital Marketing Services{' '}
@@ -233,7 +233,7 @@ export default function ServicesPage() {
                         SEO/AEO leads close at 25–45% because prospects searched for exactly what you offer, in your city, at the moment they need it. Here's what closing just 3 of your 10 guaranteed leads looks like:
                     </p>
                     <p className="text-center text-xs text-gray-600 mb-10">
-                        Based on 30% close rate (conservative floor). Sources:{' '}
+                        Based on 60% close rate (for high-intent booked appointments). Sources:{' '}
                         <a href="https://modernize.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-white/20 hover:decoration-primary/50 transition-colors">Modernize</a>,{' '}
                         <a href="https://www.angi.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-white/20 hover:decoration-primary/50 transition-colors">Angi</a>,{' '}
                         <a href="https://homeguide.com/" target="_blank" rel="noopener noreferrer" className="hover:text-primary underline decoration-white/20 hover:decoration-primary/50 transition-colors">HomeGuide</a>,{' '}
@@ -274,7 +274,7 @@ export default function ServicesPage() {
                             Ready to Get Started?
                         </h2>
                         <p className="text-gray-400 mb-8 max-w-xl mx-auto">
-                            Pay the $1,256.50 setup fee, get your website live, and we run the SEO/AEO service free until your 10 leads are delivered — all within 60 days.
+                            Pay the $1,256.50 setup fee, get your website live, and we run the SEO/AEO service free until your 5 leads are delivered — all within 60 days.
                         </p>
                         <Link
                             href="/#calendar"

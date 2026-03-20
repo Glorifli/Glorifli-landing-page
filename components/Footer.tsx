@@ -56,7 +56,7 @@ const Footer: React.FC = () => {
                             <span className="text-2xl font-bold font-heading tracking-tight text-white">Glorifli</span>
                         </div>
                         <p className="text-sm text-gray-400 max-w-sm">
-                            We guarantee 10 new appointments in 60 days — or we work for free until we get you those results.
+                            We guarantee 5 new appointments in 60 days — or we work for free until we get you those results.
                         </p>
                         <p className="text-xs text-gray-600">© 2025 Glorifli Inc. All rights reserved.</p>
                     </div>

@@ -87,7 +87,7 @@ export default async function ServicePage({ params }: Props) {
                 <section className="mb-16">
                     <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/10 border border-primary/20 mb-6">
                         <span className="text-xs font-semibold text-primary uppercase tracking-widest">
-                            {service.setupFee !== '$0' ? `${service.setupFee} One-Time Setup` : 'Free Until 10 Leads'}
+                            {service.setupFee !== '$0' ? `${service.setupFee} One-Time Setup` : 'Free Until 5 Leads'}
                         </span>
                     </div>
                     <h1 className="text-4xl md:text-6xl font-bold font-heading tracking-tighter leading-tight mb-6">
@@ -164,7 +164,7 @@ export default async function ServicePage({ params }: Props) {
                 {/* ROI (if exists) */}
                 {service.roiRows && (
                     <section className="mb-16">
-                        <h2 className="text-2xl font-bold text-white font-heading mb-6">Typical ROI Based on 10 Leads</h2>
+                        <h2 className="text-2xl font-bold text-white font-heading mb-6">Typical ROI Based on 5 Leads</h2>
                         <div className="bg-white/5 border border-white/10 rounded-2xl overflow-hidden overflow-x-auto">
                             <table className="w-full text-left min-w-[600px]">
                                 <thead className="bg-white/5 border-b border-white/10">

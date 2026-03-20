@@ -186,7 +186,7 @@ export default async function FAQSlugPage({ params }: Props) {
                 <div className="mt-14 bg-gradient-to-br from-primary/15 via-black to-black border border-primary/25 rounded-2xl p-8 text-center">
                     <h2 className="text-xl font-bold text-white mb-3">Want Glorifli to Handle This for You?</h2>
                     <p className="text-gray-400 text-sm mb-6 max-w-md mx-auto">
-                        We build the AEO/SEO infrastructure, publish the content, and optimize your GBP — all backed by a 10-leads-in-60-days guarantee.
+                        We build the AEO/SEO infrastructure, publish the content, and optimize your GBP — all backed by a 5-leads-in-60-days guarantee.
                     </p>
                     <Link
                         href="/#calendar"

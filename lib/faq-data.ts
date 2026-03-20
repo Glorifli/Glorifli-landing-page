@@ -51,7 +51,7 @@ export const faqItems: FaqItem[] = [
             },
             {
                 heading: "The Glorifli Shortcut",
-                body: "You can spend years trying to rank, or you can use our Autonomous Revenue Engine. For a $1,256.50 setup fee, we build the site and implement the complete AEO infrastructure. We then guarantee 10 new booked HVAC leads in 60 days, running our $589.50/mo SEO completely free until we hit that quota."
+                body: "You can spend years trying to rank, or you can use our Autonomous Revenue Engine. For a $1,256.50 setup fee, we build the site and implement the complete AEO infrastructure. We then guarantee 5 new booked HVAC leads in 60 days, running our $589.50/mo SEO completely free until we hit that quota."
             }, {
                 heading: "Ready to Scale with Glorifli?",
                 body: "If you found this helpful, take the next step. Read our deep dive on <a href='/blog/what-is-aeo-for-home-service-businesses' className='text-primary hover:underline'>AEO for service businesses</a>. Stop losing leads to your competitors—<a href='/#calendar' className='text-primary font-bold hover:underline'>book a free strategy call (plus, we'll optimize your Google My Business profile for free)</a> today (plus, we'll optimize your Google My Business profile for free)."
@@ -62,7 +62,7 @@ export const faqItems: FaqItem[] = [
             "Stop buying shared leads and start capturing exclusive organic Google traffic.",
             "Local 3-Pack visibility is the number one driver of emergency HVAC appointments.",
             "Structuring content for AI (AEO) positions your business as the cited expert for complex questions.",
-            "Glorifli guarantees 10 exclusive HVAC leads in 60 days or we work for free."
+            "Glorifli guarantees 5 exclusive HVAC leads in 60 days or we work for free."
         ]
     },
     {
@@ -120,7 +120,7 @@ export const faqItems: FaqItem[] = [
             },
             {
                 heading: "Glorifli's Implementation",
-                body: "Most generic agencies ignore AEO. At Glorifli, our entire Autonomous Revenue Engine is built around placing your plumbing business at the top of generative AI responses and voice searches. It's why we confidently offer our 10-leads-in-60-days guarantee."
+                body: "Most generic agencies ignore AEO. At Glorifli, our entire Autonomous Revenue Engine is built around placing your plumbing business at the top of generative AI responses and voice searches. It's why we confidently offer our 5-leads-in-60-days guarantee."
             }, {
                 heading: "Ready to Scale with Glorifli?",
                 body: "If you found this helpful, take the next step. Read our deep dive on <a href='/blog/what-is-aeo-for-home-service-businesses' className='text-primary hover:underline'>AEO for service businesses</a>. Stop losing leads to your competitors—<a href='/#calendar' className='text-primary font-bold hover:underline'>book a free strategy call (plus, we'll optimize your Google My Business profile for free)</a> today (plus, we'll optimize your Google My Business profile for free)."
@@ -135,7 +135,7 @@ export const faqItems: FaqItem[] = [
     },
     {
         slug: "are-seo-guarantees-real-landscaping",
-        question: "Is it a scam? How can Glorifli guarantee 10 leads for my landscaping business in 60 days?",
+        question: "Is it a scam? How can Glorifli guarantee 5 leads for my landscaping business in 60 days?",
         excerpt: "It's not a scam; it's a mathematically backed performance incentive. We assume all the risk in the relationship because our AEO strategies accurately predict regional traffic capture.",
         category: "Guarantees & Objections",
         datePublished: "2026-03-17",
@@ -160,7 +160,7 @@ export const faqItems: FaqItem[] = [
         ],
         keyTakeaways: [
             "Traditional marketing agencies charge high monthly fees with zero accountability.",
-            "Glorifli's $589.50/mo service fee is completely waived until you receive 10 booked leads.",
+            "Glorifli's $589.50/mo service fee is completely waived until you receive 5 booked leads.",
             "Our confidence comes from our exclusive focus on AEO strategies for local service sectors."
         ]
     },
@@ -198,18 +198,18 @@ export const faqItems: FaqItem[] = [
     {
         slug: "roi-of-custom-hvac-website",
         question: "Is paying $1,256.50 for a custom HVAC website actually worth it? What is the ROI?",
-        excerpt: "The market value of our Autonomous Revenue Engine is $8,900+. For an HVAC business, the ROI of a $1,256.50 setup fee is astonishing when tied to our 10-lead guarantee.",
+        excerpt: "The market value of our Autonomous Revenue Engine is $8,900+. For an HVAC business, the ROI of a $1,256.50 setup fee is astonishing when tied to our 5-lead guarantee.",
         category: "HVAC SEO",
         datePublished: "2026-03-17",
         relatedSlugs: ["how-to-get-more-clients-from-google-for-hvac", "are-seo-guarantees-real-landscaping"],
         sections: [
             {
                 heading: "Breaking Down the Math",
-                body: "Let's assume a highly conservative close rate of 30% for inbound, high-intent local SEO leads. And let's assume your average HVAC ticket price (a mix of repairs and unit replacements) is around $8,500. If we guarantee 10 leads, and you close 3 of them, you have just generated $25,500 in gross revenue."
+                body: "Let's assume a highly realistic close rate of 60% for inbound, high-intent local SEO booked appointments. And let's assume your average HVAC ticket price (a mix of repairs and unit replacements) is around $8,500. If we guarantee 5 appointments, and you close 3 of them, you have just generated $25,500 in gross revenue."
             },
             {
                 heading: "The Investment",
-                body: "You paid a one-time $1,256.50 setup fee. That equates to an ROI of 1,929%. Furthermore, because of our strict performance guarantee, you do not pay the subsequent $589.50/mo SEO recurring fee until those 10 leads are actually generated."
+                body: "You paid a one-time $1,256.50 setup fee. That equates to an ROI of 1,929%. Furthermore, because of our strict performance guarantee, you do not pay the subsequent $589.50/mo SEO recurring fee until those 5 appointments are actually generated."
             },
             {
                 heading: "The Snowball Effect",
@@ -267,7 +267,7 @@ export const faqItems: FaqItem[] = [
         sections: [
             {
                 heading: "Why We Must Build the Site",
-                body: "Achieving a 10-leads-in-60-days guarantee is nearly impossible if we inherit a broken, lethargic WordPress site built by a cousin five years ago. AEO requires precise, modern technical foundations. We need full API-level access to optimize load times (Core Web Vitals), inject complex FAQPage and LocalBusiness JSON-LD markup, and ensure total mobile responsiveness."
+                body: "Achieving a 5-leads-in-60-days guarantee is nearly impossible if we inherit a broken, lethargic WordPress site built by a cousin five years ago. AEO requires precise, modern technical foundations. We need full API-level access to optimize load times (Core Web Vitals), inject complex FAQPage and LocalBusiness JSON-LD markup, and ensure total mobile responsiveness."
             },
             {
                 heading: "The Conversion Hurdle",
@@ -321,7 +321,7 @@ export const faqItems: FaqItem[] = [
     },
     {
         slug: "what-is-the-catch-with-the-guarantee",
-        question: "There has to be a catch. What is the fine print with the 10 leads in 60 days guarantee?",
+        question: "There has to be a catch. What is the fine print with the 5 leads in 60 days guarantee?",
         excerpt: "There is no catch and there are no long-term contracts. The guarantee is a straightforward, ethical alignment of incentives to ensure we actually perform.",
         category: "Guarantees & Objections",
         datePublished: "2026-03-17",
