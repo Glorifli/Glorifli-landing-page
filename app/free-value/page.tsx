@@ -7,7 +7,7 @@ import GenericFAQ, { FAQItem } from '@/components/GenericFAQ';
 
 export const metadata: Metadata = {
     title: 'Free Value & Resources | Glorifli',
-    description: 'Get free SEO Action Plans, Free Blog Content, and join our lifetime commission Affiliate Program. We build goodwill by giving value upfront.',
+    description: 'Get a free SEO Action Plan and join our lifetime commission Affiliate Program. We build goodwill by giving value upfront.',
 };
 
 const hubFaqs: FAQItem[] = [
@@ -15,10 +15,10 @@ const hubFaqs: FAQItem[] = [
         question: "What is the Free Value Hub?",
         answer: (
             <>
-                The Free Value Hub is our way of building absolute trust before you pay us a dime. We offer resources like a free SEO Action Plan, complimentary blog content, and a partner program to help your <Link href="/services" className="text-primary hover:text-primary-light transition-colors">local service business</Link> grow immediately. Read our philosophy in <Link href="/blog/why-your-business-growth-has-stalled" className="text-primary hover:underline transition-colors">why business growth stalls</Link>. Let's chat about your goals: <Link href="/#calendar" className="text-primary font-bold hover:underline">book a call (plus, we'll optimize your Google My Business profile for free)</Link> (plus, we'll optimize your Google My Business profile for free).
+                The Free Value Hub is our way of building absolute trust before you pay us a dime. We offer resources like a free SEO Action Plan and a partner program to help your <Link href="/services" className="text-primary hover:text-primary-light transition-colors">local service business</Link> grow immediately. Read our philosophy in <Link href="/blog/why-your-business-growth-has-stalled" className="text-primary hover:underline transition-colors">why business growth stalls</Link>. Let's chat about your goals: <Link href="/#calendar" className="text-primary font-bold hover:underline">book a call</Link> (plus, we'll optimize your Google My Business profile for free).
             </>
         ),
-        schemaAnswer: "The Free Value Hub is our way of building absolute trust before you pay us a dime. We offer resources like a free SEO Action Plan, complimentary blog content, and a partner program to help your local service business grow immediately. Read our philosophy in why business growth stalls. Let's chat about your goals: book a call."
+        schemaAnswer: "The Free Value Hub is our way of building absolute trust before you pay us a dime. We offer resources like a free SEO Action Plan and a partner program to help your local service business grow immediately. Read our philosophy in why business growth stalls. Let's chat about your goals: book a call."
     },
     {
         question: "How do I claim my free SEO Action plan?",
@@ -42,10 +42,10 @@ const hubFaqs: FAQItem[] = [
         question: "How does the backlink exchange program work?",
         answer: (
             <>
-                We will write a fully optimized blog post specifically for your target audience for free. In return, you just publish it on your site and include a backlink to Glorifli. Learn more on our <Link href="/free-value/free-blog-content" className="text-primary hover:text-primary-light transition-colors">Free Blog Content page</Link>. Unsure about content marketing? Read <Link href="/blog/how-to-write-sales-copy-that-sells-services" className="text-primary hover:underline transition-colors">how to write sales copy that sells</Link>. Have questions? <Link href="/#calendar" className="text-primary font-bold hover:underline">Book a call (plus, we'll optimize your Google My Business profile for free)</Link> (plus, we'll optimize your Google My Business profile for free).
+                If you are looking to exchange backlinks with Glorifli to boost your own Domain Authority, we occasionally partner with relevant service businesses for natural link placements. Have questions? <Link href="/#calendar" className="text-primary font-bold hover:underline">Book a call</Link> (plus, we'll optimize your Google My Business profile for free).
             </>
         ),
-        schemaAnswer: "We will write a fully optimized blog post specifically for your target audience for free. In return, you just publish it on your site and include a backlink to Glorifli. Learn more on our Free Blog Content page. Unsure about content marketing? Read how to write sales copy that sells. Have questions? Book a call."
+        schemaAnswer: "If you are looking to exchange backlinks with Glorifli to boost your own Domain Authority, we occasionally partner with relevant service businesses for natural link placements. Have questions? Book a call."
     }
 ];
 
@@ -62,36 +62,31 @@ export default function FreeValueHubPage() {
                     Free Resources to Grow Your <span className="text-primary">Local Business</span>
                 </h1>
                 <p className="text-lg text-gray-400 max-w-2xl mx-auto mb-16">
-                    We believe in giving upfront value to build trust. Whether you need a custom SEO action plan, free blog content, or want to partner with us for commissions, you're in the right place.
+                    We believe in giving upfront value to build trust. Whether you need a custom SEO action plan or want to partner with us for commissions, you're in the right place.
                 </p>
 
                 <div className="mb-20">
                     <LeadMagnetForm delay={0.1} />
                 </div>
 
-                <div className="grid md:grid-cols-3 gap-6 text-left">
+                <div className="grid md:grid-cols-2 gap-6 text-left">
                     <Link href="/free-value/free-services" className="group bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-primary/50 transition-all duration-300">
                         <h3 className="text-2xl font-bold text-white mb-3 font-heading group-hover:text-primary transition-colors">Free Services</h3>
-                        <p className="text-gray-400 mb-6 flex-grow">Get your free custom SEO Action Plan + 1 Free SEO Optimized Blog Post designed specifically for your local business.</p>
+                        <p className="text-gray-400 mb-6 flex-grow">Get your free custom SEO Action Plan and we'll optimize your Google My Business profile to get more views.</p>
                         <span className="inline-flex items-center gap-2 text-primary font-bold">Get Started <ArrowRight className="w-4 h-4" /></span>
                     </Link>
 
-                    <Link href="/free-value/free-blog-content" className="group bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-primary/50 transition-all duration-300">
-                        <h3 className="text-2xl font-bold text-white mb-3 font-heading group-hover:text-primary transition-colors">Free SEO/AEO Blog Content</h3>
-                        <p className="text-gray-400 mb-6 flex-grow">We'll write incredibly high-quality, high-ranking SEO content for your site for free, in exchange for a simple backlink to Glorifli.</p>
-                        <span className="inline-flex items-center gap-2 text-primary font-bold">Request Content <ArrowRight className="w-4 h-4" /></span>
-                    </Link>
-
+                    {/* Partner Program */}
                     <Link href="/free-value/make-money" className="group bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-primary/50 transition-all duration-300">
                         <h3 className="text-2xl font-bold text-white mb-3 font-heading group-hover:text-primary transition-colors">Make Money With Us Here!</h3>
                         <p className="text-gray-400 mb-6 flex-grow">Join our remote sales or affiliate program. We offer a true 20% lifetime commission on any job you bring in that closes.</p>
                         <span className="inline-flex items-center gap-2 text-primary font-bold">Apply Now <ArrowRight className="w-4 h-4" /></span>
                     </Link>
                 </div>
-            </div>
 
-            <div className="max-w-4xl mx-auto mt-24 border-t border-white/10 pt-16">
-                <GenericFAQ faqs={hubFaqs} className="" title="Free Value Hub FAQ" />
+                <div className="max-w-4xl mx-auto mt-24 border-t border-white/10 pt-16">
+                    <GenericFAQ faqs={hubFaqs} className="" title="Free Value Hub FAQ" />
+                </div>
             </div>
         </div>
     );

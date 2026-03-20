@@ -2,12 +2,12 @@ import React from 'react';
 import { Metadata } from 'next';
 import Link from 'next/link';
 import LeadMagnetForm from '@/components/LeadMagnetForm';
-import { CheckCircle2 } from 'lucide-react';
+import { CheckCircle2, ArrowRight } from 'lucide-react';
 import GenericFAQ, { FAQItem } from '@/components/GenericFAQ';
 
 export const metadata: Metadata = {
     title: 'Free SEO Services & Action Plan | Glorifli',
-    description: 'Get a custom SEO Action Plan and 1 Free SEO Optimized Blog Post designed specifically for your local business.',
+    description: "Get a custom SEO Action Plan and we'll optimize your Google My Business profile to get more views.",
 };
 
 const servicesFaqs: FAQItem[] = [
@@ -15,16 +15,16 @@ const servicesFaqs: FAQItem[] = [
         question: "What exactly is included in the SEO Action plan?",
         answer: (
             <>
-                You will receive a comprehensive technical action plan for your website, a targeted list of local search terms you are currently missing, and <Link href="/blog" className="text-primary hover:text-primary-light transition-colors">two free custom blog posts</Link> fully optimized and ready to publish. See our optimization basics in <Link href="/blog/what-is-aeo-for-home-service-businesses" className="text-primary hover:underline transition-colors">AEO for home service businesses</Link>. Let's get started: <Link href="/#calendar" className="text-primary font-bold hover:underline">book a call today (plus, we'll optimize your Google My Business profile for free)</Link> (plus, we'll optimize your Google My Business profile for free).
+                You will receive a comprehensive technical action plan for your website, a targeted list of local search terms you are currently missing, and we'll optimize your Google My Business profile to get more views. See our optimization basics in <Link href="/blog/what-is-aeo-for-home-service-businesses" className="text-primary hover:underline transition-colors">AEO for home service businesses</Link>. Let's get started: <Link href="/#calendar" className="text-primary font-bold hover:underline">book a call today (plus, we'll optimize your Google My Business profile for free)</Link> (plus, we'll optimize your Google My Business profile for free).
             </>
         ),
-        schemaAnswer: "You will receive a comprehensive technical action plan for your website, a targeted list of local search terms you are currently missing, and two free custom blog posts fully optimized and ready to publish. See our optimization basics in AEO for home service businesses. Let's get started: book a call today."
+        schemaAnswer: "You will receive a comprehensive technical action plan for your website, a targeted list of local search terms you are currently missing, and we'll optimize your Google My Business profile to get more views. See our optimization basics in AEO for home service businesses. Let's get started: book a call today."
     },
     {
         question: "How long does it take to receive my plan?",
         answer: (
             <>
-                Because we do not use automated generic reports, a real human will create your action plan and craft the blog content. This usually takes between 24 and 48 business hours. Want to know what we look at? Read our guide on <Link href="/blog/what-makes-a-high-converting-landing-page" className="text-primary hover:underline transition-colors">what makes a high-converting landing page</Link>. Skip the wait—<Link href="/#calendar" className="text-primary font-bold hover:underline">book your strategy session (plus, we'll optimize your Google My Business profile for free)</Link> (plus, we'll optimize your Google My Business profile for free).
+                Because we do not use automated generic reports, a real human will create your action plan and optimize your Google My Business profile. This usually takes between 24 and 48 business hours. Want to know what we look at? Read our guide on <Link href="/blog/what-makes-a-high-converting-landing-page" className="text-primary hover:underline transition-colors">what makes a high-converting landing page</Link>. Skip the wait—<Link href="/#calendar" className="text-primary font-bold hover:underline">book your strategy session (plus, we'll optimize your Google My Business profile for free)</Link> (plus, we'll optimize your Google My Business profile for free).
             </>
         )
     },
@@ -60,7 +60,7 @@ export default function FreeServicesPage() {
                     Get Your Free <span className="text-primary">SEO Action Plan</span>
                 </h1>
                 <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
-                    Stop guessing why your phone isn't ringing. We'll analyze your site and deliver a step-by-step roadmap to outrank your competitors, plus write 1 free blog post to get you started.
+                    Stop guessing why your phone isn't ringing. We'll analyze your site and deliver a step-by-step roadmap to outrank your competitors, plus we'll optimize your Google My Business profile to get more views.
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-12 items-center text-left mb-16">
@@ -75,9 +75,11 @@ export default function FreeServicesPage() {
                                 <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0" />
                                 <span className="text-gray-300">A targeted list of local search terms and high-intent keywords missing from your site.</span>
                             </li>
-                            <li className="flex gap-3">
-                                <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0" />
-                                <span className="text-gray-300"><strong className="text-white">1 Free Custom Blog Post:</strong> Fully optimized, written specifically for your business, ready to publish.</span>
+                            <li className="flex items-start gap-4">
+                                <div className="mt-1 flex-shrink-0 w-8 h-8 rounded-full bg-primary/20 flex items-center justify-center">
+                                    <ArrowRight className="w-4 h-4 text-primary" />
+                                </div>
+                                <span className="text-gray-300"><strong className="text-white">Google My Business Optimization:</strong> We'll optimize your Google My Business profile to get more views and drive more local traffic directly to your phone line.</span>
                             </li>
                         </ul>
                     </div>

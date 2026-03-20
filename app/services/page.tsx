@@ -282,30 +282,24 @@ export default function ServicesPage() {
                         >
                             Book Your Free Strategy Call
                             <ArrowRight className="w-4 h-4" />
-                         (plus, we'll optimize your Google My Business profile for free)</Link>
+                            (plus, we'll optimize your Google My Business profile for free)</Link>
                     </div>
                 </section>
 
                 {/* ── Free Value Section ── */}
                 <section className="mb-20 text-center" id="free-value">
                     <h2 className="text-3xl font-bold text-white font-heading mb-4">Take Advantage of Our Free Resources!</h2>
-                    <p className="text-gray-400 max-w-2xl mx-auto mb-12">Get a custom SEO Action Plan, Free Backlink Content, or join our Lifetime Commission Affiliate Program.</p>
+                    <p className="text-gray-400 max-w-2xl mx-auto mb-12">Get a custom SEO Action Plan and Google My Business Optimization, or join our Lifetime Commission Affiliate Program.</p>
 
                     <div className="mb-16">
                         <LeadMagnetForm className="" delay={0.1} />
                     </div>
 
-                    <div className="grid md:grid-cols-3 gap-6 text-left max-w-5xl mx-auto">
+                    <div className="grid md:grid-cols-2 gap-6 text-left max-w-5xl mx-auto">
                         <Link href="/free-value/free-services" className="group bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
                             <h3 className="text-xl font-bold text-white mb-2 font-heading group-hover:text-primary transition-colors">Free Services</h3>
-                            <p className="text-sm text-gray-400 mb-4">Get your free custom SEO Action Plan + 1 Free SEO Optimized Blog Post designed specifically for your local business.</p>
+                            <p className="text-sm text-gray-400 mb-4">Get your free custom SEO Action Plan and we'll optimize your Google My Business profile to get more views.</p>
                             <span className="text-primary text-sm font-bold flex items-center gap-2">Get Started <ArrowRight className="w-4 h-4" /></span>
-                        </Link>
-
-                        <Link href="/free-value/free-blog-content" className="group bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
-                            <h3 className="text-xl font-bold text-white mb-2 font-heading group-hover:text-primary transition-colors">Free SEO/AEO Blog Content</h3>
-                            <p className="text-sm text-gray-400 mb-4">We'll write incredibly high-quality, high-ranking SEO content for your site for free, in exchange for a simple backlink to Glorifli.</p>
-                            <span className="text-primary text-sm font-bold flex items-center gap-2">Request Content <ArrowRight className="w-4 h-4" /></span>
                         </Link>
 
                         <Link href="/free-value/make-money" className="group bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
