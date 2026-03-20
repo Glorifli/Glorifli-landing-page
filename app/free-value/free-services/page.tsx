@@ -7,7 +7,7 @@ import GenericFAQ, { FAQItem } from '@/components/GenericFAQ';
 
 export const metadata: Metadata = {
     title: 'Free SEO Services & Action Plan | Glorifli',
-    description: 'Get a custom SEO Action Plan and 2 Free SEO Optimized Blog Posts designed specifically for your local business.',
+    description: 'Get a custom SEO Action Plan and 1 Free SEO Optimized Blog Post designed specifically for your local business.',
 };
 
 const servicesFaqs: FAQItem[] = [
@@ -60,7 +60,7 @@ export default function FreeServicesPage() {
                     Get Your Free <span className="text-primary">SEO Action Plan</span>
                 </h1>
                 <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
-                    Stop guessing why your phone isn't ringing. We'll analyze your site and deliver a step-by-step roadmap to outrank your competitors, plus write 2 free blog posts to get you started.
+                    Stop guessing why your phone isn't ringing. We'll analyze your site and deliver a step-by-step roadmap to outrank your competitors, plus write 1 free blog post to get you started.
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-12 items-center text-left mb-16">
@@ -77,7 +77,7 @@ export default function FreeServicesPage() {
                             </li>
                             <li className="flex gap-3">
                                 <CheckCircle2 className="w-6 h-6 text-primary flex-shrink-0" />
-                                <span className="text-gray-300"><strong className="text-white">2 Free Custom Blog Posts:</strong> Fully optimized, written specifically for your business, ready to publish.</span>
+                                <span className="text-gray-300"><strong className="text-white">1 Free Custom Blog Post:</strong> Fully optimized, written specifically for your business, ready to publish.</span>
                             </li>
                         </ul>
                     </div>

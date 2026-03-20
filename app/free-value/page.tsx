@@ -72,7 +72,7 @@ export default function FreeValueHubPage() {
                 <div className="grid md:grid-cols-3 gap-6 text-left">
                     <Link href="/free-value/free-services" className="group bg-white/5 border border-white/10 rounded-2xl p-8 hover:bg-white/10 hover:border-primary/50 transition-all duration-300">
                         <h3 className="text-2xl font-bold text-white mb-3 font-heading group-hover:text-primary transition-colors">Free Services</h3>
-                        <p className="text-gray-400 mb-6 flex-grow">Get your free custom SEO Action Plan + 2 Free SEO Optimized Blog Posts designed specifically for your local business.</p>
+                        <p className="text-gray-400 mb-6 flex-grow">Get your free custom SEO Action Plan + 1 Free SEO Optimized Blog Post designed specifically for your local business.</p>
                         <span className="inline-flex items-center gap-2 text-primary font-bold">Get Started <ArrowRight className="w-4 h-4" /></span>
                     </Link>
 

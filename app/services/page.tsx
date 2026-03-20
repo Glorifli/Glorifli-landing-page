@@ -298,7 +298,7 @@ export default function ServicesPage() {
                     <div className="grid md:grid-cols-3 gap-6 text-left max-w-5xl mx-auto">
                         <Link href="/free-value/free-services" className="group bg-white/5 border border-white/10 rounded-2xl p-6 hover:bg-white/10 transition-colors">
                             <h3 className="text-xl font-bold text-white mb-2 font-heading group-hover:text-primary transition-colors">Free Services</h3>
-                            <p className="text-sm text-gray-400 mb-4">Get your free custom SEO Action Plan + 2 Free SEO Optimized Blog Posts designed specifically for your local business.</p>
+                            <p className="text-sm text-gray-400 mb-4">Get your free custom SEO Action Plan + 1 Free SEO Optimized Blog Post designed specifically for your local business.</p>
                             <span className="text-primary text-sm font-bold flex items-center gap-2">Get Started <ArrowRight className="w-4 h-4" /></span>
                         </Link>
 
