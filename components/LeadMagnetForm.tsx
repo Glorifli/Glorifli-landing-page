@@ -25,7 +25,7 @@ export default function LeadMagnetForm({
     title = <>Get Your <span className="text-primary">Personalized SEO</span> Action Plan!</>,
     subtitle = "The Sooner Your Website Ranks the Sooner You Will be Booking Appointments Without having to Lift a Finger!",
     successMessageTitle = "You're on the list!",
-    successMessageSubtitle = "We'll send your personalised SEO Action Plan within 24–48 hrs. Check your inbox.",
+    successMessageSubtitle = "Your personalised SEO Action Plan will arrive shortly. Check your inbox.",
     submitButtonText = <>Get Access <ArrowRight className="w-3.5 h-3.5" /></>,
     leadType = 'hero-seo-audit'
 }: LeadMagnetFormProps) {

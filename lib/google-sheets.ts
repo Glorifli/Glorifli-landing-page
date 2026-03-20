@@ -46,7 +46,7 @@ export async function appendLeadToSheet(
 
         // 3. Target the "Sheet1" tab — columns: Name | Email | Website
         const spreadsheetId = process.env.GOOGLE_SHEETS_SPREADSHEET_ID;
-        const range = 'Sheet1!A:C';
+        const range = 'Sheet1!A2:C';
         const valueInputOption = 'RAW'; // Prevents data validation crashes on weird text
 
         const finalWebsite = (websiteUrl === 'No website' || !websiteUrl) ? '' : websiteUrl;
