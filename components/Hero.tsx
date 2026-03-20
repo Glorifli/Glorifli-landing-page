@@ -44,9 +44,9 @@ const Hero: React.FC = () => {
                     transition={{ duration: 0.5, delay: 0.1 }}
                     className="text-4xl md:text-6xl lg:text-7xl font-heading font-bold tracking-tighter leading-[1.05] mb-6 text-white"
                 >
-                    Service Business Owners Ready to Get{' '}
+                    Service Business Owners: Ready to Get{' '}
                     <span className="text-primary">More Appointments</span>{' '}
-                    on <span className="text-primary">Autopilot</span>?
+                    On <span className="text-primary">Autopilot</span>?
                 </motion.h1>
 
                 {/* Subheadline */}
