@@ -85,7 +85,7 @@ const ValueProposition: React.FC = () => {
                     >
                         <span className="mr-2">Get Started!</span>
                         <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-                    </a>
+                     (plus, we'll optimize your Google My Business profile for free)</a>
                 </div>
             </div>
         </section>

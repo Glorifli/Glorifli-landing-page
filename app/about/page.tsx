@@ -324,7 +324,7 @@ const AboutPage = () => {
                             >
                                 Book Your Free Strategy Call
                                 <ArrowRight className="w-4 h-4" />
-                            </Link>
+                             (plus, we'll optimize your Google My Business profile for free)</Link>
                             <Link
                                 href="/services"
                                 className="inline-flex items-center gap-2 px-8 py-4 bg-white/5 border border-white/10 text-white font-bold rounded-full hover:bg-white/10 hover:border-primary/40 transition-all duration-300"

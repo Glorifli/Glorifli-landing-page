@@ -291,7 +291,7 @@ export default function VsHubPage() {
                             >
                                 Book Your Free Strategy Call
                                 <ArrowRight className="w-4 h-4" />
-                            </Link>
+                             (plus, we'll optimize your Google My Business profile for free)</Link>
                             <Link
                                 href="/about"
                                 className="inline-flex items-center justify-center w-full py-3.5 bg-white/5 border border-white/10 rounded-xl font-bold text-white hover:bg-primary hover:text-black hover:border-primary transition-all duration-300"

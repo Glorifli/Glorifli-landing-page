@@ -193,7 +193,7 @@ export default async function FAQSlugPage({ params }: Props) {
                         className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-black font-bold rounded-full hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/20"
                     >
                         Book a Free Strategy Call <ArrowRight className="w-4 h-4" />
-                    </Link>
+                     (plus, we'll optimize your Google My Business profile for free)</Link>
                 </div>
 
                 {/* ── Related Questions ── */}

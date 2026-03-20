@@ -54,6 +54,7 @@ const BookingCalendar: React.FC = () => {
             <div className="max-w-4xl mx-auto">
                 <h2 className="text-3xl md:text-5xl font-bold font-heading mb-6">
                     Schedule Your Free <span className="text-primary">Strategy Call</span>
+                    <span className="block text-sm text-gray-400 mt-2 font-normal">(Plus, we'll optimize your Google My Business profile for free)</span>
                 </h2>
                 <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-12">
                     Diagnose your problem, get free advice, and leave with a mock draft of your new site.

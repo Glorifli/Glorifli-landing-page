@@ -282,7 +282,7 @@ export default function ServicesPage() {
                         >
                             Book Your Free Strategy Call
                             <ArrowRight className="w-4 h-4" />
-                        </Link>
+                         (plus, we'll optimize your Google My Business profile for free)</Link>
                     </div>
                 </section>
 
