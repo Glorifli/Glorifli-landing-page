@@ -56,7 +56,7 @@ const Hero: React.FC = () => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed"
                 >
-                    We Guarantee You <strong className="text-white">10 New Appointments in the Next 60 Days</strong> or we work for free until you get those results.
+                    We Guarantee You <strong className="text-white">5 New Appointments in the Next 60 Days</strong> or we work for free until you get those results.
                 </motion.p>
 
                 {/* ── Compact Multi-Step Audit Form ── */}
