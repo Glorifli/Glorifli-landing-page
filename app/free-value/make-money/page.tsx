@@ -6,7 +6,7 @@ import GenericFAQ, { FAQItem } from '@/components/GenericFAQ';
 
 export const metadata: Metadata = {
     title: 'Affiliate & Remote Sales Partner Program | Glorifli',
-    description: 'Join Glorifli\'s Partner Program. We offer a true 20% lifetime commission on any job you bring in that closes.',
+    description: 'Join Glorifli\'s Partner Program. We offer an ongoing $100 monthly commission for every active client you bring in.',
 };
 
 const affiliateFaqs: FAQItem[] = [
@@ -14,24 +14,24 @@ const affiliateFaqs: FAQItem[] = [
         question: "When and how do I get paid my commission?",
         answer: (
             <>
-                You get paid your 20% commission on the exact same day that the client makes their payment to us. So if they pay the $1,256.50 setup fee on Tuesday, your $251 is sent via ACH or wire on that very same Tuesday. Not sure if sales is right for you? Read <Link href="/blog/why-contractor-business-not-getting-online-leads" className="text-primary hover:underline transition-colors">why local businesses need help with online leads</Link>. Ready to start? <Link href="/#calendar" className="text-primary font-bold hover:underline">Book your interview call here (plus, we'll optimize your Google My Business profile for free)</Link> (plus, we'll optimize your Google My Business profile for free).
+                You get paid your $100 commission on the exact same day that the client makes their monthly payment to us. So if they pay their retainer on Tuesday, your $100 is sent via ACH or wire on that very same Tuesday. Not sure if sales is right for you? Read <Link href="/blog/why-contractor-business-not-getting-online-leads" className="text-primary hover:underline transition-colors">why local businesses need help with online leads</Link>. Ready to start? <Link href="/#calendar" className="text-primary font-bold hover:underline">Book your interview call here</Link> (plus, we'll optimize your Google My Business profile for free).
             </>
         )
     },
     {
-        question: "How long does the 20% commission last?",
+        question: "How long does the $100 monthly commission last?",
         answer: (
             <>
-                It lasts for the lifetime of the client. As long as they keep paying for our <Link href="/services" className="text-primary hover:text-primary-light transition-colors">monthly SEO/AEO retainer</Link>, you keep getting your 20% cut every single month—completely passively. Discover more about ongoing value in <Link href="/blog/how-much-does-hvac-marketing-cost" className="text-primary hover:underline transition-colors">how much marketing costs</Link>. Let's get you set up: <Link href="/#calendar" className="text-primary font-bold hover:underline">book a call today (plus, we'll optimize your Google My Business profile for free)</Link> (plus, we'll optimize your Google My Business profile for free).
+                It lasts for the lifetime of the client. As long as they keep paying for our <Link href="/services" className="text-primary hover:text-primary-light transition-colors">monthly SEO/AEO retainer</Link>, you keep getting your $100 every single month—completely passively. Discover more about ongoing value in <Link href="/blog/how-much-does-hvac-marketing-cost" className="text-primary hover:underline transition-colors">how much marketing costs</Link>. Let's get you set up: <Link href="/#calendar" className="text-primary font-bold hover:underline">book a call today</Link> (plus, we'll optimize your Google My Business profile for free).
             </>
         ),
-        schemaAnswer: "It lasts for the lifetime of the client. As long as they keep paying for our monthly SEO/AEO retainer, you keep getting your 20% cut every single month—completely passively. Discover more about ongoing value in how much marketing costs. Let's get you set up: book a call today."
+        schemaAnswer: "It lasts for the lifetime of the client. As long as they keep paying for our monthly SEO/AEO retainer, you keep getting your $100 every single month—completely passively. Discover more about ongoing value in how much marketing costs. Let's get you set up: book a call today."
     },
     {
         question: "Do I need to fulfill any of the actual services?",
         answer: (
             <>
-                Absolutely not. Your only job is to bring the client to the door. Once they sign and pay, my team handles 100% of the website building, SEO optimization, and client communication. Our <Link href="/faq" className="text-primary hover:text-primary-light transition-colors">60-day performance guarantee</Link> handles all objections for you. Learn about our fulfillment strategy in <Link href="/blog/what-is-aeo-for-home-service-businesses" className="text-primary hover:underline transition-colors">what AEO means for service businesses</Link>. <Link href="/#calendar" className="text-primary font-bold hover:underline">Book a call (plus, we'll optimize your Google My Business profile for free)</Link> (plus, we'll optimize your Google My Business profile for free) to join the team.
+                Absolutely not. Your only job is to bring the client to the door. Once they sign and pay, my team handles 100% of the website building, SEO optimization, and client communication. Our <Link href="/faq" className="text-primary hover:text-primary-light transition-colors">60-day performance guarantee</Link> handles all objections for you. Learn about our fulfillment strategy in <Link href="/blog/what-is-aeo-for-home-service-businesses" className="text-primary hover:underline transition-colors">what AEO means for service businesses</Link>. <Link href="/#calendar" className="text-primary font-bold hover:underline">Book a call</Link> (plus, we'll optimize your Google My Business profile for free) to join the team.
             </>
         ),
         schemaAnswer: "Absolutely not. Your only job is to bring the client to the door. Once they sign and pay, my team handles 100% of the website building, SEO optimization, and client communication. Our 60-day performance guarantee handles all objections for you. Learn about our fulfillment strategy in what AEO means for service businesses. Book a call to join the team."
@@ -40,7 +40,7 @@ const affiliateFaqs: FAQItem[] = [
         question: "How do I start sending you potential clients today?",
         answer: (
             <>
-                Simply book a quick 15-minute onboarding call via our <Link href="/#calendar" className="text-primary hover:text-primary-light transition-colors">strategy calendar (plus, we'll optimize your Google My Business profile for free)</Link> (plus, we'll optimize your Google My Business profile for free). We will get you set up with your tracking system and give you all the promotional materials you need to start immediately. Curious how we close deals? Check out <Link href="/blog/whats-the-best-way-to-get-more-appointments-booked" className="text-primary hover:underline transition-colors">how to get more appointments booked</Link>. <Link href="/#calendar" className="text-primary font-bold hover:underline">Secure your interview slot now (plus, we'll optimize your Google My Business profile for free)</Link> (plus, we'll optimize your Google My Business profile for free).
+                Simply book a quick 15-minute onboarding call via our <Link href="/#calendar" className="text-primary hover:text-primary-light transition-colors">strategy calendar</Link> (plus, we'll optimize your Google My Business profile for free). We will get you set up with your tracking system and give you all the promotional materials you need to start immediately. Curious how we close deals? Check out <Link href="/blog/whats-the-best-way-to-get-more-appointments-booked" className="text-primary hover:underline transition-colors">how to get more appointments booked</Link>. <Link href="/#calendar" className="text-primary font-bold hover:underline">Secure your interview slot now</Link> (plus, we'll optimize your Google My Business profile for free).
             </>
         ),
         schemaAnswer: "Simply book a quick 15-minute onboarding call via our strategy calendar. We will get you set up with your tracking system and give you all the promotional materials you need to start immediately. Curious how we close deals? Check out how to get more appointments booked. Secure your interview slot now."
@@ -56,10 +56,10 @@ export default function MakeMoneyPage() {
                 </div>
 
                 <h1 className="text-4xl md:text-5xl font-bold font-heading mb-6">
-                    Make Money With Us: <span className="text-primary">20% Lifetime Commission</span>
+                    Make Money With Us: <span className="text-primary">$100 Monthly Commission</span>
                 </h1>
                 <p className="text-lg text-gray-400 mb-6 max-w-2xl mx-auto">
-                    Whether you're an affiliate marketer, a B2B agency looking for a white-label partner, or a remote sales contractor—bring us a client that closes, and you receive 20% of the revenue. Forever.
+                    Whether you're an affiliate marketer, a B2B agency looking for a white-label partner, or a remote sales contractor—bring us a client that closes, and you receive $100 every month they are with us. Forever.
                 </p>
                 <p className="text-lg text-gray-400 mb-12 max-w-2xl mx-auto">
                     This is a great opportunity to gain sales experience, make money in your free time, or completely replace your income. There is absolutely NO fulfillment required on your end. We even provide you with a proven cold call and cold email template to begin generating leads immediately. Once you pass a brief interview and sign our contract, boom—you can start today.
@@ -68,13 +68,13 @@ export default function MakeMoneyPage() {
                 <div className="grid md:grid-cols-3 gap-6 text-left mb-16">
                     <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
                         <DollarSign className="w-8 h-8 text-primary mb-4" />
-                        <h3 className="font-bold text-lg mb-2">High-Ticket Payouts</h3>
-                        <p className="text-gray-400 text-sm">20% of a $1,256.50 setup fee is $251. 20% of a $589.50 monthly recurring retainer is $117/mo. It adds up fast.</p>
+                        <h3 className="font-bold text-lg mb-2">Monthly Payouts</h3>
+                        <p className="text-gray-400 text-sm">For every client you bring in that stays with us, you get $100 every single month they pay their retainer. It adds up fast.</p>
                     </div>
                     <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
                         <Award className="w-8 h-8 text-primary mb-4" />
                         <h3 className="font-bold text-lg mb-2">Lifetime Attribution</h3>
-                        <p className="text-gray-400 text-sm">As long as the client stays with Glorifli and keeps paying their monthly recurring fee, you keep getting paid your 20%.</p>
+                        <p className="text-gray-400 text-sm">As long as the client stays with Glorifli and keeps paying their monthly recurring fee, you keep getting paid your $100 every month.</p>
                     </div>
                     <div className="bg-white/5 border border-white/10 rounded-2xl p-6">
                         <Users className="w-8 h-8 text-primary mb-4" />
@@ -93,7 +93,8 @@ export default function MakeMoneyPage() {
                         className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-black font-bold rounded-full hover:bg-white transition-all duration-300 shadow-[0_0_20px_-4px_rgba(56,189,248,0.3)]"
                     >
                         Schedule Your Interview <ArrowRight className="w-4 h-4" />
-                     (plus, we'll optimize your Google My Business profile for free)</Link>
+                     </Link>
+                     (plus, we'll optimize your Google My Business profile for free)
                 </div>
 
                 <div className="mt-24 border-t border-white/10 pt-16">

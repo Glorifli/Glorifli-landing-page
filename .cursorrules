@@ -6,3 +6,9 @@
    - **Crucial Rule:** NEVER add an internal link unless it points EXCLUSIVELY to what it claims to link to. 
    - **Context Verification:** If the anchor text references "how to write converting sales copy", the destination route MUST be an article explicitly dedicated to sales copy. It cannot be routed to a generic "services" page simply to force a click.
    - **No Bait-and-Switch:** Internal linking is the backbone of AEO (Answer Engine Optimization). Links must build trust by strictly answering the localized context they were clicked from. Under no circumstances should cross-linking act as disguised sales funnels to unrelated products if the anchor text promises educational or statistical content.
+
+## Accessibility Rules
+
+1. **ADA Compliant Alt Text**
+   - **Crucial Rule:** Every single image (`<img />`, `<Image />`, etc.) on the site MUST have an ADA compliant `alt` text attached to it.
+   - **Contextual Description:** The `alt` text must clearly describe the content or function of the image for screen readers. Never use empty `alt=""` unless the image is purely decorative and its omission does not remove context.
