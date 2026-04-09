@@ -125,7 +125,7 @@ const AboutPage = () => {
         { value: "58%", label: "of Google searches end without a click — AEO captures these" },
         { value: "82%", label: "of service appointments are booked via mobile search" },
         { value: "25–45%", label: "close rate for SEO/AEO leads vs 2–5% for paid ads" },
-        { value: "60 Days", label: "to 10 guaranteed leads — or we work free until we deliver" },
+        { value: "60 Days", label: "to 5 guaranteed appointments — or we work free until we deliver" },
     ];
 
     const pillars = [
@@ -275,7 +275,7 @@ const AboutPage = () => {
                         What Is Glorifli's Performance Guarantee?
                     </h2>
                     <p className="text-gray-200 text-lg leading-relaxed mb-6 border-l-4 border-primary pl-5">
-                        <strong className="text-white">Glorifli's guarantee:</strong> Pay the one-time $1,256.50 setup fee. Your website goes live and the $589.50/month SEO/AEO service runs completely free. Within 60 days from payment, we deliver 10 new booked leads. If we miss that target, the SEO/AEO service continues at no charge until we hit it. The guarantee never expires.
+                        <strong className="text-white">Glorifli's guarantee:</strong> Pay the one-time $1,256.50 setup fee. Your website goes live and the $589.50/month SEO/AEO service runs completely free. Within 60 days from payment, we deliver 5 new booked appointments. If we miss that target, the SEO/AEO service continues at no charge until we hit it. The guarantee never expires.
                     </p>
                     <div className="grid md:grid-cols-3 gap-5">
                         {[
@@ -312,26 +312,29 @@ const AboutPage = () => {
                     <div className="absolute top-0 right-0 w-64 h-64 bg-primary/10 blur-[100px] rounded-full pointer-events-none" />
                     <div className="relative z-10">
                         <h2 className="text-3xl font-bold mb-4 text-white font-heading">
-                            Ready to Take on 10 New Leads in 60 Days?
+                            Ready to Take on 5 New Appointments in 60 Days?
                         </h2>
                         <p className="text-gray-400 mb-8 max-w-xl mx-auto">
                             Pay the $1,256.50 setup fee and we guarantee 5 booked leads within 60 days — or the SEO/AEO service keeps running free until we deliver. No contracts, no hidden fees.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link
-                                href="/#calendar"
-                                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-black font-bold rounded-full hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/20"
-                            >
-                                Book Your Free Strategy Call
-                                <ArrowRight className="w-4 h-4" />
-                             (plus, we'll optimize your Google My Business profile for free)</Link>
-                            <Link
-                                href="/services"
-                                className="inline-flex items-center gap-2 px-8 py-4 bg-white/5 border border-white/10 text-white font-bold rounded-full hover:bg-white/10 hover:border-primary/40 transition-all duration-300"
-                            >
-                                View All Services
-                                <ArrowRight className="w-4 h-4" />
-                            </Link>
+                        <div className="flex flex-col items-center">
+                            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                                <Link
+                                    href="/#calendar"
+                                    className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-black font-bold rounded-full hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/20"
+                                >
+                                    Book Your Free Strategy Call
+                                    <ArrowRight className="w-4 h-4" />
+                                </Link>
+                                <Link
+                                    href="/services"
+                                    className="inline-flex items-center gap-2 px-8 py-4 bg-white/5 border border-white/10 text-white font-bold rounded-full hover:bg-white/10 hover:border-primary/40 transition-all duration-300"
+                                >
+                                    View All Services
+                                    <ArrowRight className="w-4 h-4" />
+                                </Link>
+                            </div>
+                            
                         </div>
                         <div className="flex flex-wrap justify-center gap-6 mt-8 text-sm text-gray-500">
                             {["5 Leads Guaranteed", "No Long-Term Contracts", "No Hidden Fees", "SEO/AEO Free Until Results"].map((t) => (

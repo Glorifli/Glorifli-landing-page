@@ -78,14 +78,15 @@ const ValueProposition: React.FC = () => {
                     ))}
                 </div>
 
-                <div className="flex justify-center mt-12">
+                <div className="flex flex-col items-center justify-center mt-12">
                     <a
                         href="#calendar"
                         className="group relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-primary/90 font-heading rounded-full focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary focus:ring-offset-gray-900 hover:bg-primary shadow-[0_0_30px_-5px_rgba(56,189,248,0.5)] hover:shadow-[0_0_50px_-10px_rgba(56,189,248,0.7)]"
                     >
                         <span className="mr-2">Get Started!</span>
                         <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
-                     (plus, we'll optimize your Google My Business profile for free)</a>
+                    </a>
+                    
                 </div>
             </div>
         </section>

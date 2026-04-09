@@ -56,7 +56,7 @@ const services = [
             "Google Business Profile Optimization",
             "AI Search Optimization",
             "Priority Support",
-            "10 New Leads in 60 Days From Payment",
+            "5 Appointments in 60 Days From Payment",
             "SEO/AEO Runs Free Until Goal Is Hit",
             "No Long-Term Contracts",
         ],
@@ -64,11 +64,11 @@ const services = [
 ];
 
 const roiExamples = [
-    { industry: "Roofing", avg: "$11,500/job", closes: "3 closes", revenue: "$34,500", roi: "2,646%" },
-    { industry: "HVAC", avg: "$8,500/job", closes: "3 closes", revenue: "$25,500", roi: "1,929%" },
-    { industry: "Home Remodeling", avg: "$25,000/job", closes: "3 closes", revenue: "$75,000", roi: "5,869%" },
-    { industry: "Landscaping", avg: "$4,500/job", closes: "3 closes", revenue: "$13,500", roi: "974%" },
-    { industry: "Plumbing", avg: "$1,800/job", closes: "3 closes", revenue: "$5,400", roi: "330%" },
+    { industry: "Roofing", avg: "$11,500/job", closes: "1-2 closes", revenue: "$11.5k–$23k", roi: "815%–1,730%" },
+    { industry: "HVAC", avg: "$8,500/job", closes: "1-2 closes", revenue: "$8.5k–$17k", roi: "576%–1,253%" },
+    { industry: "Home Remodeling", avg: "$25,000/job", closes: "1-2 closes", revenue: "$25k–$50k", roi: "1,889%–3,879%" },
+    { industry: "Landscaping", avg: "$4,500/job", closes: "1-2 closes", revenue: "$4.5k–$9k", roi: "258%–616%" },
+    { industry: "Plumbing", avg: "$1,800/job", closes: "1-2 closes", revenue: "$1.8k–$3.6k", roi: "43%–186%" },
 ];
 
 const valueStack = [
@@ -230,7 +230,7 @@ export default function ServicesPage() {
                         What Is the ROI of Glorifli's Services by Industry?
                     </h2>
                     <p className="text-center text-gray-400 mb-3 max-w-2xl mx-auto">
-                        SEO/AEO leads close at 25–45% because prospects searched for exactly what you offer, in your city, at the moment they need it. Here's what closing just 3 of your 10 guaranteed leads looks like:
+                        SEO/AEO leads close at 25–45% because prospects searched for exactly what you offer, in your city, at the moment they need it. Here's what closing just 1-2 of your 5 guaranteed leads looks like:
                     </p>
                     <p className="text-center text-xs text-gray-600 mb-10">
                         Based on 60% close rate (for high-intent booked appointments). Sources:{' '}
@@ -245,7 +245,7 @@ export default function ServicesPage() {
                                 <tr className="border-b border-white/10 bg-white/5">
                                     <th className="text-left px-6 py-4 text-gray-400 font-medium">Industry</th>
                                     <th className="text-right px-6 py-4 text-gray-400 font-medium">Avg Job Value</th>
-                                    <th className="text-right px-6 py-4 text-gray-400 font-medium">3 Closes</th>
+                                    <th className="text-right px-6 py-4 text-gray-400 font-medium">1-2 Closes</th>
                                     <th className="text-right px-6 py-4 text-gray-400 font-medium">Revenue</th>
                                     <th className="text-right px-6 py-4 text-gray-400 font-medium">ROI on $1,256</th>
                                 </tr>
@@ -276,13 +276,16 @@ export default function ServicesPage() {
                         <p className="text-gray-400 mb-8 max-w-xl mx-auto">
                             Pay the $1,256.50 setup fee, get your website live, and we run the SEO/AEO service free until your 5 leads are delivered — all within 60 days.
                         </p>
-                        <Link
-                            href="/#calendar"
-                            className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-black font-bold rounded-full hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/20"
-                        >
-                            Book Your Free Strategy Call
-                            <ArrowRight className="w-4 h-4" />
-                            (plus, we'll optimize your Google My Business profile for free)</Link>
+                        <div className="flex flex-col items-center">
+                            <Link
+                                href="/#calendar"
+                                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-black font-bold rounded-full hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/20"
+                            >
+                                Book Your Free Strategy Call
+                                <ArrowRight className="w-4 h-4" />
+                            </Link>
+                            
+                        </div>
                     </div>
                 </section>
 

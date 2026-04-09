@@ -8,11 +8,11 @@ import StructuredData from "@/components/StructuredData";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Glorifli - 10 New Leads in 60 Days or We Work for Free",
-  description: "We build high-converting websites and SEO/AEO systems for local service businesses. Pay the $1,256.50 setup fee and get 5 new leads in 60 days — or we work for free until you do. Claim your free SEO/AEO audit today.",
+  title: "Glorifli - 5 Appointments in 60 Days or We Work for Free",
+  description: "We build high-converting websites and SEO/AEO systems for local service businesses. Pay the $1,256.50 setup fee and get 5 new appointments in 60 days — or we work for free until you do. Claim your free SEO/AEO audit today.",
   openGraph: {
-    title: "Glorifli - 10 New Leads in 60 Days or We Work for Free",
-    description: "Pay the $1,256.50 setup fee and get 5 new leads in 60 days — guaranteed. If we don't deliver, we work for free until we do.",
+    title: "Glorifli - 5 Appointments in 60 Days or We Work for Free",
+    description: "Pay the $1,256.50 setup fee and get 5 new appointments in 60 days — guaranteed. If we don't deliver, we work for free until we do.",
     type: "website",
     url: "https://glorifli.com",
     siteName: "Glorifli",
@@ -27,8 +27,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Glorifli - 10 New Leads in 60 Days Guaranteed",
-    description: "Pay the $1,256.50 setup fee and get 5 new leads within 60 days — or we work for free until we deliver.",
+    title: "Glorifli - 5 Appointments in 60 Days Guaranteed",
+    description: "Pay the $1,256.50 setup fee and get 5 new appointments within 60 days — or we work for free until we deliver.",
     images: ["https://glorifli.com/images/blog/featured-hero.png"],
   },
   alternates: {
@@ -52,7 +52,7 @@ const organizationSchema = {
     height: 512,
   },
   description:
-    "Glorifli builds high-converting websites and AEO/SEO content systems for local service businesses. $1,256.50 setup fee with a guarantee of 5 new leads in 60 days — or we work for free until we deliver.",
+    "Glorifli builds high-converting websites and AEO/SEO content systems for local service businesses. $1,256.50 setup fee with a guarantee of 5 new appointments in 60 days — or we work for free until we deliver.",
   foundingDate: "2025",
   areaServed: {
     "@type": "Country",
@@ -98,7 +98,7 @@ const localBusinessSchema = {
   logo: "https://glorifli.com/logo.png",
   image: "https://glorifli.com/images/blog/featured-hero.png",
   description:
-    "We build high-converting websites and AEO/SEO systems for local service businesses — guaranteed 5 new leads in 60 days of the $1,256.50 setup payment, or we work free until we deliver.",
+    "We build high-converting websites and AEO/SEO systems for local service businesses — guaranteed 5 new appointments in 60 days of the $1,256.50 setup payment, or we work free until we deliver.",
   priceRange: "$$",
   currenciesAccepted: "USD",
   paymentAccepted: "Credit Card",
@@ -115,7 +115,7 @@ const localBusinessSchema = {
           "@type": "Service",
           name: "SEO/AEO Optimization",
           description:
-            "8 SEO/AEO optimized blog posts monthly, Google Business Profile sync, citation network building, and guaranteed 5 new leads in 60 days or we keep working free.",
+            "8 SEO/AEO optimized blog posts monthly, Google Business Profile sync, citation network building, and guaranteed 5 new appointments in 60 days or we keep working free.",
           offers: {
             "@type": "Offer",
             price: "589.50",
@@ -150,7 +150,7 @@ const localBusinessSchema = {
           "@type": "Service",
           name: "Autonomous Revenue Generating Engine",
           description:
-            "Complete website + SEO/AEO system. $1,256.50 setup fee with 60-day guarantee of 5 new leads — or we work free until results are delivered.",
+            "Complete website + SEO/AEO system. $1,256.50 setup fee with 60-day guarantee of 5 new appointments — or we work free until results are delivered.",
         },
       },
     ],

@@ -54,7 +54,7 @@ export const faqItems: FaqItem[] = [
                 body: "You can spend years trying to rank, or you can use our Autonomous Revenue Engine. For a $1,256.50 setup fee, we build the site and implement the complete AEO infrastructure. We then guarantee 5 new booked HVAC leads in 60 days, running our $589.50/mo SEO completely free until we hit that quota."
             }, {
                 heading: "Ready to Scale with Glorifli?",
-                body: "If you found this helpful, take the next step. Read our deep dive on <a href='/blog/what-is-aeo-for-home-service-businesses' className='text-primary hover:underline'>AEO for service businesses</a>. Stop losing leads to your competitors—<a href='/#calendar' className='text-primary font-bold hover:underline'>book a free strategy call (plus, we'll optimize your Google My Business profile for free)</a> today (plus, we'll optimize your Google My Business profile for free)."
+                body: "If you found this helpful, take the next step. Read our deep dive on <a href='/blog/what-is-aeo-for-home-service-businesses' className='text-primary hover:underline'>AEO for service businesses</a>. Stop losing leads to your competitors—<a href='/#calendar' className='text-primary font-bold hover:underline'>book a free strategy call</a> today."
             },
 
         ],
@@ -87,7 +87,7 @@ export const faqItems: FaqItem[] = [
                 body: "Roofing requires immense trust. Glorifli leverages AEO strategies to distribute your reviews and service guarantees across the web through structured schema markup. When Google’s AI Overviews display local roofers, your business is surfaced because it has the most mathematically verifiable trust signals."
             }, {
                 heading: "Ready to Scale with Glorifli?",
-                body: "If you found this helpful, take the next step. Read our deep dive on <a href='/blog/what-is-aeo-for-home-service-businesses' className='text-primary hover:underline'>AEO for service businesses</a>. Stop losing leads to your competitors—<a href='/#calendar' className='text-primary font-bold hover:underline'>book a free strategy call (plus, we'll optimize your Google My Business profile for free)</a> today (plus, we'll optimize your Google My Business profile for free)."
+                body: "If you found this helpful, take the next step. Read our deep dive on <a href='/blog/what-is-aeo-for-home-service-businesses' className='text-primary hover:underline'>AEO for service businesses</a>. Stop losing leads to your competitors—<a href='/#calendar' className='text-primary font-bold hover:underline'>book a free strategy call</a> today."
             },
 
         ],
@@ -123,7 +123,7 @@ export const faqItems: FaqItem[] = [
                 body: "Most generic agencies ignore AEO. At Glorifli, our entire Autonomous Revenue Engine is built around placing your plumbing business at the top of generative AI responses and voice searches. It's why we confidently offer our 5-leads-in-60-days guarantee."
             }, {
                 heading: "Ready to Scale with Glorifli?",
-                body: "If you found this helpful, take the next step. Read our deep dive on <a href='/blog/what-is-aeo-for-home-service-businesses' className='text-primary hover:underline'>AEO for service businesses</a>. Stop losing leads to your competitors—<a href='/#calendar' className='text-primary font-bold hover:underline'>book a free strategy call (plus, we'll optimize your Google My Business profile for free)</a> today (plus, we'll optimize your Google My Business profile for free)."
+                body: "If you found this helpful, take the next step. Read our deep dive on <a href='/blog/what-is-aeo-for-home-service-businesses' className='text-primary hover:underline'>AEO for service businesses</a>. Stop losing leads to your competitors—<a href='/#calendar' className='text-primary font-bold hover:underline'>book a free strategy call</a> today."
             },
 
         ],
@@ -147,14 +147,14 @@ export const faqItems: FaqItem[] = [
             },
             {
                 heading: "How Our Guarantee Works",
-                body: "You pay the initial $1,256.50 setup fee for the custom, high-converting website build. For the next 60 days, our recurring $589.50/mo SEO/AEO service is completely paused and 100% free. If we do not hit 10 exclusive, booked leads within that 60-day window, our monthly service remains entirely free indefinitely until we do. We don't get our monthly retainer until you get your clients."
+                body: "You pay the initial $1,256.50 setup fee for the custom, high-converting website build. For the next 60 days, our recurring $589.50/mo SEO/AEO service is completely paused and 100% free. If we do not hit 5 exclusive, booked appointments within that 60-day window, our monthly service remains entirely free indefinitely until we do. We don't get our monthly retainer until you get your clients."
             },
             {
                 heading: "Why We Can Offer This",
                 body: "We only work with local service businesses, and we use a proprietary Content System that publishes 8 hyper-targeted local keyword articles every single month. By flooding local search with AEO-optimized content, managing your Google Business Profile, and building 50+ robust citations, we know exactly what it takes to trigger Google's algorithm. We are confident enough to bet our own money on it."
             }, {
                 heading: "Ready to Scale with Glorifli?",
-                body: "If you found this helpful, take the next step. Read our deep dive on <a href='/blog/what-is-aeo-for-home-service-businesses' className='text-primary hover:underline'>AEO for service businesses</a>. Stop losing leads to your competitors—<a href='/#calendar' className='text-primary font-bold hover:underline'>book a free strategy call (plus, we'll optimize your Google My Business profile for free)</a> today (plus, we'll optimize your Google My Business profile for free)."
+                body: "If you found this helpful, take the next step. Read our deep dive on <a href='/blog/what-is-aeo-for-home-service-businesses' className='text-primary hover:underline'>AEO for service businesses</a>. Stop losing leads to your competitors—<a href='/#calendar' className='text-primary font-bold hover:underline'>book a free strategy call</a> today."
             },
 
         ],
@@ -185,7 +185,7 @@ export const faqItems: FaqItem[] = [
                 body: "Lead generation companies will sell you remodeling leads that they also sold to three other contractors. By owning your own AEO infrastructure with Glorifli, when a user lands on your site and submits their info, that lead is 100% exclusive to you."
             }, {
                 heading: "Ready to Scale with Glorifli?",
-                body: "If you found this helpful, take the next step. Read our deep dive on <a href='/blog/what-is-aeo-for-home-service-businesses' className='text-primary hover:underline'>AEO for service businesses</a>. Stop losing leads to your competitors—<a href='/#calendar' className='text-primary font-bold hover:underline'>book a free strategy call (plus, we'll optimize your Google My Business profile for free)</a> today (plus, we'll optimize your Google My Business profile for free)."
+                body: "If you found this helpful, take the next step. Read our deep dive on <a href='/blog/what-is-aeo-for-home-service-businesses' className='text-primary hover:underline'>AEO for service businesses</a>. Stop losing leads to your competitors—<a href='/#calendar' className='text-primary font-bold hover:underline'>book a free strategy call</a> today."
             },
 
         ],
@@ -216,12 +216,12 @@ export const faqItems: FaqItem[] = [
                 body: "You aren't just paying for temporary leads. You are permanently purchasing a digital asset. The 8 blog posts we write every month stay on your site forever, continuously growing your organic traffic year over year without a linear increase in ad spend."
             }, {
                 heading: "Ready to Scale with Glorifli?",
-                body: "If you found this helpful, take the next step. Read our deep dive on <a href='/blog/what-is-aeo-for-home-service-businesses' className='text-primary hover:underline'>AEO for service businesses</a>. Stop losing leads to your competitors—<a href='/#calendar' className='text-primary font-bold hover:underline'>book a free strategy call (plus, we'll optimize your Google My Business profile for free)</a> today (plus, we'll optimize your Google My Business profile for free)."
+                body: "If you found this helpful, take the next step. Read our deep dive on <a href='/blog/what-is-aeo-for-home-service-businesses' className='text-primary hover:underline'>AEO for service businesses</a>. Stop losing leads to your competitors—<a href='/#calendar' className='text-primary font-bold hover:underline'>book a free strategy call</a> today."
             },
 
         ],
         keyTakeaways: [
-            "Closing just 3 out of 10 guaranteed leads yields an average $25,500 for HVAC contractors.",
+            "Closing just 1-2 out of 5 guaranteed leads yields an average $8,500–$17,000 for HVAC contractors.",
             "The ROI on the initial $1,256.50 setup fee vastly exceeds standard PPC or Facebook Ad returns.",
             "A custom SEO-optimized site acts as a permanent, appreciating digital asset."
         ]
@@ -247,7 +247,7 @@ export const faqItems: FaqItem[] = [
                 body: "Your only responsibility is answering the phone when the leads start rolling in. If you want to review the topics beforehand, you absolutely can, but we are fully equipped to run autonomously so you can focus on fulfilling your actual jobs."
             }, {
                 heading: "Ready to Scale with Glorifli?",
-                body: "If you found this helpful, take the next step. Read our deep dive on <a href='/blog/what-is-aeo-for-home-service-businesses' className='text-primary hover:underline'>AEO for service businesses</a>. Stop losing leads to your competitors—<a href='/#calendar' className='text-primary font-bold hover:underline'>book a free strategy call (plus, we'll optimize your Google My Business profile for free)</a> today (plus, we'll optimize your Google My Business profile for free)."
+                body: "If you found this helpful, take the next step. Read our deep dive on <a href='/blog/what-is-aeo-for-home-service-businesses' className='text-primary hover:underline'>AEO for service businesses</a>. Stop losing leads to your competitors—<a href='/#calendar' className='text-primary font-bold hover:underline'>book a free strategy call</a> today."
             },
 
         ],
@@ -278,7 +278,7 @@ export const faqItems: FaqItem[] = [
                 body: "Remember, the $1,256.50 setup fee doesn't just buy a $4,700 custom site wrapper. It also includes 60 Days of completely free SEO/AEO Blog Service. We are investing heavily alongside you to ensure the ecosystem is flawless before we take a dime in monthly retainers."
             }, {
                 heading: "Ready to Scale with Glorifli?",
-                body: "If you found this helpful, take the next step. Read our deep dive on <a href='/blog/what-is-aeo-for-home-service-businesses' className='text-primary hover:underline'>AEO for service businesses</a>. Stop losing leads to your competitors—<a href='/#calendar' className='text-primary font-bold hover:underline'>book a free strategy call (plus, we'll optimize your Google My Business profile for free)</a> today (plus, we'll optimize your Google My Business profile for free)."
+                body: "If you found this helpful, take the next step. Read our deep dive on <a href='/blog/what-is-aeo-for-home-service-businesses' className='text-primary hover:underline'>AEO for service businesses</a>. Stop losing leads to your competitors—<a href='/#calendar' className='text-primary font-bold hover:underline'>book a free strategy call</a> today."
             },
 
         ],
@@ -309,7 +309,7 @@ export const faqItems: FaqItem[] = [
                 body: "We also engineer dedicated location service pages (e.g., 'Drain Cleaning in [Neighborhood]') on your main site to act as highly relevant anchors for the Maps algorithm, completing the feedback loop between organic search and local map packs."
             }, {
                 heading: "Ready to Scale with Glorifli?",
-                body: "If you found this helpful, take the next step. Read our deep dive on <a href='/blog/what-is-aeo-for-home-service-businesses' className='text-primary hover:underline'>AEO for service businesses</a>. Stop losing leads to your competitors—<a href='/#calendar' className='text-primary font-bold hover:underline'>book a free strategy call (plus, we'll optimize your Google My Business profile for free)</a> today (plus, we'll optimize your Google My Business profile for free)."
+                body: "If you found this helpful, take the next step. Read our deep dive on <a href='/blog/what-is-aeo-for-home-service-businesses' className='text-primary hover:underline'>AEO for service businesses</a>. Stop losing leads to your competitors—<a href='/#calendar' className='text-primary font-bold hover:underline'>book a free strategy call</a> today."
             },
 
         ],
@@ -333,20 +333,20 @@ export const faqItems: FaqItem[] = [
             },
             {
                 heading: "The Free Optimization Period",
-                body: "Once payment clears, a 60-day timer begins. During this time, we launch the site and run our full $589.50/mo Autonomous Revenue Engine (including publishing 8 massive blogs, handling GBP, and syncing citations) completely free of charge. We must generate 10 tracked, exclusive inbound leads before day 60. If we hit the goal, your $589.50/mo subscription activates for month 3. If we fail, the service remains free until the 10th lead crosses the finish line."
+                body: "Once payment clears, a 60-day timer begins. During this time, we launch the site and run our full $589.50/mo Autonomous Revenue Engine (including publishing 8 massive blogs, handling GBP, and syncing citations) completely free of charge. We must generate 5 tracked, exclusive inbound appointments before day 60. If we hit the goal, your $589.50/mo subscription activates for month 3. If we fail, the service remains free until the 5th appointment crosses the finish line."
             },
             {
                 heading: "No Lock-Ins",
                 body: "Even after we succeed and you enter the month-to-month dynamic, there are no 12-month lock-in contracts. You can cancel at any time. We keep you as a client purely by generating a continuous flow of high-profit ROI."
             }, {
                 heading: "Ready to Scale with Glorifli?",
-                body: "If you found this helpful, take the next step. Read our deep dive on <a href='/blog/what-is-aeo-for-home-service-businesses' className='text-primary hover:underline'>AEO for service businesses</a>. Stop losing leads to your competitors—<a href='/#calendar' className='text-primary font-bold hover:underline'>book a free strategy call (plus, we'll optimize your Google My Business profile for free)</a> today (plus, we'll optimize your Google My Business profile for free)."
+                body: "If you found this helpful, take the next step. Read our deep dive on <a href='/blog/what-is-aeo-for-home-service-businesses' className='text-primary hover:underline'>AEO for service businesses</a>. Stop losing leads to your competitors—<a href='/#calendar' className='text-primary font-bold hover:underline'>book a free strategy call</a> today."
             },
 
         ],
         keyTakeaways: [
             "Your sole upfront commitment is the $1,256.50 technical setup fee.",
-            "Our monthly labor is truly free until we mathematically prove 10 exclusive leads.",
+            "Our monthly labor is truly free until we mathematically prove 5 exclusive appointments.",
             "We do not use long-term restrictive contracts; we retain clients strictly through generated ROI."
         ]
     }

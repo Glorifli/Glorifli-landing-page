@@ -31,6 +31,9 @@ export const metadata: Metadata = {
   title: "Glorifli - Risk-Free Website Building",
   description: "We'll build your website, and if you don't like it, you don't pay!",
   metadataBase: new URL("https://glorifli.com"),
+  verification: {
+    google: "KjzE4LVqu5Z77zREXcoxlIpiOx-rLpiQpjqhgd0dTxU",
+  },
 };
 
 export default function RootLayout({

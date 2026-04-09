@@ -15,7 +15,7 @@ const hubFaqs: FAQItem[] = [
         question: "What is the Free Value Hub?",
         answer: (
             <>
-                The Free Value Hub is our way of building absolute trust before you pay us a dime. We offer resources like a free SEO Action Plan and a partner program to help your <Link href="/services" className="text-primary hover:text-primary-light transition-colors">local service business</Link> grow immediately. Read our philosophy in <Link href="/blog/why-your-business-growth-has-stalled" className="text-primary hover:underline transition-colors">why business growth stalls</Link>. Let's chat about your goals: <Link href="/#calendar" className="text-primary font-bold hover:underline">book a call</Link> (plus, we'll optimize your Google My Business profile for free).
+                The Free Value Hub is our way of building absolute trust before you pay us a dime. We offer resources like a free SEO Action Plan and a partner program to help your <Link href="/services" className="text-primary hover:text-primary-light transition-colors">local service business</Link> grow immediately. Read our philosophy in <Link href="/blog/why-your-business-growth-has-stalled" className="text-primary hover:underline transition-colors">why business growth stalls</Link>. Let's chat about your goals: <Link href="/#calendar" className="text-primary font-bold hover:underline">book a call</Link>.
             </>
         ),
         schemaAnswer: "The Free Value Hub is our way of building absolute trust before you pay us a dime. We offer resources like a free SEO Action Plan and a partner program to help your local service business grow immediately. Read our philosophy in why business growth stalls. Let's chat about your goals: book a call."
@@ -24,7 +24,7 @@ const hubFaqs: FAQItem[] = [
         question: "How do I claim my free SEO Action plan?",
         answer: (
             <>
-                Simply fill out the short form at the <Link href="/free-value/free-services" className="text-primary hover:text-primary-light transition-colors">top of this page</Link> with your website, name, and email. Our team will manually review your site and send you a personalized action plan within 24-48 hours. See what we look for by reading <Link href="/blog/why-your-phone-isnt-ringing" className="text-primary hover:underline transition-colors">why your phone isn't ringing</Link>. Want to skip the wait? <Link href="/#calendar" className="text-primary font-bold hover:underline">Book a strategy call now</Link> (plus, we'll optimize your Google My Business profile for free).
+                Simply fill out the short form at the <Link href="/free-value/free-services" className="text-primary hover:text-primary-light transition-colors">top of this page</Link> with your website, name, and email. Our team will manually review your site and send you a personalized action plan within 24-48 hours. See what we look for by reading <Link href="/blog/why-your-phone-isnt-ringing" className="text-primary hover:underline transition-colors">why your phone isn't ringing</Link>. Want to skip the wait? <Link href="/#calendar" className="text-primary font-bold hover:underline">Book a strategy call now</Link>.
             </>
         ),
         schemaAnswer: "Simply fill out the short form at the top of this page with your website, name, and email. Our team will manually review your site and send you a personalized action plan within 24-48 hours. See what we look for by reading why your phone isn't ringing. Want to skip the wait? Book a strategy call now."
@@ -33,7 +33,7 @@ const hubFaqs: FAQItem[] = [
         question: "Where can I find more information about your paid services?",
         answer: (
             <>
-                If you are ready to let us implement these strategies for you on autopilot, you can visit our <Link href="/services" className="text-primary hover:text-primary-light transition-colors">Services page</Link> to see our full, risk-free guarantee. You can also visit our <Link href="/faq" className="text-primary hover:text-primary-light transition-colors">main FAQ page</Link> for details about timelines and pricing. Then read <Link href="/blog/the-blue-link-era-is-dead" className="text-primary hover:underline transition-colors">why the blue link era is dead</Link>. <Link href="/#calendar" className="text-primary font-bold hover:underline">Book a free consultation here</Link> (plus, we'll optimize your Google My Business profile for free).
+                If you are ready to let us implement these strategies for you on autopilot, you can visit our <Link href="/services" className="text-primary hover:text-primary-light transition-colors">Services page</Link> to see our full, risk-free guarantee. You can also visit our <Link href="/faq" className="text-primary hover:text-primary-light transition-colors">main FAQ page</Link> for details about timelines and pricing. Then read <Link href="/blog/the-blue-link-era-is-dead" className="text-primary hover:underline transition-colors">why the blue link era is dead</Link>. <Link href="/#calendar" className="text-primary font-bold hover:underline">Book a free consultation here</Link>.
             </>
         ),
         schemaAnswer: "If you are ready to let us implement these strategies for you on autopilot, you can visit our Services page to see our full, risk-free guarantee. You can also visit our main FAQ page for details about timelines and pricing. Then read why the blue link era is dead. Book a free consultation here."
@@ -42,7 +42,7 @@ const hubFaqs: FAQItem[] = [
         question: "How does the backlink exchange program work?",
         answer: (
             <>
-                If you are looking to exchange backlinks with Glorifli to boost your own Domain Authority, we occasionally partner with relevant service businesses for natural link placements. Have questions? <Link href="/#calendar" className="text-primary font-bold hover:underline">Book a call</Link> (plus, we'll optimize your Google My Business profile for free).
+                If you are looking to exchange backlinks with Glorifli to boost your own Domain Authority, we occasionally partner with relevant service businesses for natural link placements. Have questions? <Link href="/#calendar" className="text-primary font-bold hover:underline">Book a call</Link>.
             </>
         ),
         schemaAnswer: "If you are looking to exchange backlinks with Glorifli to boost your own Domain Authority, we occasionally partner with relevant service businesses for natural link placements. Have questions? Book a call."

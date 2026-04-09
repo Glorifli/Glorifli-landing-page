@@ -96,11 +96,14 @@ export default async function ServicePage({ params }: Props) {
                     <p className="text-xl text-gray-400 leading-relaxed mb-6 border-l-4 border-primary pl-5">
                         {service.descriptionTemplate} Market value: <strong className="text-white">{service.marketValue}</strong>
                     </p>
-                    <div className="flex flex-wrap gap-4 mt-8">
-                        <Link href="/#calendar" className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-black font-bold rounded-full hover:bg-white transition-all duration-300">
-                            Book a Free Strategy Call <ArrowRight className="w-4 h-4" />
-                         (plus, we'll optimize your Google My Business profile for free)</Link>
-                        <Link href="/services" className="inline-flex items-center gap-2 px-7 py-3.5 bg-white/5 border border-white/10 text-white font-bold rounded-full hover:bg-white/10 transition-all duration-300">
+                    <div className="flex flex-wrap gap-4 mt-8 items-start">
+                        <div className="flex flex-col items-center sm:items-start">
+                            <Link href="/#calendar" className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-black font-bold rounded-full hover:bg-white transition-all duration-300">
+                                Book a Free Strategy Call <ArrowRight className="w-4 h-4" />
+                            </Link>
+                            
+                        </div>
+                        <Link href="/services" className="inline-flex items-center gap-2 px-7 py-3.5 bg-white/5 border border-white/10 text-white font-bold rounded-full hover:bg-white/10 transition-all duration-300 h-fit">
                             View All Services
                         </Link>
                     </div>
@@ -171,7 +174,7 @@ export default async function ServicePage({ params }: Props) {
                                     <tr>
                                         <th className="p-4 font-bold text-gray-400">Industry</th>
                                         <th className="p-4 font-bold text-gray-400">Avg Job Value</th>
-                                        <th className="p-4 font-bold text-gray-400">Est. Revenue (3 Closes)</th>
+                                        <th className="p-4 font-bold text-gray-400">Est. Revenue (1-2 Closes)</th>
                                         <th className="p-4 font-bold text-gray-400 text-accent">ROI</th>
                                     </tr>
                                 </thead>
@@ -214,9 +217,12 @@ export default async function ServicePage({ params }: Props) {
                 <div className="text-center bg-primary/10 border border-primary/20 rounded-3xl p-10 md:p-16">
                     <h2 className="text-3xl md:text-5xl font-bold font-heading mb-6 text-white">Ready to Dominate Your Niche?</h2>
                     <p className="text-xl text-gray-400 mb-8 max-w-2xl mx-auto">Stop leaving money on the table. Claim your guaranteed growth system today.</p>
-                    <Link href="/#calendar" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-black font-bold rounded-full hover:bg-white transition-all duration-300 text-lg shadow-[0_0_30px_rgba(255,255,255,0.3)]">
-                        Get Started Risk-Free <ArrowRight className="w-5 h-5" />
-                     (plus, we'll optimize your Google My Business profile for free)</Link>
+                    <div className="flex flex-col items-center">
+                        <Link href="/#calendar" className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-primary text-black font-bold rounded-full hover:bg-white transition-all duration-300 text-lg shadow-[0_0_30px_rgba(255,255,255,0.3)]">
+                            Get Started Risk-Free <ArrowRight className="w-5 h-5" />
+                        </Link>
+                        
+                    </div>
                 </div>
             </div>
         </div>

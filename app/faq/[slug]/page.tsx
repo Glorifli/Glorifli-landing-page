@@ -188,12 +188,15 @@ export default async function FAQSlugPage({ params }: Props) {
                     <p className="text-gray-400 text-sm mb-6 max-w-md mx-auto">
                         We build the AEO/SEO infrastructure, publish the content, and optimize your GBP — all backed by a 5-leads-in-60-days guarantee.
                     </p>
-                    <Link
-                        href="/#calendar"
-                        className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-black font-bold rounded-full hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/20"
-                    >
-                        Book a Free Strategy Call <ArrowRight className="w-4 h-4" />
-                     (plus, we'll optimize your Google My Business profile for free)</Link>
+                    <div className="flex flex-col items-center">
+                        <Link
+                            href="/#calendar"
+                            className="inline-flex items-center gap-2 px-7 py-3.5 bg-primary text-black font-bold rounded-full hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/20"
+                        >
+                            Book a Free Strategy Call <ArrowRight className="w-4 h-4" />
+                        </Link>
+                        
+                    </div>
                 </div>
 
                 {/* ── Related Questions ── */}

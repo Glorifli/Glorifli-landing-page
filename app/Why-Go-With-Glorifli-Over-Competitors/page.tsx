@@ -122,7 +122,7 @@ export default function VsHubPage() {
         '@id': 'https://glorifli.com/Why-Go-With-Glorifli-Over-Competitors#webpage',
         url: 'https://glorifli.com/Why-Go-With-Glorifli-Over-Competitors',
         name: 'Glorifli vs Competitors',
-        description: 'Compare Glorifli\'s custom websites, SEO/AEO optimization, and 10-appointment guarantee against SmartSites, NPAccel, Victorious SEO, and more.',
+        description: 'Compare Glorifli\'s custom websites, SEO/AEO optimization, and 5-appointment guarantee against SmartSites, NPAccel, Victorious SEO, and more.',
         breadcrumb: {
             '@type': 'BreadcrumbList',
             itemListElement: [
@@ -284,17 +284,20 @@ export default function VsHubPage() {
                         <p className="text-gray-400 mb-8 max-w-xl mx-auto">
                             Book a free 20-minute strategy call. We'll tell you honestly whether our system fits your business — and if it doesn't, we'll say so.
                         </p>
-                        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                            <Link
-                                href="/#calendar"
-                                className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-black font-bold rounded-full hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/20"
-                            >
-                                Book Your Free Strategy Call
-                                <ArrowRight className="w-4 h-4" />
-                             (plus, we'll optimize your Google My Business profile for free)</Link>
+                        <div className="flex flex-col sm:flex-row gap-4 justify-center items-start">
+                            <div className="flex flex-col items-center">
+                                <Link
+                                    href="/#calendar"
+                                    className="inline-flex items-center gap-2 px-8 py-4 bg-primary text-black font-bold rounded-full hover:bg-white hover:scale-105 transition-all duration-300 shadow-lg shadow-primary/20"
+                                >
+                                    Book Your Free Strategy Call
+                                    <ArrowRight className="w-4 h-4" />
+                                </Link>
+                                
+                            </div>
                             <Link
                                 href="/about"
-                                className="inline-flex items-center justify-center w-full py-3.5 bg-white/5 border border-white/10 rounded-xl font-bold text-white hover:bg-primary hover:text-black hover:border-primary transition-all duration-300"
+                                className="inline-flex items-center justify-center w-full py-3.5 bg-white/5 border border-white/10 rounded-xl font-bold text-white hover:bg-primary hover:text-black hover:border-primary transition-all duration-300 h-[56px]"
                             >
                                 Learn About Glorifli
                                 <ArrowRight className="w-4 h-4" />

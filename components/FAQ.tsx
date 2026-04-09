@@ -12,7 +12,7 @@ const faqs = [
     },
     {
         question: "Why should I hire Glorifli for HVAC SEO instead of a generic web marketing agency?",
-        answer: "Generic agencies charge you $2,000/month just to publish generic blog posts and hope for the best, without tying their pay to your actual ROI. Glorifli specializes exclusively in local service businesses. Most importantly, we put our money where our mouth is: if you don't get 10 new booked leads within 60 days of paying the $1,256.50 setup fee, our ongoing services are completely free until you do."
+        answer: "Generic agencies charge you $2,000/month just to publish generic blog posts and hope for the best, without tying their pay to your actual ROI. Glorifli specializes exclusively in local service businesses. Most importantly, we put our money where our mouth is: if you don't get 5 new booked appointments within 60 days of paying the $1,256.50 setup fee, our ongoing services are completely free until you do."
     },
     {
         question: "What is the best way to get my plumbing business recommended to people on AI?",
@@ -33,7 +33,7 @@ const faqs = [
     },
     {
         question: "What happens if you don't get my landscaping company 5 new leads in 60 days?",
-        answer: "We work for free until we do. The 60-day clock begins the moment your $1,256.50 setup fee is paid. We build your site and run your SEO/AEO completely free during that time. If day 60 hits and we haven't generated 10 exclusive leads for your landscaping business, you do not pay a single cent of the $589.50 monthly retainer until the 10th lead is booked. No excuses."
+        answer: "We work for free until we do. The 60-day clock begins the moment your $1,256.50 setup fee is paid. We build your site and run your SEO/AEO completely free during that time. If day 60 hits and we haven't generated 5 exclusive appointments for your landscaping business, you do not pay a single cent of the $589.50 monthly retainer until the 5th appointment is booked. No excuses."
     },
     {
         question: "Do I have to write the blog posts for my local SEO to rank in Google Maps?",
