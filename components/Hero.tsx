@@ -7,7 +7,7 @@ const StarBackground = dynamic(() => import('./StarBackground'), {
     ssr: false, // Do not render on the server to prevent hydration issues and block main thread
 });
 import { motion, AnimatePresence } from 'framer-motion';
-import { ArrowRight, CheckCircle2, Globe } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Globe, Phone } from 'lucide-react';
 
 import LeadMagnetForm from './LeadMagnetForm';
 
@@ -56,8 +56,27 @@ const Hero: React.FC = () => {
                     transition={{ duration: 0.5, delay: 0.2 }}
                     className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto mb-10 leading-relaxed"
                 >
-                    We Guarantee You <strong className="text-white">5 New Appointments in the Next 60 Days</strong> or we work for free until you get those results.
+                    We Guarantee You <strong className="text-white">5 New Appointments in the Next 30 Days</strong> or we work for free until you get those results.
                 </motion.p>
+
+                {/* Phone CTA */}
+                <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.5, delay: 0.25 }}
+                    className="flex justify-center mb-10"
+                >
+                    <a
+                        href="tel:+18555930609"
+                        className="flex items-center gap-4 py-1.5 px-4 rounded-full bg-white/5 border border-white/10 hover:bg-white/10 hover:border-primary/50 transition-all duration-300 group"
+                    >
+                        <div className="flex items-center gap-2">
+                             <Phone className="w-4 h-4 text-primary group-hover:rotate-12 transition-transform" />
+                            <span className="text-xs font-semibold text-gray-300 tracking-wider">talk to our ai receptionist here:</span>
+                        </div>
+                        <span className="text-lg font-bold text-white leading-tight tracking-tight">+1 855-593-0609</span>
+                    </a>
+                </motion.div>
 
                 {/* ── Compact Multi-Step Audit Form ── */}
                 <LeadMagnetForm className="mt-12" delay={0.3} />

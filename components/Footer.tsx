@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import { Linkedin, Youtube, Instagram } from 'lucide-react';
+import { Linkedin, Youtube, Instagram, Phone } from 'lucide-react';
 
 const Footer: React.FC = () => {
     const socialLinks = [
@@ -56,8 +56,14 @@ const Footer: React.FC = () => {
                             <span className="text-2xl font-bold font-heading tracking-tight text-white">Glorifli</span>
                         </div>
                         <p className="text-sm text-gray-400 max-w-sm">
-                            We guarantee 5 new appointments in 60 days — or we work for free until we get you those results.
+                            We guarantee 5 new appointments in 30 days — or we work for free until we get you those results.
                         </p>
+                        <div className="flex items-center gap-2 group">
+                            <Phone className="w-4 h-4 text-primary group-hover:rotate-12 transition-transform" />
+                            <a href="tel:+18555930609" className="text-sm text-gray-400 hover:text-white transition-colors font-medium">
+                                +1 855-593-0609
+                            </a>
+                        </div>
                         <p className="text-xs text-gray-600">© 2025 Glorifli Inc. All rights reserved.</p>
                     </div>
 

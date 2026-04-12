@@ -25,7 +25,7 @@ const services = [
             { item: "High-Converting Website Build", price: "$3,500" },
             { item: "Full Site Copywriting", price: "$800" },
             { item: "Booking System Integration", price: "$400" },
-            { item: "60 Days SEO/AEO Content", price: "$2,500" },
+            { item: "30 Days SEO/AEO Content", price: "$2,500" },
         ],
         ctaLink: "https://buy.stripe.com/28EbJ17PD2yD5bUgj3cwg0c",
         highlight: false
@@ -47,13 +47,37 @@ const services = [
         valueStack: [
             { item: "Custom Website & Copywriting", price: "$4,300" },
             { item: "Booking System", price: "$400" },
-            { item: "60 Days SEO/AEO Content", price: "$2,500" },
+            { item: "30 Days SEO/AEO Content", price: "$2,500" },
             { item: "GBP & Local Citation Network", price: "$1,700+" },
         ],
         ctaLink: "https://buy.stripe.com/cNi4gz3znehlgUC1o9cwg0a",
         highlight: true,
         badge: "Best Value",
         priceDetail: "$1,256.50 setup + $589.50/mo"
+    },
+    {
+        name: "AI Receptionist",
+        slug: "ai-receptionist",
+        price: "$499",
+        period: "/mo",
+        marketValue: "$1,500+ market value",
+        description: (
+            <>
+                Never miss a call again. Call our <a href="tel:+18555930609" className="text-primary hover:underline">number</a> to Talk to our ai receptionist.
+            </>
+        ) as any,
+        features: [
+            "24/7 AI Receptionist",
+            "Never miss another call",
+            "Less stress",
+            "More appointments on your calendar"
+        ],
+        valueStack: [
+            { item: "24/7 Human Receptionist", price: "$2,000+" },
+            { item: "Lead Capture Software", price: "$100" },
+        ],
+        ctaLink: "tel:+18555930609",
+        highlight: false
     }
 ];
 
@@ -69,7 +93,7 @@ const Services: React.FC = () => {
                         My <span className="text-primary">Services</span>
                     </h2>
                     <p className="text-gray-400 text-lg max-w-2xl mx-auto mb-4">
-                        Pay the $1,256.50 setup fee to get started. Your website goes live and the SEO/AEO service runs <strong className="text-white">free</strong> until we book you 5 leads — all within 60 days of payment. If we don't, we keep working at no charge until we do.
+                        Pay the $1,256.50 setup fee to get started. Your website goes live and the SEO/AEO service runs <strong className="text-white">free</strong> until we book you 5 leads — all within 30 days of payment. If we don't, we keep working at no charge until we do.
                     </p>
 
                     {/* Value Stack Highlight */}
@@ -79,7 +103,7 @@ const Services: React.FC = () => {
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start max-w-5xl mx-auto">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-start max-w-7xl mx-auto">
                     {services.map((service, index) => (
                         <motion.div
                             key={index}
