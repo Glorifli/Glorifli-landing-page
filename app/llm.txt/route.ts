@@ -16,10 +16,21 @@ export async function GET() {
             overviewContent = fs.readFileSync(overviewPath, 'utf8');
         }
 
-        // 2. Get all blog posts
+        // 2. Read core pages from content/pages
+        const pagesDir = path.join(process.cwd(), 'content/pages');
+        let corePagesContent = '';
+        if (fs.existsSync(pagesDir)) {
+            const pageFiles = fs.readdirSync(pagesDir).filter(f => f.endsWith('.md'));
+            for (const file of pageFiles) {
+                const content = fs.readFileSync(path.join(pagesDir, file), 'utf8');
+                corePagesContent += `\n\n--- [Page: ${file.replace('.md', '').toUpperCase()}] ---\n\n${content}`;
+            }
+        }
+
+        // 3. Get all blog posts
         const posts = await getPosts();
 
-        // 3. Fetch full content for each post
+        // 4. Fetch full content for each post
         const postsContent = await Promise.all(
             posts.map(async (post) => {
                 const fullPost = await getPostData(post.slug);
@@ -41,9 +52,12 @@ ${fullPost.content}
             })
         );
 
-        // 4. Combine everything
+        // 5. Combine everything
         const finalContent = `
 ${overviewContent}
+
+# Core Pages Context
+${corePagesContent}
 
 # Blog Posts
 ${postsContent.join('\n')}
