@@ -9,8 +9,6 @@ const StarBackground = dynamic(() => import('./StarBackground'), {
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowRight, CheckCircle2, Globe, Phone } from 'lucide-react';
 
-import LeadMagnetForm from './LeadMagnetForm';
-
 const Hero: React.FC = () => {
 
     return (
@@ -77,9 +75,6 @@ const Hero: React.FC = () => {
                         <span className="text-lg font-bold text-white leading-tight tracking-tight">+1 855-593-0609</span>
                     </a>
                 </motion.div>
-
-                {/* ── Compact Multi-Step Audit Form ── */}
-                <LeadMagnetForm className="mt-12" delay={0.3} />
 
             </div>
         </section>
