@@ -53,7 +53,7 @@ const organizationSchema = {
   },
   description:
     "Glorifli builds high-converting websites and AEO/SEO content systems for local service businesses. $1,256.50 setup fee with a guarantee of 5 new appointments in 60 days — or we work for free until we deliver.",
-  foundingDate: "2025",
+  foundingDate: "2024",
   areaServed: {
     "@type": "Country",
     name: "United States",

@@ -64,7 +64,7 @@ const Footer: React.FC = () => {
                                 +1 855-593-0609
                             </a>
                         </div>
-                        <p className="text-xs text-gray-600">© 2025 Glorifli Inc. All rights reserved.</p>
+                        <p className="text-xs text-gray-600">© 2024 Glorifli Inc. All rights reserved.</p>
                     </div>
 
                     <div className="flex flex-col gap-6 md:items-end">
